@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<materials>
+  <material name="ike_albedo.png" gloss-map="ike_gloss.png"/>
+  <material name="ike_wheels_albedo.png" gloss-map="ike_wheels_gloss.png"/>
+  <material name="ike_kart_albedo.png" gloss-map="ike_kart_gloss.png"/>
+</materials>

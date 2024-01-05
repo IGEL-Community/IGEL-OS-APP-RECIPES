@@ -1,0 +1,16 @@
+{
+  "debian": {
+    "supertuxkart_1.1+ds-1build1_amd64.deb": "50b668037a46c7d011a4783298b3a0bfe94dcd2245743e3cd5d4b67a7d9ed719",
+    "supertuxkart-data_1.1+ds-1build1_all.deb": "0c24e84c69d95f0acb419c81a018b9f4cb5d4f6c301a997d47d9fb3694022afa",
+    "libmcpp0_2.7.2-5_amd64.deb": "688f084fc03e095f3755b8b4c089bbccdea09b1e45a9e3e7b3deeabd0a76b762",
+    "libglew2.1_2.1.0-4_amd64.deb": "7828f0ebb3202f76e858b26869a404be9d98b98829e53f8f4601401256dea163",
+    "libsquish0_1.15-1build1_amd64.deb": "f01629c1491a674c2bb18da587a13bf603e910c55785263667e3f1c5c9a613ff",
+    "libopenal1_1%3a1.19.1-1_amd64.deb": "a8e87817ad2e1756a233c43c4ba6781adabcfea1e810b9518344c99d9252020a",
+    "libraqm0_0.7.0-4_amd64.deb": "2f092de1b072856dd6eef736556a6441b45c7fa267770ee70783220b991b7315",
+    "libsndio7.0_1.5.0-3_amd64.deb": "66c488f9c8ee4c7265fd94d5a7209fffe17c9a094566e76ee8c4938f8cdf870c",
+    "fonts-cantarell_0.111-2_all.deb": "b3db8a342c560f0997c63bdcdc216d5860b60867dc1f4c6ee006bf0d03602fbe",
+    "fonts-noto-core_20200323-1build1~ubuntu20.04.1_all.deb": "c8fd9e2c170116d6b0e2de0364c930df84ff6f02325b3548f4a275abae9cea18",
+    "fonts-noto-ui-core_20200323-1build1~ubuntu20.04.1_all.deb": "d504883c5cec32a04c496cae9f46a7dd26b74e640a5d5d4b98a6acdcb93ee513",
+    "fonts-noto-color-emoji_0~20200916-1~ubuntu20.04.1_all.deb": "d97ca5804a33b973e596a2d7a52769721ae1683a11a6aad5ea2be0e372ef38eb"
+  }
+}
