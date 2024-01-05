@@ -1,7 +1,0 @@
-[Unit]
-Description=SuperTuxKart server
-
-[Service]
-Type=simple
-DynamicUser=yes
-ExecStart=/services/supertuxkart/usr/bin/supertuxkart-server.py
