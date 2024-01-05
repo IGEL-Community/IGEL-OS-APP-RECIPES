@@ -30,12 +30,12 @@ wget ${ZIP_LOC}/${ZIP_FILE}.zip
 
 unzip ${ZIP_FILE}.zip -d custom
 
-cd custom/build
+cd custom/target/igelpkg
 
 igelpkg build -r focal
 igelpkg sign -a -p igelpkg.output/${APP_NAME}.ipkg
 
-mv igelpkg.output/${APP_NAME}.ipkg ../..
+mv igelpkg.output/${APP_NAME}.ipkg ../../../..
 
-cd ../..
+cd ../../../..
 rm -rf build_pkg
