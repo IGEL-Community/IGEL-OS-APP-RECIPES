@@ -1,0 +1,23 @@
+name: MasterDeployAPP
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Create APP packages
+      run: bash utils/make-app-packages.sh
+    - name: git push
+      run: |
+        git config --global user.name "rneher-igel"
+        git config --global user.email "neher@igel.com"
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git add --all
+        git commit -m "Updated APP Packages"
+        git push origin HEAD:master
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        REPO_OWNER: rneher-igel

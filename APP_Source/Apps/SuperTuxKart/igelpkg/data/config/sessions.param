@@ -1,0 +1,16 @@
+<sessions>
+	<supertuxkart%>
+        <name>
+            value=<SuperTuxKart>
+        </name>
+        <icon>
+            value=<supertuxkart>
+        </icon>
+        <run_only_once>
+            value=<true>
+        </run_only_once>
+        extends_base=<sessions.base%>
+	</supertuxkart%>
+	<supertuxkart0>
+	</supertuxkart0>
+</sessions>

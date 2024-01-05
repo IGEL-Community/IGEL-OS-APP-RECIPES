@@ -1,0 +1,44 @@
+[
+  {
+    "package": "supertuxkart"
+  },
+  {
+    "package": "supertuxkart-data"
+  },
+  {
+    "package": "libmcpp0",
+    "licenses": [
+      {
+          "name": "mcpp-2.7",
+          "file": "%tmp%/usr/share/doc/libmcpp0/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "libglew2.1"
+  },
+  {
+    "package": "libsquish0"
+  },
+  {
+    "package": "libopenal1"
+  },
+  {
+    "package": "libraqm0"
+  },
+  {
+    "package": "libsndio7.0"
+  },
+  {
+    "package": "fonts-cantarell"
+  },
+  {
+    "package": "fonts-noto-core"
+  },
+  {
+    "package": "fonts-noto-ui-core"
+  },
+  {
+    "package": "fonts-noto-color-emoji"
+  }
+]

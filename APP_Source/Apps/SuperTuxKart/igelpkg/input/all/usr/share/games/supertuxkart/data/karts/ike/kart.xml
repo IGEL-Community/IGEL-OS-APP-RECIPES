@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kart name              = "Ike IGEL"
+      version           = "3"
+      model-file        = "ike igel.spm"
+      icon-file         = "ike_icon.png"
+      minimap-icon-file = "ike_icon.png"
+      shadow-file       = "ike_shadow.png"
+      type              = "medium"
+      groups            = "standard"
+      rgb               = "1.00 1.00 1.00" >
+  <sounds engine = "large">
+      <skid name="default"/>
+  </sounds>
+  <animations left = "0"
+              straight = "9"
+              right = "19"
+              start-winning = "29"
+              start-winning-loop = "109"
+              end-winning = "129"
+              start-losing = "139"
+              start-losing-loop = "159"
+              end-losing = "189"/>
+  <wheels>
+    <rear-left position = "-0.410622 0.172595 -0.538733"
+                 model    = "wheel-rear-left.spm"       />
+    <front-left position = "-0.344459 0.134418 0.506600"
+                 model    = "wheel-front-left.spm"       />
+    <front-right position = "0.342125 0.134418 0.506600"
+                 model    = "wheel-front-right.spm"       />
+    <rear-right position = "0.410624 0.172595 -0.538733"
+                 model    = "wheel-rear-right.spm"       />
+  </wheels>
+  <nitro-emitter>
+    <nitro-emitter-a position = "-0.104916 0.241363 -0.818890" />
+    <nitro-emitter-b position = "0.104916 0.241363 -0.818890" />
+  </nitro-emitter>
+  <exhaust file="kart_exhaust.xml"/>
+</kart>

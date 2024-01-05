@@ -1,0 +1,6 @@
+[Unit]
+Description=SuperTuxKart
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c '/usr/bin/igel-notify-send text -i supertuxkart -t SuperTuxKart -m "Ike IGEL wants to race against you" --timeout 120'

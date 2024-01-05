@@ -1,0 +1,26 @@
+{
+  "name": "supertuxkart",
+  "version": "1.1.0",
+  "summary": {
+    "en": "SuperTuxKart"
+  },
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "categories": [
+    "games"
+  ],
+  "author": "The IGEL community",
+  "vendor": "SuperTuxKart Team",
+  "rw_partition": {
+    "size": "small",
+    "mountpoint": "/userhome/.config/supertuxkart",
+    "flags": [
+      "compressed"
+    ],
+    "post_mount": "chown user /userhome/.config/supertuxkart"
+  },
+  "release": "1",
+  "public_version": "1.1.0"
+}

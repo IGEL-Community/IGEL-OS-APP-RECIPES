@@ -1,0 +1,103 @@
+<options>
+    <windowmode>
+        value=<fullscreen>
+        type=<string>
+        runtime=<true>
+        range=<[window]|[fullscreen]>
+        range[en_us]=<[Window][Fullscreen]>
+        displayname[en_us]=<Window mode>
+        tooltip[en_us]=<Use fullscreen or windowed display.>
+    </windowmode>
+    <no-start-screen>
+        value=<false>
+        type=<bool>
+        runtime=<true>
+        displayname[en_us]=<No start screen>
+        tooltip[en_us]=<Immediately start race without showing a menu.>
+    </no-start-screen>
+    <race-now>
+        value=<false>
+        type=<bool>
+        runtime=<true>
+        displayname[en_us]=<Skip ready-set-go phase>
+        tooltip[en_us]=<Same as -N but also skip the ready-set-go phase and the music.>
+    </race-now>
+    <track>
+        value=<>
+        type=<string>
+        runtime=<true>
+        range=<[]|[abyss]|[arena_candela_city]|[battleisland]|[black_forest]|[candela_city]|[cave]|[cocoa_temple]|[cornfield_crossing]|[endcutscene]|[featunlocked]|[fortmagma]|[gplose]|[gpwin]|[gran_paradiso_island]|[hacienda]|[icy_soccer_field]|[introcutscene]|[introcutscene2]|[lasdunasarena]|[lasdunassoccer]|[lighthouse]|[mines]|[minigolf]|[olivermath]|[overworld]|[pumpkin_park]|[ravenbridge_mansion]|[sandtrack]|[scotland]|[snowmountain]|[snowtuxpeak]|[soccer_field]|[stadium]|[stk_enterprise]|[temple]|[tutorial]|[volcano_island]|[xr591]|[zengarden]>
+        range[en_us]=<[][abyss][arena_candela_city][battleisland][black_forest][candela_city][cave][cocoa_temple][cornfield_crossing][endcutscene][featunlocked][fortmagma][gplose][gpwin][gran_paradiso_island][hacienda][icy_soccer_field][introcutscene][introcutscene2][lasdunasarena][lasdunassoccer][lighthouse][mines][minigolf][olivermath][overworld][pumpkin_park][ravenbridge_mansion][sandtrack][scotland][snowmountain][snowtuxpeak][soccer_field][stadium][stk_enterprise][temple][tutorial][volcano_island][xr591][zengarden]>
+        displayname[en_us]=<Track>
+        tooltip[en_us]=<Start track NAME.>
+    </track>
+    <gp>
+        value=<>
+        type=<string>
+        runtime=<true>
+        range=<[]|[abc]|[abcd]>
+        range[en_us]=<[all][abc][abcd]>
+        displayname[en_us]=<Grand Prix>
+        tooltip[en_us]=<Start the specified Grand Prix.>
+    </gp>
+    <numkarts>
+        value=<0>
+        type=<integer>
+        runtime=<true>
+        displayname[en_us]=<Number of karts>
+        tooltip[en_us]=<Set number of karts on the racetrack.>
+    </numkarts>
+    <kart>
+        value=<ike>
+        type=<string>
+        runtime=<true>
+        range=<[]|[ike][suzanne]|[amanda]|[nolok]|[beastie]|[sara_the_racer]|[gavroche]|[kiki]|[sara_the_wizard]|[tux]|[adiumy]|[pidgin]|[puffy]|[emule]|[hexley]|[gnu]|[konqi]|[xue]|[wilber]>
+        range[en_us]=<[][ike][suzanne][amanda][nolok][beastie][sara_the_racer][gavroche][kiki][sara_the_wizard][tux][adiumy][pidgin][puffy][emule][hexley][gnu][konqi][xue][wilber]>
+        displayname[en_us]=<Kart>
+        tooltip[en_us]=<Use kart NAME.>
+    </kart>
+    <laps>
+        value=<0>
+        type=<integer>
+        runtime=<true>
+        displayname[en_us]=<Laps>
+        tooltip[en_us]=<Define number of laps to N.>
+    </laps>
+    <mode>
+        value=<0>
+        type=<range>
+        runtime=<true>
+        range=<[0]|[1]|[2][3]>
+        range[en_us]=<[Normal][Time trial][Battle][Soccer]>
+        displayname[en_us]=<Mode>
+    </mode>
+    <difficulty>
+        value=<1>
+        type=<range>
+        runtime=<true>
+        range=<[0]|[1]|[2][3]>
+        range[en_us]=<[Beginner][Intermediate][Expert][SuperTux]>
+        displayname[en_us]=<Difficulty>
+    </difficulty>
+    <demo-mode>
+        value=<120>
+        type=<integer>
+        runtime=<true>
+        displayname[en_us]=<Start demo mode after seconds>
+        tooltip[en_us]=<Enables demo mode after t seconds of idle time in main menu.>
+    </demo-mode>
+    <connect-now>
+        value=<>
+        type=<string>
+        runtime=<true>
+        displayname[en_us]=<Server hostname>
+        tooltip[en_us]=<Connect to a server with IP or domain known now.>
+    </connect-now>
+    <server-password>
+        value=<>
+        type=<string>
+        runtime=<true>
+        displayname[en_us]=<Server password>
+        tooltip[en_us]=<Sets a password for a server (both client and server).>
+    </server-password>
+</options>

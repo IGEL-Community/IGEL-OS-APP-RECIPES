@@ -1,0 +1,27 @@
+{
+    "base": {
+        "en": "SuperTuxKart"
+    },
+    "options": {
+        "de": "Optionen",
+        "en": "Options",
+        "es": "Opciones",
+        "fr": "Options",
+        "it": "Opzioni",
+        "ja": "オプション",
+        "nl": "Opties",
+        "zh_CN": "选项",
+        "zh_HK": "選項"
+    },
+    "server": {
+        "de": "Server",
+        "en": "Server",
+        "es": "Servidor",
+        "fr": "Serveur",
+        "it": "Server",
+        "ja": "サーバ",
+        "nl": "Server",
+        "zh_CN": "服务器",
+        "zh_HK": "伺服器"
+    }
+}

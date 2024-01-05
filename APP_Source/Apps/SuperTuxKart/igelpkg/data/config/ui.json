@@ -1,0 +1,102 @@
+{
+    "root": {
+        "id": "root",
+        "childrenIds": [
+            "base"
+        ]
+    },
+    "base": {
+        "id": "base",
+        "parentId": "root",
+        "nlsResourceId": "base",
+        "title": "SuperTuxKart",
+        "childrenIds": [
+            "options",
+            "server"
+        ]
+    },
+    "options": {
+        "id": "options",
+        "nlsResourceId": "options",
+        "parentId": "base",
+        "title": "Options",
+        "elements": {
+            "0": {
+                "paramId": "app.supertuxkart.options.windowmode",
+                "type": "generic"
+            },
+            "1": {
+                "paramId": "app.supertuxkart.options.demo-mode",
+                "type": "generic"
+            },
+            "2": {
+                "paramId": "app.supertuxkart.options.connect-now",
+                "type": "generic"
+            },
+            "3": {
+                "paramId": "app.supertuxkart.options.no-start-screen",
+                "type": "generic"
+            },
+            "4": {
+                "paramId": "app.supertuxkart.options.race-now",
+                "type": "generic"
+            },
+            "5": {
+                "paramId": "app.supertuxkart.options.track",
+                "type": "generic"
+            },
+            "6": {
+                "paramId": "app.supertuxkart.options.gp",
+                "type": "generic"
+            },
+            "7": {
+                "paramId": "app.supertuxkart.options.numkarts",
+                "type": "generic"
+            },
+            "8": {
+                "paramId": "app.supertuxkart.options.kart",
+                "type": "generic"
+            },
+            "9": {
+                "paramId": "app.supertuxkart.options.laps",
+                "type": "generic"
+            },
+            "10": {
+                "paramId": "app.supertuxkart.options.mode",
+                "type": "generic"
+            },
+            "11": {
+                "paramId": "app.supertuxkart.options.difficulty",
+                "type": "generic"
+            },
+            "12": {
+                "paramId": "app.supertuxkart.options.server-password",
+                "type": "generic"
+            }
+        }
+    },
+    "server": {
+        "id": "server",
+        "nlsResourceId": "server",
+        "parentId": "base",
+        "title": "Server",
+        "elements": {
+            "0": {
+                "paramId": "app.supertuxkart.server.lan-server",
+                "type": "generic"
+            },
+            "1": {
+                "paramId": "app.supertuxkart.server.lan-server-name",
+                "type": "generic"
+            },
+            "2": {
+                "paramId": "app.supertuxkart.server.server-password",
+                "type": "generic"
+            },
+            "3": {
+                "paramId": "app.supertuxkart.server.battle-mode",
+                "type": "generic"
+            }
+        }
+    }
+}

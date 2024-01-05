@@ -1,0 +1,40 @@
+<server>
+    <lan-server>
+        value=<false>
+        type=<bool>
+        runtime=<true>
+        displayname[en_us]=<Start lan-server>
+        tooltip[en_us]=<Start a LAN server (not a playing client).>
+    </lan-server>
+    <lan-server-name>
+        value=<superigel>
+        type=<string>
+        runtime=<true>
+        displayname[en_us]=<Name of the lan-server>
+        tooltip[en_us]=<Name of the LAN server (not a playing client).>
+    </lan-server-name>
+    <battle-mode>
+        value=<0>
+        type=<string>
+        runtime=<true>
+        range=<[0][1]>
+        range[en_us]=<[Free-For-All]|[Capture The Flag]>
+        displayname[en_us]=<Battle mode>
+        tooltip[en_us]=<Specify battle mode in network.>
+    </battle-mode>
+    <server-password>
+        value=<>
+        type=<string>
+        runtime=<true>
+        displayname[en_us]=<Server password>
+        tooltip[en_us]=<Sets a password for a server (both client and server).>
+    </server-password>
+    <team-choosing>
+        value=<true>
+        type=<bool>
+        runtime=<true>
+        displayname[en_us]=<Enable team choosing>
+        tooltip[en_us]=<Enable choosing team in lobby for team game.>
+    </team-choosing>
+    node_action=</bin/systemctl restart supertuxkart-server>
+</server>
