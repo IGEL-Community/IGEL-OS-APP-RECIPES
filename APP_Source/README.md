@@ -1,1 +1,1 @@
-# App SDK Build Files
+# App Recipe Build Files

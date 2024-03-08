@@ -1,12 +1,12 @@
-# IGEL-OS-APP-SDK
+# IGEL-OS-APP-RECIPES
 
-[Getting Started with the IGEL OS App SDK](utils/Getting-Started-with-the-IGEL-OS-App-SDK.pdf)
-
------
+[Getting Started with the IGEL OS App Recipes](utils/Getting-Started-with-the-IGEL-OS-App-Recipes.pdf)
 
 -----
 
-## Getting Started With the IGEL OS App SDK
+-----
+
+## Getting Started With the IGEL OS App Recipes
 
 This document provides you with the basic knowledge that is required to create an IGEL OS App with igelpkg and publish it on the IGEL App Portal.
 

@@ -1,6 +1,6 @@
 ## IGEL Disclaimer
 
-The provided packages for use with the IGEL OS App SDK feature are without any
+The provided packages for use with the IGEL OS App Recipe feature are without any
 warranty or support by IGEL Technology.
  
 The files are not designed for production usage, use at your own risk. IGEL
@@ -11,7 +11,7 @@ software.
 IGEL Technology is not responsible for any license violation created with the
 custom partition technology or the provided technical demonstration packages.
  
-The App SDK technology can create a permanent damage in the IGEL OS host system,
+The App Recipe technology can create a permanent damage in the IGEL OS host system,
 services related to the wrong usage/misinstallation of a App and/or the deployed
 packages are not covered by the warranty in any kind.
  
