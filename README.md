@@ -8,14 +8,12 @@
 
 ## Getting Started With the IGEL OS App Recipes
 
-This document provides you with the basic knowledge that is required to create an IGEL OS App with igelpkg and publish it on the IGEL App Portal.
+This document provides you with the basic knowledge that is required to create an IGEL OS App with igelpkg.
 
 Basically, the procedure is as follows:
 
 - Install the IGEL OS App SDK on a Linux system.
 - Build and test your app.
-- Make sure that your app meets the requirements of the review by IGEL.
-- Submit your app for review
 
 -----
 
