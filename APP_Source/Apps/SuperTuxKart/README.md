@@ -8,4 +8,4 @@
 
 ----
 
-Initial version.
+The initial version.
