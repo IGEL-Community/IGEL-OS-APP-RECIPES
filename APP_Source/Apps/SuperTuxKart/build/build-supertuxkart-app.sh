@@ -6,7 +6,7 @@
 ## Development machine Ubuntu (OS12 = 20.04)
 CP="supertuxkart"
 ZIP_LOC="https://github.com/IGEL-Community/IGEL-Custom-Partitions/raw/master/APP_Packages/Apps"
-ZIP_FILE="SuperTuxKart"
+ZIP_FILE="SuperTuxKart_community"
 APP_NAME="supertuxkart-1.1.0"
 
 VERSION_ID=$(grep "^VERSION_ID" /etc/os-release | cut -d "\"" -f 2)
