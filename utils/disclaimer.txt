@@ -1,3 +1,5 @@
 ## IGEL Community Disclaimer
 
-IGEL Community content is without any warranty or support by IGEL Technology. 
+Content created by IGEL Community is without any warranty or support by IGEL Technology. 
+
+IGEL Community OS App Recipes were created by IGEL Community and not by IGEL Technology.
