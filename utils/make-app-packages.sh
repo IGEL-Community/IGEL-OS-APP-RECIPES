@@ -26,9 +26,9 @@ for category in $CATEGORIES; do
       if [ -d $app ]; then
         zip_needed=false
         #zip_reason=""
-        zip_file="$ZIPLOCATION/$category/{$app}_community.zip";
+        zip_file="$ZIPLOCATION/$category/$app_community.zip";
         #  Take the zip file string out of changed files so we don't recreate it needlessly
-        CHANGEDFILES=${CHANGEDFILES//APP_Packages\/$category\/{$app}_community.zip/}
+        CHANGEDFILES=${CHANGEDFILES//APP_Packages\/$category\/$app_community.zip/}
 
         if [ ! -f  $zip_file ]; then
           zip_needed=true;
