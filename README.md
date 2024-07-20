@@ -6,6 +6,16 @@
 
 -----
 
+## Tutorial
+
+[Video: Introduction](utils/videos/01-HOWTO-Introduction.mp4?raw=true)
+
+[IGEL Community Docs: HOWTO GitHub with Microsoft Visual Studio Code](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-GitHub-with-VS-Code/)
+
+-----
+
+-----
+
 ## Getting Started With the IGEL OS App Recipes
 
 This document provides you with the basic knowledge that is required to create an IGEL OS App with igelpkg.
