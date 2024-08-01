@@ -9,10 +9,10 @@ We currently support Ubuntu 18.04 and newer. Install igelpkg as described in the
 
 ## Creating the package structure
 
-Create the package tree from template with version 1.1.0
+Create the package tree from template with version 1.4.0
 
 ```bash
-igelpkg new -n supertuxkart -V 1.1.0
+igelpkg new -n supertuxkart -V 1.4.0
 ```
 
 ## Adding debian packages
@@ -37,7 +37,7 @@ We need to add them to igel/debian.json
 We are ready to run the first build.
 
 ```bash
-igelpkg build -r focal
+igelpkg build -r bookworm
 ```
 
 ## Checking for missing dependencies
@@ -45,26 +45,25 @@ igelpkg build -r focal
 Do a dependency check in order to find missing libraries. The base_system app is needed for the check, download the latest base_system app from the app portal.
 
 ```bash
-igelpkg check igelpkg.output/supertuxkart-1.1.0.ipkg base_system-12.1.100+1.ipkg
+igelpkg check igelpkg.output/supertuxkart-1.4.0.ipkg base_system-12.0.900-rc.9+3.ipkg
 ```
 
 Some libraries are missing:
 
 ```bash
-Error [Checker]: supertuxkart-1.1.0_x64: usr/games/supertuxkart missing libmcpp.so.0
-Error [Checker]: supertuxkart-1.1.0_x64: usr/games/supertuxkart missing libGLEW.so.2.1
-Error [Checker]: supertuxkart-1.1.0_x64: usr/games/supertuxkart missing libsquish.so.0
-Error [Checker]: supertuxkart-1.1.0_x64: usr/games/supertuxkart missing libopenal.so.1
-Error [Checker]: supertuxkart-1.1.0_x64: usr/games/supertuxkart missing libraqm.so.0
+Error [Checker]: supertuxkart-1.4.0_x64: usr/games/supertuxkart missing libmcpp.so.0
+Error [Checker]: supertuxkart-1.4.0_x64: usr/games/supertuxkart missing libopenal.so.1
+Error [Checker]: supertuxkart-1.4.0_x64: usr/games/supertuxkart missing libmbedcrypto.so.7
+Error [Checker]: supertuxkart-1.4.0_x64: usr/games/supertuxkart missing libsquish.so.0
 ```
 
 ## Adding missing dependencies
 
-Now we search for the package names of the missing libraries. We need to do this for every missing library. Use https://packages.ubuntu.com to search for the package names.
+Now we search for the package names of the missing libraries. We need to do this for every missing library. Use https://packages.debian.org to search for the package names.
 
 E.g. for libmcpp.so.0:
 
-https://packages.ubuntu.com/search?searchon=contents&keywords=libmcpp.so.0&mode=exactfilename&suite=focal&arch=any
+https://packages.debian.org/search?mode=path&suite=bookworm&section=all&arch=any&searchon=contents&keywords=libmcpp.so.0
 
 shows libmcpp0, so we add that to igel/debian.json
 
@@ -72,25 +71,16 @@ shows libmcpp0, so we add that to igel/debian.json
 ```json
 [
   {
-    "package": "supertuxkart"
-  },
-  {
-    "package": "supertuxkart-data"
-  },
-  {
     "package": "libmcpp0"
-  },
-  {
-    "package": "libglew2.1"
-  },
-  {
-    "package": "libsquish0"
   },
   {
     "package": "libopenal1"
   },
   {
-    "package": "libraqm0"
+    "package": "libmbedcrypto7"
+  },
+  {
+    "package": "libsquish0"
   }
 ]
 ```
@@ -99,7 +89,7 @@ shows libmcpp0, so we add that to igel/debian.json
 
 We build the app again to find missing dependencies of the dependencies.
 ```bash
-igelpkg build -r focal
+igelpkg build -r bookworm
 ```
 
 ## Fixing non-standard license for libmcpp0
@@ -116,7 +106,7 @@ We reference a copyright file from the libmcpp0 package in igel/debian.json.
           "name": "mcpp-2.7",
           "file": "%tmp%/usr/share/doc/libmcpp0/copyright"
       }
-    ]
+    ]    
   },
 ```
 
@@ -124,7 +114,7 @@ We reference a copyright file from the libmcpp0 package in igel/debian.json.
 We build the app again to find missing dependencies of the dependencies.
 
 ```bash
-igelpkg build -r focal
+igelpkg build -r bookworm
 ```
 
 ## Check missing dependencies
@@ -132,11 +122,11 @@ igelpkg build -r focal
 libsndio7.0 is missing which is a dependency of libopenal1.
 
 ```bash
-igelpkg check igelpkg.output/supertuxkart-1.1.0.ipkg base_system-12.1.100+1.ipkg
+igelpkg check igelpkg.output/supertuxkart-1.4.0.ipkg base_system-12.0.900-rc.9+3.ipkg
 ```
 
 ```bash
-Error [Checker]: supertuxkart-1.1.0_x64: usr/lib/x86_64-linux-gnu/libopenal.so.1.19.1 missing libsndio.so.7.0
+Error [Checker]: supertuxkart-1.4.0_x64: usr/lib/x86_64-linux-gnu/libopenal.so.1.19.1 missing libsndio.so.7.0
 ```
 We add that to igel/debian.json
 ```json
@@ -149,13 +139,13 @@ We add that to igel/debian.json
 ## Building the app again
 Now we can build again. Additionally we use -sp to sign the package. When all missing dependencies are referenced, then the app can be signed.
 ```bash
-igelpkg build -r focal -sp
+igelpkg build -r bookworm -sp
 ```
 
 ## Installing
 Install the app locally using igelpkgctl on the IGEL OS device. Best practice is to use a nfsmount or usb drive since this app is big and space on the device is limited.
 ```bash
-igelpkgctl install -f supertuxkart-1.1.0.ipkg
+igelpkgctl install -f supertuxkart-1.4.0.ipkg
 ```
 
 ## First start of the app
@@ -167,7 +157,7 @@ We will notice that supertuxkart is complaining about missing fonts.
 
 ## Add missing fonts
 
-Again we use https://packages.ubuntu.com to search for the package names.
+Again we use https://packages.debian.org to search for the package names.
 We will need a few cycles of add fonts to debian.json, build, install and run to find all missing font packages.
 
 igel/debian.json
@@ -188,7 +178,7 @@ igel/debian.json
 
 ## First successful run
 
-Now supertuxkart starts and is ready to use.
+Now SuperTuxKart starts and is ready to use.
 
 
 ## Creating a session config
@@ -252,10 +242,10 @@ convert data/app.png -colorspace gray data/monochrome.png
 
 ## Adding description
 
-From the output of
+From the output of 
 
 ```bash
-dpkg -I igelpkg.tmp/download/supertuxkart_1.1+ds-1build1_amd64.deb
+dpkg -I igelpkg.tmp/download/supertuxkart_1.4+dfsg-2_amd64.deb
 ```
 we copy and paste the description to data/descriptions/en
 
@@ -348,7 +338,7 @@ subprocess.run(command)
 Make it executable.
 
 ```bash
-chmod +x input/all/usr/bin/supertuxkart-server.py
+chmod +x input/all/usr/bin/supertuxkart-server.py 
 ```
 
 Add a systemd system service which will be run at system start.
@@ -545,16 +535,12 @@ You may notice that all highscores are lost after reboot. Let's create a persist
 Edit app.json and add
 ```json
 "rw_partition": {
-    "size": "small",
-    "mountpoint": "/userhome/.config/supertuxkart",
-    "flags": [
-      "compressed"
-    ],
-    "post_mount": "chown user /userhome/.config/supertuxkart"
-  },
+  "size": "small",
+  "flags": [
+    "compressed"
+  ]
+},
 ```
-
-post_mount is needed that the user can write to this partition.
 
 
 ## Customizing the source package
