@@ -1,0 +1,13 @@
+<sessions>
+	<speedcrunch%>
+        <name>
+            value=<SpeedCrunch>
+        </name>
+        <icon>
+            value=<speedcrunch>
+        </icon>
+        extends_base=<sessions.base%>
+	</speedcrunch%>
+	<speedcrunch0>
+	</speedcrunch0>
+</sessions>

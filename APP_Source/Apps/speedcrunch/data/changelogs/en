@@ -1,0 +1,41 @@
+speedcrunch (0.12.0-6) unstable; urgency=medium
+
+  * d/patches: use Sphinx built-in i18n support for extensions
+    - Closes: #1026816
+
+ -- Felix Krull <f_krull@gmx.de>  Fri, 23 Dec 2022 19:24:30 +0100
+
+speedcrunch (0.12.0-5.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix docs build with Sphinx >= 4. (Closes: #997366)
+    - Add 0007-fix-docs-build-with-Sphinx-4.patch
+
+ -- Felix Geyer <fgeyer@debian.org>  Sat, 29 Oct 2022 09:59:26 +0200
+
+speedcrunch (0.12.0-5) unstable; urgency=medium
+
+  * d/patches, d/control: fix docs build with Sphinx >= 2.0
+    - Closes: #955058
+  * d/patches: use CMake's CXX_STANDARD property
+  * d/copyright: add separate notice for appdata files
+  * d/control:
+    - bump Standards-Version
+    - bump debhelper compat version
+
+ -- Felix Krull <f_krull@gmx.de>  Sun, 19 Apr 2020 14:13:08 +0200
+
+speedcrunch (0.12.0-4) unstable; urgency=medium
+
+  * d/control:
+    - update VCS-* urls
+    - bump Standards-Version
+    - use python3-sphinx instead of python-sphinx
+  * d/compat: bump debhelper compat version to 10
+  * d/patches, d/rules: build the HTML manual in a separate step
+    - Rebuilding the HTML manual during the build has proven fragile. Instead,
+      the manual is now built in a separate step and the application build is
+      pointed at the result of that build.
+    - Closes: #897531
+
+ -- Felix Krull <f_krull@gmx.de>  Mon, 14 May 2018 16:52:42 +0000
