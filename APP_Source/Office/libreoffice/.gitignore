@@ -1,0 +1,5 @@
+/igelpkg.output/
+/igelpkg.tmp/
+igelpkg.log
+.vscode/
+igel/checksums.json
