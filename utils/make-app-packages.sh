@@ -68,16 +68,17 @@ for category in $CATEGORIES; do
           rm -rf $cpt
           mkdir $cpt
           #mkdir "$cpt/igel"
-          mkdir "$cpt/target"
+          #mkdir "$cpt/target"
           #cp *.xml "$cpt/igel"
           #cp igel/*.xml "$cpt/igel"
           #cp *.inf "$cpt/target"
           #cp target/*.inf "$cpt/target"
           #cp *.sh "$cpt/target"
-          cp *.md "$cpt/target"
-          cp -R !(*.xml|*.inf|*.sh|*.md|$cpt) "$cpt/target"
-          cp $COMMONREADME "$cpt"
-          cp $COMMONDISCLAIMER "$cpt"
+          #cp *.md "$cpt/target"
+          #cp -R !(*.xml|*.inf|*.sh|*.md|$cpt) "$cpt/target"
+          cp -R * "$cpt"
+          #cp $COMMONREADME "$cpt"
+          #cp $COMMONDISCLAIMER "$cpt"
           cd $cpt
           zip -r $zip_file .
           cd ..
