@@ -10,4 +10,5 @@
 	</speedcrunch%>
 	<speedcrunch0>
 	</speedcrunch0>
+    node_action=<wm_postsetup>
 </sessions>

@@ -13,4 +13,5 @@
 	</supertuxkart%>
 	<supertuxkart0>
 	</supertuxkart0>
+    node_action=<wm_postsetup>
 </sessions>
