@@ -77,6 +77,7 @@ for category in $CATEGORIES; do
           #cp *.md "$cpt/target"
           #cp -R !(*.xml|*.inf|*.sh|*.md|$cpt) "$cpt/target"
           cp -R * "$cpt"
+          rm -rf "${cpt}/tmp"
           #cp $COMMONREADME "$cpt"
           #cp $COMMONDISCLAIMER "$cpt"
           cd $cpt
