@@ -1,0 +1,14 @@
+<sessions>
+	<dgstv%>
+        <name>
+            value=<DGS TV>
+        </name>
+        <icon>
+            value=<dgstv>
+        </icon>
+        extends_base=<sessions.base%>
+	</dgstv%>
+	<dgstv0>
+	</dgstv0>
+    node_action=<wm_postsetup>
+</sessions>
