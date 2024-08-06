@@ -1,0 +1,209 @@
+[
+  {
+    "package": "vlc"
+  },
+  {
+    "package": "vlc-data"
+  },
+  {
+    "package": "vlc-bin"
+  },
+  {
+    "package": "libvlc-bin"
+  },
+  {
+    "package": "libvlc5"
+  },
+  {
+    "package": "libvlccore9"
+  },
+  {
+    "package": "vlc-plugin-base"
+  },
+  {
+    "package": "vlc-plugin-video-output"
+  },
+  {
+    "package": "vlc-plugin-qt"
+  },
+  {
+    "package": "vlc-l10n"
+  },
+  {
+    "package": "vlc-plugin-access-extra"
+  },
+  {
+    "package": "vlc-plugin-notify"
+  },
+  {
+    "package": "vlc-plugin-samba"
+  },
+  {
+    "package": "vlc-plugin-skins2"
+  },
+  {
+    "package": "vlc-plugin-video-splitter"
+  },
+  {
+    "package": "vlc-plugin-visualization"
+  },
+  {
+    "package": "libmtp9"
+  },
+  {
+    "package": "libsrt1.5-gnutls"
+  },
+  {
+    "package": "libcddb2"
+  },
+  {
+    "package": "libdc1394-25",
+    "licenses": [
+      {
+          "name": "libdc1394-25",
+          "file": "%tmp%/usr/share/doc/libdc1394-25/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "libdvbpsi10"
+  },
+  {
+    "package": "libdvdnav4"
+  },
+  {
+    "package": "libdvdread8"
+  },
+  {
+    "package": "libzvbi0"
+  },
+  {
+    "package": "libnfs13"
+  },
+  {
+    "package": "libmad0",
+    "licenses": [
+      {
+          "name": "libmad0",
+          "file": "%tmp%/usr/share/doc/libmad0/copyright"
+      }
+    ]    
+  }, 
+  {
+    "package": "libspatialaudio0"
+  },
+  {
+    "package": "liba52-0.7.4"
+  },
+  {
+    "package": "libaribb24-0"
+  },
+  {
+    "package": "libfaad2"
+  },
+  {
+    "package": "libdca0"
+  },
+  {
+    "package": "libkate1"
+  },
+  {
+    "package": "libass9"
+  },
+  {
+    "package": "libmpeg2-4",
+    "licenses": [
+      {
+          "name": "libmpeg2-4",
+          "file": "%tmp%/usr/share/doc/libmpeg2-4/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "libsdl-image1.2"
+  },
+  {
+    "package": "libshine3"
+  },
+  {
+    "package": "liblirc-client0"
+  },
+  {
+    "package": "libebml5"
+  },
+  {
+    "package": "libmatroska7"
+  },
+  {
+    "package": "libopenmpt-modplug1"
+  },
+  {
+    "package": "libmpcdec6",
+    "licenses": [
+      {
+          "name": "libmpcdec6",
+          "file": "%tmp%/usr/share/doc/libmpcdec6/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "libsidplay2",
+    "licenses": [
+      {
+          "name": "libsidplay2",
+          "file": "%tmp%/usr/share/doc/libsidplay2/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "libresid-builder0c2a",
+    "licenses": [
+      {
+          "name": "libresid-builder0c2a",
+          "file": "%tmp%/usr/share/doc/libresid-builder0c2a/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "liblua5.2-0"
+  },
+  {
+    "package": "libupnp13"
+  },
+  {
+    "package": "libixml10"
+  },
+  {
+    "package": "libchromaprint1"
+  },
+  {
+    "package": "libprotobuf-lite32"
+  },
+  {
+    "package": "libswscale6"
+  },
+  {
+    "package": "libpostproc56"
+  },
+  {
+    "package": "libplacebo208"
+  },
+  {
+    "package": "libmysofa1"
+  },
+  {
+    "package": "libsdl1.2debian"
+  },
+  {
+    "package": "libopenmpt0"
+  },
+  {
+    "package": "libxcb-xv0",
+    "licenses": [
+      {
+          "name": "libxcb-xv0",
+          "file": "%tmp%/usr/share/doc/libxcb-xv0/copyright"
+      }
+    ]    
+  }
+]

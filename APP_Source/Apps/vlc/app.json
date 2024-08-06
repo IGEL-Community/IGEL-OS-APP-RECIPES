@@ -1,0 +1,18 @@
+{
+  "categories": [
+    "misc"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "vlc",
+  "public_version": "3.0.21-0+deb12u1",
+  "release": "",
+  "summary": {
+    "en": "VLC (Community)"
+  },
+  "author": "The IGEL community",
+  "vendor": "VLC Team",
+  "version": "3.0.21"
+}
