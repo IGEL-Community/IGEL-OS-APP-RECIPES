@@ -1,0 +1,83 @@
+[
+  {
+    "package": "frozen-bubble"
+  },
+  {
+    "package": "frozen-bubble-data"
+  },
+  {
+    "package": "libsdl1.2debian"
+  },
+  {
+    "package": "libsdl-mixer1.2"
+  },
+  {
+    "package": "libcompress-bzip2-perl"
+  },
+  {
+    "package": "libsdl-perl"
+  },
+  {
+    "package": "libalien-sdl-perl"
+  },
+  {
+    "package": "libfile-sharedir-perl"
+  },
+  {
+    "package": "libclass-inspector-perl"
+  },
+  {
+    "package": "libcapture-tiny-perl"
+  },
+  {
+    "package": "libmikmod3"
+  },
+  {
+    "package": "libmad0",
+    "licenses": [
+      {
+          "name": "libmad0",
+          "file": "%tmp%/usr/share/doc/libmad0/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "libsdl2-2.0-0"
+  },
+  {
+    "package": "libopenal1"
+  },
+  {
+    "package": "libinstpatch-1.0-2"
+  },
+  {
+    "package": "libsndio7.0"
+  },
+  {
+    "package": "libsdl-gfx1.2-5",
+    "licenses": [
+      {
+          "name": "libsdl-gfx1.2-5",
+          "file": "%tmp%/usr/share/doc/libsdl-gfx1.2-5/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "libsdl-image1.2"
+  },
+  {
+    "package": "libsdl-pango1"
+  },
+  {
+    "package": "libsdl-ttf2.0-0"
+  },
+  {
+    "package": "libfile-which-perl"
+  },
+  {
+    "package": "libtie-simple-perl"
+  },
+  {
+    "package": "libfluidsynth3"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "frozenbubble",
+  "version": "2.212.11",
+  "summary": {
+    "en": "Frozen Bubble (Community)"
+  },
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "categories": [
+    "games"
+  ],
+  "author": "The IGEL community",
+  "vendor": "Frozen Bubble Team",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "public_version": "2.212-11+b1"
+}

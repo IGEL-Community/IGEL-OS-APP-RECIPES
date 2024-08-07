@@ -1,0 +1,16 @@
+<sessions>
+	<frozenbubble%>
+        <name>
+            value=<Frozen Bubble>
+        </name>
+        <icon>
+            value=<frozen-bubble>
+        </icon>
+        <run_only_once>
+            value=<true>
+        </run_only_once>
+        extends_base=<sessions.base%>
+	</frozenbubble%>
+	<frozenbubble0>
+	</frozenbubble0>
+</sessions>
