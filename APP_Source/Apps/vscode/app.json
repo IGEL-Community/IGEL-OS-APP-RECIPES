@@ -1,0 +1,24 @@
+{
+  "name": "vscode",
+  "version": "1.92.0",
+  "public_version": "1.92.0",
+  "release": "",
+  "summary": {
+    "en": "Visual Studio Code (Community)"
+  },
+  "icons": {
+    "app": "vscode_marketing.png",
+    "monochrome": "vscode_mono.png"
+  },
+  "categories": [
+    "misc"
+  ],
+  "author": "IGEL Technology GmbH",
+  "vendor": "Microsoft Corporation",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  }
+}

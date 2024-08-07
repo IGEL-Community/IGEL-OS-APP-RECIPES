@@ -1,0 +1,14 @@
+<sessions>
+	<vscode%>
+        <name>
+            value=<Visual Studio Code>
+            displayname[en_us]=<Visual Studio Code>
+        </name>
+        <icon>
+            value=<vscode>
+        </icon>
+        extends_base=<sessions.base%>
+	</vscode%>
+	<vscode0>
+	</vscode0>
+</sessions>
