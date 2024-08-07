@@ -34,4 +34,5 @@
 	</libreoffice-calc%>
 	<libreoffice-calc0>
 	</libreoffice-calc0>
+    node_action=<wm_postsetup>
 </sessions>
