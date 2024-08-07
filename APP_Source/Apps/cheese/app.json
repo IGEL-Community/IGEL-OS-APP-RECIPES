@@ -1,0 +1,18 @@
+{
+  "categories": [
+    "misc"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "cheese",
+  "public_version": "",
+  "release": "",
+  "summary": {
+    "en": "Cheese (Community)"
+  },
+  "author": "The IGEL community",
+  "vendor": "Cheese Team",
+  "version": "43.0.1"
+}

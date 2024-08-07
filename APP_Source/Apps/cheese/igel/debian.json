@@ -1,0 +1,44 @@
+[
+  {
+    "package": "cheese"
+  },
+  {
+    "package": "cheese-common"
+  },
+  {
+    "package": "libcheese-gtk25"
+  },
+  {
+    "package": "libcheese8"
+  },
+  {
+    "package": "libclutter-1.0-0"
+  },
+  {
+    "package": "libclutter-gtk-1.0-0",
+    "licenses": [
+      {
+          "name": "libclutter-gtk-1.0-0",
+          "file": "%tmp%/usr/share/doc/libclutter-gtk-1.0-0/copyright"
+      }
+    ]
+  },
+  {
+    "package": "libcogl20"
+  },
+  {
+    "package": "libcogl-path20"
+  },
+  {
+    "package": "libcogl-pango20"
+  },
+  {
+    "package": "libclutter-gst-3.0-0",
+    "licenses": [
+      {
+          "name": "libclutter-gst-3.0-0",
+          "file": "%tmp%/usr/share/doc/libclutter-gst-3.0-0/copyright"
+      }
+    ]
+  }  
+]
