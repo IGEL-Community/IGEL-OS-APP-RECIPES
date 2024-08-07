@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "misc"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "keepassxc",
+  "public_version": "2.7.4+dfsg.1-2",
+  "release": "",
+  "rw_partition": {
+    "flags": [
+      "compressed"
+    ],
+    "size": "small"
+  },
+  "summary": {
+    "en": "keepassxc (Community)"
+  },
+  "author": "The IGEL community",
+  "vendor": "keepassxc Team",
+  "version": "2.7.4"
+}

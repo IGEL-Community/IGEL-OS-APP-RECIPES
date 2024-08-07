@@ -1,0 +1,14 @@
+[
+  {
+    "package": "keepassxc"
+  },
+  {
+    "package": "libqrencode4"
+  },
+  {
+    "package": "libbotan-2-19"
+  },
+  {
+    "package": "libtspi1"
+  }
+]

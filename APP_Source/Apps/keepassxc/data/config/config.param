@@ -1,0 +1,13 @@
+<sessions>
+	<keepassxc%>
+        <name>
+            value=<keepassxc>
+        </name>
+        <icon>
+            value=<keepassxc>
+        </icon>
+        extends_base=<sessions.base%>
+	</keepassxc%>
+	<keepassxc0>
+	</keepassxc0>
+</sessions>
