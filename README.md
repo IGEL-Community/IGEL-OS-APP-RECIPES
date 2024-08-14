@@ -23,9 +23,6 @@
 
 ```bash linenums="1"
 "apptype": 2.3,
-  "architectures": [
-    "x64"
-  ],
 ```
 
 Current valid App Types:
