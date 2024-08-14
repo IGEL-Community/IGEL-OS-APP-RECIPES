@@ -12,6 +12,31 @@
 
 [IGEL Community Docs: HOWTO GitHub with Microsoft Visual Studio Code](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-GitHub-with-VS-Code/)
 
+
+-----
+
+-----
+
+##  Set apptype to 2.3 in app.json file
+
+**NOTE:** The community Apps that are based on a recipe and vendor binary need to have a special apptype, which is 2.3.
+
+```bash linenums="1"
+"apptype": 2.3,
+  "architectures": [
+    "x64"
+  ],
+```
+
+Current valid App Types:
+
+- Type 0 - IGEL Base OS
+- Type 1 - IGEL Created apps - Chromiums, CWA, Teams PWA, Zoom Desktop
+- Type 2.1 - IGEL Ready Certified Apps
+- Type 2.2 - Customer private app
+- Type 2.3 - IGEL Community Recipe apps - applications which are based on IGEL Community recipe and vendor binary
+- Type 2.4 - IGEL Community apps
+
 -----
 
 -----
