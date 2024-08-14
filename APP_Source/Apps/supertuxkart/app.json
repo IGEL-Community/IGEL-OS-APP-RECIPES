@@ -11,6 +11,7 @@
   "categories": [
     "games"
   ],
+  "apptype": 2.3,
   "author": "The IGEL community",
   "vendor": "SuperTuxKart Team",
   "rw_partition": {
