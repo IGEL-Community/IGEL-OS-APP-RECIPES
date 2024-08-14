@@ -12,6 +12,7 @@
   "summary": {
     "en": "VLC (Community)"
   },
+  "apptype": 2.3,
   "author": "The IGEL community",
   "vendor": "VLC Team",
   "version": "3.0.21"
