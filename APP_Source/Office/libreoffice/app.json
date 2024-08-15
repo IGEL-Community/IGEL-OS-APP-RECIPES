@@ -7,7 +7,6 @@
     "monochrome": "monochrome.svg"
   },
   "name": "libreoffice",
-  "apptype": 2.3,
   "author": "The IGEL community",
   "vendor": "The Document Foundation",
   "public_version": "24.2.5 BUILD 1.0 RC 1",
