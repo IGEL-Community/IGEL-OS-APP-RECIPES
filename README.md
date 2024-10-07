@@ -16,43 +16,12 @@
 
 -----
 
-## Getting Started With the IGEL OS App Recipes
+## Build your own IGEL OS App with IGEL OS App SDK.
 
-This document provides you with the basic knowledge that is required to create an IGEL OS App with igelpkg.
+- [IGEL App Creator Portal – the straightforward way to secure and deploy your third-party apps to IGEL OS12](https://www.igel.com/blog/igel-app-creator-portal-the-straightforward-way-to-secure-and-deploy-your-third-party-apps-to-igel-os12/)
+- [IGEL KB: IGEL App Creator Portal](https://kb.igel.com/igel-app-creator/current/igel-app-creator-portal)
 
-Basically, the procedure is as follows:
+**Please Note:** 
 
-- Install the IGEL OS App SDK on a Linux system.
-- Build and test your app.
-
------
-
-## Prerequisites
-
-- Machine with Ubuntu Linux 18.04 or higher, or another Debian-based Linux distribution
-- The IGEL OS APP SDK, version 0.9.8 or higher
-- Device with IGEL OS 12.01.120. To test if the app can be installed and started, a virtual machine is sufficient. If 3D graphics are required, a hardware device might be a good choice. To test if an app can be installed and started, a virtual machine is sufficient.
-- A local terminal is configured on the device
-
------
-
-## Installing igelpkg
-
-- Copy the files igel-build-tools-static[version]_amd64.deb and igelpkg_[version]_amd64.deb to your development machine.
-- Go to the directory that contains the files and enter the following command:
-
-```bash linenums="1"
-sudo apt install ./igel-build-tools-static[version]_amd64.deb igelpkg_[version]_amd64.deb
-```
-
-- To show the general help, enter
-
-```bash linenums="1"
-igelpkg --help
-```
-
-- To get help for a specific module, enter the module's name and then --help, for instance:
-
-```bash linenums="1"
-igelpkg build --help
-```
+- The IGEL App Creator portal runs the IGEL SDK to create and sign your application for OS12
+- Currently, for security requirements, the IGEL App Creator Portal only allows for debian and ubuntu official repository URLs. IGEL is planning to allow for non-official URLs with a future release
