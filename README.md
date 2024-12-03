@@ -15,7 +15,9 @@
 
 -----
 
-- [Getting Started with the IGEL OS App Recipes](utils/Getting-Started-with-the-IGEL-OS-App-Recipes.pdf)
+- [IGEL SDK Reference Manual](utils/IGEL-SDK-Reference-Manual.pdf)
+
+**NOTE:  The IGEL SDK is `NOT` needed for creating or using recipes.
 
 -----
 
