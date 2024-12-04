@@ -17,7 +17,7 @@
 
 - [IGEL SDK Reference Manual](utils/IGEL-SDK-Reference-Manual.pdf)
 
-**NOTE:**  The IGEL SDK Reference Manual provides details on files and format of files used in recipes.
+**NOTE:**  The IGEL SDK is not needed for creating recipes. The IGEL SDK Reference Manual provides details on files and format of files used in recipes.
 
 -----
 
