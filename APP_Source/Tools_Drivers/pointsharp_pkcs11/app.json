@@ -1,0 +1,16 @@
+{
+  "name": "%name%",
+  "author": "community",
+  "categories": [
+    "smartcard"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "summary": {
+    "en": "%summary%"
+  },
+  "vendor": "community",
+  "version": "%version%"
+}
