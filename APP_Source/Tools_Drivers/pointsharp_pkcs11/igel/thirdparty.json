@@ -1,6 +1,6 @@
 [
   {
-    "url": "file://mnt/files/software/pkcs11_template-1.0.0.tar.bz2",
+    "url": "file:///mnt/files/software/pkcs11_template-1.0.0.tar.bz2",
     "dest": "",
     "licenses": [
       {
