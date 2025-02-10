@@ -1,5 +1,25 @@
 Template for a Smartcard middleware
 
+Steps to use App Creator Portal to create OS 12 App
+
+- Download App Recipe zip file:
+
+https://github.com/IGEL-Community/IGEL-OS-APP-RECIPES/blob/main/APP_Packages/Tools_Drivers/pointsharp_pkcs11_community.zip
+
+- Download application zip file:
+
+https://github.com/IGEL-Community/IGEL-OS-APP-RECIPES/blob/main/APP_Source/Tools_Drivers/pointsharp_pkcs11/pkcs11_template-1.0.0.zip
+
+- Log onto https://appcreator.igel.com/ with your IGEL Cloud Services account
+- Import the `pointsharp_pkcs11_community.zip`into Upload Package of Provide Recipe section
+- Import the `pointsharp_pkcs11/pkcs11_template-1.0.0.zip` into Upload Package of Provide Binaries section
+- Select `Create` in upper right corner to create the package
+- Once package created, select `Download` in the lower right corner to download the package
+- Download and import the `Code Signing Certificate` in the upper left corner
+- Import the app and certificate into UMS
+
+
+-----
 
 The variables in igel/variables.json must be adopted to the middleware
 
