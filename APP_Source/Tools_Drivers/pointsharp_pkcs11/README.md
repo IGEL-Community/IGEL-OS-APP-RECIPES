@@ -12,7 +12,7 @@ https://github.com/IGEL-Community/IGEL-OS-APP-RECIPES/blob/main/APP_Source/Tools
 
 - Log onto https://appcreator.igel.com/ with your IGEL Cloud Services account
 - Import the `pointsharp_pkcs11_community.zip`into Upload Package of Provide Recipe section
-- Import the `pointsharp_pkcs11/pkcs11_template-1.0.0.zip` into Upload Package of Provide Binaries section
+- Import the `pkcs11_template-1.0.0.zip` into Upload Package of Provide Binaries section
 - Select `Create` in upper right corner to create the package
 - Once package created, select `Download` in the lower right corner to download the package
 - Download and import the `Code Signing Certificate` in the upper left corner
