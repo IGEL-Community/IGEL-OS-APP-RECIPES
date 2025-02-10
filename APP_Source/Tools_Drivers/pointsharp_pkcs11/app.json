@@ -1,6 +1,6 @@
 {
   "name": "%name%",
-  "author": "community",
+  "author": "",
   "categories": [
     "smartcard"
   ],
@@ -11,6 +11,6 @@
   "summary": {
     "en": "%summary%"
   },
-  "vendor": "community",
+  "vendor": "",
   "version": "%version%"
 }
