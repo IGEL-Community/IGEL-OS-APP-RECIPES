@@ -1,0 +1,7 @@
+{
+    "name": "pkcs11_template",
+    "summary": "pkcs11_template smartcard framework",
+    "version": "1.0.0",
+    "archive_url": "pkcs11_template-1.0.0.tar.bz2",
+    "libpath": "/usr/lib/pkcs11_template.so"
+}

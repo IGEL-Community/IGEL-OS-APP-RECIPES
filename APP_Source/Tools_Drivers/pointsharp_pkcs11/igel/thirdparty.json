@@ -1,0 +1,12 @@
+[
+  {
+    "url": "%archive_url%",
+    "dest": "",
+    "licenses": [
+      {
+        "name": "%name%",
+        "text": "LICENSETEXT"
+      }
+    ]
+  }
+]
