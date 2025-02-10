@@ -1,6 +1,6 @@
 {
-  "name": "%name%",
-  "author": "community",
+  "name": "pkcs11",
+  "author": "The IGEL Community",
   "categories": [
     "Smartcard"
   ],
@@ -9,8 +9,8 @@
     "monochrome": "monochrome.svg"
   },
   "summary": {
-    "en": "%summary%"
+    "en": "PKCS11"
   },
-  "vendor": "community",
-  "version": "%version%"
+  "vendor": "PKCS11",
+  "version": "1.0.0"
 }
