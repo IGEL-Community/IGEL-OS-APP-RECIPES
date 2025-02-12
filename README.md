@@ -19,15 +19,19 @@
 
 **NOTE:**  The IGEL SDK is not needed for creating recipes. The IGEL SDK Reference Manual provides details on files and format of files used in recipes.
 
+- <a href="utils/igelpkg-new-template-1.0.0.zip" download> IGEL SDK: Initial Data Structure Template</a>
+
 -----
 
 -----
 
 ## Tutorial
 
-[Video: Introduction](utils/videos/01-HOWTO-Introduction.mp4?raw=true)
+- [Video: Introduction](utils/videos/01-HOWTO-Introduction.mp4?raw=true)
 
-[IGEL Community Docs: HOWTO GitHub with Microsoft Visual Studio Code](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-GitHub-with-VS-Code/)
+- [Video: IGEL App Creator Portal - Steps to build SpeedCrunch](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-Channel-Demos/#igel-app-creator-portal-steps-to-build-speedcrunch)
+
+- [IGEL Community Docs: HOWTO GitHub with Microsoft Visual Studio Code](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-GitHub-with-VS-Code/)
 
 -----
 
