@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "vuescan",
+  "author": "The IGEL community",
+  "vendor": "VueScan",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "9.8.44",
+  "release": "",
+  "summary": {
+    "en": "VueScan (Community)"
+  },
+  "version": "9.8.44"
+}

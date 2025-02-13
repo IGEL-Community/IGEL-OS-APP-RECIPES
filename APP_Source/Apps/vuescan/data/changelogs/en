@@ -1,0 +1,20 @@
+ VueScan 9.8.44
+
+Released on 26 January 2025
+
+    Improved support for scanning from video devices
+        Works with many inexpensive slide/document scanners costing less than $100 (i.e. VIISAN P4U)
+        Supports scanning using iPhone/iPad as a “Continuity Camera” from a Mac
+        Continuity Camera on Mac works with inexpensive iPhone copy stands available on amazon.com
+        Supports scanning using an USB video camera
+        Can disable in VueScan by setting “Prefs | Disable scanners” to “Webcams”
+        Can disable using “System Settings : Privacy & Security : Camera” on Mac
+        Can disable using “Settings : General : AirPlay & Continuity : Continuity Camera” control panel on iPhone/iPad
+    Restored ‘Filter | Restore colors” option
+    Increased scan speed of Epson Expression 13000XL
+    Fixed problem with some kinds of Canon MFPs not working
+    Fixed problem scanning from some TIFF files
+    Fixed problem with hangs with Huion Tablet_GT2401
+    Fixed problem with some kinds of WIA scanner drivers
+    Fixed problem with some kinds of PIE and Reflecta scanners hanging
+    Fixed problem with some newer Fujitsu scanners not working with Duplex Feeder

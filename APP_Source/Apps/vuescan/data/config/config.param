@@ -1,0 +1,14 @@
+<sessions>
+	<vuescan%>
+        <name>
+            value=<VueScan>
+        </name>
+        <icon>
+            value=<vuescan>
+        </icon>
+        extends_base=<sessions.base%>
+	</vuescan%>
+	<vuescan0>
+	</vuescan0>
+    node_action=<wm_postsetup>
+</sessions>
