@@ -1,0 +1,14 @@
+<sessions>
+	<sapgui%>
+        <name>
+            value=<sapgui>
+        </name>
+        <icon>
+            value=<sapgui>
+        </icon>
+        extends_base=<sessions.base%>
+	</sapgui%>
+	<sapgui0>
+	</sapgui0>
+    node_action=<wm_postsetup>
+</sessions>

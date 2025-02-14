@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "sapgui",
+  "author": "The IGEL community",
+  "vendor": "SAP",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "8.5.49",
+  "release": "",
+  "summary": {
+    "en": "SAP GUI (Community)"
+  },
+  "version": "8.5.49"
+}
