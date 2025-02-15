@@ -1,0 +1,14 @@
+<sessions>
+	<libreoffice%>
+        <name>
+            value=<libreoffice>
+        </name>
+        <icon>
+            value=<libreoffice25.2-main>
+        </icon>
+        extends_base=<sessions.base%>
+	</libreoffice%>
+	<libreoffice0>
+	</libreoffice0>
+    node_action=<wm_postsetup>
+</sessions>

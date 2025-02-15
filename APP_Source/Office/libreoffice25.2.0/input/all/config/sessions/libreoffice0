@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/libreoffice/opt/libreoffice25.2/program/soffice
