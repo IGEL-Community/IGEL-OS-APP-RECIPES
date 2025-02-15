@@ -4,7 +4,7 @@
             value=<sapgui>
         </name>
         <icon>
-            value=<sapgui>
+            value=<guilogon2>
         </icon>
         extends_base=<sessions.base%>
 	</sapgui%>
