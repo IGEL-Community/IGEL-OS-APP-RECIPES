@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#To use Webex over a proxy server, create a script with this content and use for the start of Webex:
+#export http_proxy=http://proxy-host:proxy-port
+#export https_proxy=https://proxy-host:proxy-port
+#/custom/webex/opt/Webex/bin/CiscoCollabHost --proxy-server=proxy-host:proxy-port
+
+/services/webex/opt/Webex/bin/CiscoCollabHost
