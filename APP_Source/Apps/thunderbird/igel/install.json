@@ -1,0 +1,12 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      ""
+    ],
+    "destination": "/opt",
+    "owner": "0:0",
+    "permissions": "755",
+    "strip": true
+  }
+]
