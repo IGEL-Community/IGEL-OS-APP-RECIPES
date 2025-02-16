@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "webex",
+  "author": "The IGEL community",
+  "vendor": "Cisco",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "45.2.0",
+  "release": "",
+  "summary": {
+    "en": "Cisco Webex (Community)"
+  },
+  "version": "45.2.0"
+}

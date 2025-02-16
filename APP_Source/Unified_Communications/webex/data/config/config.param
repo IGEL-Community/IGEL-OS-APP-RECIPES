@@ -1,0 +1,14 @@
+<sessions>
+	<webex%>
+        <name>
+            value=<Webex>
+        </name>
+        <icon>
+            value=</services/webex/opt/Webex/bin/sparklogosmall.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</webex%>
+	<webex0>
+	</webex0>
+    node_action=<wm_postsetup>
+</sessions>
