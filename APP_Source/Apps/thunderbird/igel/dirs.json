@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.thunderbird",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/Thunderbird",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

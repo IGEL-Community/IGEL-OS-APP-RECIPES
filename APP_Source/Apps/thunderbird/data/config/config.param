@@ -1,0 +1,14 @@
+<sessions>
+	<thunderbird%>
+        <name>
+            value=<Thunderbird>
+        </name>
+        <icon>
+            value=</services/thunderbird/opt/thunderbird/chrome/icons/default/default128.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</thunderbird%>
+	<thunderbird0>
+	</thunderbird0>
+    node_action=<wm_postsetup>
+</sessions>
