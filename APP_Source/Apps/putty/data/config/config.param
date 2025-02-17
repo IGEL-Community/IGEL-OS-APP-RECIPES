@@ -1,0 +1,14 @@
+<sessions>
+	<putty%>
+        <name>
+            value=<PuTTY>
+        </name>
+        <icon>
+            value=<terminal>
+        </icon>
+        extends_base=<sessions.base%>
+	</putty%>
+	<putty0>
+	</putty0>
+    node_action=<wm_postsetup>
+</sessions>

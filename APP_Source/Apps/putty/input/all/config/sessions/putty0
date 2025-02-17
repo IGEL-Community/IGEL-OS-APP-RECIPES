@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/putty/usr/bin/putty
