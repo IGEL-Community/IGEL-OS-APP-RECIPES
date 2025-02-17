@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "linphone",
+  "author": "The IGEL community",
+  "vendor": "Linphone.org",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "5.2.6",
+  "release": "",
+  "summary": {
+    "en": "Linphone.org (Community)"
+  },
+  "version": "5.2.6"
+}
