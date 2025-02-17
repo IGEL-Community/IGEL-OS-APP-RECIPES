@@ -1,0 +1,14 @@
+<sessions>
+	<pcmanfm%>
+        <name>
+            value=<PCManFM>
+        </name>
+        <icon>
+            value=<system-file-manager>
+        </icon>
+        extends_base=<sessions.base%>
+	</pcmanfm%>
+	<pcmanfm0>
+	</pcmanfm0>
+    node_action=<wm_postsetup>
+</sessions>
