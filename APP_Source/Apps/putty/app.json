@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "putty",
+  "author": "The IGEL community",
+  "vendor": "Simon Tatham",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "0.83.0",
+  "release": "",
+  "summary": {
+    "en": "PuTTY (Community)"
+  },
+  "version": "0.83.0"
+}
