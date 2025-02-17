@@ -1,0 +1,17 @@
+[
+    {
+      "path": "/userhome/.config/linphone",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.local/share/linphone/logs",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/Documents/linphone/captures",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
