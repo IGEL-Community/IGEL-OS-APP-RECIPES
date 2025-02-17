@@ -1,0 +1,37 @@
+[
+   {
+      "package": "libfm-data"
+   },
+   {
+      "package": "libfm-extra4"
+   },
+   {
+      "package": "libfm-gtk-data"
+   },
+   {
+      "package": "libfm-gtk4"
+   },
+   {
+      "package": "libfm-modules"
+   },
+   {
+      "package": "libfm4"
+   },
+   {
+      "package": "libmenu-cache-bin"
+   },
+   {
+      "package": "libmenu-cache3"
+   },
+   {
+      "package": "lxmenu-data"
+   },
+   {
+      "package": "pcmanfm",
+      "licenses": [
+        {
+           "name": "GPL-2.0-or-later"
+        }
+      ]    
+   }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "usr/share/doc",
+      "usr/share/man"
+    ]
+  }
+]

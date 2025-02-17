@@ -1,0 +1,17 @@
+[
+    {
+      "path": "/userhome/.config/pcmanfm",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.local/share/Trash",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.gtk-bookmarks",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
