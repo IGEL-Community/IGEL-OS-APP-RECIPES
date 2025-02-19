@@ -1,0 +1,18 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "ricoh_sp_scanner",
+  "author": "The IGEL community",
+  "vendor": "Ricoh",
+  "public_version": "2.2.1",
+  "release": "",
+  "summary": {
+    "en": "ricoh sp scanner (Community)"
+  },
+  "version": "2.2.1"
+}
