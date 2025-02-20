@@ -1,0 +1,14 @@
+<sessions>
+	<myphone%>
+        <name>
+            value=<MyPhone>
+        </name>
+        <icon>
+            value=<phone-apple-iphone-symbolic>
+        </icon>
+        extends_base=<sessions.base%>
+	</myphone%>
+	<myphone>
+	</myphone>
+    node_action=<wm_postsetup>
+</sessions>

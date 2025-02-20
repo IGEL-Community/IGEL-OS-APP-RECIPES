@@ -1,0 +1,32 @@
+[
+  {
+    "package": "usbmuxd",
+    "licenses": [
+      {
+         "name": "GPL-2.0-or-later",
+         "file": "%tmp%/usr/share/doc/usbmuxd/copyright"
+      }
+    ]
+  },
+  {
+    "package": "libplist3"
+  },
+  {
+    "package": "libusbmuxd6"
+  },
+  {
+    "package": "libimobiledevice6"
+  },
+  {
+    "package": "libimobiledevice-utils"
+  },
+  {
+    "package": "ifuse",
+    "licenses": [
+      {
+         "name": "GPL-3.0-only",
+         "file": "%tmp%/usr/share/doc/ifuse/copyright"
+      }
+    ]
+  }
+]

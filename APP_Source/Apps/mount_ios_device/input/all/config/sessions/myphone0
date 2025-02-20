@@ -1,0 +1,16 @@
+#!/bin/bash
+#set -x
+#trap read debug
+
+export LD_LIBRARY_PATH=/services/mount_ios_device/usr/lib/x86_64-linux-gnu
+
+if [ ! -e ~/MYPhone ]; then
+  mkdir ~/MyPhone
+fi
+
+ifuse ~/MyPhone
+
+#
+# To unmount ~/MyPhone
+#
+#fusermount -u ~/MypHone
