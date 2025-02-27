@@ -51,7 +51,7 @@
 
 The App Creator Portal has automatic linking function that recognizes well-known folders that follow a common standard. Mostly libraries, desktop files, udev rules.
 
-For special links, they are created by in a system service file. The path to place the file is:
+For special links, they are created via a system service file. The path to place the file is:
 
 ```bash linenums="1"
 input/all/etc/systemd/appname.service
