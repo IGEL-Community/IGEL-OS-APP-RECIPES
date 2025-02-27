@@ -47,3 +47,28 @@
 
 -----
 
+## How to add links to /services/application_name
+
+The App Creator Portal has automatic linking function that recognizes well-known folders that follow a common standard. Mostly libraries, desktop files, udev rules.
+
+For special links, they are created by in a system service file. The path to place the file is:
+
+```bash linenums="1"
+input/all/etc/systemd/appname.service
+```
+
+If your recipe already has a .service file in our app just add a line:
+
+```bash linenums="1"
+ExecStartPre=/bin/ln -sf /services/citrix_nsgclient/opt/Citrix/NSGClient /opt/Citrix/NSGClient
+```
+
+Otherwise create a .service file with:
+
+```bash linenums="1"
+[Unit]
+Description=My app Service
+
+[Service]
+ExecStart=/bin/ln -sf /services/citrix_nsgclient/opt/Citrix/NSGClient /opt/Citrix/NSGClient
+```
