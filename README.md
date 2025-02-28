@@ -54,7 +54,7 @@ The App Creator Portal has automatic linking function that recognizes well-known
 For special links, they are created via a system service file. The path to place the file is:
 
 ```bash linenums="1"
-input/all/etc/systemd/appname.service
+input/all/etc/systemd/system/appname.service
 ```
 
 If your recipe already has a .service file in our app just add a line:
@@ -71,4 +71,11 @@ Description=My app Service
 
 [Service]
 ExecStart=/bin/ln -sf /services/citrix_nsgclient/opt/Citrix/NSGClient /opt/Citrix/NSGClient
+```
+
+To enable the service create the file `igel/install.sh` and add:
+
+```bash linenums="1"
+#!/bin/bash
+enable_system_service appname.service
 ```
