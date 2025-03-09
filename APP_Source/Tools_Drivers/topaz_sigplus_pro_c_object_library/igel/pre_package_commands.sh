@@ -8,11 +8,8 @@ cat <<"EOF" > "%root%/etc/topaz/topaz-init.sh"
 
 ACTION="app-topaz${1}"
 
-# mount point path
-MP=/services
-
-# custom partition path
-CP="${MP}/topaz_sigplus_pro_c_object_library"
+# app path
+APP_PATH="/services/topaz_sigplus_pro_c_object_library"
 
 # output to systemlog with ID amd tag
 LOGGER="logger -it ${ACTION}"
@@ -20,19 +17,17 @@ LOGGER="logger -it ${ACTION}"
 echo "Starting" | $LOGGER
 
 # Linking files and folders on proper path
-find ${CP} -printf "/%P\n" | while read DEST
+find ${APP_PATH} -printf "/%P\n" | while read DEST
 do
   if [ ! -z "${DEST}" -a ! -e "${DEST}" ]; then
     # Remove the last slash, if it is a dir
     [ -d $DEST ] && DEST=${DEST%/} | $LOGGER
     if [ ! -z "${DEST}" ]; then
-      ln -sv "${CP}/${DEST}" "${DEST}" | $LOGGER
+      ln -sv "${APP_PATH}/${DEST}" "${DEST}" | $LOGGER
     fi
   fi
 done
 
 echo "Finished" | $LOGGER
-
-exit 0
 
 EOF
