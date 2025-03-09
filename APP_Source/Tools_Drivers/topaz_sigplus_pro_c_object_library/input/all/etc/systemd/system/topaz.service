@@ -1,0 +1,5 @@
+[Unit]
+Description=Topaz SigPlus Pro C++ Object Library
+
+[Service]
+ExecStart=/bin/bash /etc/topaz/topaz-init.sh

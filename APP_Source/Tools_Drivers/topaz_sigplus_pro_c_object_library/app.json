@@ -1,0 +1,16 @@
+{
+  "name": "topaz_sigplus_pro_c_object_library",
+  "author": "The IGEL Community",
+  "categories": [
+    "Peripheral"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "summary": {
+    "en": "Topaz SigPlus Pro C++ Object Library"
+  },
+  "vendor": "Topaz Systems",
+  "version": "0.0.2"
+}
