@@ -1,0 +1,12 @@
+[
+  {
+    "url": "file:///tmp/topazsiglib_amd64.deb",
+    "dest": "",
+    "licenses": [
+      {
+            "name": "GPL",
+            "file": "%tmp%/usr/share/doc/topazsiglib/copyright"
+      }
+    ]
+  }
+]
