@@ -79,3 +79,45 @@ To enable the service create the file `igel/install.sh` and add:
 #!/bin/bash
 enable_system_service appname.service
 ```
+
+## Using Pre Package Commands
+
+Pre packages commands can be placed into file `igel/pre_package_commands.sh`. This can be used to create files / folders as part of the recipe.
+
+Example, used in recipe for `Topaz Systems SigPlus Pro C++ Object Library`, of using `igel/pre_package_commands.sh` to make a directory and create a file.
+
+```bash linenums="1"
+#!/bin/bash
+
+mkdir -p "%root%/etc/topaz"
+cat <<"EOF" > "%root%/etc/topaz/topaz-init.sh"
+#!/bin/bash
+#set -x
+#trap read debug
+
+ACTION="app-topaz${1}"
+
+# app path
+APP_PATH="/services/topaz_sigplus_pro_c_object_library"
+
+# output to systemlog with ID amd tag
+LOGGER="logger -it ${ACTION}"
+
+echo "Starting" | $LOGGER
+
+# Linking files and folders on proper path
+find ${APP_PATH} -printf "/%P\n" | while read DEST
+do
+  if [ ! -z "${DEST}" -a ! -e "${DEST}" ]; then
+    # Remove the last slash, if it is a dir
+    [ -d $DEST ] && DEST=${DEST%/} | $LOGGER
+    if [ ! -z "${DEST}" ]; then
+      ln -sv "${APP_PATH}/${DEST}" "${DEST}" | $LOGGER
+    fi
+  fi
+done
+
+echo "Finished" | $LOGGER
+
+EOF
+```
