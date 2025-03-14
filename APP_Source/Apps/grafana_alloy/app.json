@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "grafana_alloy",
+  "author": "The IGEL community",
+  "vendor": "Grafana",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "0.0.2",
+  "release": "",
+  "summary": {
+    "en": "Grafana Alloy (Community)"
+  },
+  "version": "0.0.2"
+}
