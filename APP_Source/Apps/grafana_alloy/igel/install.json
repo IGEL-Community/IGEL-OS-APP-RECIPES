@@ -1,0 +1,9 @@
+[
+  {
+    "source": ".*",
+    "destination": "",
+    "owner": "",
+    "permissions": "",
+    "strip": true
+  }
+]

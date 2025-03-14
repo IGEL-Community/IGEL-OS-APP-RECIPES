@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/var/lib/alloy",
+    "owner": "10902:10902",
+    "permissions": "770",
+    "persistent": true
+  }
+]
