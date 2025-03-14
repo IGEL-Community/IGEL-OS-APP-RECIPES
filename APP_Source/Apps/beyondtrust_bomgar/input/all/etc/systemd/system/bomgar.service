@@ -1,0 +1,5 @@
+[Unit]
+Description=BeyondTrust Bomgar
+
+[Service]
+ExecStart=/bin/bash /etc/bomgar/bomgar-init.sh

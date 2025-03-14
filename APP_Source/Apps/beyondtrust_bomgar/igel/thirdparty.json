@@ -1,0 +1,11 @@
+[
+  {
+    "url": "file:///tmp/bomgar-scc.tar.bz2",
+    "dest": "",
+    "licenses": [
+      {
+            "name": "GPL-3.0-or-later"
+      }
+    ]
+  }
+]

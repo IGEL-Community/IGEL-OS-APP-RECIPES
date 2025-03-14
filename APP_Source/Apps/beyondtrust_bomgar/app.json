@@ -1,0 +1,16 @@
+{
+  "name": "bomgar",
+  "author": "The IGEL Community",
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.jpg",
+    "monochrome": "monochrome.jpg"
+  },
+  "summary": {
+    "en": "BeyondTrust Bomgar"
+  },
+  "vendor": "BeyondTrust",
+  "version": "0.0.8"
+}
