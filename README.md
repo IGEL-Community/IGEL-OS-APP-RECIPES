@@ -37,6 +37,32 @@
 
 -----
 
+## Changing version in APP.JSON
+
+- The technical version of the app is defined in the field `version`.
+
+- The display version of the app is defined in the field `public_version`.
+
+- The version numbers must comply with the [Semantic Versioning (SemVer) specifications](https://semver.org/)
+
+- Version example used for IGEL OS Base OS:
+
+```bash linenums="1"
+      base_system-12.6.0
+      base_system-12.6.0+1
+      base_system-12.6.0+2
+      base_system-12.6.1-0.tp.3
+      base_system-12.6.1-0.tp.4
+      base_system-12.6.1-1.rc.2
+      base_system-12.6.1-1.rc.3
+      base_system-12.7.0-0.tp.2
+      base_system-12.7.0-0.tp.3
+```
+
+-----
+
+-----
+
 ## Build your own IGEL OS App 
 
 - [IGEL App Creator Portal – the straightforward way to secure and deploy your third-party apps to IGEL OS12](https://www.igel.com/blog/igel-app-creator-portal-the-straightforward-way-to-secure-and-deploy-your-third-party-apps-to-igel-os12/)
@@ -79,6 +105,8 @@ To enable the service create the file `igel/install.sh` and add:
 #!/bin/bash
 enable_system_service appname.service
 ```
+
+-----
 
 ## Using Pre Package Commands
 
