@@ -2,7 +2,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 **Note:**
 
-Obtain Webex for Linux and zip it up. Use name `Webex.deb.zip`
+Obtain Webex for Linux and use name `Webex.deb`
 
 ```bash linenums="1"
 wget https://binaries.webex.com/WebexDesktop-Ubuntu-Official-Package/Webex.deb
