@@ -8,7 +8,7 @@ Need to create LibreOffice tar file from installer.
 Steps:
 
 - Create Ubuntu VM
-- Create builder script from below, run it, and copy libreoffice.tar.bz2.zip
+- Create builder script from below, run it, and copy libreoffice.tar.bz2
 
 
 ```bash
@@ -52,9 +52,7 @@ dpkg -x LibreOffice_*_Linux_x86-64_deb_helppack_*/DEBS/lib*.deb custom/libreoffi
 
 
 cd custom/${APP_DIR}
-tar cvjf ../../libreoffice.tar.bz2 *
-cd ../..
-zip ../libreoffice.tar.bz2.zip libreoffice.tar.bz2
-cd ../
+tar cvjf ../../../libreoffice.tar.bz2 *
+cd ../../..
 rm -rf build_tar
 ```

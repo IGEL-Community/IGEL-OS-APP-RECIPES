@@ -20,9 +20,3 @@ Steps:
 ```bash linenums="1"
 tar cvjf bomgar-scc.tar.bz2 bomgar-scc-XXXXX.bin
 ```
-
-- Zip bomgar-scc.tar.bz2: 
-
-```bash linenums="1"
-zip bomgar-scc.tar.bz2.zip bomgar-scc.tar.bz2
-```

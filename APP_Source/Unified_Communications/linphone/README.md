@@ -9,7 +9,7 @@ Need to create Linphone VOIP tar file from APPIMAGE.
 Steps:
 
 - Create Ubuntu VM
-- Run the following builder script to create linphone.tar.bz2.zip
+- Run the following builder script to create linphone.tar.bz2
 
 ```bash linenums="1"
 #!/bin/bash
@@ -71,11 +71,7 @@ sed -i '/^version_check_url_root.*$/s/^/#/' ${BASEDIR}/usr/share/linphone/linpho
 
 # new build process into zip file
 cd custom/linphone
-tar cvjf ../../linphone.tar.bz2 *
-cd ../..
-zip linphone.tar.bz2.zip linphone.tar.bz2
-mv linphone.tar.bz2.zip ..
-
-cd ..
+tar cvjf ../../../linphone.tar.bz2 *
+cd ../../..
 rm -rf build_tar
 ```

@@ -2,7 +2,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 **Note:**
 
-
-Obtain Thunderbird for Linux (Linux version) 64bit and zip it up. Use name `thunderbird.tar.bz2.zip`
+Obtain Thunderbird for Linux (Linux version) 64bit and zip it up. Use name `thunderbird.tar.bz2`
 
 https://www.thunderbird.net/en-US/download

@@ -8,7 +8,7 @@ Need to create SAP GUI tar file from installer.
 Steps:
 
 - Create Ubuntu VM
-- Download the SAP GUI installer into $HOME/Downloads folder and run the following builder script to create sapgui.tar.bz2.zip
+- Download the SAP GUI installer into $HOME/Downloads folder and run the following builder script to create sapgui.tar.bz2
 
 ```
 #!/bin/bash
@@ -104,7 +104,5 @@ popd
 
 cp /tmp/newfiles.tar.bz2 ../sapgui.tar.bz2
 cd ..
-zip sapgui.tar.bz2.zip sapgui.tar.bz2
-rm sapgui.tar.bz2
 rm -rf buld_tar
 ```
