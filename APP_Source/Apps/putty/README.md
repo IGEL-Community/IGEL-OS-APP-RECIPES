@@ -11,7 +11,7 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 Steps:
 
 - Create Ubuntu VM
-- Run the following builder script to create putty.tar.bz2.zip
+- Run the following builder script to create putty.tar.bz2
 
 ```bash linenums="1"
 #!/bin/bash
@@ -55,11 +55,7 @@ chmod 755 custom/putty/usr/bin/*
 
 # new build process into zip file
 cd custom/putty
-tar cvjf ../../putty.tar.bz2 *
-cd ../..
-zip putty.tar.bz2.zip putty.tar.bz2
-mv putty.tar.bz2.zip ..
-
-cd ..
+tar cvjf ../../../putty.tar.bz2 *
+cd ../../..
 rm -rf build_tar
 ```

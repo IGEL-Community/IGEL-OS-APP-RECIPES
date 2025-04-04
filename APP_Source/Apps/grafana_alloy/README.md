@@ -31,8 +31,7 @@ for lib in $MISSING_LIBS; do
   apt-get download $lib
 done
 
-mv alloy_*.deb alloy.deb
-zip ../alloy.deb.zip alloy.deb
+mv alloy_*.deb ../alloy.deb
 cd ..
 rm -rf build_tar
 ```
