@@ -1,0 +1,5 @@
+[Unit]
+Description=Git User Settings Link
+
+[Service]
+ExecStart=/bin/bash /etc/vscode_git/vscode_git-init.sh

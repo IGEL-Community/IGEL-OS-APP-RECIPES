@@ -1,0 +1,24 @@
+{
+  "name": "vscode_git",
+  "version": "1.99.2",
+  "public_version": "1.99.2",
+  "release": "",
+  "summary": {
+    "en": "Visual Studio Code wth Git (Community)"
+  },
+  "icons": {
+    "app": "vscode_marketing.png",
+    "monochrome": "vscode_mono.png"
+  },
+  "categories": [
+    "Miscellaneous"
+  ],
+  "author": "IGEL Community",
+  "vendor": "Microsoft Corporation",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  }
+}
