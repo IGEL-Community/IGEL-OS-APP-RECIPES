@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/vscode_git/usr/share/code/bin/code

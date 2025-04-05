@@ -1,0 +1,17 @@
+[
+    {
+      "path": "/userhome/.config/Code",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.vscode",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/Code",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
