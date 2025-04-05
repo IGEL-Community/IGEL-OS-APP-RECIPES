@@ -149,7 +149,3 @@ echo "Finished" | $LOGGER
 
 EOF
 ```
-
------
-
------
