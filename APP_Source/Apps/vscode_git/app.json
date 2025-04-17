@@ -1,7 +1,7 @@
 {
   "name": "vscode_git",
-  "version": "1.99.2",
-  "public_version": "1.99.2",
+  "version": "1.99.3",
+  "public_version": "1.99.3",
   "release": "",
   "summary": {
     "en": "Visual Studio Code wth Git (Community)"
