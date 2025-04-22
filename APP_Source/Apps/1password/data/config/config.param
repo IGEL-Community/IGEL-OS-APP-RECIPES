@@ -1,0 +1,14 @@
+<sessions>
+	<1password%>
+        <name>
+            value=<1Password>
+        </name>
+        <icon>
+            value=</services/1password/usr/share/icons/hicolor/128x128/apps/1password.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</1password%>
+	<1password0>
+	</1password0>
+    node_action=<wm_postsetup>
+</sessions>
