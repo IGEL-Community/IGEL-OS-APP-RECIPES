@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "1password",
+  "author": "The IGEL community",
+  "vendor": "1Password",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "8.10.72",
+  "release": "",
+  "summary": {
+    "en": "1password (Community)"
+  },
+  "version": "8.10.72"
+}
