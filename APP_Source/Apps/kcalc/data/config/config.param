@@ -1,0 +1,19 @@
+<sessions>
+	<kcalc%>
+		<name>
+			value=<kcalc>
+		</name>
+		<icon>
+			value=</services/kcalc/.icons/app.svg>
+		</icon>
+		extends_base=<sessions.base%>
+	</kcalc%>
+	mode_action=<wm_postsetup>
+	<kcalc0>
+	</kcalc0>
+</sessions>
+<config_schema_version>
+	value=<1>
+	type=<integer>
+	runtime=<false>
+</config_schema_version>

@@ -1,0 +1,5 @@
+[Unit]
+Description=kcalc rc file
+
+[Service]
+ExecStart=/bin/bash /etc/kcalc/kcalc-init.sh
