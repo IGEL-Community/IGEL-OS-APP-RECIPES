@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "kcalc",
+  "author": "The IGEL community",
+  "vendor": "Steve Emms",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "0.0.4",
+  "release": "",
+  "summary": {
+    "en": "kcalc (Community)"
+  },
+  "version": "0.0.4"
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/kcalc/usr/bin/kcalc

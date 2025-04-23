@@ -1,0 +1,77 @@
+[
+  {
+    "package": "libkf5notifications5"
+  },
+  {
+    "package": "libkf5xmlgui5"
+  },
+  {
+    "package": "libkf5crash5"
+  },
+  {
+    "package": "libkf5configwidgets5"
+  },
+  {
+    "package": "libkf5configgui5"
+  },
+  {
+    "package": "libkf5guiaddons5"
+  },
+  {
+    "package": "libkf5i18n5"
+  },
+  {
+    "package": "libkf5widgetsaddons5"
+  },
+  {
+    "package": "libkf5configcore5"
+  },
+  {
+    "package": "libkf5coreaddons5"
+  },
+  {
+    "package": "libkf5windowsystem5"
+  },
+  {
+    "package": "libqt5texttospeech5"
+  },
+  {
+    "package": "libdbusmenu-glib4"
+  },
+  {
+    "package": "libkf5codecs5"
+  },
+  {
+    "package": "libkf5authcore5"
+  },
+  {
+    "package": "libqt5waylandclient5"
+  },
+  {
+    "package": "libdbusmenu-qt5-2"
+  },
+  {
+    "package": "libkf5globalaccel5"
+  },
+  {
+    "package": "libkf5itemviews5"
+  },
+  {
+    "package": "libkf5iconthemes5"
+  },
+  {
+    "package": "libkf5archive5"
+  },
+  {
+    "package": ""
+  },
+  {
+    "package": "kcalc",
+    "licenses": [
+      {
+        "name": "kcalc https://apps.kde.org/en-gb/kcalc",
+        "text": "Licensess as GNU GPL 2.0"
+        }
+        ]
+      }
+]
