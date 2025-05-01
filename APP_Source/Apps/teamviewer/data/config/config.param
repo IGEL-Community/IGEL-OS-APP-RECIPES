@@ -1,0 +1,14 @@
+<sessions>
+	<teamviewer%>
+        <name>
+            value=<TeamViewer>
+        </name>
+        <icon>
+            value=</services/teamviewer/opt/teamviewer/tv_bin/desktop/teamviewer_256.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</teamviewer%>
+	<teamviewer0>
+	</teamviewer0>
+    node_action=<wm_postsetup>
+</sessions>
