@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "teamviewer",
+  "author": "The IGEL community",
+  "vendor": "TeamViewer",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "15.65.4",
+  "release": "",
+  "summary": {
+    "en": "TeamViewer (Community)"
+  },
+  "version": "15.65.4"
+}
