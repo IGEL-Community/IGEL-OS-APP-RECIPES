@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "lansweeper_agent",
+  "author": "The IGEL community",
+  "vendor": "Lansweeper",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "12.3.0+1",
+  "release": "",
+  "summary": {
+    "en": "Lansweeper Agent (Community)"
+  },
+  "version": "12.3.0+1"
+}
