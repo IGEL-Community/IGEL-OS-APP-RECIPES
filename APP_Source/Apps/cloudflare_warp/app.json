@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "cloudflare_warp",
+  "author": "The IGEL community",
+  "vendor": "Cloudflare",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "2025.2.600",
+  "release": "",
+  "summary": {
+    "en": "Cloudflare WARP (Community)"
+  },
+  "version": "2025.2.600"
+}

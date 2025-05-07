@@ -1,0 +1,13 @@
+[Unit]
+Description=Cloudflare Zero Trust Client Taskbar
+Requires=dbus.socket
+After=dbus.socket
+BindsTo=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=LD_PRELOAD=/services/cloudflare_warp/bin/warp-taskbar
+Restart=always
+
+[Install]
+WantedBy=default.target
