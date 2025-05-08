@@ -1,0 +1,14 @@
+<sessions>
+	<softdriveclient%>
+        <name>
+            value=<SoftdriveClient>
+        </name>
+        <icon>
+            value=</services/softdriveclient/opt/Softdrive/resources/bin/Assets/favicon2.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</softdriveclient%>
+	<softdriveclient0>
+	</softdriveclient0>
+    node_action=<wm_postsetup>
+</sessions>
