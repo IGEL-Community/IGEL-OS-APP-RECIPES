@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "softdriveclient",
+  "author": "Softdrive",
+  "vendor": "Softdrive",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "3.6.2",
+  "release": "",
+  "summary": {
+    "en": "Softdrive Client (Community)"
+  },
+  "version": "3.6.2"
+}

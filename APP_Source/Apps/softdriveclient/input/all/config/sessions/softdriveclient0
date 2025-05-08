@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/softdriveclient/opt/Softdrive/softdrive-launcher-local

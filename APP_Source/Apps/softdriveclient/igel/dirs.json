@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.config/softdrive-launcher",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.config/softdrive-launcher-local",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
