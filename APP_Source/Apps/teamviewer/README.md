@@ -7,3 +7,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 https://www.teamviewer.com/en-us/download/linux/
 
 https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+
+- Rename the downloaded file to be `teamviewer_amd64.deb` and is defined in file `thirdparty.json`
