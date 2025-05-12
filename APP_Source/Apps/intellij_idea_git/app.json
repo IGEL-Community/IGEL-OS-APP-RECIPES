@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "intellij_idea_git",
+  "author": "The IGEL community",
+  "vendor": "JetBrains",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "2025.1.1+1",
+  "release": "",
+  "summary": {
+    "en": "IntelliJ IDEA wth Git (Community)"
+  },
+  "version": "2025.1.1+1"
+}

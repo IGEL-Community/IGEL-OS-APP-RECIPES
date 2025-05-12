@@ -1,0 +1,5 @@
+[Unit]
+Description=Git User Settings Link
+
+[Service]
+ExecStart=/bin/bash /etc/intelij_idea_git/intelij_idea_git-init.sh

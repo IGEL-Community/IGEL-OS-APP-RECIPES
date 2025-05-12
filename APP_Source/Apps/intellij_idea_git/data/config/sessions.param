@@ -1,0 +1,14 @@
+<sessions>
+	<intelij_idea%>
+        <name>
+            value=<InteliJ IDEA>
+        </name>
+        <icon>
+            value=</usr/local/idea/bin/idea.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</intelij_idea%>
+	<intelij_idea0>
+	</intelij_idea0>
+    node_action=<wm_postsetup>
+</sessions>
