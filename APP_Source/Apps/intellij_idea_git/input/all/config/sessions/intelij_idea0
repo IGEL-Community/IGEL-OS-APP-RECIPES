@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/services/intelij_idea_git/usr/local/idea*/bin/idea
+/services/intellij_idea_git/usr/local/idea*/bin/idea

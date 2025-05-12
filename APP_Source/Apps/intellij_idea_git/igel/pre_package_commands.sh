@@ -1,20 +1,20 @@
 #!/bin/bash
 
-mkdir -p "%root%/etc/intelij_idea_git"
-cat <<"EOF" > "%root%/etc/intelij_idea_git/intelij_idea_git-init.sh"
+mkdir -p "%root%/etc/intellij_idea_git"
+cat <<"EOF" > "%root%/etc/intellij_idea_git/intellij_idea_git-init.sh"
 #!/bin/bash
 #set -x
 #trap read debug
 
-ACTION="app-intelij_idea_git${1}"
+ACTION="app-intellij_idea_git${1}"
 
 # app path
-APP_PATH="/services/intelij_idea_git"
+APP_PATH="/services/intellij_idea_git"
 
 touch /userhome/IdeaProjects/.gitconfig
 ln -sv /userhome/IdeaProjects/.gitconfig /userhome/.gitconfig | $LOGGER
 
-ln -sv /services/intelij_idea_git/usr/local/idea* /usr/local/idea
+ln -sv /services/intellij_idea_git/usr/local/idea* /usr/local/idea
 
 echo "Finished" | $LOGGER
 
