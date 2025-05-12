@@ -1,0 +1,10 @@
+[
+  {
+    "source": ".*",
+    "destination": "/usr/local",
+    "excludes": [
+      "usr/share/doc",
+      "usr/share/man"
+    ]
+  }
+]

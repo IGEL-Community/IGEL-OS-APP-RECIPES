@@ -1,0 +1,22 @@
+[
+    {
+      "path": "/userhome/.config/JetBrains",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.local/share/JetBrains",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.java",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/IdeaProjects",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

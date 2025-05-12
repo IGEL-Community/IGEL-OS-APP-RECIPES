@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/intelij_idea_git/usr/local/idea*/bin/idea
