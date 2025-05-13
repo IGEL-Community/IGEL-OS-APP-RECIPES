@@ -14,8 +14,6 @@ APP_PATH="/services/intellij_idea_git"
 touch /userhome/IdeaProjects/.gitconfig
 ln -sv /userhome/IdeaProjects/.gitconfig /userhome/.gitconfig | $LOGGER
 
-ln -sv /services/intellij_idea_git/usr/local/idea* /usr/local/idea
-
 echo "Finished" | $LOGGER
 
 EOF
