@@ -1,14 +1,14 @@
 <sessions>
-	<intellij_idea%>
+	<intellij_idea_git%>
         <name>
             value=<IntelliJ IDEA>
         </name>
         <icon>
-            value=</usr/local/idea/bin/idea.svg>
+            value=</services/intellij_idea_git/.icons/app.svg>
         </icon>
         extends_base=<sessions.base%>
-	</intellij_idea%>
-	<intellij_idea0>
-	</intellij_idea0>
+	</intellij_idea_git%>
+	<intellij_idea_git0>
+	</intellij_idea_git0>
     node_action=<wm_postsetup>
 </sessions>
