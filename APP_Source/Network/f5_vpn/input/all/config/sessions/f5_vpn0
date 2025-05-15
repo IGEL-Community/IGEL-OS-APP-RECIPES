@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export LD_LIBRARY_PATH=/services/f5_vpn/opt/f5/vpn/lib
+
+/services/f5_vpn/opt/f5/vpn/f5vpn

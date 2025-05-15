@@ -1,0 +1,26 @@
+[
+  {
+    "url": "file:///tmp/linux_f5cli.x86_64.deb",
+    "licenses": [
+      {
+        "name": "MPL-2.0"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/linux_f5epi.x86_64.deb",
+    "licenses": [
+      {
+        "name": "MPL-2.0"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/linux_f5vpn.x86_64.deb",
+    "licenses": [
+      {
+        "name": "MPL-2.0"
+      }
+    ]
+  }
+]
