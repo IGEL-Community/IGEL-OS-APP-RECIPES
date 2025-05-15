@@ -1,0 +1,14 @@
+<sessions>
+	<avaya_agent%>
+        <name>
+            value=<Avaya Agent>
+        </name>
+        <icon>
+            value=</services/avaya_agent/.icons/app.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</avaya_agent%>
+	<avaya_agent0>
+	</avaya_agent0>
+    node_action=<wm_postsetup>
+</sessions>
