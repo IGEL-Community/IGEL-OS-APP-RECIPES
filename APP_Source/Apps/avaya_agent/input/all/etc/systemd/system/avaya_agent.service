@@ -1,0 +1,5 @@
+[Unit]
+Description=Avaya Agent for Desktop
+
+[Service]
+ExecStart=/bin/bash /etc/avaya_agent/avaya_agent-init.sh

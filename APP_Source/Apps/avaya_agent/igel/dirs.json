@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/etc/avaya-agent/user",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

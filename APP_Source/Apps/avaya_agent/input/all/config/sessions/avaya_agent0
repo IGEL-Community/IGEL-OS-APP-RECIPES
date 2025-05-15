@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/avaya_agent/usr/bin/Agent-launcher
