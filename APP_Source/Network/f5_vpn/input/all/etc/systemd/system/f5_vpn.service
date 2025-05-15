@@ -1,0 +1,5 @@
+[Unit]
+Description=F5 VPN
+
+[Service]
+ExecStart=/bin/bash /etc/f5_vpn/f5_vpn-init.sh

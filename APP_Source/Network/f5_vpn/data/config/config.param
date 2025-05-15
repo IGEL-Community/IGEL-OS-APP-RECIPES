@@ -1,0 +1,14 @@
+<sessions>
+	<f5_vpn%>
+        <name>
+            value=<F5 VPN>
+        </name>
+        <icon>
+            value=</services/f5_vpn/.icons/app.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</f5_vpn%>
+	<f5_vpn0>
+	</f5_vpn0>
+    node_action=<wm_postsetup>
+</sessions>

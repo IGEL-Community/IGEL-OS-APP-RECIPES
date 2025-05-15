@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "f5_vpn",
+  "author": "The IGEL community",
+  "vendor": "F5",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "7252.2025.409+1.2",
+  "release": "",
+  "summary": {
+    "en": "F5_VPN (Community)"
+  },
+  "version": "7252.2025.409+1.2"
+}
