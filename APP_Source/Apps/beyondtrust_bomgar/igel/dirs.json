@@ -5,6 +5,11 @@
       "owner": "777:100"
     },
     {
+      "path": "/userhome/.bomgar_scc",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
       "path": "etc/bomgar"
     }
 ]
