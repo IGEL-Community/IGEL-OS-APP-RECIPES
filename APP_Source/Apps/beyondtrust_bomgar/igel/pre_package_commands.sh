@@ -26,9 +26,9 @@ BOMGARINSTID=$(ls -a /userhome/ | grep .bomgar-scc)
 echo "Starting" | $LOGGER
 
 if [ -f /userhome/.bomgar_installed/InstallTimeStamp.log ]; then
-   #symlink custom partition data directory to /userhome/
+   #copy data into $BOMGAR_DIR
    . /userhome/.bomgar_installed/bomgar_install_dir.sh
-   su user -c "ln -s /userhome/.bomgar-scc /userhome/$BOMGAR_DIR"
+   su user -c "cp -R /userhome/.bomgar-scc/* /userhome/$BOMGAR_DIR"
 
    #launch bomgar
    su user -c "/userhome/$BOMGAR_DIR/start_pinned &"
