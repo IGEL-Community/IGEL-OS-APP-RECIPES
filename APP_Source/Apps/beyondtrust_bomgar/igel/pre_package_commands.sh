@@ -53,7 +53,7 @@ else
 
    #Create directory and copy data to directory for persistence of install.
    echo "BOMGAR_DIR=$BOMGARINSTID" > /userhome/.bomgar_installed/bomgar_install_dir.sh
-   cp -r /userhome/$BOMGARINSTID/* $APP_PATH/userhome/.bomgar-scc
+   cp -r /userhome/$BOMGARINSTID/* /userhome/.bomgar-scc
 
    su user -c "/userhome/$BOMGARINSTID/start_pinned &"
    echo "Finished" | $LOGGER
