@@ -1,6 +1,4 @@
 {
-  "name": "bomgar",
-  "author": "The IGEL Community",
   "categories": [
     "Miscellaneous"
   ],
@@ -8,9 +6,19 @@
     "app": "app.jpg",
     "monochrome": "monochrome.jpg"
   },
-  "summary": {
-    "en": "BeyondTrust Bomgar"
+  "name": "bomgar",
+  "author": "The IGEL Community",
+  "vendor": "BeyondTrush",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
   },
-  "vendor": "BeyondTrust",
-  "version": "0.0.8"
+  "public_version": "0.0.9",
+  "release": "",
+  "summary": {
+    "en": "BeyondTrust Bomgar (Community)"
+  },
+  "version": "0.0.9"
 }
