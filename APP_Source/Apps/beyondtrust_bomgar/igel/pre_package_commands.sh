@@ -28,6 +28,7 @@ echo "Starting" | $LOGGER
 if [ -f /userhome/.bomgar_installed/InstallTimeStamp.log ]; then
    #copy data into $BOMGAR_DIR
    . /userhome/.bomgar_installed/bomgar_install_dir.sh
+   su user -c "mkdir /userhome/$BOMGAR_DIR"
    su user -c "cp -R /userhome/.bomgar-scc/* /userhome/$BOMGAR_DIR"
 
    #launch bomgar
