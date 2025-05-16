@@ -27,8 +27,8 @@ echo "Starting" | $LOGGER
 
 if [ -f /userhome/.bomgar_installed/InstallTimeStamp.log ]; then
    . /userhome/.bomgar_installed/bomgar_install_dir.sh
-   BOMGAR_CURR_VER=$(igelpkgctl list installed | grep bomgar | tr -d '\t')
-   if [ "$BOMGAR_CURR_VER" != "$BOMGAR_VERSION" ]; then
+   BOMGAR_FUTURE_VER=$(igelpkgctl list future | grep bomgar | tr -d '\t')
+   if [ "$BOMGAR_FUTURE_VER" != "$BOMGAR_VERSION" ]; then
       rm -f /userhome/.bomgar_installed/*
    fi
 fi
