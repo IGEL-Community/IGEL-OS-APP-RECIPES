@@ -25,16 +25,16 @@ BOMGARINSTID=$(ls -a /userhome/ | grep .bomgar-scc)
 
 echo "Starting" | $LOGGER
 
-if [ -f /userhome/.bomgar_installed/InstallTimeStamp.log ]; then
-   . /userhome/.bomgar_installed/bomgar_install_dir.sh
-   BOMGAR_FUTURE_VER=$(igelpkgctl list future | grep bomgar | tr -d '\t')
-   if [ "$BOMGAR_FUTURE_VER" != "$BOMGAR_VERSION" ]; then
-      rm -f /userhome/.bomgar_installed/*
-   fi
-fi
+#
+# Need to add logic to allow for in place version updates.
+#
+# Currently need to remove old version BEFORE applying new version
+# OR delete the InstallTimeStamp.log file
+#
 
 if [ -f /userhome/.bomgar_installed/InstallTimeStamp.log ]; then
    #copy data into $BOMGAR_DIR
+   . /userhome/.bomgar_installed/bomgar_install_dir.sh
    su user -c "mkdir /userhome/$BOMGAR_DIR"
    su user -c "cp -R /userhome/.bomgar-scc/* /userhome/$BOMGAR_DIR"
 
@@ -58,8 +58,6 @@ else
 
    #Create directory and copy data to directory for persistence of install.
    echo "BOMGAR_DIR=$BOMGARINSTID" > /userhome/.bomgar_installed/bomgar_install_dir.sh | $LOGGER
-   BOMGAR_VER=$(igelpkgctl list installed | grep bomgar | tr -d '\t')
-   echo "BOMGAR_VERSION=$BOMGAR_VER" >> /userhome/.bomgar_installed/bomgar_install_dir.sh | $LOGGER
    cp -R /userhome/$BOMGARINSTID/* /userhome/.bomgar-scc | $LOGGER
    chown -R user:users /userhome/.bomgar-scc/* | $LOGGER
 
