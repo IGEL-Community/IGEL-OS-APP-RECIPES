@@ -1,5 +1,10 @@
 [
-  {
-    "path": "etc/bomgar"
-  }
+    {
+      "path": "/userhome/.bomgar_installed",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "etc/bomgar"
+    }
 ]
