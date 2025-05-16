@@ -26,15 +26,12 @@ BOMGARINSTID=$(ls -a /userhome/ | grep .bomgar-scc)
 echo "Starting" | $LOGGER
 
 if [ -f /userhome/.bomgar_installed/InstallTimeStamp.log ]; then
-   # killall bomgar processes
- 	killall /userhome/$BOMGARPERSIST/bomgar-scc
-	rm /userhome/$BOMGARPERSIST
    #symlink custom partition data directory to /userhome/
    . /userhome/.bomgar_installed/bomgar_install_dir.sh
-   ln -s $APP_PATH/userhome/.bomgar-scc /userhome/$BOMGAR_DIR
+   ln -s /userhome/.bomgar-scc /userhome/$BOMGAR_DIR
 
    #launch bomgar
-   su user -c "/userhome/$BOMGARINSTID/start_pinned &"
+   su user -c "/userhome/$BOMGAR_DIR/start_pinned &"
    echo "Finished" | $LOGGER
    exit 0
 else
