@@ -50,8 +50,8 @@ else
 
    #Create directory and copy data to directory for persistence of install.
    echo "BOMGAR_DIR=$BOMGARINSTID" > /userhome/.bomgar_installed/bomgar_install_dir.sh | $LOGGER
-   cp -r /userhome/$BOMGARINSTID/* /userhome/.bomgar-scc | $LOGGER
-   chown -r user:users /userhome/.bomgar-scc/* | $LOGGER
+   cp -R /userhome/$BOMGARINSTID/* /userhome/.bomgar-scc | $LOGGER
+   chown -R user:users /userhome/.bomgar-scc/* | $LOGGER
 
    su user -c "/userhome/$BOMGARINSTID/start_pinned &"
    echo "Finished" | $LOGGER
