@@ -20,3 +20,10 @@ Steps:
 ```bash linenums="1"
 tar cvjf bomgar-scc.tar.bz2 bomgar-scc-XXXXX.bin
 ```
+
+-----
+**NOTE:**
+
+- Need to add logic to `pre_package_commands.sh` allow for in place version updates.
+
+- Currently need to remove old version BEFORE applying new version or delete the InstallTimeStamp.log file
