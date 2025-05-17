@@ -9,10 +9,16 @@
   "name": "1password",
   "author": "The IGEL community",
   "vendor": "1Password",
-  "public_version": "8.10.72",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "8.10.76+1.2",
   "release": "",
   "summary": {
     "en": "1password (Community)"
   },
-  "version": "8.10.72"
+  "version": "8.10.76+1.2"
 }
