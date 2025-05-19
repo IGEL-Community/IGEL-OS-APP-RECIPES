@@ -1,0 +1,26 @@
+[
+  {
+    "package": "p7zip-full",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "p7zip-rar",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "p7zip",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  }
+]
