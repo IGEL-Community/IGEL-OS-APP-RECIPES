@@ -1,0 +1,3 @@
+Yubico Authenticator
+
+Yubico Authenticator will work with any USB or NFC-enabled YubiKeys. The Yubico Authenticator securely generates a code used to verify your identity as you are logging into various services. No connectivity needed! https://developers.yubico.com/yubioath-flutter/

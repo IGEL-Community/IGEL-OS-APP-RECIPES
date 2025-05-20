@@ -1,0 +1,14 @@
+<sessions>
+	<yubioath%>
+        <name>
+            value=<Yubico Authenticator>
+        </name>
+        <icon>
+            value=</services/yubioath/.icons/app.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</yubioath%>
+	<yubioath0>
+	</yubioath0>
+    node_action=<wm_postsetup>
+</sessions>
