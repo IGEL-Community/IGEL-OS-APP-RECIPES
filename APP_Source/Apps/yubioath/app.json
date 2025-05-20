@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "yubioath",
+  "author": "The IGEL community",
+  "vendor": "Yubico",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "7.2.0+1.0",
+  "release": "",
+  "summary": {
+    "en": "Yubico Authenticator (Community)"
+  },
+  "version": "7.2.0+1.0"
+}

@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/userhome/.local/share/authenticator",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

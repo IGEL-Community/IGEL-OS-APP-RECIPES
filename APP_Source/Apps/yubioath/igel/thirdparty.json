@@ -1,0 +1,10 @@
+[
+  {
+    "url": "file:///tmp/yubico-authenticator-latest-linux.tar.gz",
+    "licenses": [
+      {
+        "name": "MPL-2.0"
+      }
+    ]
+  }
+]
