@@ -3,8 +3,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 **NOTE:**
 
-- Changed the default path configuration settings from `~/.config/onedrive` to `/services_rw/onedrive/userhome/.config/onedrive`
-
 - [OneDrive Client for Linux](https://abraunegg.github.io/)
 
 - [Usage of OneDrive Client for Linux](https://github.com/abraunegg/onedrive/blob/master/docs/usage.md)
@@ -77,10 +75,10 @@ rm -rf build_tar
 
 ## CONFIGURATION
 
-To copy the default config file into user home directory `/services_rw/onedrive/userhome/.config/onedrive`
+To copy the default config file into user home directory `/userhome/.config/onedrive`
 
 ```bash linenums="1"
-wget https://raw.githubusercontent.com/abraunegg/onedrive/master/config -O /services_rw/onedrive/userhome/.config/onedrive
+wget https://raw.githubusercontent.com/abraunegg/onedrive/master/config -O /userhome/.config/onedrive
 ```
 
 For the supported options see the usage link above for list of  command  line  options for the availability of a configuration key.
@@ -99,7 +97,7 @@ You will be asked to open a specific link using your web browser  where you  wil
 
 ## Performing a selective sync via 'sync_list' file
 
-[Selective sync](https://github.com/abraunegg/onedrive/blob/master/docs/usage.md#performing-a-selective-synchronisation-via-sync_list-file) allows you to sync only specific files and directories. To enable selective sync create a file named `sync_list` in your application configuration directory (default is `/services_rw/onedrive/userhome/.config/onedrive`. Each line of the file represents a relative path from your `sync_dir`. All files and directories not matching any line of the file will be skipped during all operations.
+[Selective sync](https://github.com/abraunegg/onedrive/blob/master/docs/usage.md#performing-a-selective-synchronisation-via-sync_list-file) allows you to sync only specific files and directories. To enable selective sync create a file named `sync_list` in your application configuration directory (default is `/userhome/.config/onedrive`. Each line of the file represents a relative path from your `sync_dir`. All files and directories not matching any line of the file will be skipped during all operations.
 
 ```bash linenums="1"
 # sync_list supports comments
@@ -132,7 +130,7 @@ You will be asked to open a specific link using your web browser  where you  wil
 You are able to [test your configuration](https://github.com/abraunegg/onedrive/blob/master/docs/usage.md#testing-your-configuration) by utilising the `--dry-run` CLI option. No files will be downloaded, uploaded or removed, however the application will display what 'would' have occurred. For example:
 
 ```bash linenums="1"
-/services/onedrive/usr/local/bin/onedrive --confdir /services_rw/onedrive/userhome/.config/onedrive --synchronize --verbose --dry-run
+/services/onedrive/usr/local/bin/onedrive --synchronize --verbose --dry-run
 ```
 
 ## SYSTEMD INTEGRATION
