@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.config/onedrive",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/OneDrive",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
