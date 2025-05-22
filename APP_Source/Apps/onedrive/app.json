@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "onedrive",
+  "author": "The IGEL Community",
+  "vendor": "OneDrive",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "public_version": "2.5.5+1.21",
+  "release": "",
+  "summary": {
+    "en": "OneDrive (Community)"
+  },
+  "version": "2.5.5+1.21"
+}
