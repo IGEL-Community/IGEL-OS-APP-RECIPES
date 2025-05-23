@@ -153,3 +153,29 @@ EOF
 -----
 
 -----
+
+## Use prefer_btrfs file system for read / write partition
+
+**Note:** Some apps may not work with non-btrfs file system for read / write partition. Applications, like 1Password and OneDrive, use SQLite, an Open-Source database program that uses a sub-set of the SQL database descriptor language, in their application and does not work with NTFS file system.
+
+- In the `app.json` file set `prefer_btrfs` as the file system
+
+```json
+"rw_partition": {
+  "size": "small",
+  "flags": [
+    "compressed",
+    "prefer_btrfs"
+  ]
+}
+```
+
+- Check file system used for `/services_rw/*`
+
+```bash linenums="1"
+df -Th | grep services_rw
+```
+
+-----
+
+-----
