@@ -1,10 +1,7 @@
 [
     {
-      "path": "/userhome/.config/1Password-backup",
+      "path": "/userhome/.config/1Password",
       "persistent": true,
       "owner": "777:100"
-    },
-    {
-      "path": "etc/1password"
     }
 ]
