@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "webdav",
+  "author": "The IGEL community",
+  "vendor": "Henrique Dias",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "public_version": "5.8.0+1.5",
+  "release": "",
+  "summary": {
+    "en": "WebDAV (Community)"
+  },
+  "version": "5.8.0+1.5"
+}
