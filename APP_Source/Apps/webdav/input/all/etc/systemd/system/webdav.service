@@ -1,0 +1,13 @@
+[Unit]
+Description=WebDAV
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStartPre=/bin/ln -sf /services/webdav/opt/webdav /opt/webdav
+ExecStart=/services/webdav/webdav --config /opt/webdav/settings/webdav.yml
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

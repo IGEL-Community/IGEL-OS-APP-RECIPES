@@ -1,0 +1,10 @@
+[
+    {
+      "path": "/opt/webdav/settings",
+      "persistent": true
+    },
+    {
+      "path": "/opt/webdav/files",
+      "persistent": true
+    }
+]
