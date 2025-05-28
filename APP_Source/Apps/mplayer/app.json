@@ -9,10 +9,10 @@
   "name": "mplayer",
   "author": "The IGEL community",
   "vendor": "MPlayer Team",
-  "public_version": "1.5.0+1.2",
+  "public_version": "1.5.0+1.3",
   "release": "",
   "summary": {
     "en": "MPlayer Command Line (Community)"
   },
-  "version": "1.5.0+1.2"
+  "version": "1.5.0+1.3"
 }
