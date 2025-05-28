@@ -8,11 +8,11 @@
   },
   "name": "ffmpeg",
   "author": "The IGEL community",
-  "vendor": "ffmeg Team",
-  "public_version": "7.1.0+1.0",
+  "vendor": "ffmpeg Team",
+  "public_version": "7.1.0+1.1",
   "release": "",
   "summary": {
     "en": "ffmpeg (Community)"
   },
-  "version": "7.1.0+1.0"
+  "version": "7.1.0+1.1"
 }

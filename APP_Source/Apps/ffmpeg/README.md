@@ -1,8 +1,10 @@
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-http://www.mplayerhq.hu/design7/news.html
+https://ffmpeg.org
 
-- Run the following script on Ubuntu 20.04 system to build `mplayer.tar.bz2`
+https://ourcodeworld.com/articles/read/1435/how-to-convert-a-wav-file-to-mp3-using-ffmpeg
+
+- Run the following script on Ubuntu 20.04 system to build `ffmpeg.tar.bz2`
 
 ```bash linenums="1"
 #!/bin/bash
