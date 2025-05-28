@@ -13,7 +13,8 @@ https://idroot.us/scrot-command-line-screen-capture/
 APP="scrot"
 CLEAN="TRUE"
 OS12_CLEAN="12.6.0"
-MISSING_LIBS="giblib1 libid3tag0 libimlib2 scrot"
+#MISSING_LIBS="giblib1 libid3tag0 libimlib2 scrot"
+MISSING_LIBS="giblib1 scrot"
 
 
 sudo apt update -y

@@ -9,10 +9,10 @@
   "name": "scrot",
   "author": "The IGEL community",
   "vendor": "scrot Team",
-  "public_version": "7.1.0+1.0",
+  "public_version": "7.1.0+1.1",
   "release": "",
   "summary": {
     "en": "scrot (Community)"
   },
-  "version": "7.1.0+1.0"
+  "version": "7.1.0+1.1"
 }
