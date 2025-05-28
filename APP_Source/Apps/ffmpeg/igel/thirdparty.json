@@ -1,0 +1,10 @@
+[
+  {
+    "url": "file:///tmp/ffmpeg.tar.bz2",
+    "licenses": [
+      {
+        "name": "MPL-2.0"
+      }
+    ]
+  }
+]
