@@ -1,0 +1,18 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "scrot",
+  "author": "The IGEL community",
+  "vendor": "scrot Team",
+  "public_version": "7.1.0+1.0",
+  "release": "",
+  "summary": {
+    "en": "scrot (Community)"
+  },
+  "version": "7.1.0+1.0"
+}
