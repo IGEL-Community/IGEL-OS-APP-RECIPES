@@ -9,10 +9,10 @@
   "name": "ffmpeg",
   "author": "The IGEL community",
   "vendor": "ffmpeg Team",
-  "public_version": "7.1.0+1.1",
+  "public_version": "7.1.0+1.5",
   "release": "",
   "summary": {
     "en": "ffmpeg (Community)"
   },
-  "version": "7.1.0+1.1"
+  "version": "7.1.0+1.5"
 }
