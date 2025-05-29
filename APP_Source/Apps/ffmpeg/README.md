@@ -15,7 +15,7 @@ https://ourcodeworld.com/articles/read/1435/how-to-convert-a-wav-file-to-mp3-usi
 APP="ffmpeg"
 CLEAN="TRUE"
 OS12_CLEAN="12.6.0"
-MISSING_LIBS="ffmpeg i965-va-driver intel-media-va-driver libaacs0 libaom0 libass9 libavcodec58 libavdevice58 libavfilter7 libavformat58 libavresample4 libavutil56 libbdplus0 libbluray2 libbs2b0 libchromaprint1 libcodec2-0.9 libdc1394-22 libfftw3-double3 libflite1 libgme0 libgsm1 libigdgmm11 liblilv-0-0 libmysofa1 libnorm1 libopenal-data libopenal1 libopenmpt0 libpgm-5.2-0 libpostproc55 librubberband2 libsdl2-2.0-0 libserd-0-0 libshine3 libsnappy1v5 libsndio7.0 libsord-0-0 libsratom-0-0 libssh-gcrypt-4 libswresample3 libswscale5 libva-drm2 libva-x11-2 libva2 libvdpau1 libvidstab1.1 libx264-155 libx265-179 libxvidcore4 libzmq5 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers ocl-icd-libopencl1 va-driver-all vdpau-driver-all"
+MISSING_LIBS="ffmpeg i965-va-driver intel-media-va-driver libaacs0 libass9 libavdevice58 libavresample4 libbdplus0 libbluray2 libbs2b0 libchromaprint1 libcodec2-0.9 libdc1394-22 libfftw3-double3 libflite1 libgme0 libgsm1 libigdgmm11 liblilv-0-0 libmysofa1 libnorm1 libopenal-data libopenal1 libopenmpt0 libpgm-5.2-0 libpostproc55 librubberband2 libsdl2-2.0-0 libserd-0-0 libshine3 libsnappy1v5 libsndio7.0 libsord-0-0 libsratom-0-0 libssh-gcrypt-4 libswscale5 libva-drm2 libva-x11-2 libva2 libvdpau1 libvidstab1.1 libx265-179 libxvidcore4 libzmq5 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers ocl-icd-libopencl1 va-driver-all vdpau-driver-all libcdio-cdda2 libcdio18 libcdio-paranoia2 libvpx6 libwebp6 libavformat58 libavfilter7 libavcodec58 ibswresample3 libavutil56 libswresample3 libaom0 libx264-155"
 
 sudo apt update -y
 
