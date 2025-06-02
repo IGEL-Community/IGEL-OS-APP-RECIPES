@@ -158,6 +158,8 @@ EOF
 
 **Note:** Some apps may not work with non-btrfs file system for read / write partition. Applications, like 1Password and OneDrive, use SQLite, an Open-Source database program that uses a sub-set of the SQL database descriptor language, in their application and does not work with NTFS file system.
 
+***Update:** 2 June 2025, the issue with SQLite on NTFS was with compression enabled.
+
 - In the `app.json` file set `prefer_btrfs` as the file system
 
 ```json
@@ -174,6 +176,29 @@ EOF
 
 ```bash linenums="1"
 df -Th | grep services_rw
+```
+
+-----
+
+-----
+
+## Partition Size
+
+The partition size can be defined with the key size. The following values are possible:
+
+- small
+- medium
+- large
+- Exact size in KiB without quotes.
+
+When small, medium, or large are defined, the size is calculated depending on the device's storage size.
+
+To create a 2GB partition:
+
+```json linenums="1"
+"rw_partition": {
+  "size": 2000000
+},
 ```
 
 -----
