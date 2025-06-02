@@ -10,16 +10,12 @@
   "author": "The IGEL community",
   "vendor": "Henrique Dias",
   "rw_partition": {
-    "size": "large",
-    "flags": [
-      "compressed",
-      "prefer_btrfs"
-    ]
+    "size": 2000000
   },
-  "public_version": "5.8.0+1.5",
+  "public_version": "5.8.0+1.11",
   "release": "",
   "summary": {
     "en": "WebDAV (Community)"
   },
-  "version": "5.8.0+1.5"
+  "version": "5.8.0+1.11"
 }

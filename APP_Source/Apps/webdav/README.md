@@ -21,3 +21,17 @@ https://github.com/hacdias/webdav?tab=readme-ov-file#configuration
 - [How to Use Distributed App Repositories in IGEL UMS](https://kb.igel.com/en/universal-management-suite/current/how-to-use-distributed-app-repositories-in-igel-um)
 
 - WebDAV files location: `/opt/webdav/files`
+
+-----
+
+# Update app.json to change the file system size for /opt/webdav/files
+
+**NOTE:** This will fail to create partition if not enough disk space
+
+- The example below will create a `5GB` partition
+
+```json linenums="1"
+"rw_partition": {
+  "size": 5000000
+},
+```
