@@ -13,6 +13,19 @@ APP_PATH="/services/vscode_git"
 
 touch /userhome/Code/.gitconfig
 ln -sv /userhome/Code/.gitconfig /userhome/.gitconfig | $LOGGER
+ln -sv /services/vscode_git/usr/share/code/bin/code /services/vscode_git/usr/bin/code
+
+#
+# Turn off update check
+#
+if [ ! -e /userhome/.config/Code/User/settings.json ]; then
+  mkdir -p /userhome/.config/Code/User
+  cat << "XEOF" > /userhome/.config/Code/User/settings.json
+{
+    "update.mode": "none"
+}
+XEOF
+fi
 
 echo "Finished" | $LOGGER
 
