@@ -1,0 +1,14 @@
+<sessions>
+	<qz-tray%>
+        <name>
+            value=<QZ-Tray>
+        </name>
+        <icon>
+            value=</services/qz_tray/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</qz-tray%>
+	<qz-tray0>
+	</qz-tray0>
+    node_action=<wm_postsetup>
+</sessions>

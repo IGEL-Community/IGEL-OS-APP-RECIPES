@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/opt/qz-tray",
+      "persistent": true,
+      "owner": "0:0"
+    },
+    {
+      "path": "/userhome/.qz",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
