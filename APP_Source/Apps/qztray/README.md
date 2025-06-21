@@ -10,7 +10,7 @@ https://qz.io/
 
 ## Need to obtain the qztray installer
 
-**NOTE:** Obtain the three installer, rename to qz-tray.run, and zip into qz-tray.zip
+**NOTE:** Obtain the installer, rename to qz-tray.run, and zip into qz-tray.zip
 
 https://qz.io/download/?os=linux#
 
