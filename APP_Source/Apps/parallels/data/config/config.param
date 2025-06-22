@@ -1,0 +1,14 @@
+<sessions>
+	<parallels_ras%>
+        <name>
+            value=<Parallels>
+        </name>
+        <icon>
+            value=</services/parallels_ras/.icons/app.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</parallels_ras%>
+	<parallels_ras0>
+	</parallels_ras0>
+    node_action=<wm_postsetup>
+</sessions>

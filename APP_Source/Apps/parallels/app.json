@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "parallels_ras",
+  "author": "The IGEL community",
+  "vendor": "Parallels",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "20.2.1+25997.1.1",
+  "release": "",
+  "summary": {
+    "en": "Parallels RAS (Community)"
+  },
+  "version": "20.2.1+25997.1.1"
+}
