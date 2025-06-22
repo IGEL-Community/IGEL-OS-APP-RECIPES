@@ -1,0 +1,5 @@
+[Unit]
+Description=parallels_ras
+
+[Service]
+ExecStart=/bin/bash /etc/parallels_ras/parallels_ras-init.sh

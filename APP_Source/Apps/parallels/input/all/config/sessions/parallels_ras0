@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/parallels_ras/opt/2X/Client/bin/2XClient
