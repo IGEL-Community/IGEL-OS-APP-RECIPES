@@ -1,0 +1,50 @@
+[
+  {
+    "package": "openconnect",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "libopenconnect5",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "libstoken1",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "libtomcrypt1",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "libtommath1",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "vpnc-scripts",
+    "licenses": [
+      {
+          "name": "LGPL-2.1-or-later"
+      }
+    ]    
+  }
+]

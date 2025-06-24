@@ -1,0 +1,10 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "usr/share/applications.*",
+      "usr/share/doc.*",
+      "usr/share/man.*"
+    ]
+  }
+]
