@@ -5,3 +5,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - Build version tied to Ubuntu 20.04
 
 - [OpenConnect VPN Web Site](https://www.infradead.org/openconnect/)
+
+- Included missing library `libpskc`
