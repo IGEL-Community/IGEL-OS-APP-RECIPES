@@ -1,0 +1,18 @@
+[
+  {
+    "url": "file:///tmp/google-chrome-stable_amd64.deb",
+    "licenses": [
+      {
+        "name": "MPL-2.0"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/endpoint-verification_amd64.deb",
+    "licenses": [
+      {
+        "name": "MPL-2.0"
+      }
+    ]
+  }
+]
