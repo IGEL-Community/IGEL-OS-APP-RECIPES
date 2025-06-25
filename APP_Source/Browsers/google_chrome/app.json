@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "chrome",
+  "author": "The IGEL community",
+  "vendor": "Google",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "public_version": "138.0.7204+49.1.0",
+  "release": "",
+  "summary": {
+    "en": "Chrome (Community)"
+  },
+  "version": "138.0.7204+49.1.0"
+}
