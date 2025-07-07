@@ -1,0 +1,18 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "mobicontrol",
+  "author": "The IGEL community",
+  "vendor": "SOTI",
+  "public_version": "2025.1.1+1.9",
+  "release": "",
+  "summary": {
+    "en": "SOTI MobiControl Agent for Linux(Community)"
+  },
+  "version": "2025.1.1+1.9"
+}

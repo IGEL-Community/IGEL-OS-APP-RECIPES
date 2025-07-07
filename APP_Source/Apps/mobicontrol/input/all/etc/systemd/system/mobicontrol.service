@@ -1,0 +1,12 @@
+[Unit]
+Description=MobiControl for Linux
+After=network.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/bash /services/mobicontrol/etc/mobicontrol/mobicontrol-init.sh
+ExecStart=/wfs/mobicontrol/usr/opt/MobiControl/mobicontrol
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
