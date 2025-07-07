@@ -1,0 +1,9 @@
+[
+  {
+    "source": ".*",
+    "destination": "/opt/mobicontrol",
+    "excludes": [
+      ""
+    ]
+  }
+]

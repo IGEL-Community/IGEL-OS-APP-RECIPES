@@ -1,0 +1,18 @@
+[
+  {
+    "url": "file:///tmp/LinuxAgent_x64_64bit.tar.gz",
+    "licenses": [
+      {
+        "name": "LGPL-2.1-only"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/MCSetup.zip",
+    "licenses": [
+      {
+        "name": "LGPL-2.1-only"
+      }
+    ]
+  }
+]
