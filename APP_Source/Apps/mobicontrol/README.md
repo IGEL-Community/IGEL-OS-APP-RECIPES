@@ -16,3 +16,7 @@ LinuxAgent202511_x64_64bit.tar.gz
 
 - Obtain the installer, rename to `LinuxAgent_x64_64bit.tar.gz`
 - Obtain the MCSetup.ini file, zip into `MSSetup.zip`
+
+## Vendor Web Site for Support
+
+- [Enroll Linux Device](https://soti.net/mc/help/v14.0/en/console/devices/managing/enrolling/platforms/linux_enroll.html)
