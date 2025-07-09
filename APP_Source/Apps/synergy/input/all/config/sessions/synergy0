@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/synergy/usr/bin/synergy

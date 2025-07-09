@@ -1,0 +1,14 @@
+<sessions>
+	<synergy%>
+        <name>
+            value=<Synergy>
+        </name>
+        <icon>
+            value=</services/synergy/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</synergy%>
+	<synergy0>
+	</synergy0>
+    node_action=<wm_postsetup>
+</sessions>

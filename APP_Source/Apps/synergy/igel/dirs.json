@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.synergy",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.config/Synergy",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

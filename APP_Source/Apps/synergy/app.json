@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "synergy",
+  "author": "The IGEL community",
+  "vendor": "Synergy",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+    ]
+  },
+  "public_version": "1.14.6+1.0",
+  "release": "",
+  "summary": {
+    "en": "synergy (Community)"
+  },
+  "version": "1.14.6+1.0"
+}
