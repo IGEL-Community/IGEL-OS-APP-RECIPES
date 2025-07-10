@@ -1,0 +1,49 @@
+[
+  {
+    "package": "apache2"
+  },
+  {
+    "package": "apache2-bin"
+  },
+  {
+    "package": "apache2-data"
+  },
+  {
+    "package": "apache2-utils"
+  },
+  {
+    "package": "libapr1",
+    "licenses": [
+      {
+        "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "package": "libaprutil1",
+    "licenses": [
+      {
+        "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "package": "libaprutil1-dbd-sqlite3",
+    "licenses": [
+      {
+        "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "package": "libaprutil1-ldap",
+    "licenses": [
+      {
+        "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "package": "liblua5.2-0"
+  }
+]
