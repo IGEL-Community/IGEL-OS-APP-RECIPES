@@ -33,3 +33,11 @@ Alias /webdav /var/www/webdav
     Reguire user igel
 </Directory>
 ```
+
+-----
+
+-----
+
+## Notes on Setting up UMS Distributed App Repository
+
+- [IGEL KB: How to Use Distributed App Repositories in IGEL UMS](https://kb.igel.com/en/universal-management-suite/current/how-to-use-distributed-app-repositories-in-igel-um)
