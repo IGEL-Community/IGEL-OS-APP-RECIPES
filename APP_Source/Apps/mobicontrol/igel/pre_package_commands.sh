@@ -26,7 +26,7 @@ ln -svf ${APP_PATH} ${APP_OPT_LINK} | $LOGGER
 if [ ! -e ${APP_PATH}/mobicontrol ]; then
   cp /services/mobicontrol/opt/mobicontrol/MCSetup.ini /services/mobicontrol/opt/mobicontrol/installer
   cd /services/mobicontrol/opt/mobicontrol/installer
-  /bin/sh install.sh -c -y | $LOGGER
+  /bin/sh install.sh -c -y
 fi
 
 # copy mobicontrol to /tmp
