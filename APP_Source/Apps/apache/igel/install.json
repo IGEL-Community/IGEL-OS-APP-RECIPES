@@ -1,0 +1,13 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "usr/share/man",
+      "usr/share/doc"
+    ],
+    "destination": "",
+    "owner": "",
+    "permissions": "",
+    "strip": false
+  }
+]

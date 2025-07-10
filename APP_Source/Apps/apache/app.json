@@ -1,0 +1,21 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "apache",
+  "author": "The IGEL community",
+  "vendor": "Apache Software Foundation",
+  "rw_partition": {
+    "size": 4000000
+  },
+  "public_version": "2.4.41+1.11",
+  "release": "",
+  "summary": {
+    "en": "Apache (Community)"
+  },
+  "version": "2.4.41+1.11"
+}

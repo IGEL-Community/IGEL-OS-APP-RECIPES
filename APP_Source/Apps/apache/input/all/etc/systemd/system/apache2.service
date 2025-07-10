@@ -1,0 +1,17 @@
+[Unit]
+Description=The Apache HTTP Server
+After=network.target remote-fs.target nss-lookup.target
+Documentation=https://httpd.apache.org/docs/2.4/
+
+[Service]
+ExecStartPre=/bin/bash /etc/apache/apache-init.sh
+Type=forking
+Environment=APACHE_STARTED_BY_SYSTEMD=true
+ExecStart=/services/apache/usr/sbin/apachectl start
+ExecStop=/services/apache/usr/sbin/apachectl stop
+ExecReload=/services/apache/usr/sbin/apachectl graceful
+PrivateTmp=true
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
