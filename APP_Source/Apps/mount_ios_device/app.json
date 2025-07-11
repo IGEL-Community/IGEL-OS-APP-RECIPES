@@ -9,7 +9,6 @@
   "name": "mount_ios_device",
   "author": "The IGEL community",
   "vendor": "libimobiledevice.org",
-  "public_version": "0.0.11",
   "release": "",
   "summary": {
     "en": "Mount iOS Device (Community)"

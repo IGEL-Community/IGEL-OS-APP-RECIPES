@@ -7,7 +7,6 @@
     "monochrome": "monochrome.svg"
   },
   "name": "keepassxc",
-  "public_version": "2.7.4+dfsg.1-2",
   "release": "",
   "rw_partition": {
     "flags": [

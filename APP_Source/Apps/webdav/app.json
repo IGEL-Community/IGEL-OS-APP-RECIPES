@@ -12,7 +12,6 @@
   "rw_partition": {
     "size": 2000000
   },
-  "public_version": "5.8.0+1.11",
   "release": "",
   "summary": {
     "en": "WebDAV (Community)"
