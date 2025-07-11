@@ -58,17 +58,17 @@ chown -R 775 /services_rw/apache/var/www/webdav
 - Create a folder
 
 ```bash linenums="1"
-curl -i --digest -u igel:igel-password -X MKCOL http://igel-device/testdir
+curl -i --digest -u igel:igel-password -X MKCOL http://igel-device/webdav/testdir
 ```
 
 - Add a file to a folder
 
 ```bash linenums="1"
-curl -i --digest -u igel:igel-password -T /etc/os-release http://igel-device/testdir/os-release
+curl -i --digest -u igel:igel-password -T /etc/os-release http://igel-device/webdav/testdir/os-release
 ```
 
 - Download a file
 
 ```bash linenums="1"
-curl -L --digest -u igel:igel-password http://igel-device/testdir/os-release --output /tmp/os-release
+curl -L --digest -u igel:igel-password http://igel-device/webdav/testdir/os-release --output /tmp/os-release
 ```
