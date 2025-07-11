@@ -41,8 +41,6 @@
 
 - The technical version of the app is defined in the field `version`.
 
-- The display version of the app is defined in the field `public_version`.
-
 - The version numbers must comply with the [Semantic Versioning (SemVer) specifications](https://semver.org/)
 
 - Version example used for IGEL OS Base OS:
