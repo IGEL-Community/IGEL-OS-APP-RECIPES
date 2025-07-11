@@ -70,5 +70,5 @@ curl -i --digest -u igel:igel-password -T /etc/os-release http://igel-device/tes
 - Download a file
 
 ```bash linenums="1"
-curl -L --digest -u igel:igel-password http://igel-device/testdir/os-release/os-release --output /tmp/os-release
+curl -L --digest -u igel:igel-password http://igel-device/testdir/os-release --output /tmp/os-release
 ```
