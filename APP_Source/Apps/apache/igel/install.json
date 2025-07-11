@@ -2,8 +2,8 @@
   {
     "source": ".*",
     "excludes": [
-      "usr/share/man",
-      "usr/share/doc"
+      "usr/share/man.*",
+      "usr/share/doc.*"
     ],
     "destination": "",
     "owner": "",
