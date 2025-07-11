@@ -41,3 +41,34 @@ Alias /webdav /var/www/webdav
 ## Notes on Setting up UMS Distributed App Repository
 
 - [IGEL KB: How to Use Distributed App Repositories in IGEL UMS](https://kb.igel.com/en/universal-management-suite/current/how-to-use-distributed-app-repositories-in-igel-um)
+
+-----
+
+-----
+
+## Set permissions after apache2 starts up
+
+```bash linenums="1"
+chown -R www-data:www-data /services_rw/apache/var/www/webdav
+chown -R 775 /services_rw/apache/var/www/webdav
+```
+
+## How to use Curl with WebDAV
+
+- Create a folder
+
+```bash linenums="1"
+curl -i --digest -u igel:igel-password -X MKCOL http://igel-device/testdir
+```
+
+- Add a file to a folder
+
+```bash linenums="1"
+curl -i --digest -u igel:igel-password -T /etc/os-release http://igel-device/testdir/os-release
+```
+
+- Download a file
+
+```bash linenums="1"
+curl -L --digest -u igel:igel-password http://igel-device/testdir/os-release/os-release --output /tmp/os-release
+```
