@@ -2,6 +2,7 @@
 [
   {
     "path": "/var/www/webdav",
+    "permissions": "777",
     "persistent": true
   }
 ]
