@@ -1,6 +1,6 @@
 [
     {
-      "path": "/userhome/.config/brave",
+      "path": "/userhome/.config/BraveSoftware/Brave-Browser",
       "persistent": true,
       "owner": "777:100"
     }
