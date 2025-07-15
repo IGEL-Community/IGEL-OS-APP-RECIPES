@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "brave",
+  "author": "The IGEL community",
+  "vendor": "Brave",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Brave (Community)"
+  },
+  "version": "1.80.120+1.0"
+}
