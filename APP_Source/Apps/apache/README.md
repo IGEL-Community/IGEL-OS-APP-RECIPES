@@ -50,7 +50,7 @@ Alias /webdav /var/www/webdav
 
 ```bash linenums="1"
 chown -R www-data:www-data /services_rw/apache/var/www/webdav
-chown -R 775 /services_rw/apache/var/www/webdav
+chmod -R 775 /services_rw/apache/var/www/webdav
 ```
 
 ## How to use Curl with WebDAV
