@@ -1,0 +1,14 @@
+<sessions>
+	<brave%>
+        <name>
+            value=<Brave>
+        </name>
+        <icon>
+            value=</services/brave/.icons/app.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</brave%>
+	<brave0>
+	</brave0>
+    node_action=<wm_postsetup>
+</sessions>
