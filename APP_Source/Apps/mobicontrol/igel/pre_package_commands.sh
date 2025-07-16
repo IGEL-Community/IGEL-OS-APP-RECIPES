@@ -20,8 +20,10 @@ if [ ! -d ${APP_PATH} ]; then
   mkdir -p ${APP_PATH}
 fi
 
-mkdir -p /usr/opt
-ln -svf ${APP_PATH} ${APP_OPT_LINK} | $LOGGER
+if [ ! -L ${APP_OPT_LINK} ]; then
+  mkdir -p /usr/opt
+  ln -svf ${APP_PATH} ${APP_OPT_LINK} | $LOGGER
+fi
 
 # Run install.sh for the first time
 if [ ! -e ${APP_PATH}/mobicontrol ]; then
