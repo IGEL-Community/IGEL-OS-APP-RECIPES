@@ -1,6 +1,6 @@
 [Unit]
 Description=MobiControl for Linux
-After=network-online.target
+After=multi-user.target
 
 [Service]
 Type=simple
