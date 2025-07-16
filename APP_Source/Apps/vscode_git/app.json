@@ -14,7 +14,8 @@
   ],
   "author": "IGEL Community",
   "vendor": "Microsoft Corporation",
-  "rw_partition": {
-    "size": 4000000
-  }
+  "size": "large",
+  "flags": [
+    "compressed"
+  ]
 }
