@@ -20,3 +20,43 @@ LinuxAgent202511_x64_64bit.tar.gz
 ## Vendor Web Site for Support
 
 - [Enroll Linux Device](https://soti.net/mc/help/v14.0/en/console/devices/managing/enrolling/platforms/linux_enroll.html)
+
+-----
+
+-----
+
+## Setup Final Desktop Command
+
+- The installation of MobiControl is not running from systemctl and need to create a final desktop command
+
+- Following the note from [IGEL Community Docs: HOWTO Custom Commands](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-Custom-Commands/), create final desktop command, `cc-desktop-3fdc-mobicontrol.sh`  with the following content:
+
+```bash linenums="1"
+#!/bin/bash
+#set -x
+#trap read debug
+
+#
+# MobiControl
+#
+# Custom Commands: Desktop: Final Desktop Command
+#
+
+ACTION="cc-desktop-3fdc-mobicontrol"
+
+APP_INIT="/etc/mobicontrol/mobicontrol-init.sh"
+
+# output to systemlog with ID amd tag
+LOGGER="logger -it ${ACTION}"
+
+echo "Starting" | $LOGGER
+
+if [ -e ${APP_INIT} ]; then
+  echo "Running MobiControl Init" | $LOGGER
+  /bin/bash ${APP_INIT}
+fi
+
+echo "Finished" | $LOGGER
+
+exit 0
+```
