@@ -202,3 +202,15 @@ To create a 2GB partition:
 -----
 
 -----
+
+## Listing Systemd Targets
+
+- List all the systemd targets on system:
+
+```bash linenums="1"
+systemctl list-units --type target
+```
+
+-----
+
+-----
