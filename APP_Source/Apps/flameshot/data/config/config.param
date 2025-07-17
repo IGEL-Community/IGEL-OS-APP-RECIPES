@@ -1,0 +1,14 @@
+<sessions>
+	<flameshot%>
+        <name>
+            value=<Flameshot>
+        </name>
+        <icon>
+            value=</services/flameshot/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</flameshot%>
+	<flameshot0>
+	</flameshot0>
+    node_action=<wm_postsetup>
+</sessions>

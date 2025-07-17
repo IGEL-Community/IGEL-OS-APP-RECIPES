@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/flameshot/usr/bin/Flameshot.AppImage
