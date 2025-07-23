@@ -3,3 +3,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Need to obtain the installer
 
 **NOTE:** Obtain the installer file and rename to `Avaya-Agent-For-Desktop-Linux-64Bits.deb`
+
+- [Avaya Agent for Desktop - Avaya Agent for Desktop for Linux 64 bits (DEB package) ](https://support.avaya.com/support/en/download/1397315636959?productId=P1598)
