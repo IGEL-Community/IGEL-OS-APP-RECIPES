@@ -6,7 +6,7 @@
     "persistent": true
   },
   {
-    "path": "/var/www/html",
+    "path": "/var/www/html/igel",
     "permissions": "777",
     "persistent": true
   }
