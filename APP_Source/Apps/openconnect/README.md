@@ -7,3 +7,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - [OpenConnect VPN Web Site](https://www.infradead.org/openconnect/)
 
 - Included missing library `libpskc`
+
+**NOTE:** Assign direct app to directory / device. Once deployed, use command line / custom app.
+
+- [IGEL Community Docs: HOWTO VPN](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-VPN/)
