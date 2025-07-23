@@ -4,5 +4,10 @@
     "path": "/var/www/webdav",
     "permissions": "777",
     "persistent": true
+  },
+  {
+    "path": "/var/www/html",
+    "permissions": "777",
+    "persistent": true
   }
 ]
