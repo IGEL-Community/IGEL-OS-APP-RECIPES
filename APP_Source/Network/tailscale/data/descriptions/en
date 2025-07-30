@@ -1,1 +1,3 @@
-Tailscale is a zero-configuration VPN that creates a secure network between your devices. It uses WireGuard for encrypted point-to-point connections and works seamlessly behind firewalls and NATs.
+Tailscale is a zero-configuration VPN that creates a secure network between your devices.
+
+It uses WireGuard for encrypted point-to-point connections and works seamlessly behind firewalls and NATs.

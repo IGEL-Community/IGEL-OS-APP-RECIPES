@@ -1,9 +1,8 @@
 [
   {
     "path": "/var/lib/tailscale",
-    "user": "root",
-    "group": "root",
-    "perms": "755",
-    "persist": true
+    "owner": "root:root",
+    "permissions": "755",
+    "persistent": true
   }
 ]
