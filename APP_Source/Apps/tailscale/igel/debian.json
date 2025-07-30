@@ -1,0 +1,10 @@
+[
+  {
+    "package": "iptables",
+    "licenses": [
+      {
+          "name": "GPL-2.0-or-later"
+      }
+    ]    
+  }
+]

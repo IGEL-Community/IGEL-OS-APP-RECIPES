@@ -3,7 +3,7 @@
     "source": ".*",
     "destination": "",
     "owner": "",
-    "permissions": "",
+    "permissions": "644"
     "strip": true
   }
 ]

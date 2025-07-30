@@ -1,0 +1,6 @@
+[
+  { "source": "usr/bin/tailscale",  "destination": "/usr/bin/tailscale" },
+  { "source": "usr/sbin/tailscaled", "destination": "/usr/sbin/tailscaled" },
+  { "source": "lib/systemd/system/tailscaled.service", "destination": "/lib/systemd/system/tailscaled.service", "permissions": "644" },
+  { "source": "etc/default/tailscaled", "destination": "/etc/default/tailscaled", "permissions": "644" }
+]
