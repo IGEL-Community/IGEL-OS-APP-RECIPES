@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "source": "usr/bin/tailscale",
+    "destination": "/usr/bin/tailscale"
+  },
+  {
+    "source": "usr/sbin/tailscaled",
+    "destination": "/usr/sbin/tailscaled"
+  },
+  {
+    "source": "lib/systemd/system/tailscaled.service",
+    "destination": "/lib/systemd/system/tailscaled.service"
+  },
+  {
+    "source": "etc/default/tailscaled",
+    "destination": "/etc/default/tailscaled"
+  }
+]

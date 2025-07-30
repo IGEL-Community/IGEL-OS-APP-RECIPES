@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# Enable the tailscale service
-enable_system_service tailscale.service
+# Enable the tailscaled service
+enable_system_service tailscaled.service
