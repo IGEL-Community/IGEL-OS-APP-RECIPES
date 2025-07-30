@@ -1,14 +1,9 @@
 [
   {
-    "source": "usr/bin/tailscale",
-    "destination": "/usr/bin/tailscale"
-  },
-  {
-    "source": "usr/sbin/tailscaled",
-    "destination": "/usr/sbin/tailscaled"
-  },
-  {
-    "source": "etc/default/tailscaled",
-    "destination": "/etc/default/tailscaled"
+    "source": ".*",
+    "excludes": [
+      "usr/share/doc.*",
+      "usr/share/man.*"
+    ]
   }
 ]

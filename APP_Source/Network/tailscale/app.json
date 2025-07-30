@@ -1,20 +1,14 @@
 {
   "categories": [
-    "Network"
+    "Miscellaneous"
   ],
   "icons": {
     "app": "app.png",
     "monochrome": "monochrome.png"
   },
   "name": "tailscale",
-  "author": "The IGEL community",
+  "author": "The IGEL Community",
   "vendor": "Tailscale Inc.",
-  "rw_partition": {
-    "size": "small",
-    "flags": [
-      "compressed"
-    ]
-  },
   "release": "",
   "summary": {
     "en": "Tailscale VPN (Community)"
