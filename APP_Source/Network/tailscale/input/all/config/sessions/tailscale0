@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Tailscale session script
+#
+
+# Check if tailscaled is running
+if ! systemctl is-active --quiet tailscaled; then
+    echo "Starting tailscaled service..."
+    sudo systemctl start tailscaled
+    sleep 2
+fi
+
+# Check authentication status
+if tailscale status 2>&1 | grep -q "Logged out"; then
+    echo "Tailscale is not authenticated."
+    echo "Please run: sudo tailscale up"
+    echo "Or use an auth key: sudo tailscale up --authkey=YOUR_KEY"
+    read -p "Press Enter to continue..."
+else
+    echo "Tailscale is connected."
+    tailscale status
+    read -p "Press Enter to continue..."
+fi

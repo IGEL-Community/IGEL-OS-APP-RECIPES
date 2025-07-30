@@ -1,0 +1,11 @@
+{
+  "dirs": [
+    {
+      "path": "/var/lib/tailscale",
+      "user": "root",
+      "group": "root",
+      "perms": "755",
+      "persist": true
+    }
+  ]
+}
