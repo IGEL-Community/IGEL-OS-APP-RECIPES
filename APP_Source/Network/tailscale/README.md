@@ -12,6 +12,24 @@ Tailscale is a zero-configuration VPN that creates a secure network between your
 - For OS 12.5.0+: Compatibility layer for 12.0.x apps
 - Valid Tailscale auth key or interactive authentication
 
+## Build Steps
+
+1. Make sure you have IGEL OS 12.3.0 or later.
+2. Use the IGEL App Creator portal to create and sign your application for OS12.
+3. Deploy the application via UMS.
+
+## Version Bump Procedure
+
+- The technical version of the app is defined in the field `version` in `app.json`.
+- Follow [Semantic Versioning](https://semver.org/).
+- Update the version number in `app.json` before packaging.
+
+## Known Limitations
+
+- Requires IGEL OS 12.3.0 or later.
+- Compatibility layer for 12.0.x apps needed for OS 12.5.0+.
+- A valid Tailscale auth key or interactive authentication is required.
+
 ## Configuration
 
 The package includes:
