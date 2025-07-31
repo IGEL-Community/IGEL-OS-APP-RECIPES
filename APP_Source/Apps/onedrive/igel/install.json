@@ -4,5 +4,6 @@
     "excludes": [
       ""
     ]
+    "permissions": "644"
   }
 ]

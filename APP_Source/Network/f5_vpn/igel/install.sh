@@ -1,3 +1,6 @@
 #!/bin/bash
 # For root services:
 enable_system_service f5_vpn.service
+
+# Set proper permissions for systemd unit file
+chmod 644 /etc/systemd/system/f5_vpn.service

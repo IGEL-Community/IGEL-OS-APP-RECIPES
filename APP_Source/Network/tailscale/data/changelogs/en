@@ -1,0 +1,5 @@
+Version 1.78.1+1
+- Initial IGEL OS package
+- Based on Tailscale 1.78.1
+- Includes tailscale and tailscaled binaries
+- Persistent storage configured for /var/lib/tailscale

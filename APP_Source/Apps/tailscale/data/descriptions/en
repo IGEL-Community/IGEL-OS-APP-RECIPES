@@ -1,0 +1,3 @@
+Tailscale is a zero-configuration VPN.
+
+Tailscale creates a secure WireGuard network between your devices using OAuth2 authentication and automatic key management, making it the easiest way to securely connect your devices.

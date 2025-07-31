@@ -6,5 +6,6 @@
       "usr/share/doc",
       "usr/share/man"
     ]
+    "permissions": "644"
   }
 ]

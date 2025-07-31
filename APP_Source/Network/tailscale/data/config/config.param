@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profiles>
+  <profile>
+    <profile_id>10000</profile_id>
+    <profilename>tailscale</profilename>
+    <firmware>
+      <model>IGEL OS 12</model>
+      <version>12.3.0.100</version>
+    </firmware>
+    <description>Tailscale VPN</description>
+    <apps>
+      <instance>
+        <session_id>tailscale0</session_id>
+        <app_id>tailscale</app_id>
+        <session_name>Tailscale</session_name>
+        <icon>tailscale</icon>
+        <options>--use-authkey YOUR_AUTH_KEY</options>
+        <configured>true</configured>
+      </instance>
+    </apps>
+  </profile>
+</profiles>
