@@ -1,0 +1,14 @@
+<sessions>
+	<aliza_diacom%>
+        <name>
+            value=<AlizaMS>
+        </name>
+        <icon>
+            value=</services/aliza_diacom/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</aliza_diacom%>
+	<aliza_diacom0>
+	</aliza_diacom0>
+    node_action=<wm_postsetup>
+</sessions>
