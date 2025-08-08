@@ -2,9 +2,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Download rclone
 
-https://rclone.org/downloads/
+https://rclone.org
 
-rclone-v1.70.3-linux-amd64.zip
 
-- Note the version of the file
-- Rename file to `rclone-linux-amd64.zip`
+```bash linenums="1"
+wget https://downloads.rclone.org/rclone-current-linux-amd64.zip
+```
