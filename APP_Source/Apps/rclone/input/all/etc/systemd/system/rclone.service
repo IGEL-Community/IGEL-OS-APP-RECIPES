@@ -1,0 +1,5 @@
+[Unit]
+Description=rclone
+
+[Service]
+ExecStart=/bin/bash /etc/rclone/rclone-init.sh
