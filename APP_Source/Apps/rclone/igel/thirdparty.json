@@ -1,0 +1,10 @@
+[
+  {
+    "url": "file:///tmp/rclone-linux-amd64.zip",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  }
+]

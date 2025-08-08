@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/userhome/.config/rclone",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
