@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "aliza_diacom",
+  "author": "The IGEL community",
+  "vendor": "Aliza Medical Imaging",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Alizq Diacom Viewer (Community)"
+  },
+  "version": "1.9.10+1.0"
+}
