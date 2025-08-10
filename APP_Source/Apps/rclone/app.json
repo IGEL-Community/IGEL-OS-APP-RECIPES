@@ -6,7 +6,7 @@
     "app": "app.svg",
     "monochrome": "monochrome.svg"
   },
-  "name": "rclone_client",
+  "name": "client_rclone",
   "author": "The IGEL community",
   "vendor": "rclone",
   "rw_partition": {
