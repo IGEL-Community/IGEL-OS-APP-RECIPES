@@ -16,6 +16,7 @@ LOGGER="logger -it ${ACTION}"
 chown root ${APP_PATH}/opt/f5/vpn/svpn
 chmod 4755 ${APP_PATH}/opt/f5/vpn/svpn
 mkdir -p ${APP_PATH}/usr/local/lib/F5Networks/SSLVPN/var/run
+mkdir -p ${APP_PATH}/usr/local/bin
 
 cp -f ${APP_PATH}/opt/f5/vpn/com.f5.f5vpn.service /usr/share/dbus-1/services/
 setcap cap_kill+ep ${APP_PATH}/opt/f5/vpn/f5vpn
@@ -34,7 +35,8 @@ fi
 
 ln -sv ${APP_PATH}/opt/f5 /opt/f5
 
+ln -sv ${APP_PATH}/usr/local/bin/F5Networks /usr/local/bin/F5Networks
+
 echo "Finished" | $LOGGER
 
 EOF
-
