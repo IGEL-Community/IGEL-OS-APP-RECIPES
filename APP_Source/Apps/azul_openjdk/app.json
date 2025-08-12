@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "azul_openjdk",
+  "author": "The IGEL community",
+  "vendor": "Azul",
+  "release": "",
+  "summary": {
+    "en": "Azul Zulu OpenJDK (Community)"
+  },
+  "version": "21.44.17+1.1"
+}
