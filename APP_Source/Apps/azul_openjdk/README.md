@@ -14,7 +14,7 @@ zulu21.44.17-ca-jdk21.0.8-linux_x64.tar.gz
 - Update for the version of product
 
 ```bash linenums="1"
-eval JAVA_HOME=/services/azul_jdkfx/zulu21.44.17-ca-jdk21.0.8-linux_x64
-PATH=/services/azul_jdkfx/zulu21.44.17-ca-jdk21.0.8-linux_x64/bin:$PATH
+eval JAVA_HOME=/services/azul_openjdk/zulu21.44.17-ca-jdk21.0.8-linux_x64
+PATH=/services/azul_openjdk/zulu21.44.17-ca-jdk21.0.8-linux_x64/bin:$PATH
 java --version
 ```
