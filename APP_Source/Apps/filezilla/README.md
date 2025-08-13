@@ -9,6 +9,9 @@ FileZilla_3.69.3_x86_64-linux-gnu.tar.xz
 - Note the version of the file
 - Rename file to `FileZilla_x86_64-linux-gnu.tar.xz`
 
+**NOTE:** IGEL App Creator Portal does not support tar.xz format. Until this is fixed, you must uncompress and re-compress the file:
+
+
 ```bash linenums="1"
 mv FileZilla_*_x86_64-linux-gnu.tar.xz FileZilla_x86_64-linux-gnu.tar.xz && mkdir fz_tmp && tar xvf FileZilla_x86_64-linux-gnu.tar.xz --directory fz_tmp && cd fz_tmp && chmod -R 755 * && tar cjvf ../FileZilla_x86_64-linux-gnu.tar.bz2 * && cd .. && rm -rf fz_tmp
 ```
