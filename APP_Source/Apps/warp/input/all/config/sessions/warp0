@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#/services/warp/Warp-x64.AppImage --no-auto-update
+
+/services/warp/Warp-x64.AppImage
