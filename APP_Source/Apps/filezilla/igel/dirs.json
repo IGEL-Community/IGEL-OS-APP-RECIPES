@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/userhome/.config/filezilla",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

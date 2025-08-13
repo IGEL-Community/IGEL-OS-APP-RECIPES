@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/filezilla/FileZilla3/bin/filezilla
