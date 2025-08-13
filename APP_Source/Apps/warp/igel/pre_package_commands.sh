@@ -2,7 +2,7 @@
 
 mkdir -p "%root%/etc/warp"
 # Create corrected Warp desktop file
-cat <<"EOF" > "%root%/etc/warp/dev.warp.Warp.desktop << 'EOF'
+cat <<"EOF" > "%root%/etc/warp/dev.warp.Warp.desktop"
 [Desktop Entry]
 # The version of the desktop entry spec this conforms to.
 Version=1.0
