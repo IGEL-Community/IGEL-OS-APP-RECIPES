@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "filezilla",
+  "author": "The IGEL community",
+  "vendor": "FileZilla",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "FileZilla FTP Client (Community)"
+  },
+  "version": "3.69.3+1.1"
+}

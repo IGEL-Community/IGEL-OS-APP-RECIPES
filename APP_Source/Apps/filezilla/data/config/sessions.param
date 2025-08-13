@@ -1,0 +1,14 @@
+<sessions>
+	<filezilla%>
+        <name>
+            value=<FileZilla>
+        </name>
+        <icon>
+            value=</services/filezilla/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</filezilla%>
+	<filezilla0>
+	</filezilla0>
+    node_action=<wm_postsetup>
+</sessions>
