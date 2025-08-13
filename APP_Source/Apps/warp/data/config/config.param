@@ -1,0 +1,14 @@
+<sessions>
+	<warp%>
+        <name>
+            value=<Warp Terminal>
+        </name>
+        <icon>
+            value=</services/warp/.icons/app.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</warp%>
+	<warp0>
+	</warp0>
+    node_action=<wm_postsetup>
+</sessions>
