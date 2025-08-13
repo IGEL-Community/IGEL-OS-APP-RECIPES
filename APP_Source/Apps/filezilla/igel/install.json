@@ -1,5 +1,6 @@
 [
   {
-    "source": ".*"
+    "source": ".*",
+    "permissions": "755"
   }
 ]
