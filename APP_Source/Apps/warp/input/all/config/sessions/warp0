@@ -2,4 +2,4 @@
 
 #/services/warp/Warp-x64.AppImage --no-auto-update
 
-/services/warp/Warp-x64.AppImage
+xdg-mime default dev.warp.Warp.desktop x-scheme-handler/warp && /services/warp/Warp-x64.AppImage
