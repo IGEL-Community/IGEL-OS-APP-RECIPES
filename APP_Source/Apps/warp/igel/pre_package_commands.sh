@@ -42,7 +42,7 @@ LOGGER="logger -it ${ACTION}"
 
 ln -sv ${APP_PATH}/Warp-x64.AppImage /usr/bin/warp
 
-ln -sv /etc/warp/dev.warp.Warp.desktop /userhome/.local/share/applications/dev.warp.Warp.desktop
+ln -sv /etc/warp/dev.warp.Warp.desktop /usr/share/applications/dev.warp.Warp.desktop
 
 #xdg-mime default dev.warp.Warp.desktop x-scheme-handler/warp
 
