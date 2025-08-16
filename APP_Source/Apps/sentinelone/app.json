@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "sentinelone",
+  "author": "The IGEL community",
+  "vendor": "SentinelOne",
+  "release": "",
+  "summary": {
+    "en": "SentinelOne Agent (Community)"
+  },
+  "version": "25.1.3+6.1.3"
+}
