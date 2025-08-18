@@ -24,6 +24,7 @@ if [ ! -e /userhome/.config/Code/User/settings.json ]; then
 {
     "update.mode": "none"
 }
+chown -R user:users /userhome/.config/Code
 XEOF
 fi
 
