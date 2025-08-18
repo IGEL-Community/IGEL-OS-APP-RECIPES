@@ -78,7 +78,7 @@ rm -rf build_tar
 To copy the default config file into user home directory `/userhome/.config/onedrive`
 
 ```bash linenums="1"
-wget https://raw.githubusercontent.com/abraunegg/onedrive/master/config -O /userhome/.config/onedrive
+wget https://raw.githubusercontent.com/abraunegg/onedrive/master/config -O /userhome/.config/onedrive/config
 ```
 
 For the supported options see the usage link above for list of  command  line  options for the availability of a configuration key.
