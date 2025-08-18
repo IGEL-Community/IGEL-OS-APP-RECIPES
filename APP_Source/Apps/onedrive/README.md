@@ -24,7 +24,7 @@ set -x
 
 sudo apt install unzip -y
 
-sudo apt install -y build-essential libcurl4-openssl-dev libsqlite3-dev pkg-config git curl libnotify-dev
+sudo apt install -y build-essential libcurl4-openssl-dev libsqlite3-dev pkg-config git curl libnotify-dev libdbus-1-dev
 curl -fsS https://dlang.org/install.sh | bash -s dmd
 source ~/dlang/dmd-*/activate
 
