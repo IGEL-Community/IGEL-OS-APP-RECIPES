@@ -20,13 +20,14 @@ ln -sv /services/vscode_git/usr/share/code/bin/code /services/vscode_git/usr/bin
 #
 if [ ! -e /userhome/.config/Code/User/settings.json ]; then
   mkdir -p /userhome/.config/Code/User
+  chown -R user:users /userhome/.config/Code/User
   cat << "XEOF" > /userhome/.config/Code/User/settings.json
 {
     "update.mode": "none"
 }
 XEOF
 fi
-chown -R user:users /userhome/.config/Code
+chown -R user:users /userhome/.config/Code/User
 
 echo "Finished" | $LOGGER
 
