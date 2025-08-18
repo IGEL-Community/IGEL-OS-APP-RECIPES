@@ -31,3 +31,15 @@ mv endpoint-verification_*_amd64.deb endpoint-verification_amd64.deb
 #google-chrome-stable_138.0.7204.49-1_amd64.deb
 mv google-chrome-stable_*_amd64.deb google-chrome-stable_amd64.deb
 ```
+
+-----
+
+-----
+
+# How to Chromecast
+
+- Launch Google Chrome and open content to share
+
+- Click on three vertical dots on the right corner of the chrome browser to open up the menu.
+
+- Click on `Cast,save, and share` to start casting the video on the Chromecast device.
