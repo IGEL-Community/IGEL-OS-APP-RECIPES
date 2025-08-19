@@ -1,0 +1,10 @@
+[
+  {
+    "url": "file:///tmp/tailscale.deb",
+    "licenses": [
+      {
+        "name": "MPL-2.0"
+      }
+    ]
+  }
+]
