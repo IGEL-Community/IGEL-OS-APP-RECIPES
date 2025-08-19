@@ -3,7 +3,7 @@
     "url": "file:///tmp/tailscale.deb",
     "licenses": [
       {
-        "name": "MPL-2.0"
+        "name": "BSD-3-Clause"
       }
     ]
   }

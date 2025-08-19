@@ -9,9 +9,15 @@
   "name": "tailscale",
   "author": "The IGEL Community",
   "vendor": "Tailscale",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed"
+    ]
+  },
   "release": "",
   "summary": {
     "en": "Tailscale (Community)"
   },
-  "version": "1.86.2+1.2"
+  "version": "1.86.2+1.3"
 }

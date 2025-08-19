@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/var/lib/tailscale",
+    "permissions": "700",
+    "persistent": true
+  },
+  {
+    "path": "/var/run/tailscale",
+    "permissions": "755",
+    "persistent": false
+  }
+]
