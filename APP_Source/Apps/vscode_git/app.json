@@ -1,6 +1,6 @@
 {
   "name": "vscode_git",
-  "version": "1.103.1+1.4",
+  "version": "1.103.1+1.5",
   "release": "",
   "summary": {
     "en": "Visual Studio Code wth Git (Community)"
@@ -15,9 +15,6 @@
   "author": "IGEL Community",
   "vendor": "Microsoft Corporation",
   "rw_partition": {
-    "size": "large",
-    "flags": [
-      "compressed"
-    ]
+    "size": 2000000
   }
 }
