@@ -4,7 +4,7 @@
             value=<libreoffice>
         </name>
         <icon>
-            value=<libreoffice25.2-main>
+            value=<libreoffice25.8-main>
         </icon>
         extends_base=<sessions.base%>
 	</libreoffice%>
