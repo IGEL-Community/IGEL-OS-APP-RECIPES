@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/userhome/.local/share/PaperCutPrintDeployClient",
+    "permissions": "777",
+    "persistent": true
+  },
+  {
+    "path": "/opt/PaperCutPrintDeployClient/data/logs",
+    "permissions": "777",
+    "persistent": true
+  }
+]

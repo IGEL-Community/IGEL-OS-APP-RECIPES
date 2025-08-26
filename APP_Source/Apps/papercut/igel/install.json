@@ -1,0 +1,12 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "etc/systemd.*"
+    ],
+    "destination": "",
+    "owner": "",
+    "permissions": "755",
+    "strip": false
+  }
+]

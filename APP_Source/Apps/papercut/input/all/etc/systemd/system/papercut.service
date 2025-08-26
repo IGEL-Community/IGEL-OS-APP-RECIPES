@@ -1,0 +1,15 @@
+[Unit]
+Description=Automatically deploys printers through a server configuration
+ConditionFileIsExecutable=/services/papercut/opt/PaperCutPrintDeployClient/pc-print-deploy-client
+
+[Service]
+ExecStartPre=/bin/bash /etc/papercut/papercut-init.sh
+StartLimitInterval=5
+StartLimitBurst=10
+ExecStart=/services/papercut/opt/PaperCutPrintDeployClient/pc-print-deploy-client
+
+Restart=always
+RestartSec=120
+
+[Install]
+WantedBy=multi-user.target

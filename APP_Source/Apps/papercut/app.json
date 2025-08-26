@@ -1,0 +1,30 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "papercut",
+  "author": "The IGEL community",
+  "vendor": "PaperCut",
+  "rw_partition": {
+    "size": "medium"
+  },
+  "release": "",
+  "summary": {
+    "en": "PaperCut Print Deploy Client (Community)"
+  },
+  "version": "1.9.807+1.3",
+  "requires": [
+    {
+      "name": "java17",
+      "version": ">=17.0.15+1"
+    },
+    {
+      "name": "cups_printing",
+      "version": ">=1.2.2+1"
+    }
+  ]
+}
