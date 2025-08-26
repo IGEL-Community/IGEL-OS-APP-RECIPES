@@ -1,0 +1,14 @@
+<sessions>
+	<papercut%>
+        <name>
+            value=<PaperCut Print Deploy Client>
+        </name>
+        <icon>
+            value=</services/papercut/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</papercut%>
+	<papercut0>
+	</papercut0>
+    node_action=<wm_postsetup>
+</sessions>
