@@ -1,0 +1,11 @@
+[Unit]
+Description=VirtualHere Server
+After=network.target
+
+[Service]
+ExecStartPre=/bin/bash /etc/virtualhere_server/virtualhere_server-init.sh
+Type=forking
+ExecStart=/services/virtualhere_server/usr/bin/vhusbdx86_64 -b -c /wfs/virtualhere_usb_server_config.ini
+
+[Install]
+WantedBy=multi-user.target
