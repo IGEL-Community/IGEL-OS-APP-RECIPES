@@ -1,0 +1,9 @@
+[
+  {
+    "source": ".*",
+    "owner": "0:0",
+    "permissions": "755",
+    "destination": "/usr/bin",
+    "strip": false
+  }
+]

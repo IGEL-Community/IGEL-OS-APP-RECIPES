@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "virtualhere_server",
+  "author": "The IGEL Community",
+  "vendor": "VirtualHere",
+  "release": "",
+  "summary": {
+    "en": "VirtualHere Linux USB Server (Community)"
+  },
+  "version": "4.8.2+1.1"
+}
