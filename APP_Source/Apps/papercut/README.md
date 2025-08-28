@@ -6,8 +6,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 - Download deb file and rename to pc-print-deploy-client.deb
 
-- Current version - pc-print-deploy-client.172.16.3.129.deb
-
 - Java Runtime Environment needs to be installed - https://app.igel.com/java17
 
 # Need to update /wfs/papercut/config/client.conf.toml
