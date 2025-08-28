@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/userhome/.config/flameshot",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
