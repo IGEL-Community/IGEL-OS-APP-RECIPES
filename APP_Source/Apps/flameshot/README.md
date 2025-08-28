@@ -4,9 +4,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 - [Flameshot](https://flameshot.org/)
 
-- Obtain flameshot for Linux AppImage and zip it up
+- Obtain flameshot for Linux AppImage and zip it up - [Linux AppImage Download Link](https://flameshot.org/#download)
 
-```bash linenums="1"
-wget -O Flameshot.AppImage https://github.com/flameshot-org/flameshot/releases/download/v12.1.0/Flameshot-12.1.0.x86_64.AppImage
-zip Flameshot.AppImage.zip Flameshot.AppImage
-```
+- Rename file to `Flameshot.AppImage` and zip it into `Flameshot.AppImage.zip`
