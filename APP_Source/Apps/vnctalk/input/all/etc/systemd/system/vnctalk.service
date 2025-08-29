@@ -1,0 +1,5 @@
+[Unit]
+Description=VNCtalk
+
+[Service]
+ExecStart=/bin/bash /etc/vnctalk/vnctalk-init.sh

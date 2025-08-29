@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "vnctalk",
+  "author": "The IGEL community",
+  "vendor": " Virtual Network Consult AG",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "VNCtalk (Community)"
+  },
+  "version": "4.0.8+31523.1.1"
+}
