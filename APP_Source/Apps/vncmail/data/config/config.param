@@ -1,0 +1,14 @@
+<sessions>
+	<vncmail%>
+        <name>
+            value=<VNCmail>
+        </name>
+        <icon>
+            value=</services/vncmail/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</vncmail%>
+	<vncmail0>
+	</vncmail0>
+    node_action=<wm_postsetup>
+</sessions>

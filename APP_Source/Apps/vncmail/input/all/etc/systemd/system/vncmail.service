@@ -1,0 +1,5 @@
+[Unit]
+Description=VNCmail
+
+[Service]
+ExecStart=/bin/bash /etc/vncmail/vncmail-init.sh
