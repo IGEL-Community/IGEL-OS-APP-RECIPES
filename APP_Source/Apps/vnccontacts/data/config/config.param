@@ -1,0 +1,14 @@
+<sessions>
+	<vnccontacts%>
+        <name>
+            value=<VNCcontacts>
+        </name>
+        <icon>
+            value=</services/vnccontacts/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</vnccontacts%>
+	<vnccontacts0>
+	</vnccontacts0>
+    node_action=<wm_postsetup>
+</sessions>

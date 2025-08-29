@@ -1,0 +1,5 @@
+[Unit]
+Description=VNCcontacts
+
+[Service]
+ExecStart=/bin/bash /etc/vnccontacts/vnccontacts-init.sh

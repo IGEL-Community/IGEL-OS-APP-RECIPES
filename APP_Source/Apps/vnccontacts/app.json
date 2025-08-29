@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "vnccontacts",
+  "author": "The IGEL community",
+  "vendor": " Virtual Network Consult AG",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "VNCcontacts (Community)"
+  },
+  "version": "1.5.7+494.1.0"
+}
