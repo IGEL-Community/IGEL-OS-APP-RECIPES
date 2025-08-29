@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "simplescreenrecorder",
+  "author": "The IGEL community",
+  "vendor": "simplescreenrecorder Team",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "SimpleScreenRecorder (Community)"
+  },
+  "version": "0.4.4+1.1.3"
+}
