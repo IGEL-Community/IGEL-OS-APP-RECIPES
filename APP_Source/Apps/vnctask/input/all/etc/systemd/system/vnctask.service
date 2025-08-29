@@ -1,0 +1,5 @@
+[Unit]
+Description=VNCtask
+
+[Service]
+ExecStart=/bin/bash /etc/vnctask/vnctask-init.sh

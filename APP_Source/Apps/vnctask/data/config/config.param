@@ -1,0 +1,14 @@
+<sessions>
+	<vnctask%>
+        <name>
+            value=<VNCtask>
+        </name>
+        <icon>
+            value=</services/vnctask/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</vnctask%>
+	<vnctask0>
+	</vnctask0>
+    node_action=<wm_postsetup>
+</sessions>

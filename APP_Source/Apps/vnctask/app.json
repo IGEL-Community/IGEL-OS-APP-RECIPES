@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "vnctask",
+  "author": "The IGEL community",
+  "vendor": " Virtual Network Consult AG",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "VNCtask (Community)"
+  },
+  "version": "1.6.8+331.1.0"
+}
