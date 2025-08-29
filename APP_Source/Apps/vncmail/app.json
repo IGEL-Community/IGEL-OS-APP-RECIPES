@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "vncmail",
+  "author": "The IGEL community",
+  "vendor": " Virtual Network Consult AG",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "VNCmail (Community)"
+  },
+  "version": "3.0.5+7686.1.0"
+}
