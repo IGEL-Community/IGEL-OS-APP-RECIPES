@@ -3,7 +3,7 @@
     "url": "file:///tmp/simplescreenrecorder.tar.bz2",
     "licenses": [
       {
-        "name": "MPL-2.0"
+        "name": "GPL-3.0-only"
       }
     ]
   }
