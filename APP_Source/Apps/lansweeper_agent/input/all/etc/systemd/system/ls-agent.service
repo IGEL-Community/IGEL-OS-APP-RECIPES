@@ -1,0 +1,13 @@
+[Unit]
+Description=Lansweeper Agent
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/services/lansweeper_agent/opt/LansweeperAgent/LSAgent
+WorkingDirectory=/services/lansweeper_agent/opt/LansweeperAgent
+SyslogIdentifier=LsAgent
+
+[Install]
+WantedBy=multi-user.target
