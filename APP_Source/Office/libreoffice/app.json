@@ -10,7 +10,7 @@
   "author": "The IGEL community",
   "vendor": "Libreoffice",
   "rw_partition": {
-    "size": "medium",
+    "size": "large",
     "flags": [
       "compressed"
     ]
@@ -19,5 +19,5 @@
   "summary": {
     "en": "LibreOffice (Community)"
   },
-  "version": "25.8.0+1.0"
+  "version": "25.8.1+1.0"
 }
