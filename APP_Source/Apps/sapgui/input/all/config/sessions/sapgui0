@@ -1,3 +1,4 @@
 #!/bin/bash
 
-/services/sapgui/opt/SAPClients/SAPGUI7.80rev3/bin/guilogon
+#/services/sapgui/opt/SAPClients/SAPGUI7.80rev3/bin/guilogon
+/services/sapgui/opt/SAPClients/*/bin/guilogon
