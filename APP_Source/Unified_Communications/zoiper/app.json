@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "zoiper",
+  "author": "The IGEL community",
+  "vendor": "Zoiper",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Zoiper (Community)"
+  },
+  "version": "5.6.10+1.3"
+}
