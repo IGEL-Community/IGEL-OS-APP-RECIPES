@@ -1,0 +1,14 @@
+<sessions>
+	<zoiper%>
+        <name>
+            value=<Zoiper>
+        </name>
+        <icon>
+            value=</services/zoiper/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</zoiper%>
+	<zoiper0>
+	</zoiper0>
+    node_action=<wm_postsetup>
+</sessions>

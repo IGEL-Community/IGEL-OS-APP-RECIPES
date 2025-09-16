@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/zoiper/usr/bin/zoiper5
