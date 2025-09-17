@@ -1,0 +1,29 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "sonicwall_netextender",
+  "author": "The IGEL Community",
+  "vendor": "SonicWall",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "SonicWall Netextender (Community)"
+  },
+  "version": "10.3.0+21.1.4",
+  "requires": [
+    {
+      "name": "azul_openjdk",
+      "version": ">=21.44.17+1.1"
+    }
+  ]
+}

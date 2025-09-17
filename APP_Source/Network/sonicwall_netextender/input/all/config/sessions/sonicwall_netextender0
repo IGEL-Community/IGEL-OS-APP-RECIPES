@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+cd /services/azul_openjdk/zulu*
+eval JAVA_HOME=$(pwd)
+PATH=$JAVA_HOME/bin:$PATH
+
+/services/sonicwall_netextender/usr/local/netextender/NetExtender_webkit2_41

@@ -1,0 +1,8 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "usr/local/netextender/neservice"
+    ]
+  }
+]

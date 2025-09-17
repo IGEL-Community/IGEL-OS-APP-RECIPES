@@ -1,0 +1,14 @@
+<sessions>
+	<sonicwall_netextender%>
+        <name>
+            value=<SonicWall Netextender>
+        </name>
+        <icon>
+            value=</services/sonicwall_netextender/usr/local/netextender/nx-icon.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</sonicwall_netextender%>
+	<sonicwall_netextender0>
+	</sonicwall_netextender0>
+    node_action=<wm_postsetup>
+</sessions>
