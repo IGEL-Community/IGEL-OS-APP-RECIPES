@@ -1,0 +1,13 @@
+[Unit]
+Description=SonicWall NetExtender Service
+
+[Service]
+ExecStartPre=/bin/bash /etc/sonicwall_netextender/sonicwall_netextender-init.sh
+PIDFile=/var/run/NEService.pid
+ExecStartPre=/bin/rm -f /var/run/NEService.pid
+ExecStart=/services/sonicwall_netextender/usr/local/netextender/NEService
+Restart=on-failure
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
