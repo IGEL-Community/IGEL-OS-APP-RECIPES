@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/freecad/FreeCAD*.AppImage
