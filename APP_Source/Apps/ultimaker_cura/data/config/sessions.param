@@ -1,0 +1,14 @@
+<sessions>
+	<ultimaker_cura%>
+        <name>
+            value=<UltiMaker Cura>
+        </name>
+        <icon>
+            value=</services/ultimaker_cura/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</ultimaker_cura%>
+	<ultimaker_cura0>
+	</ultimaker_cura0>
+    node_action=<wm_postsetup>
+</sessions>
