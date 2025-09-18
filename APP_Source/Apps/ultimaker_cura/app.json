@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "ultimaker_cura",
+  "author": "The IGEL community",
+  "vendor": "ultimaker.com",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "UltiMaker Cura (Community)"
+  },
+  "version": "5.10.2+1.0"
+}
