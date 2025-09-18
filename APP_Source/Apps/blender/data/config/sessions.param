@@ -1,0 +1,14 @@
+<sessions>
+	<blender%>
+        <name>
+            value=<blender>
+        </name>
+        <icon>
+            value=</services/blender/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</blender%>
+	<blender0>
+	</blender0>
+    node_action=<wm_postsetup>
+</sessions>
