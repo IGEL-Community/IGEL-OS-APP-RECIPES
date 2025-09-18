@@ -1,0 +1,14 @@
+<sessions>
+	<freecad%>
+        <name>
+            value=<FreeCAD>
+        </name>
+        <icon>
+            value=</services/freecad/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</freecad%>
+	<freecad0>
+	</freecad0>
+    node_action=<wm_postsetup>
+</sessions>
