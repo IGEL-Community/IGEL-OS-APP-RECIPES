@@ -31,8 +31,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class EdgeTest {
     public static void main(String[] args) {
-        // Optional: set the path to msedgedriver manually if not in PATH
-        // System.setProperty("webdriver.edge.driver", "C:\\path\\to\\msedgedriver.exe");
 
         // 1. Launch Edge browser
         WebDriver driver = new EdgeDriver();
