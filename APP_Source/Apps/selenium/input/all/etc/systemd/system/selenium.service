@@ -1,0 +1,8 @@
+[Unit]
+Description=Selenium Web Browser Automation
+
+[Service]
+ExecStart=/bin/bash /etc/selenium/selenium-init.sh
+
+[Install]
+WantedBy=multi-user.target
