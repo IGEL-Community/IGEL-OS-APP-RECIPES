@@ -1,0 +1,29 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "selenium",
+  "author": "The IGEL Community",
+  "vendor": "Selenium",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Selenium Web Browser Automation (Community)"
+  },
+  "version": "4.36.0+1.0",
+  "requires": [
+    {
+      "name": "azul_openjdk",
+      "version": ">=21.44.17+1.1"
+    }
+  ]
+}
