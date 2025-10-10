@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "ringcentral",
+  "author": "The IGEL community",
+  "vendor": "RingCentral",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "RingCentral Embeddable (Community)"
+  },
+  "version": "0.4.3+1.3"
+}

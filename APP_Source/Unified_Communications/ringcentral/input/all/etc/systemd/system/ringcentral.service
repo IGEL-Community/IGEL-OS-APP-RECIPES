@@ -1,0 +1,5 @@
+[Unit]
+Description=ringcentral
+
+[Service]
+ExecStart=/bin/bash /etc/ringcentral/ringcentral-init.sh
