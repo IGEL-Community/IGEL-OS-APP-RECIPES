@@ -1,0 +1,45 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": ["base"]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "Cisco Secure Client",
+    "childrenIds": ["config", "sessions"]
+  },
+  "config": {
+    "id": "config",
+    "title": "Configuration",
+    "nlsResourceId": "config.label",
+    "parentId": "base",
+    "elements": {
+      "0": {
+        "title": "Configuration",
+        "nlsResourceId": "config.label",
+        "type": "label"
+      },
+      "1": {
+        "paramId": "app.cisco_secure_client.config.profile_dir",
+        "type": "generic"
+      }
+    }
+  },
+  "sessions": {
+    "id": "sessions",
+    "parentId": "base",
+    "nlsResourceId": "sessions.label",
+    "title": "Session",
+    "instancePage": true,
+    "fixInstanceId": 0,
+    "elements": {
+      "0": {
+        "type": "sessionPage",
+        "paramId": "app.cisco_secure_client.sessions.cisco_secure_client",
+        "instancePageId": "sessions.genericInstancePage"
+      }
+    }
+  }
+}
