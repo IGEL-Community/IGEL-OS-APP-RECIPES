@@ -1,0 +1,14 @@
+{
+    "config.label": {
+        "de": "Einstellungen",
+        "en": "Settings"
+    },
+    "sessions.label": {
+        "de": "Sitzung",
+        "en": "Session"
+    },
+    "title": {
+        "de": "Cisco Secure Client",
+        "en": "Cisco Secure Client"
+    }
+}

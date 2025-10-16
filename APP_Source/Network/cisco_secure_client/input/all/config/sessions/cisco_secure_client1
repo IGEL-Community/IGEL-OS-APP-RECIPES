@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/cisco_secure_client/opt/cisco/secureclient/dart/dartui

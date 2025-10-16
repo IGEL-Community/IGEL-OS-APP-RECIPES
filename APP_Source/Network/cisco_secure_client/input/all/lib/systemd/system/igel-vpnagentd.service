@@ -1,0 +1,19 @@
+[Unit]
+Description=Cisco Secure Client - AnyConnect VPN Agent
+
+After=igel-network-online.target
+After=igel-cisco-secure-client-watcher.service
+After=igel-cisco-secure-client-config.service
+Requires=igel-cisco-secure-client-config.service
+
+ConditionFileIsExecutable=/services/cisco_secure_client/opt/cisco/secureclient/bin/load_tun.sh
+ConditionFileIsExecutable=/services/cisco_secure_client/opt/cisco/secureclient/bin/vpnagentd
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStartPre=/services/cisco_secure_client/opt/cisco/secureclient/bin/load_tun.sh
+ExecStart=/services/cisco_secure_client/opt/cisco/secureclient/bin/vpnagentd -execv_instance
+ExecReload=/bin/kill -HUP $MAINPID
+PIDFile=/var/run/vpnagentd.pid
+KillMode=process

@@ -1,0 +1,25 @@
+<sessions>
+	<cisco_secure_client0>
+		<name_localized>
+			displayname[de_de]=<Cisco Secure Client>
+		</name_localized>
+	</cisco_secure_client0>
+	<cisco_secure_client1>
+		<name_localized>
+			displayname[de_de]=<Cisco Secure Client DART>
+		</name_localized>
+	</cisco_secure_client1>
+</sessions>
+<config>
+	<profile_dir>
+		displayname[es_es]=<Directorio del perfil>
+		displayname[nl_nl]=<Profielmap>
+		displayname[fr_fr]=<Répertoire de profil>
+		displayname[de_de]=<Profil -Verzeichnis>
+		displayname[zh_cn]=<配置文件目录>
+		displayname[it_it]=<Directory profilo>
+		displayname[zh_hk]=<設定檔目錄>
+		displayname[ja_jp]=<プロファイル ディレクトリ>
+		tooltip[de_de]=<Pfad zum Profilverzeichnis des Cisco Secure Client. Alle Profile in diesem Verzeichnis werden hinzugefügt.>
+	</profile_dir>
+</config>

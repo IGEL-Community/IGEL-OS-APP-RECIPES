@@ -1,0 +1,12 @@
+[Unit]
+Description=IGEL - Watch directories, needed to configure Cisco Secure Client
+
+After=igel-network-online.target
+
+ConditionFileIsExecutable=/services/cisco_secure_client/config/bin/igel-cisco-secure-client-watcher.py
+
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=/services/cisco_secure_client/config/bin/igel-cisco-secure-client-watcher.py

@@ -1,0 +1,20 @@
+[
+  {
+    "path": "/userhome/.vpn",
+    "persistent": true,
+    "owner": "777:100",
+    "permissions": "755"
+  },
+  {
+    "path": "/userhome/.cisco/secureclient/log/",
+    "persistent": true,
+    "owner": "777:100",
+    "permissions": "755"
+  },
+  {
+    "path": "/userhome/.cisco/iseposture/log/",
+    "persistent": true,
+    "owner": "777:100",
+    "permissions": "755"
+  }
+]

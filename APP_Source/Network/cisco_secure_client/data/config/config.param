@@ -1,0 +1,43 @@
+<sessions>
+	<cisco_secure_client%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</cisco_secure_client%>
+  <cisco_secure_client0>
+		<name_localized>
+			displayname[en_us]=<Cisco Secure Client>
+		</name_localized>
+		<icon>
+			value=</services/cisco_secure_client/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </cisco_secure_client0>
+  <cisco_secure_client1>
+		<name_localized>
+			displayname[en_us]=<Cisco Secure Client DART>
+		</name_localized>
+		<icon>
+			value=</services/cisco_secure_client/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </cisco_secure_client1>
+</sessions>
+<config>
+	<profile_dir>
+		value=</tmp/Downloads>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Profile directory>
+		tooltip[en_us]=<Path to the Cisco Secure Client profile directory. All profiles in this directory will be added.>
+		node_action=<systemctl restart igel-cisco-secure-client-watcher.service>
+	</profile_dir>
+</config>
+<config_schema_version>
+	value=<1>
+	type=<integer>
+	runtime=<false>
+</config_schema_version>

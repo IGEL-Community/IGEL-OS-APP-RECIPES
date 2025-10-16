@@ -1,0 +1,29 @@
+[
+  {
+    "url": "file:///tmp/cisco-secure-client-linux64-predeploy-k9.tar.gz",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/SecureClient/cisco-secure-client-vpn_amd64.deb",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/SecureClient/cisco-secure-client-dart_amd64.deb",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  }
+]

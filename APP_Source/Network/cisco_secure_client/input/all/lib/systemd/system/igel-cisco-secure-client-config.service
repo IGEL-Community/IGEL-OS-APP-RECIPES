@@ -1,0 +1,17 @@
+[Unit]
+Description=IGEL - Configure Cisco Secure Client
+
+After=igel-network-online.target
+After=igel-cisco-secure-client-watcher.service
+Requires=igel-cisco-secure-client-watcher.service
+
+ConditionFileIsExecutable=/services/cisco_secure_client/config/bin/igel-cisco-secure-client-prepare.sh
+ConditionFileIsExecutable=/services/cisco_secure_client/config/bin/igel-cisco-secure-client-config.py
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Restart=on-failure
+ExecStartPre=/bin/bash /etc/cisco_secure_client/cisco_secure_client-init.sh
+ExecStart=/services/cisco_secure_client/config/bin/igel-cisco-secure-client-config.py
+ExecStartPost=/services/cisco_secure_client/config/bin/igel-cisco-secure-client-prepare.sh

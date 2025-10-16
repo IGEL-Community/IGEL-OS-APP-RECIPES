@@ -1,0 +1,32 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "etc/.*",
+      "lib/systemd/system/vpnagentd.service",
+      "cisco-secure-client-linux64-5.1.12.146/.*"
+    ],
+    "strip": false
+  },
+  {
+    "source": "cisco-secure-client-linux64-5.1.12.146/iseposture/.*",
+    "excludes": [
+      "cisco-secure-client-linux64-5.1.12.146/iseposture/iseposture_install.sh",
+      "cisco-secure-client-linux64-5.1.12.146/iseposture/bin/iseposture_uninstall.sh"
+    ],
+    "destination": "/opt/cisco/secureclient",
+    "permissions": "755",
+    "strip": false
+  },
+  {
+    "source": "cisco-secure-client-linux64-5.1.12.146/posture/.*",
+    "excludes": [
+      "cisco-secure-client-linux64-5.1.12.146/posture/posture_install.sh",
+      "cisco-secure-client-linux64-5.1.12.146/posture/bin/posture_uninstall.sh",
+      "cisco-secure-client-linux64-5.1.12.146/posture/license.txt"
+    ],
+    "destination": "/opt/cisco/secureclient",
+    "permissions": "755",
+    "strip": false
+  }
+]
