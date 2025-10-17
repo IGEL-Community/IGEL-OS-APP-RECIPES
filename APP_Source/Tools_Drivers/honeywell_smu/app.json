@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "honeywell_smu",
+  "author": "The IGEL Community",
+  "vendor": "Honeywell",
+  "release": "",
+  "summary": {
+    "en": "Honeywell SMU (Community)"
+  },
+  "version": "1.0.6+1.0"
+}
