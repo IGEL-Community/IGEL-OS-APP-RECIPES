@@ -21,6 +21,6 @@ The key features of Scanner Management Utility are:
 
 ```bash linenums="1"
 cd /services/honeywell_smu
-LD_LIBRARY_PATH=/services/honeywell_smu/openssl
+export LD_LIBRARY_PATH=/services/honeywell_smu/openssl
 ./smu /v
 ```
