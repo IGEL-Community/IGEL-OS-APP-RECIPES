@@ -1,0 +1,14 @@
+<sessions>
+	<ia_vision%>
+        <name>
+            value=<Vision>
+        </name>
+        <icon>
+            value=</services/ia_vision/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</ia_vision%>
+	<ia_vision0>
+	</ia_vision0>
+    node_action=<wm_postsetup>
+</sessions>
