@@ -2,6 +2,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Honeywell SMU
 
+The Honeywell command line Scanner Management Utility (SMU) assists with the staging, deployment, and management of barcode scanners.
+
+The key features of Scanner Management Utility are:
+
+- Firmware updates
+- Configuration updates
+- Golden image and sending end device model specific commands
+- Details of available features and work flows
+
 - Download SMU_64_bit_VERSION.zip and rename to `SMU_64_bit.zip`
 
 # Steps to run SMU
