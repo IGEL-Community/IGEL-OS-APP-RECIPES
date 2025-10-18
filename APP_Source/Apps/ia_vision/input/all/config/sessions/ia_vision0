@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/ia_vision/visionclientlauncher/visionclientlauncher.sh

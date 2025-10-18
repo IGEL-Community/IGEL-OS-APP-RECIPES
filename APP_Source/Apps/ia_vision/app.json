@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "ia_vision",
+  "author": "The IGEL community",
+  "vendor": "Inductive Automation",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Inductive Automation Vision (Community)"
+  },
+  "version": "8.3.0+1.1"
+}

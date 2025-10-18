@@ -1,0 +1,5 @@
+[Unit]
+Description=Inductive Automation Vision
+
+[Service]
+ExecStart=/bin/bash /etc/ia_vision/ia_vision-init.sh
