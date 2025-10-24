@@ -1,0 +1,5 @@
+[Unit]
+Description=Brother Scanner brscan4
+
+[Service]
+ExecStart=/bin/bash /etc/brother_scanner_brscan4/brother_scanner_brscan4-init.sh
