@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "brother_scanner_brscan4",
+  "author": "The IGEL community",
+  "vendor": "Brother",
+  "release": "",
+  "summary": {
+    "en": "Brother Scanner brscan4 (Community)"
+  },
+  "version": "0.4.11+1.1.2"
+}
