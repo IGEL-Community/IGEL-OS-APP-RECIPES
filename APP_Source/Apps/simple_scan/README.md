@@ -3,3 +3,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 # Simple-Scan
 
 Simple Scan is a user friendly scan application
+
+**Note:** Requires CUPs app and will install if not already installed
