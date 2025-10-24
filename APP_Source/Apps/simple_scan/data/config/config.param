@@ -1,0 +1,14 @@
+<sessions>
+	<simple_scan%>
+        <name>
+            value=<Simple-Scan>
+        </name>
+        <icon>
+            value=</services/simple_scan/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</simple_scan%>
+	<simple_scan0>
+	</simple_scan0>
+    node_action=<wm_postsetup>
+</sessions>

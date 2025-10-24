@@ -1,0 +1,11 @@
+[
+  {
+    "package": "simple-scan"
+  },
+  {
+    "package": "libgusb2"
+  },
+  {
+    "package": "libpackagekit-glib2-18"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "simple_scan",
+  "author": "The IGEL community",
+  "vendor": "Simple Scan Team",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Simple Scan (Community)"
+  },
+  "version": "42.5.0+1.0"
+}
