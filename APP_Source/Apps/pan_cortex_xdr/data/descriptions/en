@@ -1,0 +1,3 @@
+Palo Alto Networks Cortex XDR Collector
+
+Palo Alto Networks Cortex XDR Collector is a key component within Cortex XDR, Palo Alto Networks’ extended detection and response (XDR) platform. Its main purpose is to collect, normalize, and forward telemetry data from various sources to the Cortex Data Lake (CDL) or directly to Cortex XDR for analytics and threat detection.

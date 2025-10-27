@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/var/collected",
+    "persistent": true,
+    "owner": "0:0",
+    "permissions": "755"
+  },
+  {
+    "path": "/etc/panw",
+    "persistent": true,
+    "owner": "0:0",
+    "permissions": "755"
+  }
+]
