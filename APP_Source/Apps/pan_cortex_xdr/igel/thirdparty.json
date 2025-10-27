@@ -1,0 +1,20 @@
+[
+  {
+    "url": "file:///tmp/collector.deb",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/collector.conf.zip",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  }
+]

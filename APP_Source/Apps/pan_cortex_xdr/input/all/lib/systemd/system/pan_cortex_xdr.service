@@ -1,0 +1,19 @@
+[Unit]
+Description=Palo Alto Networks Cortex XDR Collector
+Documentation=https://www.paloaltonetworks.com/cortex
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=on-failure
+WorkingDirectory=/services/pan_cortex_xdr/opt/paloaltonetworks/xdr-collector
+RuntimeDirectory=xdr-collector
+RuntimeDirectoryMode=0750
+ExecStartPre=/bin/bash /services/pan_cortex_xdr/etc/pan_cortex_xdr/pan_cortex_xdr-init.sh
+ExecStart=/services/pan_cortex_xdr/opt/paloaltonetworks/xdr-collector/bin/xcd
+
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

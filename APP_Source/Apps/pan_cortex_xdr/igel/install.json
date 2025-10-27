@@ -1,0 +1,10 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "etc/.*",
+      "lib/.*"
+    ],
+    "strip": false
+  }
+]

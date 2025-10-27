@@ -1,0 +1,20 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "pan_cortex_xdr",
+  "author": "The IGEL community",
+  "vendor": "Palo Alto Networks",
+  "rw_partition": {
+    "size": "medium"
+  },
+  "release": "",
+  "summary": {
+    "en": "Palo Alto Networks Cortex XDR Collector (Community)"
+  },
+  "version": "1.5.1+1950.1.5"
+}
