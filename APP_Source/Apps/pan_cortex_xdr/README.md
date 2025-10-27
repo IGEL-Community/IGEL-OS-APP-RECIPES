@@ -11,6 +11,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 --elb-addr https://distributions.traps.paloaltonetworks.com/
 ```
 
+- Zip collector.conf file into `collector.conf.zip`
+
 - Version tested with: collector-1.5.1.1950.deb
 
 -----
