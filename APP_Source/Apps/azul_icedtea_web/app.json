@@ -1,0 +1,30 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "azul_icedtea_web",
+  "author": "The IGEL community",
+  "vendor": "Azul",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Azul IcedTea-Web (Community)"
+  },
+  "version": "1.8.8+28.1.1",
+  "requires": [
+    {
+      "name": "java17",
+      "version": ">=17.0.16+1"
+    }
+  ]
+}
