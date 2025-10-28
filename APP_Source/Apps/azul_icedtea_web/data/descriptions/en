@@ -1,0 +1,5 @@
+Azul IcedTea-Web
+
+Azul IcedTea-Web - IcedTea-Web as a Solution to Replace Java Web Start
+
+IcedTea-Web is an opensource reimplementation of the Java Web Start technology, released under the GPL with Classpath Exception. It provides the most commonly used features of Java Web Start and the JNLP standard, so that users can continue running applications based on Java Web Start and JNLP without any change. IcedTea-Web follows the JNLP-specification defined in JSR-56.
