@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=PaperCut Print Deploy Client
+Comment=Automatically deploys printers through a server configuration
+Exec=/services/papercut/opt/PaperCutPrintDeployClient/initialise.sh
+Icon=/services/papercut/opt/PaperCutPrintDeployClient/desktop.svg
+Terminal=false
+Type=Application
+StartupWMClass=pc-webview
+Categories=Utility;Application;
