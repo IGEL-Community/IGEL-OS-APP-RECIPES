@@ -33,3 +33,45 @@ scanimage -d escl:http://10.0.0.2:80 --format=png --mode Color --resolution 600 
 ```bash linenums="1"
 gpicview igel-image.png
 ```
+
+## List options for Brother MFC-L2750DW
+
+```bash linenums="1"
+scanimage -d escl:http://10.0.0.2:80 --help
+```
+
+```man linenums="1"
+Options specific to device `escl:http://10.0.0.2:80':
+  Scan mode:
+    --mode Lineart|Gray|Color [Lineart]
+        Selects the scan mode (e.g., lineart, monochrome, or color).
+    --resolution 100|200|300|600dpi [100]
+        Sets the resolution of the scanned image.
+    --source Flatbed|ADF|ADF Duplex [Flatbed]
+        Selects the scan source (such as a document-feeder).
+  Geometry:
+    -l 0..210.481mm [0]
+        Top-left x position of scan area.
+    -t 0..291.507mm [0]
+        Top-left y position of scan area.
+    -x 5.41866..215.9mm [215.9]
+        Width of scan-area.
+    -y 5.41866..296.926mm [296.926]
+        Height of scan-area.
+  Enhancement:
+    --preview[=(yes|no)] [no]
+        Request a preview-quality scan.
+    --preview-in-gray[=(yes|no)] [no]
+        Request that all previews are done in monochrome mode.  On a
+        three-pass scanner this cuts down the number of passes to one and on a
+        one-pass scanner, it reduces the memory requirements and scan-time of
+        the preview.
+    --brightness 296278272..32767 (in steps of -462015426) [inactive]
+        Controls the brightness of the acquired image.
+    --contrast 32612..-422329373 (in steps of 32612) [inactive]
+        Controls the contrast of the acquired image.
+    --sharpen -468633672..22033 (in steps of 296278272) [inactive]
+        Set sharpen value.
+    --threshold 32767..-468632528 (in steps of 22033) [inactive]
+        Select minimum-brightness to get a white point
+```
