@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "sane_debug_tools",
+  "author": "The IGEL community",
+  "vendor": "SANE Community https://www.sane-project.org/intro.html",
+  "release": "",
+  "summary": {
+    "en": "SANE (Community)"
+  },
+  "version": "1.1.1+1.0"
+}
