@@ -1,0 +1,10 @@
+[
+  {
+    "url": "file:///tmp/sane.tar.bz2",
+    "licenses": [
+      {
+        "name": "GPL-2.0-or-later"
+      }
+    ]
+  }
+]
