@@ -13,7 +13,7 @@
   "summary": {
     "en": "RingCentral Horizon VDI Plugin (Community)"
   },
-  "version": "25.2.30+1.3",
+  "version": "25.2.30+1.4",
   "requires": [
     {
       "name": "horizon",
