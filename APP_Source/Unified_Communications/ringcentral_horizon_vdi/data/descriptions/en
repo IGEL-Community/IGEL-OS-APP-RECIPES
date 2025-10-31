@@ -1,0 +1,13 @@
+RingCentral_Horizon_VDI
+
+RingCentral_Horizon_VDI - Using the Omnissa VDI integration in the RingCentral app Omnissa media redirection integrates with desktop and web versions of the RingCentral app and RingCX in the RingCentral app to improve audio quality during phone calls using an Omnissa Virtual Desktop Infrastructure (VDI).
+
+Important: To optimize media for the best call quality in the Omnissa VDI environment, avoid running multiple RingCentral apps at the same time.
+
+Don’t use these apps simultaneously:
+
+- RingCentral app (desktop or web)
+- RingCX in the RingCentral app (desktop or web)
+- RingCentral for Teams desktop plugin (desktop or web)
+
+Running more than one app can reduce call quality. For the best experience, make sure only one instance of any app is active per user on your Omnissa Virtual Machine (VM).
