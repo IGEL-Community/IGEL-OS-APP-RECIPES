@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "ringcentral_horizon_vdi",
+  "author": "The IGEL community",
+  "vendor": "RingCentral",
+  "release": "",
+  "summary": {
+    "en": "RingCentral Horizon VDI Plugin (Community)"
+  },
+  "version": "25.2.30+1.3",
+  "requires": [
+    {
+      "name": "horizon",
+      "version": ">=25.6.0+1"
+    }
+  ]
+}

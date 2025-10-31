@@ -1,0 +1,5 @@
+[Unit]
+Description=RingCentral Horizon VDI Plugin
+
+[Service]
+ExecStart=/bin/bash /etc/ringcentral_horizon_vdi/ringcentral_horizon_vdi-init.sh
