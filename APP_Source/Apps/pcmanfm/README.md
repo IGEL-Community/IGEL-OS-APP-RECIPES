@@ -45,3 +45,17 @@ Profiles=profile-zero;
 [X-Action-Profile profile-zero]
 Exec=/usr/bin/gpicview %f
 ```
+
+- Uncompress file: `uncompress.desktop
+
+```desktop
+[Desktop Entry]
+Type=Action
+Name=Unzip Here
+Icon=package-x-generic
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=application/zip;
+Exec=/usr/bin/unzip -o %f -d %d
+```
