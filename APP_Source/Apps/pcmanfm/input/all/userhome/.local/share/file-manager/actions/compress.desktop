@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Action
+Name=Compress to ZIP
+Icon=package-x-generic
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=inode/directory;application/x-directory;
+Exec=/usr/bin/zip -r %f.zip %f
