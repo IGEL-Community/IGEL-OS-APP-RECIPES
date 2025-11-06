@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Action
+Name=View Image
+Icon=utilities-terminal
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Exec=/usr/bin/gpicview %f

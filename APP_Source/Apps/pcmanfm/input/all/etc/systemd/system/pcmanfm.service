@@ -1,0 +1,5 @@
+[Unit]
+Description=PCmanFM
+
+[Service]
+ExecStart=chmod -R 755 /services/pcmanfm

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Action
+Name=Open Terminal Here
+Icon=utilities-terminal
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Exec=/usr/bin/xfce4-terminal -T %f --geometry 90x38 --working-directory=%f

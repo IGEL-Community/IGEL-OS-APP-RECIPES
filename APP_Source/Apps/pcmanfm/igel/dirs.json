@@ -10,11 +10,6 @@
       "owner": "777:100"
     },
     {
-      "path": "/userhome/.local/share/file-manager",
-      "persistent": true,
-      "owner": "777:100"
-    },
-    {
       "path": "/userhome/.gtk-bookmarks",
       "persistent": true,
       "owner": "777:100"
