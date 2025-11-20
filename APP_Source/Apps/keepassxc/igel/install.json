@@ -2,8 +2,10 @@
   {
     "source": ".*",
     "excludes": [
-      "usr/share/doc",
-      "usr/share/man"
-    ]
+      ""
+    ],
+    "owner": "0:0",
+    "permissions": "755",
+    "strip": false
   }
 ]

@@ -1,10 +1,10 @@
 <sessions>
 	<keepassxc%>
         <name>
-            value=<keepassxc>
+            value=<KeePassXC>
         </name>
         <icon>
-            value=<keepassxc>
+            value=</services/keepassxc/.icons/app.svg>
         </icon>
         extends_base=<sessions.base%>
 	</keepassxc%>

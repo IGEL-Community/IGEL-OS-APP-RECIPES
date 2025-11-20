@@ -7,17 +7,17 @@
     "monochrome": "monochrome.svg"
   },
   "name": "keepassxc",
-  "release": "",
+  "author": "The IGEL community",
+  "vendor": "KeePassXC Team",
   "rw_partition": {
+    "size": "small",
     "flags": [
       "compressed"
-    ],
-    "size": "small"
+    ]
   },
+  "release": "",
   "summary": {
-    "en": "keepassxc (Community)"
+    "en": "KeePassXC (Community)"
   },
-  "author": "The IGEL community",
-  "vendor": "keepassxc Team",
-  "version": "2.7.4"
+  "version": "2.7.10+1.1"
 }
