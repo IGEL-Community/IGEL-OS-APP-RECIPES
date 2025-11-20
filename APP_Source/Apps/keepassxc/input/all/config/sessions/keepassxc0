@@ -1,3 +1,4 @@
 #!/bin/bash
 
-keepassxc
+/services/keepassxc/KeePassXC-*-x86_64.AppImage
+
