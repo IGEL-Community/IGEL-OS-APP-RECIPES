@@ -1,0 +1,12 @@
+[
+  {
+    "url": "file:///tmp/7zip.tar.bz2",
+    "licenses": [
+      {
+        "name": "LGPL-3.0-or-later",
+        "name": "BSD-2-Clause",
+        "name": "BSD-3-Clause"
+      }
+    ]
+  }
+]
