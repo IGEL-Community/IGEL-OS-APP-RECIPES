@@ -1,6 +1,6 @@
 [
   {
-    "source": "yubico-authenticator-7.2.3-linux/.*",
+    "source": "yubico-authenticator-7.3.0-linux/.*",
     "excludes": [
       ""
     ],
