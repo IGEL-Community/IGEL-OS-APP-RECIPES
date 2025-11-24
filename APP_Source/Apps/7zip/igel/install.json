@@ -2,9 +2,10 @@
   {
     "source": ".*",
     "excludes": [
-      "usr/share/applications.*",
-      "usr/share/doc.*",
-      "usr/share/man.*"
-    ]
+      ""
+    ],
+    "destination": "/usr/bin",
+    "owner": "0:0",
+    "permissions": "755"
   }
 ]
