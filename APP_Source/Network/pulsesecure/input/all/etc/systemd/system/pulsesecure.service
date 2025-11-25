@@ -1,0 +1,15 @@
+[Unit]
+Description= Ivanti Secure Access Service
+After=network.target
+
+[Service]
+Type=forking
+Restart=always
+RestartSec=1
+User=root
+ExecStartPre=/bin/bash /etc/pulsesecure/pulsesecure-init.sh
+ExecStart=/services/pulsesecure/opt/pulsesecure/bin/startup.sh start
+ExecStop=/services/pulsesecure/opt/pulsesecure/bin/startup.sh stop
+
+[Install]
+WantedBy=multi-user.target
