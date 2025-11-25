@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "pulsesecure",
+  "author": "The IGEL Community",
+  "vendor": "Ivanti",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Ivanti Secure Access Client for Linux VPN (Community)"
+  },
+  "version": "22.8.4+R4.1.1"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "lib/systemd.*",
+      "usr/share/doc",
+      "usr/share/man"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+# Ivanti Secure Access Client for Linux VPN
+
+## Need to obtain the installer
+
+**NOTE:** Obtain the installer file and rename to `ps-pulse-linux-64bit-installer.deb`
+
+- [Ivanti Secure Access Client for Linux](https://help.ivanti.com/ps/help/en_US/ISAC/22.X/ag-22.X/pulse_client_for_linux.htm?utm_source=chatgpt.com)
+
+ps-pulse-linux-22.8r4-b38767-64bit-installer.deb

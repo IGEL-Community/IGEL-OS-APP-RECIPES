@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/pulsesecure/opt/pulsesecure/bin/pulseUI

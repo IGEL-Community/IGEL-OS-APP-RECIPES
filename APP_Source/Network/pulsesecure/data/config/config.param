@@ -1,0 +1,14 @@
+<sessions>
+	<pulsesecure%>
+        <name>
+            value=<Ivanti Secure Access Client>
+        </name>
+        <icon>
+            value=</services/pulsesecure/.icons/monochrome.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</pulsesecure%>
+	<pulsesecure0>
+	</pulsesecure0>
+    node_action=<wm_postsetup>
+</sessions>
