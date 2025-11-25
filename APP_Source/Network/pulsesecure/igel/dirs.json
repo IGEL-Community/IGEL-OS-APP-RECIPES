@@ -1,6 +1,6 @@
 [
     {
-      "path": "/userhome/.config/ron-pulsesecure",
+      "path": "/userhome/.pulsesecure",
       "persistent": true,
       "owner": "777:100"
     }
