@@ -10,11 +10,14 @@
   "author": "The IGEL Community",
   "vendor": "Ivanti",
   "rw_partition": {
-    "size": 600000
+    "size": 600000,
+    "flags": [
+      "prefer_btrfs"
+    ]
   },
   "release": "",
   "summary": {
     "en": "Ivanti Secure Access Client for Linux VPN (Community)"
   },
-  "version": "22.8.4+R4.1.10"
+  "version": "22.8.4+R4.1.11"
 }
