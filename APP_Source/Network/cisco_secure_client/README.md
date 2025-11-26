@@ -136,8 +136,6 @@ The profile will then be permanently stored on the read/write partition at /serv
 
 ## Cisco Secure Client App has no build in mechanism to handle certificates
 
-- Use custom commands
-
 - At least three files are needed (CA certificate, Auth Certificate, Private key).
 
 - Put those files to /wfs/ via Filetransfer
