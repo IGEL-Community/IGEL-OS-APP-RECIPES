@@ -1,0 +1,14 @@
+<sessions>
+	<appspace%>
+        <name>
+            value=<Appspace App>
+        </name>
+        <icon>
+            value=</services/appspace/.icons/monochrome.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</appspace%>
+	<appspace0>
+	</appspace0>
+    node_action=<wm_postsetup>
+</sessions>

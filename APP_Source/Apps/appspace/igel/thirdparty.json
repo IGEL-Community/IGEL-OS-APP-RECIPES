@@ -1,0 +1,11 @@
+[
+  {
+    "url": "file:///tmp/appspace-app-amd64.deb",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  }
+]

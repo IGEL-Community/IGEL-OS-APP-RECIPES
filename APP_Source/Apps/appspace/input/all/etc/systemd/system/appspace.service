@@ -1,0 +1,5 @@
+[Unit]
+Description= Appspace App
+
+[Service]
+ExecStart=/bin/bash /etc/appspace/appspace-init.sh
