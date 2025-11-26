@@ -16,10 +16,10 @@ LOGGER="logger -it ${ACTION}"
 echo "Starting" | $LOGGER
 
 ln -svf ${APP_PATH}/opt/pulsesecure /opt/pulsesecure
-ln -svf ${APP_PATH}/var/lib/pulsesecure /var/lib/pulsesecure
+#ln -svf ${APP_PATH}/var/lib/pulsesecure /var/lib/pulsesecure
 
-setfacl -d -m g::r ${APP_PATH}/var/lib/pulsesecure/pulse
-setfacl -d -m o::r ${APP_PATH}/var/lib/pulsesecure/pulse
+#setfacl -d -m g::r ${APP_PATH}/var/lib/pulsesecure/pulse
+#setfacl -d -m o::r ${APP_PATH}/var/lib/pulsesecure/pulse
 
 # MOVE THE FOLLOWING INTO A FINAL DESKTOP COMMAND
 # https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-Custom-Commands/
