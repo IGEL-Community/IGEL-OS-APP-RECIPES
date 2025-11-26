@@ -3,5 +3,11 @@
       "path": "/userhome/.pulsesecure",
       "persistent": true,
       "owner": "777:100"
+    },
+    {
+      "path": "/opt/pulsesecure/lib/cefRuntime",
+      "persistent": true,
+      "permissions": "755",
+      "owner": "0:0"
     }
 ]
