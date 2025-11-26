@@ -48,6 +48,8 @@ if [ -z "$(ls -A "$CEF_INSTALL_DIR")" ]; then
   SETUP_CEF=${APP_PATH}/opt/pulsesecure/bin/setup_cef.sh
   #sed -i -e "s|TMP_DIR=/tmp/cef.download|TMP_DIR=/custom/cef.download|" $SETUP_CEF
   #sed -i -e "s|CEF_INSTALL_ROOT_DIR=/opt|CEF_INSTALL_ROOT_DIR=/custom/pulse/opt|" $SETUP_CEF
+  sed -i -e "s|pcstp.pulsesecure.net|23.37.101.52|" $SETUP_CEF
+  CEF_INSTALL_ROOT_DIR=/opt|CEF_INSTALL_ROOT_DIR=/custom/pulse/opt|" $SETUP_CEF
   #TMP_DIR=.
   CEF_INSTALL_ROOT_DIR=/opt
   CEF_INSTALL_DIR=${CEF_INSTALL_ROOT_DIR}/pulsesecure/lib/cefRuntime
