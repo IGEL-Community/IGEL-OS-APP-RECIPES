@@ -16,7 +16,7 @@ The path, the file is transferred to does not really matter but you have to make
 
 The profile will then be permanently stored on the read/write partition at /services_rw/cisco_secure_client/profile and linked to the Secure Client profile directory (/services/cisco_secure_client/opt/cisco/secureclient/vpn/profile/).
 
-### Files Needed from Client
+## Files Needed from Client
 
 - cisco-secure-client-linux64-VERSION-predeploy-k9.tar.gz and rename to `cisco-secure-client-linux64-predeploy-k9.tar.gz`
 - cisco-secure-client-vpn_VERSION_amd64.deb" and rename to `cisco-secure-client-vpn_amd64.deb`
@@ -24,8 +24,104 @@ The profile will then be permanently stored on the read/write partition at /serv
 
 **NOTE:** Edit recipe to update version number in file `install.json`
 
-### Files Needed from Client
+## Cisco-Secure-Client-XML-Profile-Template.xml
 
-- cisco-secure-client-linux64-VERSION-predeploy-k9.tar.gz
-- cisco-secure-client-vpn_VERSION_amd64.deb"
-- cisco-secure-client-dart_VERSION_amd64.deb
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/">
+
+  <!-- ========================================================= -->
+  <!--        SERVER LIST (WHAT USERS SEE IN THE DROP-DOWN)       -->
+  <!-- ========================================================= -->
+  <ServerList>
+    <HostEntry>
+      <HostName>My Corporate VPN</HostName>            <!-- User-friendly name -->
+      <HostAddress>vpn.example.com</HostAddress>       <!-- FQDN or IP -->
+      <PrimaryProtocol>HTTPS</PrimaryProtocol>         <!-- Usually HTTPS -->
+    </HostEntry>
+
+    <!-- Duplicate for more VPN gateways
+    <HostEntry>
+      <HostName>Backup VPN</HostName>
+      <HostAddress>backupvpn.example.com</HostAddress>
+    </HostEntry>
+    -->
+  </ServerList>
+
+  <!-- ========================================================= -->
+  <!--                CLIENT BEHAVIOR SETTINGS                    -->
+  <!-- ========================================================= -->
+  <ClientInitialization>
+
+    <!-- Auto-connect behavior -->
+    <AutoConnectOnStart UserControllable="true">false</AutoConnectOnStart>
+    <MinimizeOnConnect UserControllable="true">true</MinimizeOnConnect>
+
+    <!-- Allow users to type a hostname manually -->
+    <AllowManualHostInput>true</AllowManualHostInput>
+
+    <!-- LAN access on connect -->
+    <LocalLanAccess UserControllable="true">false</LocalLanAccess>
+
+    <!-- Certificate lookup on Linux -->
+    <CertificateStoreLinux>All</CertificateStoreLinux>
+    <!-- Values: "Machine" "User" "All" -->
+
+    <!-- Reconnect after interruption -->
+    <AutoReconnect UserControllable="false">true</AutoReconnect>
+    <AutoReconnectBehavior>ReconnectAfterResume</AutoReconnectBehavior>
+
+    <!-- Logging -->
+    <Logging Level="INFO"/>
+  </ClientInitialization>
+
+  <!-- ========================================================= -->
+  <!--                     VPN PROTOCOL OPTIONS                   -->
+  <!-- ========================================================= -->
+  <VPNProtocol>
+    <IPProtocolSupport>IPv4,IPv6</IPProtocolSupport>
+    <PseudoDefaultGatewayAddress>Override</PseudoDefaultGatewayAddress>
+  </VPNProtocol>
+
+  <!-- ========================================================= -->
+  <!--                    PROXY BEHAVIOR                          -->
+  <!-- ========================================================= -->
+  <ProxySettings>
+    <ProxyMode>Native</ProxyMode>
+    <AllowLocalProxyConnections>true</AllowLocalProxyConnections>
+  </ProxySettings>
+
+  <!-- ========================================================= -->
+  <!--                  SCRIPTS (Linux compatible)               -->
+  <!-- ========================================================= -->
+  <Scripting>
+    <!-- Place scripts in: /opt/cisco/secureclient/vpn/scripts -->
+    <!-- and make executable: chmod +x script.sh -->
+
+    <!-- Example scripts (optional) -->
+    <EnableScripting>true</EnableScripting>
+
+    <!-- Uncomment if needed
+    <OnConnect>
+      <Command>/opt/cisco/secureclient/vpn/scripts/on_connect.sh</Command>
+    </OnConnect>
+
+    <OnDisconnect>
+      <Command>/opt/cisco/secureclient/vpn/scripts/on_disconnect.sh</Command>
+    </OnDisconnect>
+    -->
+  </Scripting>
+
+  <!-- ========================================================= -->
+  <!--                    NETWORK VISIBILITY                      -->
+  <!-- ========================================================= -->
+  <Preferences>
+    <!-- Allow DNS fallback when VPN split DNS is in effect -->
+    <AllowLocalDNS>true</AllowLocalDNS>
+
+    <!-- Traffic behavior -->
+    <EnableTransportProtocolPreference>true</EnableTransportProtocolPreference>
+  </Preferences>
+
+</AnyConnectProfile>
+```
