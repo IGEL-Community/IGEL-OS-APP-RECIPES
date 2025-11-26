@@ -48,7 +48,7 @@ if [ -z "$(ls -A "$CEF_INSTALL_DIR")" ]; then
   SETUP_CEF=${APP_PATH}/opt/pulsesecure/bin/setup_cef.sh
   #sed -i -e "s|TMP_DIR=/tmp/cef.download|TMP_DIR=/custom/cef.download|" $SETUP_CEF
   #sed -i -e "s|CEF_INSTALL_ROOT_DIR=/opt|CEF_INSTALL_ROOT_DIR=/custom/pulse/opt|" $SETUP_CEF
-  sed -i -e "s|pcstp.pulsesecure.net|23.37.101.52|" $SETUP_CEF
+  echo "23.37.101.52  pcstp.pulsesecure.net" >> /etc/hosts
   #CEF_INSTALL_ROOT_DIR=/opt|CEF_INSTALL_ROOT_DIR=/custom/pulse/opt|" $SETUP_CEF
   #TMP_DIR=.
   CEF_INSTALL_ROOT_DIR=/opt
@@ -57,7 +57,7 @@ if [ -z "$(ls -A "$CEF_INSTALL_DIR")" ]; then
   CEF_PACKAGE_NAME=$(grep CEF_PACKAGE_NAME= $SETUP_CEF | cut -d "=" -f 2)
   tmpdir=$(mktemp -d)
   wget -O ${tmpdir}/cef64.tar.bz2 $CEF_URL | $LOGGER
-  tar xvf ${tmpdir}/cef64.tar.bz2 -C ${tmpdir}
+  tar xvf ${tmpdir}/cef64.tar.bz2 -C ${tmpdir} | $LOGGER
   cp -r ${tmpdir}/${CEF_PACKAGE_NAME}/* ${CEF_INSTALL_DIR}/
   cp -r $CEF_INSTALL_DIR/Resources/* $CEF_INSTALL_DIR/Release/
   rm -rf ${tmpdir}
