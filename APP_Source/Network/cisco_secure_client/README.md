@@ -129,3 +129,25 @@ The profile will then be permanently stored on the read/write partition at /serv
 
 </AnyConnectProfile>
 ```
+
+-----
+
+-----
+
+## Cisco Secure Client App has no build in mechanism to handle certificates
+
+- Use custom commands
+
+- At least three files are needed (CA certificate, Auth Certificate, Private key).
+
+- Put those files to /wfs/ via Filetransfer
+
+- Use custom commands to create the following directories: 
+
+```bash
+/userhome/.cisco/certificates/ca/ 
+/userhome/.cisco/certificates/client/ 
+/userhome/.cisco/certificates/client/private/
+```
+
+- Then use ln -s to link the certs from /wfs/ to those directories. 
