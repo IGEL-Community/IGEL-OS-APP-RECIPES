@@ -24,6 +24,10 @@ The profile will then be permanently stored on the read/write partition at /serv
 
 **NOTE:** Edit recipe to update version number in file `install.json`
 
+-----
+
+-----
+
 ## Cisco-Secure-Client-XML-Profile-Template.xml
 
 ```xml
