@@ -5,7 +5,7 @@
       "lib/systemd.*",
       "usr/share/doc",
       "usr/share/man",
-      "var/lib"
+      "var/lib/pulsesecure"
     ]
   }
 ]
