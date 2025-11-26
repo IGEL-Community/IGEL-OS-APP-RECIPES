@@ -43,6 +43,7 @@ CEF_INSTALL_DIR=${CEF_INSTALL_ROOT_DIR}/pulsesecure/lib/cefRuntime
 
 # if $CEF_INSTALL_DIR is empty
 if [ -z "$(ls -A "$CEF_INSTALL_DIR")" ]; then
+  echo "Downloading and installing CEF (Chromium Embedded Framework)" | $LOGGER
   #CEF install change path from /tmp to ${APP_PATH}
   SETUP_CEF=${APP_PATH}/opt/pulsesecure/bin/setup_cef.sh
   #sed -i -e "s|TMP_DIR=/tmp/cef.download|TMP_DIR=/custom/cef.download|" $SETUP_CEF
@@ -53,7 +54,7 @@ if [ -z "$(ls -A "$CEF_INSTALL_DIR")" ]; then
   CEF_URL=`grep URL= $SETUP_CEF | grep linux | cut -d "=" -f 2`
   CEF_PACKAGE_NAME=`grep CEF_PACKAGE_NAME= $SETUP_CEF | cut -d "=" -f 2`
   tmpdir=$(mktemp -d)
-  wget -O ${tempdir}/cef64.tar.bz2 $CEF_URL | $LOGGER
+  wget -O ${tmpdir}/cef64.tar.bz2 $CEF_URL | $LOGGER
   tar xvf ${tmpdir}/cef64.tar.bz2 -C ${tmpdir}
   cp -r ${tmpdir}/${CEF_PACKAGE_NAME}/* ${CEF_INSTALL_DIR}/
   cp -r $CEF_INSTALL_DIR/Resources/* $CEF_INSTALL_DIR/Release/
