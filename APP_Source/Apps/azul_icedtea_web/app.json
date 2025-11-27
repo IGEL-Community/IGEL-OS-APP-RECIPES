@@ -10,10 +10,11 @@
   "author": "The IGEL community",
   "vendor": "Azul",
   "rw_partition": {
-    "size": "small",
+    "size": "large",
     "flags": [
       "compressed",
-      "prefer_btrfs"
+      "prefer_btrfs",
+       "allow_execute"
     ]
   },
   "release": "",
