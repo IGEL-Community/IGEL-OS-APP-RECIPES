@@ -10,11 +10,11 @@
   "author": "The IGEL Community",
   "vendor": "Appspace",
   "rw_partition": {
-    "size": "small"
+    "size": "large"
   },
   "release": "",
   "summary": {
     "en": "Appspace App (Community)"
   },
-  "version": "2.91.0+1.4"
+  "version": "2.91.0+1.5"
 }
