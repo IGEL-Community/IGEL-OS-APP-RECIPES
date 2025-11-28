@@ -22,6 +22,20 @@
 
 - <a href="utils/igelpkg-new-template-1.0.0.zip" download> IGEL SDK: Initial Data Structure Template</a>
 
+- With SDK ≥1.0.0 and IGEL OS ≥ 12.5.0 it is no longer necessary to use a special Developer Edition of IGEL OS.
+
+- To develop and evaluate apps, it is now sufficient to copy the two public SDK app signing keys to the IGEL OS:
+
+    - copy `/usr/share/igelpkg/certs/IGEL_OS_12_SDK-intermediate.crt` from development machine to `/wfs/cmty/im-certs/` on IGEL OS
+    - deploy `/usr/share/igelpkg/certs/IGEL_OS_12_SDK-leaf.crt` as app signing certificate by UMS
+    - reboot
+
+- SDK command to build and sign app:
+
+```bash linenums="1"
+igelpkg build -r bookworm -a x64 -sp -sa
+```
+
 -----
 
 -----
