@@ -203,6 +203,23 @@ To create a 2GB partition:
 
 -----
 
+## Allow Execute Permission from read / write Partition
+
+The small partition will allow for execution of programs
+
+```json
+"rw_partition": {
+  "size": "small",
+  "flags": [
+    "allow_execute"
+  ]
+}
+```
+
+-----
+
+-----
+
 ## Listing Systemd Targets
 
 - List all the systemd targets on system:
