@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/userhome/.vmware",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

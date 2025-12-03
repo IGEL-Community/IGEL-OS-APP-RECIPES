@@ -1,0 +1,5 @@
+[Unit]
+Description=VMware Remote Console
+
+[Service]
+ExecStart=/bin/bash /etc/vmwarerc/vmwarerc-init.sh

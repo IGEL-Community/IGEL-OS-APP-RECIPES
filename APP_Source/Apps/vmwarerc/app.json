@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "vmwarerc",
+  "author": "The IGEL community",
+  "vendor": "VMware by Broadcom",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "VMware Remote Console (Community)"
+  },
+  "version": "12.0.4+1.0"
+}
