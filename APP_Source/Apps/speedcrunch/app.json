@@ -9,9 +9,16 @@
   "name": "speedcrunch",
   "author": "The IGEL community",
   "vendor": "SpeedCrunch Team",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
   "release": "",
   "summary": {
     "en": "SpeedCrunch (Community)"
   },
-  "version": "0.12.0"
+  "version": "0.12.0+1.0"
 }
