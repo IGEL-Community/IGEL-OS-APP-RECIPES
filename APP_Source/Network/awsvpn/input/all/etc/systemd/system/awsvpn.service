@@ -1,0 +1,14 @@
+[Unit]
+Description= AWS VPN Client for Linux
+After=network.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/bash /etc/awsvpn/awsvpn-init.sh
+ExecStart=/services/awsvpn/opt/awsvpnclient/Service/ACVC.GTK.Service
+Restart=always
+RestartSec=1s
+User=root
+
+[Install]
+WantedBy=multi-user.target
