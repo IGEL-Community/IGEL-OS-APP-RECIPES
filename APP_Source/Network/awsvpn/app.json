@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "awsvpn",
+  "author": "The IGEL Community",
+  "vendor": "AWS",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "AWS Client VPN for Linux (Community)"
+  },
+  "version": "5.3.1+1.4"
+}

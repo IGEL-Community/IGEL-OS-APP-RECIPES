@@ -1,0 +1,14 @@
+<sessions>
+	<awsvpn%>
+        <name>
+            value=<AWS VPN Client>
+        </name>
+        <icon>
+            value=</services/awsvpn/.icons/monochrome.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</awsvpn%>
+	<awsvpn0>
+	</awsvpn0>
+    node_action=<wm_postsetup>
+</sessions>
