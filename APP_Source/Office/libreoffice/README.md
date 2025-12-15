@@ -16,20 +16,23 @@ Steps:
 #set -x
 #trap read debug
 
+## Browser Download Folder
+DOWNLOADS="$HOME/Downloads"
+
 ## Development machine Ubuntu
 APP_DIR="libreoffice"
 
-if ! compgen -G "$HOME/Downloads/LibreOffice_*_Linux_x86-64_deb.tar.gz" > /dev/null; then
+if ! compgen -G "$DOWNLOADS/LibreOffice_*_Linux_x86-64_deb.tar.gz" > /dev/null; then
   echo "***********"
-  echo "Obtain latest Linux (64-bit) (deb) package, save into $HOME/Downloads and re-run this script "
+  echo "Obtain latest Linux (64-bit) (deb) package, save into $DOWNLOADS and re-run this script "
   echo "https://www.libreoffice.org/download/download/?type=deb-x86_64"
   echo "***********"
   exit 1
 fi
-if ! compgen -G "$HOME/Downloads/LibreOffice_*_Linux_x86-64_deb_helppack_*.tar.gz" > /dev/null; then
+if ! compgen -G "$DOWNLOADS/LibreOffice_*_Linux_x86-64_deb_helppack_*.tar.gz" > /dev/null; then
   echo "***********"
   echo "Help for offline use"
-  echo "Obtain latest Linux (64-bit) (deb) package, save into $HOME/Downloads and re-run this script "
+  echo "Obtain latest Linux (64-bit) (deb) package, save into $DOWNLOADS and re-run this script "
   echo "https://www.libreoffice.org/download/download/?type=deb-x86_64"
   echo "***********"
   exit 1
@@ -40,16 +43,17 @@ cd build_tar
 
 mkdir -p custom/${APP_DIR}
 
-tar zxvf $HOME/Downloads/LibreOffice_*_Linux_x86-64_deb.tar.gz
-LIBREOFFICEDIR="LibreOffice_*_Linux_x86-64_deb/DEBS"
-find ${LIBREOFFICEDIR} -type f | while read LINE
+# extract tar files
+find $DOWNLOADS/ -name "LibreOffice_*.tar.gz" | while read LINE
+do
+  tar zxvf "${LINE}"
+done
+
+# extract deb files
+find . -name "*.deb" | while read LINE
 do
   dpkg -x "${LINE}" custom/libreoffice
 done
-
-tar zxvf $HOME/Downloads/LibreOffice_*_Linux_x86-64_deb_helppack_*.tar.gz
-dpkg -x LibreOffice_*_Linux_x86-64_deb_helppack_*/DEBS/lib*.deb custom/libreoffice
-
 
 cd custom/${APP_DIR}
 tar cvjf ../../../libreoffice.tar.bz2 *
