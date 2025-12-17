@@ -1,0 +1,13 @@
+[
+  {
+    "package": "xfce4-clipman",
+    "licenses": [
+      {
+          "name": "GPL-2.0-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "libqrencode4"
+  }
+]
