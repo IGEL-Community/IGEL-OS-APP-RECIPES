@@ -1,0 +1,3 @@
+Clipman - xfce4-clipman-plugin
+
+Clipman is a clipboard manager for Xfce. It keeps the clipboard contents around while it is usually lost when you close an application. It is able to handle text and images, and has a feature to execute actions on specific text by matching them against regular expressions.

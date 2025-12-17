@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "clipman",
+  "author": "The IGEL community",
+  "vendor": "Xfce Development Team",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Clipman - xfce4-clipman-plugin (Community)"
+  },
+  "version": "1.6.2+1.0"
+}
