@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "twinkle",
+  "author": "The IGEL community",
+  "vendor": "Twinkle Team",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Twinkle (Community)"
+  },
+  "version": "1.10.2+1.3"
+}

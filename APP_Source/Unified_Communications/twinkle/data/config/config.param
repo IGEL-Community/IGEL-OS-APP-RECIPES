@@ -1,0 +1,14 @@
+<sessions>
+	<twinkle%>
+        <name>
+            value=<Twinkle>
+        </name>
+        <icon>
+            value=</services/twinkle/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</twinkle%>
+	<twinkle0>
+	</twinkle0>
+    node_action=<wm_postsetup>
+</sessions>

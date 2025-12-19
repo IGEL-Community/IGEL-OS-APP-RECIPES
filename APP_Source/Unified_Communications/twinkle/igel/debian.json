@@ -1,0 +1,22 @@
+[
+  {
+    "package": "twinkle"
+  },
+  {
+    "package": "twinkle-common"
+  },
+  {
+    "package": "libccrtp2v5",
+    "licenses": [
+      {
+          "name": "GPL-2.0-or-later"
+      }
+    ]    
+  },
+  {
+    "package": "libgsm1"
+  },
+  {
+    "package": "libucommon8"
+  }
+]
