@@ -1,0 +1,5 @@
+[Unit]
+Description= Twinkle
+
+[Service]
+ExecStart=/bin/bash /etc/twinkle/twinkle-init.sh
