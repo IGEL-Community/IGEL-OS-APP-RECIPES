@@ -1,0 +1,14 @@
+<sessions>
+	<joplin%>
+        <name>
+            value=<Joplin>
+        </name>
+        <icon>
+            value=</services/joplin/.icons/monochrome.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</joplin%>
+	<joplin0>
+	</joplin0>
+    node_action=<wm_postsetup>
+</sessions>

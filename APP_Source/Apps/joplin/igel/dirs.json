@@ -1,0 +1,17 @@
+[
+    {
+      "path": "/userhome/JoplinBackup",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.config/joplin-desktop",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.config/Joplin",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
