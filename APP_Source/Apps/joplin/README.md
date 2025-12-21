@@ -2,6 +2,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # [Joplin](https://joplinapp.org/)
 
+Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organized into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor. The notes are in Markdown format.
+
 - Download Joplin for Linux (Joplin-VERSION.AppImage) and zip into `Joplin.AppImage.zip`-
 
 https://joplinapp.org/help/install
