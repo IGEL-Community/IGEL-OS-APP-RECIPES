@@ -3,8 +3,7 @@
     "url": "file:///tmp/Joplin.AppImage.zip",
     "licenses": [
       {
-        "name": "Commercial",
-        "text": "Joplin is proprietary software developed by Joplin. All rights reserved."
+        "name": "AGPL-3.0-or-later"
       }
     ]
   }
