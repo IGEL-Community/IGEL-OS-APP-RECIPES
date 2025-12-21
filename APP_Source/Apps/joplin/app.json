@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "joplin",
+  "author": "The IGEL community",
+  "vendor": "Joplin",
+  "rw_partition": {
+    "size": 2000000,
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Joplin (Community)"
+  },
+  "version": "3.4.12+1.2"
+}
