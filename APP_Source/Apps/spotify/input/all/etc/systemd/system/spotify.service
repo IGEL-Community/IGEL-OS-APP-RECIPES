@@ -1,0 +1,5 @@
+[Unit]
+Description=spotify
+
+[Service]
+ExecStart=/bin/bash /etc/spotify/spotify-init.sh

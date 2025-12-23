@@ -1,0 +1,14 @@
+<sessions>
+	<spotify%>
+        <name>
+            value=<Spotify>
+        </name>
+        <icon>
+            value=</services/spotify/.icons/monochrome.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</spotify%>
+	<spotify0>
+	</spotify0>
+    node_action=<wm_postsetup>
+</sessions>
