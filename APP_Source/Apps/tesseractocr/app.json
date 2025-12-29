@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "tesseractocr",
+  "author": "The IGEL community",
+  "vendor": "tesseract-ocr Team",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "tesseract-ocr (Community)"
+  },
+  "version": "5.3.0+1.2"
+}
