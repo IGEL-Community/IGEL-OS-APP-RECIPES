@@ -1,0 +1,27 @@
+[
+  {
+    "package": "tesseract-ocr"
+  },
+  {
+    "package": "libtesseract5"
+  },
+  {
+    "package": "tesseract-ocr-eng"
+  },
+  {
+    "package": "tesseract-ocr-osd"
+  },
+  {
+    "package": "libicu72"
+  },
+  {
+    "package": "liblept5",
+    "licenses": [
+      {
+          "name": "liblept5",
+          "file": "%tmp%/usr/share/doc/liblept5/copyright"
+      }
+    ]    
+
+  }
+]
