@@ -1,0 +1,20 @@
+[
+  {
+    "package": "git"
+  },
+  {
+    "package": "pigz",
+    "licenses": [
+      {
+          "name": "pigz",
+          "file": "%tmp%/usr/share/doc/pigz/copyright"
+      }
+    ]    
+  },
+  {
+    "package": "uidmap"
+  },
+  {
+    "package": "slirp4netns"
+  }
+]
