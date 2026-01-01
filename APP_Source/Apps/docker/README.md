@@ -18,6 +18,13 @@ What happens internally:
 
 ## Docker with ubuntu:22.04
 
+- Setup Debian Bookworm (12)
+
+```bash linenums="1"
+docker run --network host -it debian:bookworm bash -c \
+"apt-get update && apt-get install -y curl iputils-ping && bash"
+```
+
 - Setup Ubuntu 22.04
 
 ```bash linenums="1"
@@ -29,6 +36,12 @@ docker run --network host -it ubuntu:22.04 bash -c \
 
 ```bash linenums="1"
 docker images
+```
+
+- Run debian:bookworm
+
+```bash linenums="1"
+docker run --network host -it debian:bookworm
 ```
 
 - Run ubuntu:22.04
