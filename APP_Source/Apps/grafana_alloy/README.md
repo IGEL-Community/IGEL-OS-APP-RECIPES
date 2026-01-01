@@ -35,3 +35,40 @@ mv alloy_*.deb ../alloy.deb
 cd ..
 rm -rf build_tar
 ```
+
+# Use Docker to collect deb file
+
+- Save [dockerfile](https://github.com/IGEL-Community/IGEL-OS-APP-RECIPES/tree/main/APP_Source/Apps/docker#use-docker-to-collect-latest-deb-files)
+
+- Save the following as `get-debs.sh`:
+
+```bash linenums="1"
+#!/bin/bash
+#set -x
+#trap read debug
+
+MISSING_LIBS="alloy"
+
+apt install curl unzip -y
+curl https://apt.grafana.com/gpg.key | apt-key add -
+sh -c 'echo "deb [arch=amd64] https://apt.grafana.com stable main" >> /etc/apt/sources.list.d/grafana.list'
+apt-get update
+
+mkdir build_tar
+cd build_tar
+
+for lib in $MISSING_LIBS; do
+  apt-get download $lib
+done
+
+mv alloy_*.deb ../alloy.deb
+cd ..
+rm -rf build_tar
+```
+
+- Run the following command:
+
+```bash linenums="1"
+mkdir -p artifacts
+docker buildx build --network host --target export --output type=local,dest=./artifacts .
+```
