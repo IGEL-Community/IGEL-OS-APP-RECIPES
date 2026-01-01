@@ -1,0 +1,56 @@
+[
+  {
+    "url": "file:///tmp/containerd.io.deb",
+    "dest": "",
+    "licenses": [
+      {
+            "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/docker-buildx-plugin.deb",
+    "dest": "",
+    "licenses": [
+      {
+            "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/docker-ce.deb",
+    "dest": "",
+    "licenses": [
+      {
+            "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/docker-ce-cli.deb",
+    "dest": "",
+    "licenses": [
+      {
+            "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/docker-ce-rootless-extras.deb",
+    "dest": "",
+    "licenses": [
+      {
+            "name": "Apache-2.0"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/docker-compose-plugin.deb",
+    "dest": "",
+    "licenses": [
+      {
+            "name": "Apache-2.0"
+      }
+    ]
+  }
+]
