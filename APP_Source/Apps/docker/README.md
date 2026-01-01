@@ -85,3 +85,74 @@ mv *.deb ..
 cd ..
 rm -rf build_tar
 ```
+
+## Use Docker to collect latest deb files
+
+- Save the following as `dockerfile`:
+
+```dockerfile
+# Choose a base image
+FROM debian:bookworm AS build
+
+# Set a working directory inside the image
+WORKDIR /tmp
+COPY . .
+
+# Copy deb collection script
+COPY get-debs.sh .
+
+# Install dependencies
+RUN apt update && apt-get install -y curl gnupg
+
+# run get-debs to collect the deb files
+RUN bash ./get-debs.sh
+
+# copy deb files to out folder
+RUN mkdir -p /out
+RUN cp -v *.deb /out/
+
+# copy files out of container
+FROM scratch AS export
+COPY --from=build /out/ /
+```
+
+- Save the following as `get-debs.sh`:
+
+```bash linenums="1"
+#!/bin/bash
+#set -x
+#trap read debug
+
+MISSING_LIBS="containerd.io docker-buildx-plugin docker-ce docker-ce-cli docker-ce-rootless-extras docker-compose-plugin"
+
+apt install curl -y
+
+curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+"deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] \
+https://download.docker.com/linux/debian \
+bookworm stable" | \
+tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+apt-get update
+
+mkdir build_tar
+cd build_tar
+
+for lib in $MISSING_LIBS; do
+  apt-get download $lib
+  mv $lib*.deb $lib.deb
+done
+
+mv *.deb ..
+cd ..
+rm -rf build_tar
+```
+
+- Run the following command:
+
+```bash linenums="1"
+mkdir -p artifacts
+docker buildx build --network host --target export --output type=local,dest=./artifacts .
+```
