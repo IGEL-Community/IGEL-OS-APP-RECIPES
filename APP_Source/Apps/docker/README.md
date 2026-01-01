@@ -112,6 +112,7 @@ RUN bash ./get-debs.sh
 # copy deb files to out folder
 RUN mkdir -p /out
 RUN cp -v *.deb /out/
+RUN cp -v deb-listing.txt /out/
 
 # copy files out of container
 FROM scratch AS export
