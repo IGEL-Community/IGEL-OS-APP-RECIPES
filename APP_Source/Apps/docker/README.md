@@ -16,7 +16,7 @@ What happens internally:
 - Docker creates and runs a container
 - The container prints a message and exits
 
-## Docker with ubuntu:22.04
+## Docker Examples
 
 - Setup Debian Bookworm (12)
 
