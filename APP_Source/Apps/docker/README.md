@@ -2,6 +2,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # [Docker](https://www.docker.com/)
 
+**Note:** Need to run docker as `root`.
+
 ## Test Docker with hello-world
 
 ```bash linenums="1"
