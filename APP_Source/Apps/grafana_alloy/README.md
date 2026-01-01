@@ -29,9 +29,12 @@ cd build_tar
 
 for lib in $MISSING_LIBS; do
   apt-get download $lib
+  ls $lib* >> deb-listing.txt
+  mv $lib*.deb $lib.deb
 done
 
-mv alloy_*.deb ../alloy.deb
+mv *.deb ..
+mv deb-listing.txt ..
 cd ..
 rm -rf build_tar
 ```
@@ -59,9 +62,12 @@ cd build_tar
 
 for lib in $MISSING_LIBS; do
   apt-get download $lib
+  ls $lib* >> deb-listing.txt
+  mv $lib*.deb $lib.deb
 done
 
-mv alloy_*.deb ../alloy.deb
+mv *.deb ..
+mv deb-listing.txt ..
 cd ..
 rm -rf build_tar
 ```
