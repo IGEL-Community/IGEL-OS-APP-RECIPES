@@ -83,6 +83,7 @@ igelpkg build -r bookworm -a x64 -sp -sa
 - [IGEL KB: Upload and Assign Files in the IGEL UMS Web App - Classification - App signing certificate](https://kb.igel.com/en/universal-management-suite/current/upload-and-assign-files-in-the-igel-ums-web-app)
 - [IGEL Community - IGEL App Creator Portal](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-Add-Applications/#igel-app-creator-portal)
 - [SPDX License List](https://spdx.org/licenses/) enables the efficient and reliable identification of license type
+- [How to use IGEL App Creator SDK Docker Container](https://igel-community.github.io/IGEL-Docs-v02/Docs/HOWTO-Docker/)
 
 -----
 
