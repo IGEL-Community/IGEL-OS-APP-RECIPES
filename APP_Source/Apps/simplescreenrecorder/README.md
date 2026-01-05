@@ -76,7 +76,7 @@ Steps:
 - Create `dockerfile`
 - Create `get-tar.bz2.sh`
 - Create `run-docker.sh`
-- Run, as root, `run-docker.sh
+- Run, as root, `run-docker.sh`
 - The `simplescreenrecorder.tar.bz2` will be in the `artifacts` folder
 
 ### Save the following as `dockerfile`
