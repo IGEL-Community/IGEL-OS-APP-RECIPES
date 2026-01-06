@@ -1,0 +1,10 @@
+[
+  {
+    "url": "file:///tmp/terraform_linux_amd64.zip",
+    "licenses": [
+      {
+        "name": "BUSL-1.1"
+      }
+    ]
+  }
+]

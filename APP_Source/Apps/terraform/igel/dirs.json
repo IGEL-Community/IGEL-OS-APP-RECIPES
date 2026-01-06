@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.terraform.d",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/Terraform",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
