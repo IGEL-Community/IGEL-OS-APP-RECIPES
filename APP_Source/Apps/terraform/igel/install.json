@@ -1,0 +1,10 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "LICENSE.txt"
+    ],
+    "destination": "/usr/bin",
+    "strip": false
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "terraform",
+  "author": "The IGEL community",
+  "vendor": "HashiCorp",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed",
+      "prefer_btrfs",
+       "allow_execute"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Terraform (Community)"
+  },
+  "version": "1.14.3+1.1"
+}
