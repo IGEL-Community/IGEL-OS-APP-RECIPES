@@ -1,14 +1,17 @@
 <sessions>
 	<remmina%>
-        <name>
-            value=<Remmina>
-        </name>
-        <icon>
-            value=</services/remmina/.icons/app.svg>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</remmina%>
-	<remmina0>
-	</remmina0>
-    node_action=<wm_postsetup>
+  <remmina0>
+		<name_localized>
+			displayname[en_us]=<Remmina>
+		</name_localized>
+		<icon>
+            value=</services/remmina/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </remmina0>
 </sessions>
