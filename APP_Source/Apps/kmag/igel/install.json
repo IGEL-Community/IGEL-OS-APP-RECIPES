@@ -1,0 +1,24 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "etc.*",
+      "usr/bin/kcookiejar5",
+      "usr/bin/ktelnetservice5",
+      "usr/bin/ktrash5",
+      "usr/bin/protocoltojson",
+      "usr/share/applications.*",
+      "usr/share/dbus-1.*",
+      "usr/share/doc.*",
+      "usr/share/kconf_update.*",
+      "usr/share/kf5.*",
+      "usr/share/knotifications5.*",
+      "usr/share/kservices5.*",
+      "usr/share/kservicetypes5.*",
+      "usr/share/lintian.*",
+      "usr/share/man.*",
+      "usr/share/qlogging-categories5.*",
+      "usr/share/locale.*kio5.mo"
+    ]
+  }
+]
