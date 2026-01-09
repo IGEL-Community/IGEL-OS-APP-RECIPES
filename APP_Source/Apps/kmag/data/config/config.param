@@ -1,0 +1,14 @@
+<sessions>
+	<kmag%>
+        <name>
+            value=<KMag>
+        </name>
+        <icon>
+            value=</services/kmag/.icons/app.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</kmag%>
+	<kmag0>
+	</kmag0>
+    node_action=<wm_postsetup>
+</sessions>

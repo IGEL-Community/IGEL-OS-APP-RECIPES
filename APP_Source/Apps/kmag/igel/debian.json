@@ -1,0 +1,68 @@
+[
+  {
+    "package": "kio"
+  },
+  {
+    "package": "kmag"
+  },
+  {
+    "package": "libkf5archive5"
+  },
+  {
+    "package": "libkf5authcore5"
+  },
+  {
+    "package": "libkf5codecs5"
+  },
+  {
+    "package": "libkf5configcore5"
+  },
+  {
+    "package": "libkf5configgui5"
+  },
+  {
+    "package": "libkf5configwidgets5"
+  },
+  {
+    "package": "libkf5coreaddons5"
+  },
+  {
+    "package": "libkf5crash5"
+  },
+  {
+    "package": "libkf5dbusaddons5"
+  },
+  {
+    "package": "libkf5globalaccel5"
+  },
+  {
+    "package": "libkf5guiaddons5"
+  },
+  {
+    "package": "libkf5i18n5"
+  },
+  {
+    "package": "libkf5iconthemes5"
+  },
+  {
+    "package": "libkf5itemviews5"
+  },
+  {
+    "package": "libkf5kiocore5"
+  },
+  {
+    "package": "libkf5service5"
+  },
+  {
+    "package": "libkf5widgetsaddons5"
+  },
+  {
+    "package": "libkf5xmlgui5"
+  },
+  {
+    "package": "libqaccessibilityclient-qt5-0"
+  },
+  {
+    "package": "libqt5waylandclient5"
+  }
+]

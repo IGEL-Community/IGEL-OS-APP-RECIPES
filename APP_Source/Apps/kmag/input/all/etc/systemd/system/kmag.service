@@ -1,0 +1,7 @@
+[Unit]
+Description=KMag
+
+[Service]
+ExecStartPre=/bin/touch /services_rw/kmag/userhome/.config/kmag/kmagrc
+ExecStartPre=/bin/chmod a+rw /services_rw/kmag/userhome/.config/kmag/kmagrc
+ExecStart=/bin/ln -svf /services_rw/kmag/userhome/.config/kmag/kmagrc /userhome/.config/kmagrc

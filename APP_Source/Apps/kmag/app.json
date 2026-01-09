@@ -1,0 +1,20 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "kmag",
+  "author": "The IGEL community",
+  "vendor": "KMag Team",
+  "rw_partition": {
+    "size": "small"
+  },
+  "release": "",
+  "summary": {
+    "en": "KMag (Community)"
+  },
+  "version": "22.12.3+10.1.7"
+}
