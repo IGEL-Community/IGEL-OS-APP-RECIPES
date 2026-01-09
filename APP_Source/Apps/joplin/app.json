@@ -10,7 +10,7 @@
   "author": "The IGEL community",
   "vendor": "Joplin",
   "rw_partition": {
-    "size": 8000000,
+    "size": 12000000,
     "flags": [
       "compressed",
       "prefer_btrfs"
@@ -20,5 +20,5 @@
   "summary": {
     "en": "Joplin (Community)"
   },
-  "version": "3.4.12+1.4"
+  "version": "3.4.12+1.5"
 }
