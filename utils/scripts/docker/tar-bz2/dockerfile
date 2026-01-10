@@ -1,0 +1,26 @@
+# Choose a base image
+FROM ubuntu:20.04 AS build
+
+# Set a working directory inside the image
+WORKDIR /tmp
+COPY . .
+
+# Copy tar.bz2 collection script
+COPY get-tar.bz2.sh .
+
+# Install dependencies
+RUN apt update && apt-get install -y curl gnupg bzip2 wget
+
+# run get-tar.bz2 to collect the tar.bz2 files
+RUN bash ./get-tar.bz2.sh | tee -a debug.txt
+
+# copy tar.bz2 files to out folder
+RUN mkdir -p /out
+#RUN cp -v *.tar.bz2 /out/
+#RUN cp -v tar.bz2-listing.txt /out/
+#RUN cp -v debug.txt /out/
+RUN cp -vR * /out/
+
+# copy files out of container
+FROM scratch AS export
+COPY --from=build /out/ /
