@@ -16,9 +16,7 @@ RUN bash ./get-debs.sh | tee -a debug.txt
 
 # copy deb files to out folder
 RUN mkdir -p /out
-RUN cp -v *.deb /out/
-RUN cp -v deb-listing.txt /out/
-RUN cp -v debug.txt /out/
+RUN cp -vR * /out/
 
 # copy files out of container
 FROM scratch AS export
