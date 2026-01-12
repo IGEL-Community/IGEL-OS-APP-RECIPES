@@ -9,7 +9,7 @@ COPY . .
 COPY get-debs.sh .
 
 # Install dependencies
-RUN apt update && apt-get install -y curl gnupg | tee -a debug.txt
+RUN apt update && apt-get install -y curl gnupg binutils xz-utils | tee -a debug.txt
 
 # run get-debs to collect the deb files
 RUN bash ./get-debs.sh | tee -a debug.txt
