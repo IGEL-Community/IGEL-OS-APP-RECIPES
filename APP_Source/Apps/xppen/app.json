@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Multimedia"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "xppen",
+  "author": "The IGEL community",
+  "vendor": "XPPen",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "XPPen (Community)"
+  },
+  "version": "4.0.13+251226.1.1"
+}
