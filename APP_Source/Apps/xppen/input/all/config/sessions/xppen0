@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/xppen/usr/lib/pentablet/PenTablet.sh

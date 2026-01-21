@@ -1,0 +1,14 @@
+<sessions>
+	<xppen%>
+        <name>
+            value=<XPPen>
+        </name>
+        <icon>
+            value=</services/xppen/usr/share/icons/hicolor/256x256/apps/xppentablet.png>
+        </icon>
+        extends_base=<sessions.base%>
+	</xppen%>
+	<xppen0>
+	</xppen0>
+    node_action=<wm_postsetup>
+</sessions>
