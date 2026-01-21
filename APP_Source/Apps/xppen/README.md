@@ -7,5 +7,5 @@ Obtain XPPen drivers for Linux (Download .deb) and rename to remove version from
 https://www.xp-pen.com/download
 
 ```bash linenums="1"
-wget https://download01.xp-pen.com/file/2026/01/XPPenLinux4.0.13-251226.deb
+wget -O XPPenLinux.deb https://download01.xp-pen.com/file/2026/01/XPPenLinux4.0.13-251226.deb
 ```
