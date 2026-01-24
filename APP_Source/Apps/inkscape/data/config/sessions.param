@@ -1,0 +1,14 @@
+<sessions>
+	<inkscape%>
+        <name>
+            value=<Inkscape>
+        </name>
+        <icon>
+            value=</services/inkscape/.icons/app.svg>
+        </icon>
+        extends_base=<sessions.base%>
+	</inkscape%>
+	<inkscape0>
+	</inkscape0>
+    node_action=<wm_postsetup>
+</sessions>
