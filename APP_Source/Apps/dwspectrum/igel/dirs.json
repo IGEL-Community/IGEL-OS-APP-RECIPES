@@ -1,0 +1,13 @@
+[
+    {
+      "path": "/userhome/.local/share/Digital_Watchdog",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/Videos/DW_Spectrum_Media",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
+
