@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/dwspectrum/opt/digitalwatchdog/client/*/bin/applauncher

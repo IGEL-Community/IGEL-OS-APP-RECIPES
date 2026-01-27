@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "dwspectrum",
+  "author": "The IGEL community",
+  "vendor": "dwspectrum",
+  "rw_partition": {
+    "size": 2000000,
+    "flags": [
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "DW Spectrum (Community)"
+  },
+  "version": "6.1.0+42176.1.3"
+}

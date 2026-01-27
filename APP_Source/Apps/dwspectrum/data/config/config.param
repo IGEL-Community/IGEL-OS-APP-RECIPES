@@ -1,0 +1,17 @@
+<sessions>
+	<dwspectrum%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</dwspectrum%>
+  <dwspectrum0>
+		<name_localized>
+			displayname[en_us]=<DW Spectrum Client>
+		</name_localized>
+		<icon>
+            value=</services/dwspectrum/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </dwspectrum0>
+</sessions>

@@ -1,0 +1,6 @@
+[Unit]
+Description=DWSpectrum
+
+[Service]
+ExecStartPre=/bin/ln -svf /services_rw/dwspectrum/userhome/.local/share/Digital_Watchdog '/userhome/.local/share/Digital Watchdog'
+ExecStart=/bin/ln -svf /services_rw/dwspectrum/userhome/Videos/DW_Spectrum_Media '/userhome/Videos/DW Spectrum Media'
