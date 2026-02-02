@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "dislocker",
+  "author": "The IGEL community",
+  "vendor": "Dislocker Team",
+  "release": "",
+  "summary": {
+    "en": "Dislocker (Community)"
+  },
+  "version": "0.7.2+1.0"
+}

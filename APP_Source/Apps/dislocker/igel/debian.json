@@ -1,0 +1,11 @@
+[
+  {
+    "package": "dislocker"
+  },
+  {
+    "package": "libdislocker0.7"
+  },
+  {
+    "package": "libruby3.1"
+  }
+]
