@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "teamviewerqs",
+  "author": "The IGEL community",
+  "vendor": "TeamViewer",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed",
+      "prefer_btrfs",
+      "allow_execute"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "TeamViewer QuickSupport (Community)"
+  },
+  "version": "15.74.3+1.4"
+}

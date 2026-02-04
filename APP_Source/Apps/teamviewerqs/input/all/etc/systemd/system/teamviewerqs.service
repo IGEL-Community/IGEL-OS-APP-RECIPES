@@ -1,0 +1,5 @@
+[Unit]
+Description=TeamViewer QuickSupport
+
+[Service]
+ExecStart=/services/teamviewerqs/config/bin/teamviewerqs-setup.sh
