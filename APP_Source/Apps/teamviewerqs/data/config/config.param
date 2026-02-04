@@ -1,0 +1,17 @@
+<sessions>
+	<teamviewerqs%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</teamviewerqs%>
+  <teamviewerqs0>
+		<name_localized>
+			displayname[en_us]=<TeamViewer QuickSupport>
+		</name_localized>
+		<icon>
+            value=</services/teamviewerqs/.icons/app.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </teamviewerqs0>
+</sessions>

@@ -1,0 +1,28 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": ["base"]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "TeamViewer QuickSupport",
+    "childrenIds": ["sessions"]
+  },
+  "sessions": {
+    "id": "sessions",
+    "parentId": "base",
+    "nlsResourceId": "sessions.label",
+    "title": "Session",
+    "instancePage": true,
+    "fixInstanceId": 0,
+    "elements": {
+      "0": {
+        "type": "sessionPage",
+        "paramId": "app.teamviewerqs.sessions.teamviewerqs",
+        "instancePageId": "sessions.genericInstancePage"
+      }
+    }
+  }
+}
