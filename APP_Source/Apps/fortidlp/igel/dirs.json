@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/etc/jazz",
+    "persistent": true,
+    "owner": "0:0",
+    "permissions": "755"
+  },
+  {
+    "path": "/var/jazz",
+    "persistent": true,
+    "owner": "0:0",
+    "permissions": "755"
+  }
+]

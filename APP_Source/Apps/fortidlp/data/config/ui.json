@@ -1,0 +1,31 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": ["base"]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "FortiDLP",
+    "childrenIds": ["config"]
+  },
+  "config": {
+    "id": "config",
+    "title": "Configuration",
+    "nlsResourceId": "config.label",
+    "parentId": "base",
+    "elements": {
+      "0": {
+        "title": "Configuration",
+        "nlsResourceId": "config.label",
+        "type": "label"
+      },
+      "1": {
+        "paramId": "app.fortidlp.config.enrollment-token",
+        "type": "generic"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+[Unit]
+Description=FortiDLP Agent Content NG
+After=igel-network-online.target
+Requires=jazz-agent.service
+After=jazz-agent.service
+
+[Service]
+ExecStartPre=/services/fortidlp/config/bin/fortidlp-init.sh
+ExecStart=/services/fortidlp/usr/sbin/jazz-contentng /var/run/jazzcontentng
+Restart=always
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
