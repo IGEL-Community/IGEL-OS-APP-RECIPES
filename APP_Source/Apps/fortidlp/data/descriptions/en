@@ -1,0 +1,15 @@
+FortiDLP
+
+FortiDLP protects organizations’ networks, devices, applications,
+and data against insider and outsider threats. It blends active user
+behavior analytics and data loss prevention technologies to accelerate
+threat detection and response.
+
+FortiDLP comprises the FortiDLP Infrastructure and the FortiDLP Agent:
+
+The FortiDLP Infrastructure, which includes the frontend (known as
+the FortiDLP Console), backend, database, and associated applications,
+is deployed on-premises or to the FortiDLP Cloud.
+
+The FortiDLP Agent collects granular behavioral information and reports
+it back to the FortiDLP Infrastructure for security threat analysis.

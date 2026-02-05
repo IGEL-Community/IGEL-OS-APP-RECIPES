@@ -1,0 +1,15 @@
+<config>
+	<enrollment-token>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<FortiDLP Enrollment Token>
+		tooltip[en_us]=<FortiDLP Enrollment Token>
+		node_action=<systemctl restart jazz-agent.service>
+	</enrollment-token>
+</config>
+<config_schema_version>
+	value=<1>
+	type=<integer>
+	runtime=<false>
+</config_schema_version>

@@ -1,0 +1,11 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "etc/firefox.*",
+      "usr/share/jazz.*",
+      "usr/src.*"
+    ],
+    "strip": false
+  }
+]

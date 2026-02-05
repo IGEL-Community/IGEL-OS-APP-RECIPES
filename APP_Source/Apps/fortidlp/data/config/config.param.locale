@@ -1,0 +1,10 @@
+<config>
+	<enrollment-token>
+		displayname[es_es]=<FortiDLP Enrollment Token>
+		displayname[nl_nl]=<FortiDLP Enrollment Token>
+		displayname[fr_fr]=<FortiDLP Enrollment Token>
+		displayname[de_de]=<FortiDLP Enrollment Token>
+		displayname[it_it]=<FortiDLP Enrollment Token>
+		tooltip[de_de]=<FortiDLP Enrollment Token>
+	</enrollment-token>
+</config>

@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "fortidlp",
+  "author": "The IGEL community",
+  "vendor": "Fortinet",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Fortinet DLP (Community)"
+  },
+  "version": "12.4.2+1.9"
+}
