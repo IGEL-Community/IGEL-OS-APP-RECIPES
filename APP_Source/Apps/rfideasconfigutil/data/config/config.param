@@ -1,0 +1,17 @@
+<sessions>
+	<rfideasconfigutil%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</rfideasconfigutil%>
+  <rfideasconfigutil0>
+		<name_localized>
+			displayname[en_us]=<rf IDEAS Configuration Utility>
+		</name_localized>
+		<icon>
+            value=</services/rfideasconfigutil/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </rfideasconfigutil0>
+</sessions>
