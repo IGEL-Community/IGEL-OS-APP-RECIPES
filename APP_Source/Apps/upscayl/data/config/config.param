@@ -1,0 +1,17 @@
+<sessions>
+	<upscayl%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</upscayl%>
+  <upscayl0>
+		<name_localized>
+			displayname[en_us]=<Upscayl>
+		</name_localized>
+		<icon>
+            value=</services/upscayl/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </upscayl0>
+</sessions>
