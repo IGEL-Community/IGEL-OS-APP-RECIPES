@@ -7,6 +7,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 - Set a reader's connection type, timing parameters, and card types and their associated data formats in order to read a credential. Also included are the Card Analyzer and Cloning features. Export .hwg files for rf IDEAS remote reader management solutions and configuration cards. 
 
+## Download rfIDEASConfigurationUtility6.10.0.deb
+
 https://www.rfideas.com/download-resource?nid=1395
 
 rfIDEASConfigurationUtility6.10.0.deb
