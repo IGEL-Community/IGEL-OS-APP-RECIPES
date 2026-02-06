@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "rfideasconfigutil",
+  "author": "The IGEL community",
+  "vendor": "rf IDEAS",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "rfIDEAS Configuration Utility (Community)"
+  },
+  "version": "6.10.0+1.2"
+}

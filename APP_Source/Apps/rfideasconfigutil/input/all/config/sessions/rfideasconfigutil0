@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/rfideasconfigutil/usr/bin/rfideasconfigurationutility6.10.0
