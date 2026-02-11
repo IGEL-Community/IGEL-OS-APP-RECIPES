@@ -1,0 +1,20 @@
+[
+    {
+      "path": "/opt/splashtop-business/config",
+      "persistent": true,
+      "owner": "0:0",
+      "permissions": "777"
+    },
+    {
+      "path": "/opt/splashtop-business/dump",
+      "persistent": true,
+      "owner": "0:0",
+      "permissions": "777"
+    },
+    {
+      "path": "/opt/splashtop-business/log",
+      "persistent": true,
+      "owner": "0:0",
+      "permissions": "777"
+    }
+]
