@@ -1,0 +1,11 @@
+[Unit]
+Description=SRUsb
+
+[Service]
+Type=Simple
+ExecStartPre=/bin/bash /services/splashtop/config/bin/splashtop-postinst.sh
+ExecStart=/services/splashtop/opt/splashtop-business/lib/SRUsb/SRUsb --mode stub
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+<sessions>
+	<splashtop%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</splashtop%>
+  <splashtop0>
+		<name_localized>
+			displayname[en_us]=<Splashtop>
+		</name_localized>
+		<icon>
+            value=</services/splashtop/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </splashtop0>
+</sessions>
