@@ -2,5 +2,5 @@
     "userland-proxy": false,
     "bridge": "none",
     "storage-driver": "vfs",
-    "iptables": true
+    "iptables": false
 }
