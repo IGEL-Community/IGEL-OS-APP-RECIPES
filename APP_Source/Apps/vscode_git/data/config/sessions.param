@@ -1,14 +1,17 @@
 <sessions>
 	<vscode%>
-        <name>
-            value=<Visual Studio Code>
-            displayname[en_us]=<Visual Studio Code>
-        </name>
-        <icon>
-            value=<vscode>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</vscode%>
-	<vscode0>
-	</vscode0>
+  <vscode0>
+		<name_localized>
+			displayname[en_us]=<Visual Studio Code>
+		</name_localized>
+		<icon>
+            value=<vscode>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </vscode0>
 </sessions>
