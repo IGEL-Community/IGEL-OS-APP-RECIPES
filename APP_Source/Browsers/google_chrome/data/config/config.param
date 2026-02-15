@@ -1,14 +1,17 @@
 <sessions>
 	<chrome%>
-        <name>
-            value=<chrome>
-        </name>
-        <icon>
-            value=</services/chrome/.icons/app.png>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</chrome%>
-	<chrome0>
-	</chrome0>
-    node_action=<wm_postsetup>
+  <chrome0>
+		<name_localized>
+			displayname[en_us]=<Chrome>
+		</name_localized>
+		<icon>
+            value=</services/chrome/.icons/app.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </chrome0>
 </sessions>
