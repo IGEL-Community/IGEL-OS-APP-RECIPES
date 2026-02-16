@@ -1,9 +1,9 @@
 <sessions>
-	<vscode%>
+	<vscode_git%>
 		extends_base=<sessions.base%>
 		node_action=<wm_postsetup>
-	</vscode%>
-  <vscode0>
+	</vscode_git%>
+  <vscode_git0>
 		<name_localized>
 			displayname[en_us]=<Visual Studio Code>
 		</name_localized>
@@ -13,5 +13,5 @@
 		<type>
 			displayname[en_us]=<Misc>
 		</type>
-  </vscode0>
+  </vscode_git0>
 </sessions>
