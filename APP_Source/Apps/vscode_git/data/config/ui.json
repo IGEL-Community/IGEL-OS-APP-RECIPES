@@ -20,7 +20,7 @@
     "elements": {
       "0": {
         "type": "sessionPage",
-        "paramId": "app.vscode.sessions.vscode",
+        "paramId": "app.vscode_git.sessions.vscode_git",
         "instancePageId": "sessions.genericInstancePage"
       }
     }
