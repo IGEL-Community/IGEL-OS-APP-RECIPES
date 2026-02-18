@@ -1,0 +1,17 @@
+<sessions>
+	<localsend%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</localsend%>
+  <localsend0>
+		<name_localized>
+			displayname[en_us]=<localsend>
+		</name_localized>
+		<icon>
+            value=</services/localsend/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </localsend0>
+</sessions>
