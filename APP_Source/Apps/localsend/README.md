@@ -12,6 +12,10 @@ Support for:
 - Windows
 - Linux
 
+-----
+
+## Download App
+
 - Obtain LocalSend for Linux AppImage and zip it up - [Linux AppImage Download Link](https://localsend.org/download)
 
 - Zip it into `LocalSend.AppImage.zip`
