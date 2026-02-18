@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/userhome/.local/share/localsend_app",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

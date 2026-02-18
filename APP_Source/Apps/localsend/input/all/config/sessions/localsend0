@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/localsend/usr/bin/LocalSend-*-linux-x86-64.AppImage
