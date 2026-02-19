@@ -5,7 +5,7 @@
 	</localsend%>
   <localsend0>
 		<name_localized>
-			displayname[en_us]=<localsend>
+			displayname[en_us]=<LocalSend>
 		</name_localized>
 		<icon>
             value=</services/localsend/.icons/monochrome.png>
