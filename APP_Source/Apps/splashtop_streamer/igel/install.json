@@ -1,0 +1,11 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "etc/systemd.*",
+      "opt/splashtop-streamer/config.*",
+      "usr/share/applications.*",
+      "usr/share/doc.*"
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/usr/bin/env HIDE_WINDOW=0 /services/splashtopstreamer/opt/splashtop-streamer/SRStreamer

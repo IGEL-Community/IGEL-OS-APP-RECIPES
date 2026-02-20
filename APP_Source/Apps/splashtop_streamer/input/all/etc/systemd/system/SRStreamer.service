@@ -1,0 +1,16 @@
+[Unit]
+Description=Splashtop Streamer Daemon
+Wants=network-online.target
+After=igel-network-online.target
+
+[Service]
+Environment="LD_LIBRARY_PATH=/services/splashtopstreamer/opt/splashtop-streamer"
+Type=simple
+PIDFile=/run/SRStreamer.pid
+ExecStartPre=/bin/bash /services/splashtopstreamer/config/bin/splashtopstreamer-postinst.sh
+ExecStart=/services/splashtopstreamer/opt/splashtop-streamer/SRFeature
+Restart=always
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

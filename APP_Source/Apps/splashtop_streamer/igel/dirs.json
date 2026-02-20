@@ -1,0 +1,26 @@
+[
+    {
+      "path": "/opt/splashtop-streamer/.keyring",
+      "persistent": true,
+      "owner": "10904:10904",
+      "permissions": "777"
+    },
+    {
+      "path": "/opt/splashtop-streamer/config",
+      "persistent": true,
+      "owner": "10904:10904",
+      "permissions": "777"
+    },
+    {
+      "path": "/opt/splashtop-streamer/dump",
+      "persistent": true,
+      "owner": "10904:10904",
+      "permissions": "777"
+    },
+    {
+      "path": "/opt/splashtop-streamer/log",
+      "persistent": true,
+      "owner": "10904:10904",
+      "permissions": "777"
+    }
+]

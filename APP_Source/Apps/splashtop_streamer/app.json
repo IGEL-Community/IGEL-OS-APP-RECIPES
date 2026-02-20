@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "splashtopstreamer",
+  "author": "The IGEL community",
+  "vendor": "Splashtop",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Splashtop Streamer (Community)"
+  },
+  "version": "3.8.0+1.8"
+}

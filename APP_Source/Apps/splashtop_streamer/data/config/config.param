@@ -1,0 +1,32 @@
+<sessions>
+	<splashtopstreamer%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</splashtopstreamer%>
+  <splashtopstreamer0>
+		<name_localized>
+			displayname[en_us]=<Splashtop Streamer>
+		</name_localized>
+		<icon>
+            value=</services/splashtopstreamer/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </splashtopstreamer0>
+</sessions>
+<config>
+	<deployment-code>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Splashtop Stream Deployment Code>
+		tooltip[en_us]=<Splashtop Stream Deployment Code>
+		node_action=<systemctl restart SRStreamer.service>
+	</deployment-code>
+</config>
+<config_schema_version>
+	value=<1>
+	type=<integer>
+	runtime=<false>
+</config_schema_version>
