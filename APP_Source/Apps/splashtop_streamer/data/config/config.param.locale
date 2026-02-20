@@ -1,0 +1,17 @@
+<sessions>
+	<splashtopstreamer0>
+		<name_localized>
+			displayname[de_de]=<Splashtop Streamer>
+		</name_localized>
+	</splashtopstreamer0>
+</sessions>
+<config>
+	<deployment-code>
+		displayname[es_es]=<Splashtop Streamer Deployment Code>
+		displayname[nl_nl]=<Splashtop Streamer Deployment Code>
+		displayname[fr_fr]=<Splashtop Streamer Deployment Code>
+		displayname[de_de]=<Splashtop Streamer Deployment Code>
+		displayname[it_it]=<Splashtop Streamer Deployment Code>
+		tooltip[de_de]=<Splashtop Streamer Deployment Code>
+	</deployment-code>
+</config>

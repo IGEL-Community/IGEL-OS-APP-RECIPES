@@ -1,0 +1,8 @@
+Splashtop Streamer
+
+Splashtop Streamer is a software component of the Splashtop remote-access
+system that you install on a computer you want to access or control
+remotely. It acts as the “server” side of the remote connection,
+enabling another device (like your phone, tablet, or another PC) to see
+and control the computer over a network or the Internet using a Splashtop
+client app.
