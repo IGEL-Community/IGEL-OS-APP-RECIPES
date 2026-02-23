@@ -2,4 +2,4 @@
 Description=Joplin
 
 [Service]
-ExecStart=/bin/bash /etc/joplin/joplin-init.sh
+ExecStart=/bin/bash /services/joplin/config/bin/joplin/joplin-init.sh
