@@ -1,14 +1,17 @@
 <sessions>
 	<joplin%>
-        <name>
-            value=<Joplin>
-        </name>
-        <icon>
-            value=</services/joplin/.icons/monochrome.png>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</joplin%>
-	<joplin0>
-	</joplin0>
-    node_action=<wm_postsetup>
+  <joplin0>
+		<name_localized>
+			displayname[en_us]=<Joplin>
+		</name_localized>
+		<icon>
+            value=</services/joplin/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </joplin0>
 </sessions>

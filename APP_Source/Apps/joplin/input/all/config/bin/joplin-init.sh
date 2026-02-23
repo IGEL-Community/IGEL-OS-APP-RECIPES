@@ -1,8 +1,4 @@
 #!/bin/bash
-
-mkdir -p "%root%/etc/joplin"
-cat <<"EOF" > "%root%/etc/joplin/joplin-init.sh"
-#!/bin/bash
 #set -x
 #trap read debug
 
@@ -19,5 +15,3 @@ echo "Starting" | $LOGGER
 ln -svf ${APP_NAME} /usr/bin/joplin | $LOGGER
 
 echo "Finished" | $LOGGER
-
-EOF
