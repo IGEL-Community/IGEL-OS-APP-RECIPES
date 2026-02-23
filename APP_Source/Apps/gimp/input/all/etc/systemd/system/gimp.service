@@ -1,0 +1,5 @@
+[Unit]
+Description=GIMP
+
+[Service]
+ExecStart=/bin/bash /services/gimp/config/bin/gimp-init.sh
