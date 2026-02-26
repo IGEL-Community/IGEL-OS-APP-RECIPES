@@ -1,14 +1,17 @@
 <sessions>
 	<libreoffice%>
-        <name>
-            value=<libreoffice>
-        </name>
-        <icon>
-            value=</services/libreoffice/.icons/app.svg>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</libreoffice%>
-	<libreoffice0>
-	</libreoffice0>
-    node_action=<wm_postsetup>
+  <libreoffice0>
+		<name_localized>
+			displayname[en_us]=<LibreOffice>
+		</name_localized>
+		<icon>
+            value=</services/libreoffice/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </libreoffice0>
 </sessions>
