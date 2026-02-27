@@ -1,14 +1,17 @@
 <sessions>
 	<pcmanfm%>
-        <name>
-            value=<PCManFM>
-        </name>
-        <icon>
-            value=<system-file-manager>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</pcmanfm%>
-	<pcmanfm0>
-	</pcmanfm0>
-    node_action=<wm_postsetup>
+  <pcmanfm0>
+		<name_localized>
+			displayname[en_us]=<PCManFM>
+		</name_localized>
+		<icon>
+            value=<system-file-manager>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </pcmanfm0>
 </sessions>
