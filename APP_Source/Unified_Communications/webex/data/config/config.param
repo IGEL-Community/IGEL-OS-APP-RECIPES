@@ -1,14 +1,17 @@
 <sessions>
 	<webex%>
-        <name>
-            value=<Webex>
-        </name>
-        <icon>
-            value=</services/webex/opt/Webex/bin/sparklogosmall.png>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</webex%>
-	<webex0>
-	</webex0>
-    node_action=<wm_postsetup>
+  <webex0>
+		<name_localized>
+			displayname[en_us]=<Webex>
+		</name_localized>
+		<icon>
+			value=</services/webex/opt/Webex/bin/sparklogosmall.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </webex0>
 </sessions>
