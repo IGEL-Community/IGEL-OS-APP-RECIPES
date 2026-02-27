@@ -1,0 +1,17 @@
+<sessions>
+	<inkscape%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</inkscape%>
+  <inkscape0>
+		<name_localized>
+			displayname[en_us]=<Inkscape>
+		</name_localized>
+		<icon>
+            value=</services/inkscape/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </inkscape0>
+</sessions>
