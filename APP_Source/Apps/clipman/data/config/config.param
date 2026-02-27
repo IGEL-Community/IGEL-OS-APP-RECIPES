@@ -1,14 +1,17 @@
 <sessions>
 	<clipman%>
-        <name>
-            value=<Clipman>
-        </name>
-        <icon>
-            value=</services/clipman/.icons/app.svg>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</clipman%>
-	<clipman0>
-	</clipman0>
-    node_action=<wm_postsetup>
+  <clipman0>
+		<name_localized>
+			displayname[en_us]=<Clipman>
+		</name_localized>
+		<icon>
+            value=</services/clipman/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </clipman0>
 </sessions>
