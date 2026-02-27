@@ -1,14 +1,17 @@
 <sessions>
 	<speedcrunch%>
-        <name>
-            value=<SpeedCrunch>
-        </name>
-        <icon>
-            value=<speedcrunch>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</speedcrunch%>
-	<speedcrunch0>
-	</speedcrunch0>
-    node_action=<wm_postsetup>
+  <speedcrunch0>
+		<name_localized>
+			displayname[en_us]=<SpeedCrunch>
+		</name_localized>
+		<icon>
+            value=<speedcrunch>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </speedcrunch0>
 </sessions>
