@@ -1,14 +1,17 @@
 <sessions>
 	<ringcentral%>
-        <name>
-            value=<RingCentral>
-        </name>
-        <icon>
-            value=</services/ringcentral/.icons/monochrome.png>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</ringcentral%>
-	<ringcentral0>
-	</ringcentral0>
-    node_action=<wm_postsetup>
+  <ringcentral0>
+		<name_localized>
+			displayname[en_us]=<ringcentral>
+		</name_localized>
+		<icon>
+			value=</services/ringcentral/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </ringcentral0>
 </sessions>
