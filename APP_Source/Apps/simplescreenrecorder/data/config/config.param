@@ -1,14 +1,17 @@
 <sessions>
 	<simplescreenrecorder%>
-        <name>
-            value=<SimpleScreenRecorder>
-        </name>
-        <icon>
-            value=</services/simplescreenrecorder/.icons/app.svg>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</simplescreenrecorder%>
-	<simplescreenrecorder0>
-	</simplescreenrecorder0>
-    node_action=<wm_postsetup>
+  <simplescreenrecorder0>
+		<name_localized>
+			displayname[en_us]=<SimpleScreenRecorder>
+		</name_localized>
+		<icon>
+            value=</services/simplescreenrecorder/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </simplescreenrecorder0>
 </sessions>
