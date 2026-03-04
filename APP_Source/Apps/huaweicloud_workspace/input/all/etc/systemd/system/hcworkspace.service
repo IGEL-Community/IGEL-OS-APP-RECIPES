@@ -1,0 +1,10 @@
+[Unit]
+Description=Huawei Cloud Workspace
+Wants=network-online.target
+After=igel-network-online.target
+
+[Service]
+ExecStart=/bin/bash /services/hcworkspace/config/bin/hcworkspace-postinst.sh
+
+[Install]
+WantedBy=multi-user.target

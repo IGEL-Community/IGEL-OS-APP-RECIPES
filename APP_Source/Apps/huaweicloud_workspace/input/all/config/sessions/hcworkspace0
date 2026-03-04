@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/hcworkspace/opt/apps/com.huawei.HuaweiCloudWorkspace/files/HDPViewer/LinuxClient/ClientTool CloudLaunch CloudClient
