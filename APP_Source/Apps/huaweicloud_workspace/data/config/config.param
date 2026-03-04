@@ -1,0 +1,17 @@
+<sessions>
+	<hcworkspace%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</hcworkspace%>
+  <hcworkspace0>
+		<name_localized>
+			displayname[en_us]=<HUAWEI CLOUD WORKSPACE>
+		</name_localized>
+		<icon>
+            value=</services/hcworkspace/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </hcworkspace0>
+</sessions>

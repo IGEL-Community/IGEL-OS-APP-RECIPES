@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "hcworkspace",
+  "author": "The IGEL community",
+  "vendor": "Huawei Cloud",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed",
+      "prefer_btrfs",
+      "allow_execute"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Huawei Cloud Workspace (Community)"
+  },
+  "version": "25.2.0+0.1.1"
+}
