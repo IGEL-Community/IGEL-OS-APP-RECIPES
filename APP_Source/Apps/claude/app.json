@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "claude",
+  "author": "The IGEL community",
+  "vendor": "claude",
+  "rw_partition": {
+    "size": 2000000,
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Claude Desktop (Community)"
+  },
+  "version": "1.3.17+1.2"
+}

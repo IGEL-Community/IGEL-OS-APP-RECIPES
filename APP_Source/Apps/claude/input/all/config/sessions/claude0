@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/claude/usr/bin/claude-desktop

@@ -1,0 +1,17 @@
+<sessions>
+	<claude%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</claude%>
+  <claude0>
+		<name_localized>
+			displayname[en_us]=<claude>
+		</name_localized>
+		<icon>
+            value=</services/claude/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </claude0>
+</sessions>
