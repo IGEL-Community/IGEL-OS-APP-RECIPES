@@ -59,7 +59,7 @@ if [ -n "${DEPLOYMENT_CODE}" ]; then
     echo "Deployment code already setup" | $LOGGER
   else
     echo "Adding deployment code ${DEPLOYMENT_CODE}" | $LOGGER
-    /services/splashtopstreamer/opt/splashtop-streamer/SRUtility deploy $DEPLOYMENT_CODE
+    /services/splashtopstreamer/opt/splashtop-streamer/SRUtility --deploy $DEPLOYMENT_CODE
   fi
 fi
 
