@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "zstd",
+  "author": "The IGEL Community",
+  "vendor": "zstd Team",
+  "release": "",
+  "summary": {
+    "en": "zstd (Community)"
+  },
+  "version": "1.5.4+1.0"
+}
