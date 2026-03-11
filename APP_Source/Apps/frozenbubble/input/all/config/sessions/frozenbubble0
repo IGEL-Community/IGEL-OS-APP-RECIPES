@@ -1,3 +1,5 @@
 #!/bin/bash
 
+export LD_LIBRARY_PATH=/services/frozenbubble/usr/lib/x86_64-linux-gnu
+
 /services/frozenbubble/usr/games/frozen-bubble
