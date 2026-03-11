@@ -4,7 +4,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 https://github.com/AlizaMedicalImaging/AlizaMS/releases
 
-alizams_binary_only-1.9.10.tar.gz
+alizams_binary_only-1.9.11.tar.gz
 
 - Note the version of the file
 - Rename file to `alizams_binary_only.tar.gz`
