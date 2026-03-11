@@ -1,0 +1,17 @@
+<sessions>
+	<alizadiacom%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</alizadiacom%>
+  <alizadiacom0>
+		<name_localized>
+			displayname[en_us]=<AlizaMS>
+		</name_localized>
+		<icon>
+            value=</services/alizadiacom/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </alizadiacom0>
+</sessions>
