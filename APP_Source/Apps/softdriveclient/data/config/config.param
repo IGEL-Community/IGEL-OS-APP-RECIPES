@@ -1,14 +1,17 @@
 <sessions>
 	<softdriveclient%>
-        <name>
-            value=<SoftdriveClient>
-        </name>
-        <icon>
-            value=</services/softdriveclient/opt/Softdrive/resources/bin/Assets/favicon2.png>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</softdriveclient%>
-	<softdriveclient0>
-	</softdriveclient0>
-    node_action=<wm_postsetup>
+  <softdriveclient0>
+		<name_localized>
+			displayname[en_us]=<SoftdriveClient>
+		</name_localized>
+		<icon>
+			value=</services/softdriveclient/opt/Softdrive/resources/bin/Assets/favicon2.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </softdriveclient0>
 </sessions>
