@@ -1,14 +1,17 @@
 <sessions>
 	<appspace%>
-        <name>
-            value=<Appspace App>
-        </name>
-        <icon>
-            value=</services/appspace/.icons/monochrome.png>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</appspace%>
-	<appspace0>
-	</appspace0>
-    node_action=<wm_postsetup>
+  <appspace0>
+		<name_localized>
+			displayname[en_us]=<Appspace App>
+		</name_localized>
+		<icon>
+            value=</services/appspace/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </appspace0>
 </sessions>
