@@ -1,0 +1,23 @@
+<config>
+	<acc-api-key>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<ServiceNow ACC API KEY>
+		tooltip[en_us]=<ServiceNow ACC API KEY>
+		node_action=<systemctl restart snowacc.service>
+	</acc-api-key>
+	<acc-mid>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<ServiceNow ACC MID>
+		tooltip[en_us]=<ServiceNow ACC MID>
+		node_action=<systemctl restart snowacc.service>
+	</acc-mid>
+</config>
+<config_schema_version>
+	value=<1>
+	type=<integer>
+	runtime=<false>
+</config_schema_version>

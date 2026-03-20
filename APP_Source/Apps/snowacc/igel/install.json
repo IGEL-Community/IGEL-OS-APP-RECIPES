@@ -1,0 +1,13 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "lib.*",
+      "usr/share/servicenow/agent-client-collector/embedded/share/doc.*",
+      "usr/share/servicenow/agent-client-collector/embedded/share/man.*",
+      "var/cache.*",
+      "var/log.*",
+      "var/run.*"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "url": "file:///tmp/agent-client-collector_amd64.deb",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "userName" : "servicenow",
+  "homeDirectory" : "/services/snowacc/usr/share/servicenow",
+  "uid" : 10905,
+  "gid" : 10905
+}

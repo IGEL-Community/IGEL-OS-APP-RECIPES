@@ -1,0 +1,21 @@
+[
+    {
+      "path": "/var/cache/servicenow/agent-client-collector",
+      "persistent": true,
+      "owner": "0:0",
+      "permissions": "755"
+    },
+    {
+      "path": "/var/log/servicenow/agent-client-collector",
+      "persistent": true,
+      "owner": "0:0",
+      "permissions": "755"
+    },
+    {
+      "path": "/var/run/servicenow/agent-client-collector",
+      "persistent": true,
+      "owner": "0:0",
+      "permissions": "755"
+    }
+]
+
