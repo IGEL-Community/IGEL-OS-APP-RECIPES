@@ -124,7 +124,6 @@ ln -svf ${APP_PATH}/usr/share/servicenow /usr/share/servicenow
 ln -svf ${APP_PATH}/etc/servicenow /etc/servicenow
 
 cp -p ${APP_PATH}/etc/servicenow/agent-client-collector/check-allow-list.json.default ${APP_PATH}/etc/servicenow/agent-client-collector/check-allow-list.json
-
 cp -p ${APP_PATH}/etc/servicenow/agent-client-collector/acc.yml.example ${APP_PATH}/etc/servicenow/agent-client-collector/acc.yml
 
 chown_sn_dirs
