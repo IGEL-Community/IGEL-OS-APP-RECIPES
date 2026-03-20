@@ -1,6 +1,6 @@
 [Unit]
 Description=Agent-Now acc
-After=igel-network-online.target
+After=igel-desktop-final.target
 
 [Service]
 Environment=AGENT_ROOT=/services/snowacc/usr/share
