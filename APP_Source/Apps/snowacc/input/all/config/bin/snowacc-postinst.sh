@@ -8,16 +8,12 @@
 # ServiceNow Agent Client Collector postinst
 #
 
-set -e
-
 ACTION="snowacc_postinst"
 
 # output to systemlog with ID amd tag
 LOGGER="logger -it ${ACTION}"
 
 echo "Starting - Configure snowacc" | $LOGGER
-
-set -e
 
 PROGNAME=`basename $0`
 
@@ -71,8 +67,6 @@ SN_GROUP=servicenow
 
 chown_sn_dirs()
 {
-	set -e
-
 	chown -R $SN_USER:$SN_GROUP $SHARE_SN_DIR
 	chown -R $SN_USER:$SN_GROUP $ETC_SN_DIR
 	chown -R $SN_USER:$SN_GROUP $LOG_SN_DIR
@@ -85,7 +79,6 @@ chown_sn_dirs()
 
 chmod_sn_dirs()
 {
-	set -e
 	# Ensure all relevant files/directories with correct permissions.
 	find $SHARE_SN_DIR -type d -exec chmod 755 '{}' '+'
 	find $CACHE_SN_DIR -type d -exec chmod 755 '{}' '+'
@@ -116,20 +109,19 @@ chmod_sn_exes()
 
 create_ser_number_file()
 {
-	set +e
 	
-		if ! [ -x "$(command -v dmidecode)" ]; then
-		  echo '' > $INSTALLER_DIR/serial_number.txt | $LOGGER
-		 else
-		  dmidecode -s system-serial-number > $INSTALLER_DIR/serial_number.txt
-		fi
+	if ! [ -x "$(command -v dmidecode)" ]; then
+	  echo '' > $INSTALLER_DIR/serial_number.txt | $LOGGER
+	else
+	  dmidecode -s system-serial-number > $INSTALLER_DIR/serial_number.txt
+	fi
 
-		chmod 0644 $INSTALLER_DIR/serial_number.txt
+	chmod 0644 $INSTALLER_DIR/serial_number.txt
 	chown $SN_USER:$SN_GROUP $INSTALLER_DIR/serial_number.txt
 }
 
-ln -svf ${APP_PATH}/usr/share/servicenow /usr/share/servicenow | $LOGGER
-ln -svf ${APP_PATH}/etc/servicenow /etc/servicenow | $LOGGER
+ln -svf ${APP_PATH}/usr/share/servicenow /usr/share/servicenow
+ln -svf ${APP_PATH}/etc/servicenow /etc/servicenow
 
 cp -p ${APP_PATH}/etc/servicenow/agent-client-collector/check-allow-list.json.default ${APP_PATH}/etc/servicenow/agent-client-collector/check-allow-list.json
 
