@@ -1,0 +1,10 @@
+<config>
+	<deployment-code>
+		displayname[es_es]=<ServiceNow Agent Client Collector Deployment Code>
+		displayname[nl_nl]=<ServiceNow Agent Client Collector Deployment Code>
+		displayname[fr_fr]=<ServiceNow Agent Client Collector Deployment Code>
+		displayname[de_de]=<ServiceNow Agent Client Collector Deployment Code>
+		displayname[it_it]=<ServiceNow Agent Client Collector Deployment Code>
+		tooltip[de_de]=<ServiceNow Agent Client Collector Deployment Code>
+	</deployment-code>
+</config>

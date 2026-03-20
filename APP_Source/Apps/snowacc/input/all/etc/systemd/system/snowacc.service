@@ -1,0 +1,21 @@
+[Unit]
+Description=Agent-Now acc
+After=igel-network-online.target
+
+[Service]
+Environment=AGENT_ROOT=/services/snowacc/usr/share
+Environment=AGENT_CACHE_ROOT=/services_rw/snowacc/var/cache
+Environment=AGENT_CONFIG_ROOT=/services/snowacc/etc
+Environment=AGENT_LOG_ROOT=/services_rw/snowacc/var/log
+Environment=AGENT_RUN_ROOT=/services_rw/snowacc/var/run
+Environment=RUBYOPT=-Eutf-8
+User=servicenow
+Group=servicenow
+ExecStartPre=/bin/bash /services/snowacc/config/bin/snowacc-postinst.sh
+ExecStart=/services/snowacc/usr/share/servicenow/agent-client-collector/bin/acc-service start acc
+KillMode=process
+Restart=on-failure
+RestartSec=1min
+
+[Install]
+WantedBy=network-online.target

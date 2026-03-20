@@ -1,0 +1,10 @@
+{
+    "config.label": {
+        "de": "Einstellungen",
+        "en": "Settings"
+    },
+    "title": {
+        "de": "ServiceNow Agent Client Collector",
+        "en": "ServiceNow Agent Client Collector"
+    }
+}

@@ -1,0 +1,11 @@
+ServiceNow Agent Client Collector
+
+ServiceNow Agent Client Collector (ACC) is a lightweight software agent that collects operational data and send it back to ServiceNow.
+
+- Gathers system, application, and performance data
+
+- Monitors health and availability
+
+- Collects logs and inventory details
+
+- Sends everything back to your ServiceNow instance for analysis

@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "snowacc",
+  "author": "The IGEL community",
+  "vendor": "ServiceNow",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "ServiceNow Agent Client Collector (Community)"
+  },
+  "version": "6.0.4+6.1.4"
+}

@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": ["base"]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "ServiceNow Agent Client Collector",
+    "childrenIds": ["config"]
+  },
+  "config": {
+    "id": "config",
+    "title": "Configuration",
+    "nlsResourceId": "config.label",
+    "parentId": "base",
+    "elements": {
+      "0": {
+        "title": "Configuration",
+        "nlsResourceId": "config.label",
+        "type": "label"
+      },
+      "1": {
+        "paramId": "app.snowacc.config.acc-api-key",
+        "type": "generic"
+      },
+      "2": {
+        "paramId": "app.snowacc.config.acc-mid",
+        "type": "generic"
+      }
+    }
+  }
+}
+
