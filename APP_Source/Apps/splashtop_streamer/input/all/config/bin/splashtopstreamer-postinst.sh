@@ -3,7 +3,7 @@
 #trap read debug
 
 #
-# Version: Fri Feb 13 10:37:01 AM MST 2026
+# Version: Mon Mar 23 10:02:50 AM MDT 2026
 #
 # Splashtop-Streamer postinst
 #
@@ -48,6 +48,10 @@ chown $SRS_USER:$SRS_GROUP $SRS_HOME/SRChat
 chmod 2755 $SRS_HOME/SRChat
 chown $SRS_USER:$SRS_GROUP $SRS_HOME/SRUtility
 chmod 2755 $SRS_HOME/SRUtility
+
+# 260323 - Start Update permissions
+chmod -R 777 $SRS_HOME
+# 260323 - End Update permissions
 
 /services/splashtopstreamer/opt/splashtop-streamer/SRUtility --config --key update_need_report --value 1 || true
 
