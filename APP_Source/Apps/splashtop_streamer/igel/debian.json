@@ -1,5 +1,11 @@
 [
   {
-    "package": "libxcb-xtest0"
+    "package": "libxcb-xtest0",
+    "licenses": [
+      {
+        "name": "libxcb-xtest0",
+        "file": "%tmp%/usr/share/doc/libxcb-xtest0/copyright"
+      }
+    ]    
   }
 ]
