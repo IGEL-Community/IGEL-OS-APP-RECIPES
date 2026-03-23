@@ -1,3 +1,9 @@
 #!/bin/bash
 
+#Run SRFeature
+# export LD_LIBRARY_PATH=/custom/opt/splashtop-streamer
+# /custom/opt/splashtop-streamer/SRFeature
+
+export LD_LIBRARY_PATH=/services/splashtopstreamer/opt/splashtop-streamer
+
 /usr/bin/env HIDE_WINDOW=0 /services/splashtopstreamer/opt/splashtop-streamer/SRStreamer
