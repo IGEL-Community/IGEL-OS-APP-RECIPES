@@ -5,7 +5,18 @@
       "lib.*",
       "var/cache.*",
       "var/log.*",
-      "var/run.*"
+      "var/run.*",
+      "usr/share/servicenow/agent-client-collector/doc.*",
+      "usr/share/servicenow/agent-client-collector/embedded/lib/ruby/3.3.0/bundler/man.*",
+      "usr/share/servicenow/agent-client-collector/embedded/lib/ruby/gems/3.3.0/doc.*",
+      "usr/share/servicenow/agent-client-collector/embedded/lib/ruby/gems/3.3.0/gems/net-imap-0.4.21/docs.*",
+      "usr/share/servicenow/agent-client-collector/embedded/lib/ruby/gems/3.3.0/gems/racc-1.7.3/doc.*",
+      "usr/share/servicenow/agent-client-collector/embedded/lib/ruby/gems/3.3.0/gems/rake-13.1.0/doc.*",
+      "usr/share/servicenow/agent-client-collector/embedded/lib/ruby/gems/3.3.0/gems/rbs-3.4.0/docs.*",
+      "usr/share/servicenow/agent-client-collector/embedded/lib/ruby/gems/3.3.0/gems/rexml-3.4.4/doc.*",
+      "usr/share/servicenow/agent-client-collector/embedded/lib/ruby/gems/3.3.0/gems/test-unit-3.6.1/doc.*",
+      "usr/share/servicenow/agent-client-collector/embedded/share/doc.*",
+      "usr/share/servicenow/agent-client-collector/embedded/share/man.*"
     ]
   }
 ]
