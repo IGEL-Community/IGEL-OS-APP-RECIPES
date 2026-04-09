@@ -35,3 +35,23 @@ This is written into `~/.gitconfig` and the content of the file looks like this:
 - Log File Highlighter
 - Markdown Preview Mermaid Support
 - Vim
+
+-----
+
+## /userhome/.config/Code/User/settings.json
+
+- Same settings
+
+```json
+{
+    "update.mode": "none",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "githubPullRequests.pushBranch": "always",
+    "githubPullRequests.pullBranch": "never",
+    "git.timeout": 600,
+    "terminal.integrated.fontSize": 18,
+    "markdown.preview.fontSize": 18,
+    "editor.fontSize": 12
+}
+```
