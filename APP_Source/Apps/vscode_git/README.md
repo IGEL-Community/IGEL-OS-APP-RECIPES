@@ -40,8 +40,6 @@ This is written into `~/.gitconfig` and the content of the file looks like this:
 
 ## /userhome/.config/Code/User/settings.json
 
-- Same settings
-
 ```json
 {
     "update.mode": "none",
