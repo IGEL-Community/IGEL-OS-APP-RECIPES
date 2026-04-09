@@ -9,7 +9,7 @@
   "name": "flameshot",
   "author": "The IGEL community",
   "vendor": "Flameshot",
-   "vendor": "Avaya",
+   "vendor": "Flameshot",
   "rw_partition": {
     "size": "small",
     "flags": [
@@ -20,5 +20,5 @@
   "summary": {
     "en": "Flameshot (Community)"
   },
-  "version": "13.1.0+1.1"
+  "version": "13.3.0+1.1"
 }
