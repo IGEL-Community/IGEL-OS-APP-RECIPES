@@ -82,5 +82,76 @@ popd
 
 cp /tmp/newfiles.tar.bz2 ../sapgui.tar.bz2
 cd ..
-rm -rf buld_tar
+rm -rf build_tar
+```
+
+## Use Docker to build sapgui.tar.bz2
+
+- Save the following as `dockerfile`:
+
+```dockerfile
+FROM debian:12-slim
+
+RUN apt-get update && apt-get install -y \
+    bzip2 \
+    tar \
+    findutils \
+    coreutils \
+    xz-utils \
+    libxtst6 \
+    libxi6 \
+    libxrender1 \
+    libxext6 \
+    libx11-6 \
+    libxpm4 \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY PlatinGUI-Linux-x86_64-Installation /tmp/
+COPY build-sapgui-tar.sh /usr/local/bin/
+
+RUN chmod +x /usr/local/bin/build-sapgui-tar.sh
+
+CMD ["/usr/local/bin/build-sapgui-tar.sh"]
+```
+
+- Save the following as `build-sapgui-tar.sh`:
+
+```bash linenums="1"
+#!/bin/bash
+set -euxo pipefail
+
+GETVERSION_FILE="PlatinGUI-Linux-x86_64-Installation"
+
+pushd /
+find etc opt usr | sort > /tmp/find_root_listing1.txt
+popd
+
+chmod a+x "/tmp/${GETVERSION_FILE}"
+"/tmp/${GETVERSION_FILE}" install -f -s
+
+pushd /
+find etc opt usr | sort > /tmp/find_root_listing2.txt
+
+comm -1 -3 /tmp/find_root_listing1.txt /tmp/find_root_listing2.txt \
+  | tar -cjvf /tmp/sapgui.tar.bz2 -T -
+
+popd
+
+cp /tmp/sapgui.tar.bz2 /output/sapgui.tar.bz2
+```
+
+- Save the following as `run-docker.sh`:
+
+```bash linenums="1"
+#!/bin/bash
+
+mkdir -p output
+
+docker system prune -f
+docker build --network host -t sapgui-builder .
+
+docker run --network host --rm \
+  -v "$PWD/output:/output" \
+  sapgui-builder
 ```
