@@ -105,6 +105,7 @@ RUN apt-get update && apt-get install -y \
     libx11-6 \
     libxpm4 \
     unzip \
+    xdg-utils \
     && rm -rf /var/lib/apt/lists/*
 
 COPY PlatinGUI-Linux-x86_64-Installation /tmp/
