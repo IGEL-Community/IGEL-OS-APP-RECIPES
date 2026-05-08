@@ -1,0 +1,18 @@
+<sessions>
+	<whack_a_hacker%>
+		extends_base=<sessions.base%>
+	  	node_action=<wm_postsetup>
+	</whack_a_hacker%>
+  	<whack_a_hacker0>
+		<name_localized>
+			displayname[en_us]=<Whack-a-Hacker>
+		</name_localized>
+		<icon>
+            value=</services/whack_a_hacker/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  	</whack_a_hacker0>
+
+</sessions>

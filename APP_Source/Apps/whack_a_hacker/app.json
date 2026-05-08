@@ -1,0 +1,23 @@
+{
+  "name": "whack_a_hacker",
+  "version": "1.11.0",
+  "summary": {
+    "en": "Whack-a-Hacker - A fast-paced cybersecurity themed arcade game"
+  },
+  "icons": {
+      "app": "app.svg",
+      "monochrome": "monochrome.svg"
+  },
+  "categories": [
+    "Game",
+    "ArcadeGame"
+  ],
+  "author": "David Prows",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  }
+}
+
