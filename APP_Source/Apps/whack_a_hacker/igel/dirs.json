@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/userhome/.local/share/whack-a-hacker",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

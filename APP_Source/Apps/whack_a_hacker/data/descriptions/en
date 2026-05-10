@@ -1,0 +1,3 @@
+Whack-a-Hacker - A fast-paced cybersecurity themed arcade game
+
+Whack-a-Hacker is a fast-paced, cyber security themed whack-a-mole game built with Python and Pygame. Defeat hackers, avoid phishing traps, collect power-ups, and climb the leaderboard. Features diverse enemy types including regular hackers, APT threats, social engineers, boss hackers, and phishing emails. Includes power-ups like freeze time, double points, time bonus, and slow motion. All sprites and sound effects are procedurally generated.

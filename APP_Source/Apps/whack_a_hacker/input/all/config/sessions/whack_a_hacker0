@@ -1,0 +1,3 @@
+#!/bin/bash
+
+APULSE_PLAYBACK_DEVICE=default AUDIODEV=hw:0,0 SDL_AUDIODRIVER=alsa /services/whack_a_hacker/whack-a-hacker*.AppImage
