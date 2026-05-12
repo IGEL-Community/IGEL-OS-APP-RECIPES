@@ -1,0 +1,40 @@
+{
+    "root": {
+        "id": "root",
+        "childrenIds": [
+            "base"
+        ]
+    },
+    "base": {
+        "id": "base",
+        "parentId": "root",
+        "nlsResourceId": "base",
+        "title": "VideoScreensaver",
+        "elements": {
+            "0": {
+                "paramId": "app.videoscreensaver.options.idle_seconds",
+                "type": "generic"
+            },
+            "1": {
+                "paramId": "app.videoscreensaver.options.play_order",
+                "type": "generic"
+            },
+            "2": {
+                "paramId": "app.videoscreensaver.options.pin_enabled",
+                "type": "generic"
+            },
+            "3": {
+                "paramId": "app.videoscreensaver.options.pin_code",
+                "type": "generic"
+            },
+            "4": {
+                "paramId": "app.videoscreensaver.options.logging_enabled",
+                "type": "generic"
+            },
+            "5": {
+                "paramId": "app.videoscreensaver.options.pic_seconds",
+                "type": "generic"
+            }
+        }
+    },
+}

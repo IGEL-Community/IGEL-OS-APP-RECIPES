@@ -1,0 +1,17 @@
+Video Screensaver for IGEL OS.
+
+
+Videoscreensaver offer an alternative to IGEL Default screen saver, allowing to play videos and or still image slideshows - by filename order or random. 
+Additionally you can protect the screensaver with a PIN code. 
+
+Changelog:
+
+Initial Release 1.0.0
+
+Videos to be placed in /userhome/videoscreensaver
+Pictures to be paced in /userome/videoscreensaverpics
+
+Use IGEL Setup to configure inactivity time out, play list order, pin code and picture duration. Videos will play in full length. 
+
+Update 1.0.1
+Disables Translate dialogue. 

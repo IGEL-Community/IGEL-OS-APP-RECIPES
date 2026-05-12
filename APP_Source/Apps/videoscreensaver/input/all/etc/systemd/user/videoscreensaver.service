@@ -1,0 +1,17 @@
+[Unit]
+Description=Video Screensaver Service
+After=graphical.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=python3 /services/videoscreensaver/bin/edge-video_pics.py
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/userhome/.Xauthority
+Restart=always
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
