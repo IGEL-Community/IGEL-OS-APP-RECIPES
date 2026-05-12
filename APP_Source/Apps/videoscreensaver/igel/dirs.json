@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/userhome/videoscreensaver",
+    "owner": "777:100",
+    "permissions": "750",
+    "persistent": true
+  },
+  {
+    "path": "/userhome/videoscreensaverpics",
+    "owner": "777:100",
+    "permissions": "750",
+    "persistent": true
+  }
+]

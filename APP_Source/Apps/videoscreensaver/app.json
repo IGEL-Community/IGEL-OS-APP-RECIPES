@@ -1,0 +1,53 @@
+{
+  "name": "videoscreensaver",
+  "version": "1.0.1",
+  "public_version": "",
+  "release": "",
+  "summary": {
+    "en": "videoscreensaver"
+  },
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "categories": [
+    "Miscellaneous"
+  ],
+  "tags": [],
+  "author": "Fred",
+  "vendor": "IGEL",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "requires": [
+    {
+      "name": "base_system",
+      "version": ">=12.8.0"
+    },
+    {
+      "name": "edge",
+      "version": ">=142.0.0"
+    }
+  ],
+  "suggests": [
+    {
+      "name": "",
+      "version": ""
+    }
+  ],
+  "provides": [
+    {
+      "name": "",
+      "version": ""
+    }
+  ],
+  "conflicts": [
+    {
+      "name": "",
+      "version": ""
+    }
+  ]
+}

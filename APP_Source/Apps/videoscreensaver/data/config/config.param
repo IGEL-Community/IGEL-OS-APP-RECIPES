@@ -1,0 +1,42 @@
+<options>
+        <idle_seconds>
+                value=<300>
+                type=<int>
+                runtime=<true>
+                displayname=<Idle timeout, in seconds>
+        </idle_seconds>
+                <play_order>
+                value=<Random>
+                type=<string>
+                range=<[Random][By Filename]>
+                runtime=<true>
+                displayname=<Playlist: Random or in order of File Name sorting>
+                </play_order>
+        <pin_enabled>
+                value=<False>
+                type=<string>
+                range=<[False][True]>
+                runtime=<true>
+                displayname=<Pin protected?>
+        </pin_enabled>
+        <pin_code>
+                value=<>
+                type=<string>
+                runtime=<true>
+                displayname=<Pin:>
+                </pin_code>
+        <logging_enabled>
+                value=<False>
+                type=<string>
+                range=<[False][True]>
+                runtime=<true>
+                displayname=<Enable Logging?>
+                </logging_enabled>
+        <pic_seconds>
+                value=<5>
+                type=<init>
+                runtime=<true>
+                displayname=<Time in seconds to display pictures>
+        </pic_seconds>
+node_action=<runuser -l user -c "systemctl --user restart videoscreensaver.service">
+</options>
