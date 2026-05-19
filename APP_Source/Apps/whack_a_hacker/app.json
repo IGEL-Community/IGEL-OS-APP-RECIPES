@@ -1,6 +1,6 @@
 {
   "name": "whack_a_hacker",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "summary": {
     "en": "Whack-a-Hacker - A fast-paced cybersecurity themed arcade game"
   },
@@ -13,6 +13,7 @@
     "ArcadeGame"
   ],
   "author": "David Prows",
+  "vendor": "Beacon Credit Union",
   "rw_partition": {
     "size": "small",
     "flags": [
