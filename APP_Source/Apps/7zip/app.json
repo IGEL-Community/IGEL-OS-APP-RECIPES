@@ -1,17 +1,17 @@
 {
-  "categories": [
-    "Miscellaneous"
-  ],
-  "icons": {
-    "app": "app.svg",
-    "monochrome": "monochrome.svg"
-  },
   "name": "7zip",
-  "author": "The IGEL Community",
-  "vendor": "7Zip Team",
+  "version": "26.1.0+1.2",
   "release": "",
   "summary": {
     "en": "7Zip (Community)"
   },
-  "version": "25.1.0+1.1"
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "categories": [
+    "Miscellaneous"
+  ],
+  "author": "IGEL Community",
+  "vendor": "7Zip Team"
 }
