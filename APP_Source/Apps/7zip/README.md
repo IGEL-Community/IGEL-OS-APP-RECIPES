@@ -2,12 +2,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # 7Zip
 
-- Currently, IGEL App Creator Portal does not support tar.xz format. Until this is fixed, you must uncompress and re-compress the file:
+- Download latest 7zip (64-bit Linux x86-64) and create `7zip.tar.bz2` with the file `7zzs`
 
-- Download latest 7zip and create `7zip.tar.bz2`
+- https://www.7-zip.org/download.html
 
 ```bash linenums="1"
-wget -O 7zip.tar.xz https://www.7-zip.org/a/7z2501-linux-x64.tar.xz
+#!/bin/bash
+#set -x
+#trap read debug
+
+wget -O 7zip.tar.xz https://www.7-zip.org/a/7z2601-linux-x64.tar.xz
 tar xf 7zip.tar.xz 7zzs
 tar cvjf 7zip.tar.bz2 7zzs
 rm -f 7zip.tar.xz 7zzs
