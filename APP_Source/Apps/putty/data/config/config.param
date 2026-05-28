@@ -1,14 +1,17 @@
 <sessions>
 	<putty%>
-        <name>
-            value=<PuTTY>
-        </name>
-        <icon>
-            value=<terminal>
-        </icon>
-        extends_base=<sessions.base%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
 	</putty%>
-	<putty0>
-	</putty0>
-    node_action=<wm_postsetup>
+  <putty0>
+		<name_localized>
+			displayname[en_us]=<puTTY>
+		</name_localized>
+		<icon>
+            value=<terminal>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </putty0>
 </sessions>
