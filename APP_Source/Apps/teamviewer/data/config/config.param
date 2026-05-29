@@ -8,7 +8,7 @@
 			displayname[en_us]=<TeamViewer>
 		</name_localized>
 		<icon>
-			value=</services/teamviewer/opt/teamviewer/tv_bin/desktop/teamviewer_256.png>
+			value=</services/teamviewer/.icons/app.svg>
 		</icon>
 		<type>
 			displayname[en_us]=<Misc>
