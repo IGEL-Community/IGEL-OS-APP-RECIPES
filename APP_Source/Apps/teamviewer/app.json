@@ -3,8 +3,8 @@
     "Miscellaneous"
   ],
   "icons": {
-    "app": "app.png",
-    "monochrome": "monochrome.png"
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
   },
   "name": "teamviewer",
   "author": "The IGEL community",
@@ -19,5 +19,5 @@
   "summary": {
     "en": "TeamViewer (Community)"
   },
-  "version": "15.65.4"
+  "version": "15.78.3+1.1"
 }
