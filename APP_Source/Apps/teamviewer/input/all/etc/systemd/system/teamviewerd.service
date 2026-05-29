@@ -1,6 +1,6 @@
 [Unit]
 Description = TeamViewer remote control daemon
-After = network.target network-online.target dbus.service systemd-logind.service
+After = network.target network-online.target dbus.service systemd-logind.service multi-user.target igel-network-online.target igel-desktop-final.target
 Wants = network-online.target systemd-logind.service
 Requires = dbus.service
 
