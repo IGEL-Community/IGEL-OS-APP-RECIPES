@@ -63,9 +63,6 @@ COPY --from=build /out/ /
 #set -x
 #trap read debug
 
-apt-get update
-apt-get install -y --no-install-recommends ca-certificates curl gnupg 
-
 mkdir -p /etc/apt/keyrings
 curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
 echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable-v2" | tee /etc/apt/sources.list.d/syncthing.list
