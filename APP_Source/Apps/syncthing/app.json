@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "syncthing",
+  "author": "The IGEL community",
+  "vendor": "syncthing",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Syncthing (Community)"
+  },
+  "version": "2.1.1"
+}
