@@ -1,0 +1,17 @@
+<sessions>
+	<syncthing%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</syncthing%>
+  <syncthing0>
+		<name_localized>
+			displayname[en_us]=<Syncthing>
+		</name_localized>
+		<icon>
+            value=</services/syncthing/.icons/monochrome.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </syncthing0>
+</sessions>
