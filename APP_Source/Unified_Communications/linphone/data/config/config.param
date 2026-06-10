@@ -1,14 +1,14 @@
 <sessions>
 	<linphone%>
-        <name>
-            value=<linphone>
-        </name>
-        <icon>
-            value=</services/linphone/linphone.svg>
-        </icon>
         extends_base=<sessions.base%>
-	</linphone%>
+        node_action=<wm_postsetup>
+        </linphone%>
 	<linphone0>
+            <name_localized>
+                displayname[en_us]=<Linphone>
+            </name_localized>
+            <icon>
+                value=</services/linphone/.icons/app.svg>
+            </icon>
 	</linphone0>
-    node_action=<wm_postsetup>
 </sessions>
