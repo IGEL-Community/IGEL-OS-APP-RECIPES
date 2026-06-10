@@ -4,9 +4,9 @@
     "excludes": [
       ""
     ],
-    "destination": "/",
+    "destination": "/usr/bin",
     "owner": "0:0",
     "permissions": "755",
-    "strip": true
+    "strip": false
   }
 ]
