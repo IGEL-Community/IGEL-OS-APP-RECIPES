@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/opt/beyondtrust",
+      "persistent": true,
+      "owner": "0:0"
+    }
+]

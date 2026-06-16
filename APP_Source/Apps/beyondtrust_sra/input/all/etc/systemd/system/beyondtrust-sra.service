@@ -1,0 +1,13 @@
+[Unit]
+Description=BeyondTrust SRA Init
+After=network-online.target display-manager.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=/bin/bash /etc/beyondtrust/beyondtrust-init.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
