@@ -1,0 +1,12 @@
+[
+  {
+    "url": "file:///tmp/beyondtrust-sra.tar.bz2",
+    "dest": "",
+    "licenses": [
+      {
+        "name": "LicenseRef-BeyondTrust-Proprietary",
+        "text": "BeyondTrust proprietary software. See https://www.beyondtrust.com/eula for license terms."
+      }
+    ]
+  }
+]

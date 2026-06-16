@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.png",
+    "monochrome": "monochrome.png"
+  },
+  "name": "beyondtrust_sra",
+  "author": "UCI",
+  "vendor": "BeyondTrust",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "BeyondTrust SRA Jump Client (UCI)"
+  },
+  "version": "1.6.0"
+}
