@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "libreoffice",
+  "author": "The IGEL community",
+  "vendor": "Libreoffice",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "LibreOffice (Community)"
+  },
+  "version": "26.2.4+1.2"
+}
