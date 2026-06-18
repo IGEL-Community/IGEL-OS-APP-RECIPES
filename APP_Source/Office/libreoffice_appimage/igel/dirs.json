@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.config/libreoffice",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/Documents",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
