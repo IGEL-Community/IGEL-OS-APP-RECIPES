@@ -1,0 +1,17 @@
+<sessions>
+	<naps2%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</naps2%>
+  <naps20>
+		<name_localized>
+			displayname[en_us]=<NAPS2>
+		</name_localized>
+		<icon>
+			value=</services/naps2/.icons/monochrome.png>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </naps20>
+</sessions>

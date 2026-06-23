@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "naps2",
+  "author": "The IGEL community",
+  "vendor": "Ben Olden-Cooligan",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "NAPS2 - Not Another PDF Scanner (Community)"
+  },
+  "version": "8.2.1+1.2"
+}
