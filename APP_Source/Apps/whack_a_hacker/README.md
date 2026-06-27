@@ -4,7 +4,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [https://github.com/commputethis/Whack-a-Hacker/releases](https://github.com/commputethis/Whack-a-Hacker/releases)
 
-whack-a-hacker-igel_v1.11.AppImage
+whack-a-hacker-x86_64_v1.14.AppImage
 
 - Note the version of the file
 - Zip/Compress file to whack-a-hacker.AppImage.zip
+
