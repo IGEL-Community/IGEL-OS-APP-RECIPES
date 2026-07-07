@@ -8,5 +8,5 @@ Free and fully featured chat app for XMPP.
 
 For Linux users needing XMPP messaging:
 
-- Gajim is one options.
+- Gajim is one option.
 
