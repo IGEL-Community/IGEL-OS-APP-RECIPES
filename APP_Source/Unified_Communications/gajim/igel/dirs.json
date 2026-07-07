@@ -1,0 +1,17 @@
+[
+    {
+      "path": "/userhome/.config/gajim",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.local/share/gajim",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.cache/gajim",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]

@@ -1,0 +1,317 @@
+[
+{
+  "package":"gajim"
+},
+{
+  "package":"desktop-file-utils"
+},
+{
+  "package":"gir1.2-gst-plugins-base-1.0",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package":"gir1.2-gtksource-4",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package":"gir1.2-gtk-3.0"
+},
+{
+  "package":"gir1.2-gtk-4.0"
+},
+{
+  "package":"gir1.2-gtksource-5",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package":"python3-cairo",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package":"python3-axolotl"
+},
+{
+  "package":"python3-gnupg"
+},
+{
+  "package": "python3-axolotl-curve25519"
+},
+{
+  "package": "python3-protobuf"
+},
+{
+  "package":"python3-cryptography"
+},
+{
+  "package":"python3-css-parser"
+},
+{
+  "package":"python3-emoji"
+},
+{
+  "package":"python3-gi"
+},
+{
+  "package":"python3-gi-cairo"
+},
+{
+  "package":"python3-idna"
+},
+{
+  "package":"python3-nbxmpp"
+},
+{
+  "package":"python3-omemo"
+},
+{
+  "package":"python3-packaging"
+},
+{
+  "package":"python3-pil",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "libenchant-2-2"
+},
+{
+  "package": "hunspell-de-de"
+},
+{
+  "package":"python3-precis-i18n"
+},
+{
+  "package":"python3-qrcode"
+},
+{
+  "package":"python3-sqlalchemy"
+},
+{
+  "package":"gajim-omemo"
+},
+{
+  "package":"fonts-noto-color-emoji"
+},
+{
+  "package":"gir1.2-ayatanaappindicator3-0.1"
+},
+{
+  "package": "libopenni2-0"
+},
+{
+  "package":"gir1.2-farstream-0.2"
+},
+{
+  "package":"gir1.2-geoclue-2.0"
+},
+{
+  "package":"gir1.2-gspell-1"
+},
+{
+  "package":"gir1.2-gsound-1.0"
+},
+{
+  "package":"gir1.2-gupnpigd-1.0",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "libgupnp-igd-1.0-4",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package":"gir1.2-gstreamer-1.0",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package":"libsoup-3.0-0"
+},
+{
+  "package":"gir1.2-soup-3.0"
+},
+{
+  "package":"python3-keyring"
+},
+{
+  "package": "libgsound0"
+},
+{
+  "package":"gir1.2-secret-1"
+},
+{
+  "package":"python3-gssapi"
+},
+{
+  "package": "python3-decorator",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "libfluidsynth3"
+},
+{
+  "package": "libvo-amrwbenc0"
+},
+{
+  "package": "libmpcdec6",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "libde265-0"
+},
+{
+  "package": "libzbar0",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "libgstreamer-plugins-bad1.0-0",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "libdc1394-25",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "libfarstream-0.2-5"
+},
+{
+  "package": "gstreamer1.0-plugins-base",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "gstreamer1.0-plugins-good",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "gstreamer1.0-libav",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "gstreamer1.0-gtk3",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "gstreamer1.0-plugins-ugly"
+},
+{
+  "package":"gstreamer1.0-gl",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package":"gstreamer1.0-nice",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "libnice10",
+  "licenses": [
+      {
+        "name": "GPL-2.0",
+        "text": "GNU GENERAL PUBLIC LICENSE"
+      }
+    ]
+},
+{
+  "package": "xdg-desktop-portal"
+},
+{
+  "package": "xdg-desktop-portal-gtk"
+},
+{
+  "package": "dconf-gsettings-backend"
+},
+{
+  "package": "libdconf1"
+}
+]
