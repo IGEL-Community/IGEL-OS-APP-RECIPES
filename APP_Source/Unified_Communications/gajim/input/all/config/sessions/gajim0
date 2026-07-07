@@ -1,0 +1,2 @@
+#!/bin/bash
+env PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring gajim

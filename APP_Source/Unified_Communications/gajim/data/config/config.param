@@ -1,0 +1,14 @@
+<sessions>
+	<gajim%>
+        extends_base=<sessions.base%>
+        node_action=<wm_postsetup>
+        </gajim%>
+	<gajim0>
+            <name_localized>
+                displayname[en_us]=<gajim>
+            </name_localized>
+            <icon>
+                value=</services/gajim/.icons/app.svg>
+            </icon>
+	</gajim0>
+</sessions>
