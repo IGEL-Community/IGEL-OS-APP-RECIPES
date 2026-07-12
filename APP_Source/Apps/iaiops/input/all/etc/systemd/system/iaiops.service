@@ -1,0 +1,45 @@
+[Unit]
+Description=Industrial-AIOps — governed, read-first OT diagnostics (container)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# The app runs entirely from its published OCI image; nothing is copied into the
+# root filesystem. All writable state (audit / policy / undo store) lives under
+# /services_rw/iaiops, mounted into the container as IAIOPS_HOME.
+#
+# Site configuration goes in /services_rw/iaiops/iaiops.env (optional; overrides
+# the defaults below). Typical keys — pick the edition/profile your site runs and
+# lock down who may reach the MCP endpoint:
+#   IAIOPS_IMAGE=ghcr.io/industrial-aiops/iaiops:0.12.0-building
+#   IAIOPS_MCP=building
+#   IAIOPS_MCP_TRANSPORT=sse
+#   IAIOPS_ALLOWLIST_ACCOUNTS=ops-agent
+#   IAIOPS_ALLOWLIST_IPS=10.0.0.0/24
+Environment=IAIOPS_IMAGE=ghcr.io/industrial-aiops/iaiops:0.12.0-factory
+Environment=IAIOPS_MCP=factory
+Environment=IAIOPS_MCP_TRANSPORT=sse
+EnvironmentFile=-/services_rw/iaiops/iaiops.env
+
+ExecStartPre=-/usr/bin/podman pull ${IAIOPS_IMAGE}
+# Read-first, hardened: read-only rootfs, all caps dropped, no privilege gain.
+# The MCP endpoint binds to localhost by default; expose it only behind the
+# account/IP allowlist (IAIOPS_ALLOWLIST_*). Config (protocol targets) and all
+# writable state live in /services_rw/iaiops, mounted as IAIOPS_HOME=/state, so
+# the operator drops config.yaml there rather than baking it into the image.
+ExecStart=/usr/bin/podman run --rm --name iaiops \
+  --read-only --cap-drop=ALL --security-opt=no-new-privileges \
+  --env IAIOPS_MCP \
+  --env IAIOPS_MCP_TRANSPORT \
+  --env IAIOPS_ALLOWLIST_ACCOUNTS \
+  --env IAIOPS_ALLOWLIST_IPS \
+  --env IAIOPS_HOME=/state \
+  --volume /services_rw/iaiops:/state:Z \
+  --publish 127.0.0.1:8080:8080 \
+  ${IAIOPS_IMAGE}
+ExecStop=/usr/bin/podman stop iaiops
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
