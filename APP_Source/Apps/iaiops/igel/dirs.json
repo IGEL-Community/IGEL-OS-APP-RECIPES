@@ -1,0 +1,7 @@
+[
+  {
+    "path": "/services_rw/iaiops",
+    "persistent": true,
+    "owner": "777:100"
+  }
+]

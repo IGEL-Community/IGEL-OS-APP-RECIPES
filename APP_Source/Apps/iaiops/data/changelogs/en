@@ -1,0 +1,7 @@
+0.12.0+1.0
+
+- Initial community recipe: launches the iaiops 0.12.0 OCI image via Podman.
+- Read-first, hardened container (read-only rootfs, all caps dropped,
+  no-new-privileges); state persists in /services_rw/iaiops.
+- Site config (edition/profile, MCP transport, account/IP allowlist) via
+  /services_rw/iaiops/iaiops.env; protocol targets via /services_rw/iaiops/config.yaml.
