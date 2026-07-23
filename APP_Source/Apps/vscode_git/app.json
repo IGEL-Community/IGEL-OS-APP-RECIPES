@@ -1,13 +1,13 @@
 {
   "name": "vscode_git",
-  "version": "1.109.3+1.2",
+  "version": "1.129.1+1.0",
   "release": "",
   "summary": {
     "en": "Visual Studio Code wth Git (Community)"
   },
   "icons": {
-    "app": "vscode_marketing.png",
-    "monochrome": "vscode_mono.png"
+    "app": "app.png",
+    "monochrome": "monochrome.png"
   },
   "categories": [
     "Miscellaneous"
