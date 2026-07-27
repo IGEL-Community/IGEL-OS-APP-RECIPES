@@ -20,7 +20,7 @@
     "elements": {
       "0": {
         "type": "sessionPage",
-        "paramId": "app.yubiath.sessions.yubiath",
+        "paramId": "app.yubioath.sessions.yubioath",
         "instancePageId": "sessions.genericInstancePage"
       }
     }
