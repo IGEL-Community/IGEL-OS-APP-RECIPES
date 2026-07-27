@@ -1,0 +1,10 @@
+{
+    "sessions.label": {
+        "de": "Sitzung",
+        "en": "Session"
+    },
+    "title": {
+        "de": "Yubico Authenticator",
+        "en": "Yubico Authenticator"
+    }
+}
