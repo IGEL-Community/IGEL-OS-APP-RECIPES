@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.png"
+  },
+  "name": "iaiops",
+  "author": "The IGEL community",
+  "vendor": "Industrial-AIOps",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Industrial-AIOps — governed, read-first OT diagnostics (Community)"
+  },
+  "version": "0.12.0+1.0"
+}

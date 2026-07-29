@@ -1,0 +1,14 @@
+Industrial-AIOps (governed OT diagnostics)
+
+Industrial-AIOps (iaiops) is a vendor-neutral, read-first operational-technology
+data tap and cross-protocol troubleshooting brain, exposed to AI agents as
+governed MCP tools. It reads ~14 field protocols (OPC-UA, Modbus, S7comm,
+Mitsubishi MC, Omron FINS, MTConnect, MQTT/Sparkplug B, EtherNet/IP, EtherCAT,
+PROFINET, SECS/GEM, HART-IP, BACnet/IP, IO-Link) plus per-industry editions
+(factory, process, fab, building, water, warehouse, clinical, renewables).
+
+This recipe launches the published, hardened iaiops OCI image on the endpoint via
+Podman. It is read-first by design: every tool runs through the built-in
+governance harness (audit, budget, graduated risk tiers, undo). The MCP endpoint
+binds to localhost and should be exposed only behind the account/IP allowlist.
+Open source (MIT): https://github.com/industrial-aiops/industrial-aiops
