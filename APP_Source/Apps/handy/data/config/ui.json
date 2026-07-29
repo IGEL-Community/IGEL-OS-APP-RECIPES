@@ -1,0 +1,168 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": [
+      "base"
+    ]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "Handy",
+    "childrenIds": [
+      "sessions",
+      "hotkeys",
+      "postprocessing",
+      "dictation",
+      "behaviour"
+    ]
+  },
+  "sessions": {
+    "id": "sessions",
+    "parentId": "base",
+    "nlsResourceId": "sessions.label",
+    "title": "Session",
+    "instancePage": true,
+    "fixInstanceId": 0,
+    "elements": {
+      "0": {
+        "type": "sessionPage",
+        "paramId": "app.handy.sessions.handy",
+        "instancePageId": "sessions.genericInstancePage"
+      }
+    }
+  },
+  "hotkeys": {
+    "id": "hotkeys",
+    "parentId": "base",
+    "nlsResourceId": "hotkeys.label",
+    "title": "Hotkeys",
+    "elements": {
+      "0": {
+        "title": "Hotkeys",
+        "nlsResourceId": "hotkeys.label",
+        "type": "label"
+      },
+      "1": {
+        "paramId": "app.handy.config.transcribe_hotkey",
+        "type": "generic"
+      },
+      "2": {
+        "paramId": "app.handy.config.postprocess_hotkey",
+        "type": "generic"
+      }
+    }
+  },
+  "postprocessing": {
+    "id": "postprocessing",
+    "parentId": "base",
+    "nlsResourceId": "postprocessing.label",
+    "title": "Post-processing",
+    "elements": {
+      "0": {
+        "title": "Post-processing",
+        "nlsResourceId": "postprocessing.label",
+        "type": "label"
+      },
+      "1": {
+        "paramId": "app.handy.config.postprocess_enabled",
+        "type": "generic"
+      },
+      "2": {
+        "paramId": "app.handy.config.postprocess_provider",
+        "type": "generic"
+      },
+      "3": {
+        "paramId": "app.handy.config.postprocess_base_url",
+        "type": "generic"
+      },
+      "4": {
+        "paramId": "app.handy.config.postprocess_model",
+        "type": "generic"
+      },
+      "5": {
+        "paramId": "app.handy.config.postprocess_api_key",
+        "type": "generic"
+      }
+    }
+  },
+  "dictation": {
+    "id": "dictation",
+    "parentId": "base",
+    "nlsResourceId": "dictation.label",
+    "title": "Dictation",
+    "elements": {
+      "0": {
+        "title": "Dictation",
+        "nlsResourceId": "dictation.label",
+        "type": "label"
+      },
+      "1": {
+        "paramId": "app.handy.config.model_url",
+        "type": "generic"
+      },
+      "2": {
+        "paramId": "app.handy.config.model_unload_timeout",
+        "type": "generic"
+      },
+      "3": {
+        "paramId": "app.handy.config.skip_onboarding",
+        "type": "generic"
+      },
+      "4": {
+        "paramId": "app.handy.config.custom_words",
+        "type": "generic"
+      },
+      "5": {
+        "paramId": "app.handy.config.mute_while_recording",
+        "type": "generic"
+      },
+      "6": {
+        "paramId": "app.handy.config.audio_feedback",
+        "type": "generic"
+      }
+    }
+  },
+  "behaviour": {
+    "id": "behaviour",
+    "parentId": "base",
+    "nlsResourceId": "behaviour.label",
+    "title": "Interface & typing",
+    "elements": {
+      "0": {
+        "title": "Interface & typing",
+        "nlsResourceId": "behaviour.label",
+        "type": "label"
+      },
+      "1": {
+        "paramId": "app.handy.config.start_hidden",
+        "type": "generic"
+      },
+      "2": {
+        "paramId": "app.handy.config.overlay_style",
+        "type": "generic"
+      },
+      "3": {
+        "paramId": "app.handy.config.overlay_position",
+        "type": "generic"
+      },
+      "4": {
+        "paramId": "app.handy.config.keyboard_implementation",
+        "type": "generic"
+      },
+      "5": {
+        "paramId": "app.handy.config.typing_tool",
+        "type": "generic"
+      },
+      "6": {
+        "paramId": "app.handy.config.paste_method",
+        "type": "generic"
+      },
+      "7": {
+        "paramId": "app.handy.config.append_trailing_space",
+        "type": "generic"
+      }
+    }
+  }
+}

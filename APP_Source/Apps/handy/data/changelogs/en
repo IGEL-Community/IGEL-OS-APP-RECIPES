@@ -1,0 +1,66 @@
+* Fix: dictation worked once per app start and then went deaf (0.9.4+1.9)
+  - Cause is an upstream signal collision, confirmed by three independent reports (cjpais/Handy#1660, fix proposed in #1267, unmerged): Handy maps SIGUSR1 to "toggle dictation with post-processing" for remote control, while WebKitGTK - the webview Handy's entire UI runs in - uses SIGUSR1 to suspend threads for JavaScriptCore's garbage collector (WTF ThreadingPOSIX.cpp sets sigThreadSuspendResume = SIGUSR1). Every few minutes the GC's Collector Thread signals the process, Handy starts a recording nobody asked for, and nothing ever stops it. While that phantom recording is active the real push-to-talk press is ignored, because the coordinator only starts on a press when it is idle
+  - The session launcher now exports JSC_SIGNAL_FOR_GC=30, which WebKit reads to pick a different signal for the GC. That removes the collision from the WebKit side without patching Handy, and can be dropped once a Handy release stops listening on SIGUSR1
+  - Confirm on a device with: grep -c "Received SIGUSR1" /userhome/.local/share/com.pais.handy/logs/handy.log - it should stay at 0 while nobody sends that signal
+
+* Fix: a hotkey with a side-specific modifier registered nothing at all (0.9.4+1.8)
+  - A binding such as ctrl_left+space - the spelling Handy's own key recorder and its handy_keys backend use - cannot be parsed by the library behind Handy's Tauri backend: global-hotkey's parser accepts only ALT/OPTION, CONTROL/CTRL, COMMAND/CMD/SUPER, SHIFT as modifier tokens, and has no CTRL_LEFT key either. An unparseable shortcut means NO hotkey is registered, and Handy surfaces nothing in the UI to say so. Note win/windows/meta are equally unusable there; only super works
+  - The recipe now normalizes a hotkey before writing it: side-specific names lose the side, win/windows/meta become super, and modifiers are re-emitted before the key (that parser rejects a key that comes first). Each repair is logged to systemlog
+  - A combination that still could not register - no normal key, more than one, or an unknown key name - is refused outright and the user's existing binding is left alone, instead of writing a value that silently disables the hotkey
+  - Settings-sync notes now reach systemlog as their own line rather than being lumped in with the status word
+
+* Fix: the Speech model URL downloaded a model Handy then ignored (0.9.4+1.7)
+  - Symptom: the URL was set, the file was fetched, and the device still transcribed with a different model. Two separate upstream behaviours, both verified in Handy 0.9.4 source
+  - 1. Handy's scan of its models folder SKIPS a file whose name matches the default-quant filename of a catalog model (it already claims that filename), and catalog models only count as downloaded when they sit in the Hugging Face cache. A URL pointing at, say, canary-180m-flash-Q8_0.gguf therefore produced a file Handy could not see at all. Downloads are now saved with a "ums-" prefix, which cannot collide with any catalog filename
+  - 2. auto_select_model_if_needed() picks the first downloaded model in the catalog's editorial rank order, and a dropped-in model has no rank, so it sorts last: any model already on the device (for example one left in the Hugging Face cache by an earlier recipe version) was selected instead. The recipe now selects the downloaded model explicitly by its ID - once the file is actually on disk, never before, since Handy clears a selection it cannot resolve
+  - Consequence worth knowing: the profile's model now wins over a user's own choice on managed devices, and changing the URL moves the fleet at the next session start. That is what "managed field" means everywhere else in this profile
+  - Devices that already fetched an unprefixed copy under 1.5/1.6 keep it as a stray file; delete /userhome/.local/share/com.pais.handy/models/<name>.gguf by hand to reclaim the space
+
+* Hotkeys: Tauri is now the only offered backend (0.9.4+1.6)
+  - Root cause of "no hotkey works at all" on devices set to Keyboard implementation = Handy Keys: that backend reads keyboards straight from evdev and, because Handy uses its blocking constructor, grabs them (EVIOCGRAB) and re-injects through /dev/uinput. The IGEL session user can access neither device, so it fails - inside its own manager thread, after HandyKeysState::new() has already returned Ok, and init_shortcuts() then logs and swallows every per-binding registration error. Upstream's fallback to Tauri never fires, so the app looks healthy with NO hotkey registered, not even its own Ctrl+Space
+  - Handy Keys is therefore no longer selectable in the profile: the field offers Unmanaged or Tauri only, and a stale handy_keys value from an older profile is ignored rather than re-applied. Selecting Tauri repairs a device where somebody switched backends in the app
+  - Hotkey tooltips now state the real rule - the combination must contain a normal key. Modifier-only combos (Ctrl+Win) and side-specific names (ctrl_left) are not usable here; ctrl+super+space is the closest working equivalent
+  - Granting the device access Handy Keys needs was implemented and then dropped deliberately: it hands raw keystroke-read and event-injection capability to the desktop user, and an exclusive keyboard grab can cost a session its keyboard if X11 does not pick up the re-injection clone. Modifier-only hotkeys are not worth that on a thin client. Rationale kept in the README
+
+* Speech model is now a plain URL instead of a pinned model list (0.9.4+1.5)
+  - The "Transcription model" dropdown is replaced by "Speech model URL": paste the direct download URL of any .gguf (e.g. from huggingface.co/handy-computer) and devices fetch it once, in the background, into Handy's own custom-models folder. Handy registers it and selects it when nothing else is selected, which needs First-run onboarding = Skip
+  - Drops the commit pins, sha256 checksums, bundled-copy and /wfs seeding paths entirely. The pins went stale with every Handy release (its model catalog is compiled into the binary), the seeding paths hand-built a Hugging Face cache layout that depends on library internals, and a model Handy's catalog did not recognise could be cleared again by its own auto-select
+  - Any URL the device can reach works, so an internal web server covers restricted-egress and air-gapped fleets without a recipe change (README: Air-gapped and restricted-egress fleets)
+  - Changing the URL no longer switches a device that already has a working model: the new model appears in Handy's model manager to be picked, rather than being swapped underneath the user
+
+* Fix: a fresh device showed no model while the selected one downloaded (0.9.4+1.4)
+  - On a device with nothing selected yet, the admin's chosen model is now selected immediately, so the app shows it and starts working the moment the download lands. A device that already has a working model still keeps it until the replacement is on disk
+  - Hotkey and keyboard-implementation tooltips now warn that modifier-only combos (e.g. Ctrl+Win) and side-specific names (ctrl_left) require Keyboard implementation = Handy Keys; Handy's Linux default (Tauri) rejects them with "Failed to register shortcut"
+
+* Keyboard/typing and startup settings (0.9.4+1.3)
+  - Window at startup (tray / show) — the launcher no longer forces --start-hidden, which previously overrode the setting (Handy ORs the flag with it), so this is now admin-controlled
+  - Keyboard implementation (Handy Keys / Tauri) — Handy defaults to Tauri on Linux; Handy Keys handles side-specific modifiers and keyboard-grabbing VDI clients differently
+  - Text injection tool (Auto / xdotool / wtype / kwtype / dotool / ydotool) — IGEL OS 12 is X11, so xdotool applies; Auto normally picks it
+  - Paste-method and keyboard tooltips now state Handy's actual Linux defaults (Direct, Tauri)
+
+* More UMS-managed settings (0.9.4+1.2)
+  - Unload model after idle (Never / Immediately / 2 / 5 / 10 / 15 min / 1 hour) — Handy defaults to 5 minutes, after which the next dictation pays a full model reload; "Never" removes that pause on thin clients at the cost of holding the model in RAM
+  - Recording overlay style (Hidden / Minimal pill / Live transcription) and position (Top / Bottom)
+  - Text insertion method (Ctrl+V / Direct / Shift+Insert / Ctrl+Shift+V / None) — Ctrl+V is the most compatible, including into Citrix and Omnissa sessions
+  - Trailing space after inserted text
+  - New "Interface & typing" page in the profile; enum values are validated against Handy's own accepted set before being written, since an unknown variant fails its whole settings load
+
+* Transcription model is now a UMS profile setting, downloaded per device (0.9.4+1.1)
+  - New "Transcription model" field (Handy -> Dictation): Canary 180M Q4/Q8, Parakeet EN Q4/Q8, Nemotron Q4 — each pinned by commit + sha256 and verified on download. On thin clients prefer Canary 180M (catalog speed 98 / accuracy 88) over Parakeet 0.6B (79 / 90); model choice dominates dictation latency
+  - New "First-run onboarding" field to skip Handy's wizard on managed devices
+  - The recipe now imposes NO defaults of its own: with every field Unmanaged, Handy starts exactly as it would without the recipe (own defaults, own onboarding, own model manager) and no settings file is created. UMS values are the only thing that overrides
+  - A managed model is re-applied at every Handy start, so a profile change reaches devices whose settings already exist
+  - Model no longer packaged in the .ipkg (~70 MB instead of ~800 MB); a bundled copy at /services/handy/handy-models is still used when present, so air-gapped fleets can keep bundling
+
+* Initial IGEL OS 12 community recipe for Handy 0.9.4
+  - Packages the upstream Handy_0.9.4_amd64.deb (Tauri app; binary at usr/bin/handy with bundled ggml/onnxruntime libraries in usr/lib/Handy)
+  - Runtime libraries pulled from Debian Bookworm repos: libgtk-layer-shell0, libopenblas0-pthread, libayatana-appindicator3-1 + indicator/dbusmenu chain (webkit2gtk-4.1, GTK3, ALSA, OpenSSL come from the 12.5+ base system)
+  - Persistent app data at /userhome/.local/share/com.pais.handy (settings, downloaded models, history.db, recordings) and /userhome/.config/com.pais.handy — models survive reboots
+  - 2 GB read-write partition (compressed, prefer_btrfs for the SQLite history database) — the bundled default model is symlinked from the read-only app partition and consumes no rw space; raise the size only for fleets that download extra large Whisper models on-device
+  - Tray session launcher: handy0 starts the single-instance tray app hidden (--start-hidden); global push-to-talk hotkey (default Ctrl+Space); relaunching the session shows the main window
+  - Session script pins HANDY_NO_GTK_LAYER_SHELL=1 (X11), adds the openblas-pthread directory to LD_LIBRARY_PATH, and fails with a systemlog message if the base image lacks the WebKit 4.1 stack
+  - Zero-touch first run: pre-selects Parakeet Unified EN (Handy's catalog-recommended English model) and provides it automatically; unmanaged user settings are never overwritten
+  - Speech model bundled into the .ipkg (uploaded as a .tar.gz — the Portal only accepts tar/tgz/gz/zip/deb/bz2, per SDK §9.3, so a bare .gguf cannot be attached), with a UMS-pushed /wfs/handy-models copy or a sha256-verified download from huggingface.co as fallbacks
+  - HF_HOME pointed into the persistent app-data dir so Hugging Face catalog models survive reboots
+  - UMS profile settings (all unmanaged by default): transcribe/post-process hotkeys, post-processing enable/provider/base-URL/model/API key, custom vocabulary, mute-while-recording, recording sounds — synced surgically into user settings at session start via handy-init.service + handy-settings-sync.py
+  - Excludes the 62 MB libggml-vulkan.so GPU backend from packaging (dlopen-only, CPU inference by design)

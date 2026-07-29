@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.local/share/com.pais.handy",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.config/com.pais.handy",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
