@@ -1,0 +1,11 @@
+[
+  { "package": "libgtk-layer-shell0", "licenses": [ { "name": "MIT" } ] },
+  { "package": "libopenblas0-pthread", "licenses": [ { "name": "BSD-3-Clause" } ] },
+  { "package": "libgfortran5", "licenses": [ { "name": "GPL-3.0-or-later" } ] },
+  { "package": "libquadmath0", "licenses": [ { "name": "GPL-3.0-or-later" } ] },
+  { "package": "libayatana-appindicator3-1", "licenses": [ { "name": "LGPL-2.1-or-later" } ] },
+  { "package": "libayatana-indicator3-7", "licenses": [ { "name": "GPL-3.0-only" } ] },
+  { "package": "libayatana-ido3-0.4-0", "licenses": [ { "name": "GPL-3.0-only" } ] },
+  { "package": "libdbusmenu-glib4", "licenses": [ { "name": "LGPL-3.0-only" } ] },
+  { "package": "libdbusmenu-gtk3-4", "licenses": [ { "name": "LGPL-3.0-only" } ] }
+]

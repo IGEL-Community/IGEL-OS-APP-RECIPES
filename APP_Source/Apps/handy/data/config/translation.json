@@ -1,0 +1,26 @@
+{
+    "sessions.label": {
+        "de": "Sitzung",
+        "en": "Session"
+    },
+    "hotkeys.label": {
+        "de": "Tastenkombinationen",
+        "en": "Hotkeys"
+    },
+    "postprocessing.label": {
+        "de": "Nachbearbeitung",
+        "en": "Post-processing"
+    },
+    "dictation.label": {
+        "de": "Diktat",
+        "en": "Dictation"
+    },
+    "title": {
+        "de": "Handy",
+        "en": "Handy"
+    },
+    "behaviour.label": {
+        "de": "Oberfläche & Eingabe",
+        "en": "Interface & typing"
+    }
+}

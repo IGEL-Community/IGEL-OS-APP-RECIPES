@@ -1,0 +1,30 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "handy",
+  "author": "The IGEL Community",
+  "vendor": "CJ Pais",
+  "requires": [
+    {
+      "name": "base_system",
+      "version": ">=12.5.0"
+    }
+  ],
+  "rw_partition": {
+    "size": 2000000,
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Handy Speech-to-Text (Community)"
+  },
+  "version": "0.9.4+1.9"
+}

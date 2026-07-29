@@ -1,0 +1,14 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "usr/share/doc.*",
+      "usr/share/man.*",
+      "usr/share/metainfo.*",
+      "usr/lib/Handy/libggml-vulkan.so"
+    ],
+    "owner": "0:0",
+    "permissions": "755",
+    "strip": false
+  }
+]

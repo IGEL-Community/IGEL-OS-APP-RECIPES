@@ -1,0 +1,210 @@
+<sessions>
+	<handy%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</handy%>
+	<handy0>
+		<name_localized>
+			displayname[en_us]=<Handy>
+		</name_localized>
+		<icon>
+			value=</services/handy/.icons/monochrome.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+	</handy0>
+</sessions>
+<config>
+	<transcribe_hotkey>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Transcribe hotkey>
+		tooltip[en_us]=<Push-to-talk key combination: modifiers plus exactly ONE normal key, e.g. ctrl+space, ctrl+shift+space, ctrl+super+space, ctrl+alt+f9. Modifiers are ctrl, shift, alt, super. The recipe repairs the common near-misses for you and says so in the systemlog: side-specific names (ctrl_left) lose the side, win/windows/meta become super, and the order is fixed. What CANNOT work is a combination with no normal key (Ctrl+Win) or more than one — that is refused and your existing hotkey is left alone, because the backend registers nothing at all for an unparseable shortcut and reports no error anywhere in the app. Empty = Handy default (ctrl+space).>
+		node_action=<systemctl restart handy-init.service>
+	</transcribe_hotkey>
+	<postprocess_hotkey>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Post-process hotkey>
+		tooltip[en_us]=<Key combination for transcribe-with-AI-post-processing, e.g. ctrl+shift+space. Same rules as the Transcribe hotkey: modifiers plus exactly one normal key. Empty = Handy default (ctrl+shift+space).>
+		node_action=<systemctl restart handy-init.service>
+	</postprocess_hotkey>
+	<postprocess_enabled>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[true]|[false]>
+		range[en_us]=<[Unmanaged][Enabled][Disabled]>
+		displayname[en_us]=<Post-processing>
+		tooltip[en_us]=<Enable AI post-processing fleet-wide. Enabling also selects Handy's built-in "Improve Transcriptions" prompt. Unmanaged = users decide in the app.>
+		node_action=<systemctl restart handy-init.service>
+	</postprocess_enabled>
+	<postprocess_provider>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[custom]|[openai]|[anthropic]|[groq]|[cerebras]|[zai]|[openrouter]|[bedrock_mantle]>
+		range[en_us]=<[Unmanaged][Custom (OpenAI-compatible)][OpenAI][Anthropic][Groq][Cerebras][Z.AI][OpenRouter][AWS Bedrock]>
+		displayname[en_us]=<Post-processing provider>
+		tooltip[en_us]=<LLM provider for post-processing. Use "Custom" with base URL https://api.openai.com/v1 for the low-latency OpenAI path (disables model reasoning).>
+		node_action=<systemctl restart handy-init.service>
+	</postprocess_provider>
+	<postprocess_base_url>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Custom provider base URL>
+		tooltip[en_us]=<Only used when provider is "Custom", e.g. https://api.openai.com/v1. Empty = Handy default.>
+		node_action=<systemctl restart handy-init.service>
+	</postprocess_base_url>
+	<postprocess_model>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Post-processing model>
+		tooltip[en_us]=<Model ID for the selected provider, e.g. gpt-5.6-terra or claude-haiku-4-5. Applied to the provider chosen above.>
+		node_action=<systemctl restart handy-init.service>
+	</postprocess_model>
+	<postprocess_api_key>
+		value=<>
+		type=<password>
+		runtime=<true>
+		displayname[en_us]=<Post-processing API key>
+		tooltip[en_us]=<API key for the selected provider. Stored in the device's persistent Handy settings; use a dedicated key with a spend limit.>
+		node_action=<systemctl restart handy-init.service>
+	</postprocess_api_key>
+	<model_url>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Speech model URL>
+		tooltip[en_us]=<Direct URL to a .gguf speech model. Each device downloads it once into Handy's models folder and the recipe then selects it explicitly, so it wins over anything already on the device. Find models at https://huggingface.co/handy-computer — open a repo, then Files, and copy the download link of one .gguf. Suggested for thin clients: canary-180m-flash-Q8_0.gguf (218 MB, Handy's own default quant for that model) or canary-180m-flash-Q4_K_M.gguf (139 MB, smaller and faster). Needs First-run onboarding = Skip and HTTPS egress to the host. Empty = users pick and download models in the app themselves.>
+		node_action=<systemctl restart handy-init.service>
+	</model_url>
+	<skip_onboarding>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[true]>
+		range[en_us]=<[Unmanaged][Skip]>
+		displayname[en_us]=<First-run onboarding>
+		tooltip[en_us]=<Skip Handy's first-run wizard so a managed device starts ready to use. Required for the Speech model URL flow: Handy does not auto-select a model while onboarding is pending. Skipping the wizard without supplying a model leaves users with nothing selected. Unmanaged leaves Handy's own behaviour untouched.>
+		node_action=<systemctl restart handy-init.service>
+	</skip_onboarding>
+	<custom_words>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Custom vocabulary>
+		tooltip[en_us]=<Comma-separated names and jargon the transcriber should recognize — company, product and site names, internal acronyms. Replaces the user's list when set.>
+		node_action=<systemctl restart handy-init.service>
+	</custom_words>
+	<mute_while_recording>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[true]|[false]>
+		range[en_us]=<[Unmanaged][Muted][Not muted]>
+		displayname[en_us]=<Mute audio while recording>
+		tooltip[en_us]=<Mute system audio output while dictating. Unmanaged = users decide in the app.>
+		node_action=<systemctl restart handy-init.service>
+	</mute_while_recording>
+	<audio_feedback>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[true]|[false]>
+		range[en_us]=<[Unmanaged][On][Off]>
+		displayname[en_us]=<Recording sounds>
+		tooltip[en_us]=<Play start/stop sounds when recording. Unmanaged = users decide in the app.>
+		node_action=<systemctl restart handy-init.service>
+	</audio_feedback>
+	<model_unload_timeout>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[never]|[immediately]|[min2]|[min5]|[min10]|[min15]|[hour1]>
+		range[en_us]=<[Unmanaged (Handy default: 5 minutes)][Never — keep loaded][Immediately after each dictation][2 minutes][5 minutes][10 minutes][15 minutes][1 hour]>
+		displayname[en_us]=<Unload model after idle>
+		tooltip[en_us]=<How long the speech model stays in RAM between dictations. Reloading costs seconds on thin clients, so "Never" gives the snappiest first dictation after a pause at the cost of holding the model in memory; "Immediately" frees RAM but makes every dictation pay the load.>
+		node_action=<systemctl restart handy-init.service>
+	</model_unload_timeout>
+	<start_hidden>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[true]|[false]>
+		range[en_us]=<[Unmanaged (Handy default: show window)][Start hidden in tray][Show main window]>
+		displayname[en_us]=<Window at startup>
+		tooltip[en_us]=<Start Handy minimised to the system tray instead of opening its main window. Recommended when the session is set to Autostart, so users are not greeted by a window at every login. Handy always shows the window if it needs first-run permissions.>
+		node_action=<systemctl restart handy-init.service>
+	</start_hidden>
+	<overlay_style>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[none]|[minimal]|[live]>
+		range[en_us]=<[Unmanaged][Hidden][Minimal pill][Live transcription panel]>
+		displayname[en_us]=<Recording overlay>
+		tooltip[en_us]=<On-screen indicator while recording. "Hidden" suits kiosk-style desktops; "Live" shows text as it is transcribed (streaming-capable models only).>
+		node_action=<systemctl restart handy-init.service>
+	</overlay_style>
+	<overlay_position>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[top]|[bottom]>
+		range[en_us]=<[Unmanaged][Top of screen][Bottom of screen]>
+		displayname[en_us]=<Overlay position>
+		tooltip[en_us]=<Where the recording overlay appears. Ignored when the overlay is hidden.>
+		node_action=<systemctl restart handy-init.service>
+	</overlay_position>
+	<keyboard_implementation>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[tauri]>
+		range[en_us]=<[Unmanaged (Handy default: Tauri)][Tauri]>
+		displayname[en_us]=<Keyboard implementation>
+		tooltip[en_us]=<Hotkey backend. Leave this alone: Tauri is Handy's own Linux default and the only one supported on IGEL OS. Handy's other backend, Handy Keys, reads keyboards directly from /dev/input and re-injects through /dev/uinput — access the session user does not have — and when it cannot, Handy registers NO hotkey at all, silently, not even its own Ctrl+Space. Selecting Tauri here repairs a device where somebody switched to Handy Keys in the app.>
+		node_action=<systemctl restart handy-init.service>
+	</keyboard_implementation>
+	<typing_tool>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[auto]|[xdotool]|[wtype]|[kwtype]|[dotool]|[ydotool]>
+		range[en_us]=<[Unmanaged (Handy default: Auto)][Auto-detect][xdotool (X11)][wtype (Wayland)][kwtype (KDE Wayland)][dotool][ydotool]>
+		displayname[en_us]=<Text injection tool (Linux)>
+		tooltip[en_us]=<Helper used to type text into other applications. IGEL OS 12 is X11, where xdotool applies; Auto normally picks it correctly, so only pin this if injection misbehaves.>
+		node_action=<systemctl restart handy-init.service>
+	</typing_tool>
+	<paste_method>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[ctrl_v]|[direct]|[shift_insert]|[ctrl_shift_v]|[none]>
+		range[en_us]=<[Unmanaged (Linux default: Direct)][Ctrl+V (most compatible)][Direct keystrokes][Shift+Insert][Ctrl+Shift+V (terminals)][None — clipboard only]>
+		displayname[en_us]=<Text insertion method>
+		tooltip[en_us]=<How transcribed text is placed into the focused window. Handy defaults to Direct on Linux. Ctrl+V is generally the most compatible, including into Citrix/Omnissa sessions. Direct types character by character (slower, but works where paste is blocked). Ctrl+Shift+V suits terminal emulators. None leaves the text on the clipboard only.>
+		node_action=<systemctl restart handy-init.service>
+	</paste_method>
+	<append_trailing_space>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		range=<[]|[true]|[false]>
+		range[en_us]=<[Unmanaged][Add trailing space][No trailing space]>
+		displayname[en_us]=<Trailing space>
+		tooltip[en_us]=<Append a space after inserted text so consecutive dictations do not run together.>
+		node_action=<systemctl restart handy-init.service>
+	</append_trailing_space>
+</config>
+<config_schema_version>
+	value=<1>
+	type=<integer>
+	runtime=<false>
+</config_schema_version>

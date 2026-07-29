@@ -1,0 +1,180 @@
+#!/bin/bash
+# Handy speech-to-text session launcher. Single-instance: relaunching the
+# session shows the running instance's main window. User data persists per
+# igel/dirs.json.
+
+DATA="/userhome/.local/share/com.pais.handy"
+
+# Handy resolves models it downloads itself through hf-hub's stock cache
+# (HF_HOME or ~/.cache/huggingface). ~/.cache is volatile on IGEL, so point
+# HF_HOME inside the persistent app-data dir — otherwise a model a user
+# downloads in the app is lost at every reboot.
+export HF_HOME="${DATA}/hf"
+
+# UMS profile values, exported by handy-init.service (root) into a root-owned
+# env file under /run/handy. Absent file = no managed settings.
+[ -r /run/handy/handy.env ] && { set -a; . /run/handy/handy.env; set +a; }
+
+# The WebKitGTK 4.1 stack is expected from the base system (app.json requires
+# base_system >= 12.5.0) — fail loudly in systemlog instead of a silent
+# no-show on images that lack it. Skip the check if ldconfig is unavailable.
+LDCONFIG=$(command -v ldconfig || echo /sbin/ldconfig)
+if [ -x "$LDCONFIG" ] && ! "$LDCONFIG" -p 2>/dev/null | grep -qF libwebkit2gtk-4.1; then
+    logger -it handy "base system lacks libwebkit2gtk-4.1 — add the WebKit stack to igel/debian.json and rebuild (see recipe README)"
+    exit 1
+fi
+
+# --- speech model ----------------------------------------------------------
+# Optional: the admin puts a .gguf URL in the UMS profile ("Speech model
+# URL"). We download it into Handy's own custom-models directory — the
+# documented location its startup scan reads (discover_custom_transcribe_models)
+# — where Handy registers it as a model whose ID is the filename minus its
+# extension. No model registry, no pinned commits, no checksums: any model file
+# Handy can load works, and adding a model needs no recipe change.
+#
+# Two upstream details drive the details below (verified in 0.9.4 source):
+#
+#  1. That scan SKIPS a file whose name matches the default-quant filename of a
+#     catalog model, because the catalog already claims that filename. Catalog
+#     models count as downloaded only when they are in the Hugging Face cache,
+#     so such a file would be invisible to Handy — nothing registered, nothing
+#     selected. Saving under a recipe-owned prefix avoids the collision for any
+#     URL an admin can pick.
+#  2. auto_select_model_if_needed() takes the first downloaded model in the
+#     catalog's editorial rank order, and a custom model has no rank, so it
+#     sorts last. On a device that already holds any other model, Handy would
+#     select that one instead. So the model is selected explicitly, by ID, once
+#     the file is actually on disk (see MODEL_ID below) — never before, because
+#     Handy clears a selection it cannot resolve.
+#
+# Downloading runs in the background so login is never delayed; Handy only
+# scans for models at startup, so a freshly downloaded model becomes active at
+# the NEXT session start. Left unset, the recipe touches nothing and users pick
+# and download models in the app exactly as they would without this recipe.
+MODELS_DIR="${DATA}/models"
+MODEL_PREFIX="ums-"
+
+# Local filename for a model URL: basename, query string stripped, prefixed.
+model_filename() {
+    local n="${1%%\?*}"
+    printf '%s%s' "$MODEL_PREFIX" "${n##*/}"
+}
+
+fetch_model() {
+    local url="$1" name tmp rc
+    name=$(model_filename "$url")
+    case "$name" in
+        *.gguf|*.bin) ;;
+        *)  logger -it handy "speech model URL does not end in .gguf or .bin — ignoring: $name"
+            return 1 ;;
+    esac
+    [ -f "${MODELS_DIR}/${name}" ] && return 0     # already present
+    mkdir -p "$MODELS_DIR" || {
+        logger -it handy "cannot create ${MODELS_DIR} (permissions or full rw partition?) — model download skipped"
+        return 1
+    }
+    # Single-flight so two session starts cannot fight over the same file.
+    if command -v flock >/dev/null && : >> "${MODELS_DIR}/.download.lock" 2>/dev/null; then
+        exec 9>>"${MODELS_DIR}/.download.lock"
+        flock -n 9 || return 0
+        [ -f "${MODELS_DIR}/${name}" ] && return 0
+    fi
+    # Download to a hidden temp name and rename on success, so an interrupted
+    # transfer never leaves a partial file that Handy would try to load.
+    tmp="${MODELS_DIR}/.${name}.partial"
+    logger -it handy "downloading speech model ${name} from ${url}"
+    curl -fsSL --retry 3 --connect-timeout 30 \
+         --speed-limit 1024 --speed-time 300 \
+         -C - -o "$tmp" "$url"
+    rc=$?
+    if [ $rc -ne 0 ]; then
+        # 33/22: server rejected the resume range (stale partial) — start clean
+        # next session; transient network errors keep the partial for resume.
+        { [ $rc -eq 33 ] || [ $rc -eq 22 ]; } && rm -f "$tmp"
+        logger -it handy "speech model download failed (curl exit $rc) — check the URL and HTTPS egress; retries at the next session start"
+        return 1
+    fi
+    if ! mv -n "$tmp" "${MODELS_DIR}/${name}" || [ ! -f "${MODELS_DIR}/${name}" ]; then
+        rm -f "$tmp"
+        logger -it handy "could not place ${name} in ${MODELS_DIR} — retries at the next session start"
+        return 1
+    fi
+    logger -it handy "speech model ${name} downloaded — Handy selects it at the next session start"
+}
+
+# Skip while Handy is running: it owns its own downloads and only scans for
+# models at startup. The subshell keeps the lock fd out of the exec'd process.
+if [ -n "${HANDY_UMS_MODEL_URL:-}" ] && ! pgrep -x handy >/dev/null 2>&1; then
+    ( fetch_model "$HANDY_UMS_MODEL_URL" ) >/dev/null 2>&1 &
+fi
+
+# Tell the settings sync which model to select — only once the file is really
+# there. Handy's ID for it is the filename without the extension.
+if [ -n "${HANDY_UMS_MODEL_URL:-}" ]; then
+    MODEL_FILE=$(model_filename "$HANDY_UMS_MODEL_URL")
+    if [ -f "${MODELS_DIR}/${MODEL_FILE}" ]; then
+        export HANDY_UMS_MODEL_ID="${MODEL_FILE%.*}"
+    else
+        logger -it handy "speech model ${MODEL_FILE} not on disk yet — selection deferred to a later session start"
+    fi
+fi
+
+# Apply admin-set UMS values to Handy's settings — only when Handy is not
+# already running, because a running Handy holds its settings in memory and
+# saves them on change, so an external write can race and lose either side's
+# edits. Profile changes therefore apply at the next real Handy start.
+if pgrep -x handy >/dev/null 2>&1; then
+    logger -it handy "Handy already running — UMS settings sync deferred to next Handy start"
+elif command -v python3 >/dev/null; then
+    SYNC_OUT=$(python3 /services/handy/config/bin/handy-settings-sync.py 2>&1)
+    # The status word is the last line; anything before it is a note about a
+    # value that was normalized or refused, worth its own systemlog line.
+    SYNC_STATUS=$(printf '%s\n' "$SYNC_OUT" | tail -n 1)
+    SYNC_NOTES=$(printf '%s\n' "$SYNC_OUT" | sed '$d' | tr '\n' ';')
+    [ -n "$SYNC_NOTES" ] && logger -it handy "settings sync: ${SYNC_NOTES}"
+    case "$SYNC_STATUS" in
+        seeded|updated) logger -it handy "settings sync: $SYNC_STATUS" ;;
+        unchanged|unmanaged) : ;;
+        *) logger -it handy "settings sync problem: $SYNC_STATUS" ;;
+    esac
+else
+    logger -it handy "python3 unavailable — UMS settings sync skipped"
+fi
+
+# libtranscribe.so.0 links libopenblas.so.0, which Debian ships in an
+# openblas-pthread subdirectory normally exposed via update-alternatives —
+# which does not run for IGEL app installs. One export covers the whole
+# dependency chain (openblas -> libgfortran -> libquadmath) plus the ayatana
+# tray libraries; a build-time rpath patch would need three patched objects.
+export LD_LIBRARY_PATH="/services/handy/usr/lib/x86_64-linux-gnu:/services/handy/usr/lib/x86_64-linux-gnu/openblas-pthread${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+
+# gtk-layer-shell only works on Wayland; IGEL OS 12 runs X11 — pin Handy's
+# recording overlay to its regular-window fallback (upstream switch).
+export HANDY_NO_GTK_LAYER_SHELL=1
+
+# Move WebKit's garbage-collector signal off SIGUSR1.
+#
+# Handy maps SIGUSR1 to "toggle dictation with post-processing" (signal_handle.rs)
+# for remote control. WebKitGTK — the webview behind Handy's whole UI — uses
+# SIGUSR1 to suspend threads for JavaScriptCore's garbage collector: WTF's
+# ThreadingPOSIX.cpp sets sigThreadSuspendResume = SIGUSR1 and the GC's
+# Collector Thread pthread_kill()s the process with it every few minutes. Handy
+# then starts a recording nobody asked for, which nothing ever stops — and while
+# that phantom recording is active the user's real push-to-talk press is
+# ignored, because the coordinator only starts on a press when it is idle. The
+# app therefore appears to work exactly once and then go deaf until restarted.
+#
+# WebKit reads JSC_SIGNAL_FOR_GC to pick a different signal, which costs nothing
+# and removes the collision from this side without patching Handy. 30 (SIGPWR)
+# is unused by desktop applications; override the variable if it ever clashes.
+# Upstream: cjpais/Handy#1660 (bug), #1267 (fix, unmerged) — drop this export
+# once a Handy release no longer listens on SIGUSR1.
+export JSC_SIGNAL_FOR_GC="${JSC_SIGNAL_FOR_GC:-30}"
+
+# No --start-hidden here on purpose: Handy computes
+#   should_hide = settings.start_hidden || cli_args.start_hidden
+# so passing the flag would make the "Window at startup" profile setting
+# unreachable. Whether the window appears is left to that setting (or to
+# Handy's own default when it is Unmanaged). Reopening the session always
+# brings up the main window via the single-instance handler.
+exec /services/handy/usr/bin/handy

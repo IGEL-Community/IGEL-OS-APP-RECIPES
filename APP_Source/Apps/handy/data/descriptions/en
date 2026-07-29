@@ -1,0 +1,12 @@
+Handy
+
+Handy is a free, open-source speech-to-text application that works completely offline. Press a keyboard shortcut (default Ctrl+Space), speak, and release — your words are transcribed locally and typed into whatever text field has focus. No cloud, no subscription: audio never leaves the device.
+
+Transcription runs on-device using models from Handy's catalog. Your administrator can select the model fleet-wide; otherwise you choose one in the app, where Whisper and multilingual models are also available. Voice activity detection is handled by Silero VAD.
+
+IGEL recipe notes:
+
+- Handy runs as a system-tray application. Start it from the configured session (or set the session to autostart); it then waits in the tray for the global hotkey.
+- If your administrator has selected a model, the device downloads and selects it automatically — no per-desktop setup. Otherwise Handy's own first-run setup applies. To change models or settings, open the session again while Handy is running to bring up the main window. Models, settings, transcription history and recordings are stored in a persistent directory and survive reboots.
+- Transcribed text is typed into the currently focused window — including remote sessions (Citrix, Omnissa Horizon, RDP), since injected keystrokes are forwarded like normal typing.
+- Requires a working microphone. Audio capture is shared through the sound server, so Handy can run alongside softphone or VDI real-time audio without exclusive locking.

@@ -1,0 +1,10 @@
+[Unit]
+Description=Handy UMS profile export
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash /services/handy/config/bin/handy-init.sh
+
+[Install]
+WantedBy=multi-user.target
