@@ -1,3 +1,15 @@
+0.20.1+1.0
+
+- Track the current iaiops release: the image is now 0.20.1 (was 0.12.0).
+- FIX: the building/water edition examples pointed at 0.12.0 tags that were never
+  published — only factory, fab and process exist for 0.12.0. All five edition
+  tags exist for 0.20.1, so switching IAIOPS_IMAGE now works as documented.
+- Every MCP tool now carries the standard tool annotations (readOnlyHint /
+  destructiveHint), derived from the governance harness — a managed endpoint's
+  agent can tell a read from a plant write without parsing tool descriptions.
+- Audit now covers the CLI as well as the MCP server, so a write cannot bypass
+  the audit trail by using the other front-end.
+
 0.12.0+1.0
 
 - Initial community recipe: launches the iaiops 0.12.0 OCI image via Podman.

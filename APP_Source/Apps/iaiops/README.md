@@ -32,7 +32,7 @@ lock down the endpoint (overrides the unit defaults):
 
 ```sh
 # /services_rw/iaiops/iaiops.env
-IAIOPS_IMAGE=ghcr.io/industrial-aiops/iaiops:0.12.0-building
+IAIOPS_IMAGE=ghcr.io/industrial-aiops/iaiops:0.20.1-building
 IAIOPS_MCP=building
 IAIOPS_MCP_TRANSPORT=sse
 IAIOPS_ALLOWLIST_ACCOUNTS=ops-agent

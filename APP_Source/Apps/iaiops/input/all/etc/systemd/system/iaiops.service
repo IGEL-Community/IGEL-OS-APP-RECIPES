@@ -11,12 +11,12 @@ Wants=network-online.target
 # Site configuration goes in /services_rw/iaiops/iaiops.env (optional; overrides
 # the defaults below). Typical keys — pick the edition/profile your site runs and
 # lock down who may reach the MCP endpoint:
-#   IAIOPS_IMAGE=ghcr.io/industrial-aiops/iaiops:0.12.0-building
+#   IAIOPS_IMAGE=ghcr.io/industrial-aiops/iaiops:0.20.1-building
 #   IAIOPS_MCP=building
 #   IAIOPS_MCP_TRANSPORT=sse
 #   IAIOPS_ALLOWLIST_ACCOUNTS=ops-agent
 #   IAIOPS_ALLOWLIST_IPS=10.0.0.0/24
-Environment=IAIOPS_IMAGE=ghcr.io/industrial-aiops/iaiops:0.12.0-factory
+Environment=IAIOPS_IMAGE=ghcr.io/industrial-aiops/iaiops:0.20.1-factory
 Environment=IAIOPS_MCP=factory
 Environment=IAIOPS_MCP_TRANSPORT=sse
 EnvironmentFile=-/services_rw/iaiops/iaiops.env
