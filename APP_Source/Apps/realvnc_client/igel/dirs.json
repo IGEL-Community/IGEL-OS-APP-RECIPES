@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/userhome/.vnc",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
