@@ -1,0 +1,17 @@
+<sessions>
+	<realvnc_client%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</realvnc_client%>
+  <realvnc_client0>
+		<name_localized>
+			displayname[en_us]=<RealVNC Connect Viewer>
+		</name_localized>
+		<icon>
+            value=</services/realvnc_client/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </realvnc_client0>
+</sessions>

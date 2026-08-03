@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "realvnc_client",
+  "author": "The IGEL community",
+  "vendor": "RealVNC",
+   "vendor": "RealVNC",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "RealVNC Viewer for Linux (Community)"
+  },
+  "version": "8.4.0+1.1"
+}

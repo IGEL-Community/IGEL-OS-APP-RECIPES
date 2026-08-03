@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/realvnc_client/usr/lib/rvncconnect/rvncconnect
