@@ -14,3 +14,16 @@ wget https://appimages.libreitalia.org/LibreOffice-latest.full-x86_64.AppImage
 ```bash linenums="1"
 zip LibreOffice-latest.full-x86_64.AppImage.zip LibreOffice-latest.full-x86_64.AppImage
 ```
+
+- Get version for app packing
+
+```bash
+chmod a+x LibreOffice-latest.full-x86_64.AppImage
+./LibreOffice-latest.full-x86_64.AppImage --version
+```
+
+```bash
+LibreOffice 26.2.5.1 997786b8bfe5fadf793c1218fed3f515ec806f1b
+```
+
+- Use verion as: `26.2.5+1.0`
