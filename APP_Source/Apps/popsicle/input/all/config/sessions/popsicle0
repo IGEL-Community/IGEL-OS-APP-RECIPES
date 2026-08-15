@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/popsicle/usr/bin/Popsicle_USB_Flasher-*-x86_64.AppImage

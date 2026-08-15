@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "popsicle",
+  "author": "The IGEL community",
+  "vendor": "Popsicle",
+  "release": "",
+  "summary": {
+    "en": "Popsicle USB Flash Tool (Community)"
+  },
+  "version": "1.3.3+1.0"
+}
