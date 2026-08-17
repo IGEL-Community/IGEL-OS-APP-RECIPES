@@ -4,6 +4,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 **Note:** Need to build latest version of Putty
 
+- Updated recipe to include pre-built version (0.85 from 260816)
+
 -----
 
 -----
