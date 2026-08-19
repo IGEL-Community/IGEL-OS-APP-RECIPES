@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "valueset",
+  "author": "The IGEL Community",
+  "vendor": "The IGEL COmmunity",
+  "release": "",
+  "summary": {
+    "en": "Value Set (Community)"
+  },
+  "version": "1.0.0+1.0"
+}
