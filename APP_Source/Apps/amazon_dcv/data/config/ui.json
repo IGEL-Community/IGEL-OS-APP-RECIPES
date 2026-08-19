@@ -1,0 +1,44 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": [
+      "base"
+    ]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "Amazon DCV Client",
+    "childrenIds": [
+      "sessions", "config"
+    ]
+  },
+  "sessions": {
+    "id": "sessions",
+    "parentId": "base",
+    "nlsResourceId": "sessions",
+    "title": "Sessions",
+    "instancePage": true,
+    "fixInstanceId": 0,
+    "elements": {
+      "0": {
+        "type": "sessionPage",
+        "paramId": "app.amazondcv.sessions.amazondcv",
+        "instancePageId": "sessions.genericInstancePage"
+      }
+    }
+  },
+  "config": {
+    "id": "config",
+    "title": "Configuration",
+    "nlsResourceId": "config",
+    "parentId": "base",
+    "elements": {
+      "0": {
+        "paramId": "app.amazondcv.config.connection_server",
+        "type": "generic"
+      }
+    }
+  }
+}
