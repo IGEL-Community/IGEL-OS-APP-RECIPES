@@ -118,7 +118,7 @@ ITC10B6762436B2,fubar1,abcdef$
 EOF
 ```
 
-- Command to create credentials.txt
+- Command to create credentials.enc
 
 ```bash linenums="1"
 openssl enc -aes-256-cbc -salt -pbkdf2 -in credentials.txt -out credentials.enc
