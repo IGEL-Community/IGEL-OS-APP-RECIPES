@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "amazondcv",
+  "author": "The IGEL Community",
+  "vendor": "Amazon Web Services",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Amazon DCV Client (Community)"
+  },
+  "version": "2025.0.8846+2.1"
+}

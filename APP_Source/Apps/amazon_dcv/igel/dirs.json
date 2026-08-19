@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/userhome/.dcvviewer",
+    "persistent": true,
+    "owner": "777:100"
+  },
+  {
+    "path": "/userhome/.config/dcvviewer",
+    "persistent": true,
+    "owner": "777:100"
+  }
+]

@@ -1,0 +1,6 @@
+Amazon DCV Client
+
+Amazon DCV is a high-performance remote desktop and application streaming
+protocol from AWS. It lets you run a workload on a powerful remote
+machine—often an AWS EC2 instance—and interact with its graphical
+desktop from your local computer with low latency.
