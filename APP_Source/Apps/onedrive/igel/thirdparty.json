@@ -6,5 +6,13 @@
         "name": "MPL-2.0"
       }
     ]
+  },
+  {
+    "url": "file:///tmp/OneDriveGUI.AppImage.zip",
+    "licenses": [
+      {
+        "name": "GPL-3.0-only"
+      }
+    ]
   }
 ]
