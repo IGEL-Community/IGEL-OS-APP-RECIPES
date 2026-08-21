@@ -12,7 +12,6 @@
   "rw_partition": {
     "size": "large",
     "flags": [
-      "compressed",
       "prefer_btrfs"
     ]
   },
@@ -20,5 +19,5 @@
   "summary": {
     "en": "OneDrive (Community)"
   },
-  "version": "2.5.15+1.0"
+  "version": "2.5.15+1.1"
 }
