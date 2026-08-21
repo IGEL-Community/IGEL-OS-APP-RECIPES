@@ -4,14 +4,5 @@
     "excludes": [
       ""
     ]
-  },
-  {
-    "source": "onedrivegui/.*",
-    "excludes": [
-      ""
-    ],
-    "destination": "/usr/bin",
-    "permissions": "755",
-    "strip": false
   }
 ]
