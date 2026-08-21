@@ -1,0 +1,17 @@
+<sessions>
+	<onedrive%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</onedrive%>
+  <onedrive0>
+		<name_localized>
+			displayname[en_us]=<OneDrive GUI>
+		</name_localized>
+		<icon>
+            value=</services/onedrive/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </onedrive0>
+</sessions>
