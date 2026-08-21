@@ -3,6 +3,7 @@
     "source": ".*",
     "excludes": [
       ""
-    ]
+    ],
+    "strip": false
   }
 ]
