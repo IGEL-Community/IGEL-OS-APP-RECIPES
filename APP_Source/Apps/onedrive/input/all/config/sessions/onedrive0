@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/services/onedrive/OneDriveGUI*.AppImage
+/services/onedrive/usr/bin/OneDriveGUI.AppImage
