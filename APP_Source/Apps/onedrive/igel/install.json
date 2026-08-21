@@ -6,7 +6,7 @@
     ]
   },
   {
-    "source": "OneDriveGUI.AppImage",
+    "source": "OneDriveGUI.AppImage.*",
     "excludes": [
       ""
     ],
