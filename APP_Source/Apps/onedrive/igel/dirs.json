@@ -8,5 +8,10 @@
       "path": "/userhome/OneDrive",
       "persistent": true,
       "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.config/onedrive-gui",
+      "persistent": true,
+      "owner": "777:100"
     }
 ]

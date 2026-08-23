@@ -1,5 +1,0 @@
-[Unit]
-Description=OneDrive client for Linux
-
-[Service]
-ExecStart=/bin/bash /services/onedrive/etc/onedrive/onedrive-init.sh

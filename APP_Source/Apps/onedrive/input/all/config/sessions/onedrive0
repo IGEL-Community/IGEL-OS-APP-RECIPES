@@ -1,3 +1,22 @@
 #!/bin/bash
+#set -x
+#trap read debug
 
-/services/onedrive/usr/local/bin/OneDriveGUI.AppImage
+# Performing a selective sync via 'sync_list' file
+# Selective sync allows you to sync only specific files and
+# directories. To enable selective sync create a file named
+# sync_list in your application configuration directory (default is
+# /userhome/.config/onedrive). Each line of the file represents a relative
+# path from your sync_dir. All files and directories not matching any line
+# of the file will be skipped during all operations.
+
+#SYNC_FILE="/userhome/.config/onedrive/sync_list"
+
+#if [ ! -f "$SYNC_LIST" ]; then
+#    cat << "EOF" > "$SYNC_LIST"
+# Include IGEL folder in root
+#/igel-files/
+#EOF
+#fi
+
+/services/onedrive/OneDriveGUI*.AppImage
