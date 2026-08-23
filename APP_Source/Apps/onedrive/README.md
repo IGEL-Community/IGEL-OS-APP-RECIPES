@@ -2,7 +2,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # [OneDrive Client for Linux](https://abraunegg.github.io/)
 
-Sets to create latest app:
+Steps to create latest app:
 
 - Build latest OneDrive client for Linux (recommend the below docker build method)
 - Download latest [OneDrive GUI](https://github.com/bpozdena/OneDriveGUI) client and zip into `OneDriveGUI.AppImage.zip`
@@ -11,7 +11,7 @@ Sets to create latest app:
 
 -----
 
-## Steps configure OneDrive
+## Steps to Configure OneDrive
 
 Since IGEL OS has limited storage, identify the folders that will be synchronized via the file: [sync_list ](https://github.com/abraunegg/onedrive/blob/master/docs/usage.md#performing-a-selective-synchronisation-via-sync_list-file)
 
