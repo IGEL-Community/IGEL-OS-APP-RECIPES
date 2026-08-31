@@ -10,7 +10,7 @@
   "author": "The IGEL Community",
   "vendor": "OneDrive",
   "rw_partition": {
-    "size": "large",
+    "size": 3000000,
     "flags": [
       "prefer_btrfs"
     ]
@@ -19,5 +19,5 @@
   "summary": {
     "en": "OneDrive (Community)"
   },
-  "version": "2.5.15+1.4"
+  "version": "2.5.15+1.5"
 }
