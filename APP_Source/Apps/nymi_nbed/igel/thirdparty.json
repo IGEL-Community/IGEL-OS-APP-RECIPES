@@ -1,0 +1,13 @@
+[
+  {
+    "url": "file:///tmp//nbed_amd64.deb",
+    "dest": "",
+    "licenses": [
+      {
+        "name": "Nymi Inc. proprietary license",
+        "text": "Check license conditions from Nymi Inc. or request them by mail from support@nymi.com.",
+        "file": ""
+      }
+    ]
+  }
+]

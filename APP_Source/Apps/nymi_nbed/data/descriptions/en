@@ -1,0 +1,13 @@
+Nymi Bluetooth Endpoint Daemon is part of Nymi's Connected Worker Platform (CWP)
+
+The Nymi Bluetooth Endpoint Daemon (nbed) is part of Nymi's Connected Worker Platform (CWP) or Nymi endpoint software.
+
+Its job is to act as a local Bluetooth service that communicates with Nymi Bands and the rest of the Nymi authentication stack. 
+
+At a high level, it:
+
+- Manages the local Bluetooth Adapter
+- Communicates with the Nymi Agent / Runtime
+- Discovers and tracks Nymi Bands
+- Supports authentication and workstation unlock workflows
+- Monitors service health

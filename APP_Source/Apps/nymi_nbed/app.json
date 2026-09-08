@@ -1,0 +1,30 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "nbed",
+  "author": "The IGEL Community",
+  "vendor": "Nymi",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "prefer_btrfs",
+      "compressed"
+    ]
+  },
+  "release": "",
+  "requires": [
+    {
+      "name": "base_system",
+      "version": ">=12.7.0-0"
+    }
+  ],
+  "summary": {
+    "en": "Nymi Bluetooth Endpoint daemon (Community)"
+  },
+  "version": "1.21.1+1.0"
+}
