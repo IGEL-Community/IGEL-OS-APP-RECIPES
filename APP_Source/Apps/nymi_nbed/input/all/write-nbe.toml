@@ -1,0 +1,74 @@
+#!/bin/bash
+# Script build nbe.toml from configured values within setup
+AGENT_URL=$(get app.nbed.nbed_config.agent_url)
+RSSI_WINDOW_TAP=$(get app.nbed.nbed_config.rssi_window_tap)
+RSSI_WINDOW_LONG=$(get app.nbed.nbed_config.rssi_window_long)
+RSSI_TAP_THRESHOLD=$(get app.nbed.nbed_config.rssi_tap_threshold)
+RSSI_CUTOFF_CLOSE=$(get app.nbed.nbed_config.rssi_cutoff_close)
+RSSI_CUTOFF_FAR=$(get app.nbed.nbed_config.rssi_cutoff_far)
+TOML="/services/nbed/usr/bin/nbe.toml"
+
+#LOGGING
+ACTION="NBED_Config_${1}"
+LOGGER="logger -it ${ACTION}"
+echo "Writing config file with configured values from configured app settings" | $LOGGER
+
+# Plausibility check - Check if configured values are within allowed range. If not default values are used!
+# RSSI_WINDOW_TAP = duration required. Default 10. Range 1 to ??? We'll define 200 as max value
+RSSI_WINDOW_TAP=$((RSSI_WINDOW_TAP + 1))
+RSSI_WINDOW_TAP=$((RSSI_WINDOW_TAP - 1))
+if [ "$RSSI_WINDOW_TAP" -ge 1 ] && [ "$RSSI_WINDOW_TAP" -le 200 ]; then
+	# keep configured value
+	echo "RSSI_WINDOW_TAP value $RSSI_WINDOW_TAP is within allowed range! Value will be used!" | $LOGGER
+else
+	echo "RSSI_WINDOW_TAP value $RSSI_WINDOW_TAP is beyond allowed range (1 to 200). Defaul value 10 will be set for active configuration!" | $LOGGER
+	RSSI_WINDOW_TAP=10
+fi
+# RSSI_WINDOW_LONG = Frequency determination to check distance between BLE radio antenna and the NYMI wrist. Default 50. Range 1 to ??? We'll define 200 as max value
+RSSI_WINDOW_LONG=$((RSSI_WINDOW_LONG + 1))
+RSSI_WINDOW_LONG=$((RSSI_WINDOW_LONG - 1))
+if [ "$RSSI_WINDOW_LONG" -ge 1 ] && [ "$RSSI_WINDOW_LONG" -le 200 ]; then
+	# keep configured value
+	echo "RSSI_WINDOW_LONG value $RSSI_WINDOW_LONG is within allowed range! Value will be used!" | $LOGGER
+else
+	echo "RSSI_WINDOW_LONG value $RSSI_WINDOW_LONG is beyond allowed range (1 to 200). Defaul value 50 will be set for active configuration!" | $LOGGER
+	RSSI_WINDOW_LONG=50
+fi
+# RSSI_TAP_THRESHOLD = this determins the range at which a tap event will occur. Allowed range: negative number -1 to -99. Default value -42.
+RSSI_TAP_THRESHOLD=$((RSSI_TAP_THRESHOLD + 1))
+RSSI_TAP_THRESHOLD=$((RSSI_TAP_THRESHOLD - 1))
+if [ "$RSSI_TAP_THRESHOLD" -ge -99 ] && [ "$RSSI_TAP_THRESHOLD" -le -1 ]; then
+	# keep configured value
+	echo "RSSI_TAP_THRESHOLD value $RSSI_TAP_THRESHOLD is within allowed range! Value will be used!" | $LOGGER
+else
+	echo "RSSI_TAP_THRESHOLD value $RSSI_TAP_THRESHOLD is beyond allowed range (-1 to -99). Defaul value -42 will be set for active configuration!" | $LOGGER
+	RSSI_TAP_THRESHOLD=-42
+fi
+# RSSI_CUTOFF_CLOSE = determins the outer-range of the close-distance threshold. Must be 0 or negative. 0 to bybass proximity functionality. Default value: -70
+RSSI_CUTOFF_CLOSE=$((RSSI_CUTOFF_CLOSE + 1))
+RSSI_CUTOFF_CLOSE=$((RSSI_CUTOFF_CLOSE - 1))
+if [ "$RSSI_CUTOFF_CLOSE" -ge -99 ] && [ "$RSSI_CUTOFF_CLOSE" -le 0 ]; then
+	# keep configured value
+	echo "RSSI_CUTOFF_CLOSE value $RSSI_CUTOFF_CLOSE is within allowed range! Value will be used!" | $LOGGER 
+else    
+	echo "RSSI_CUTOFF_CLOSE value $RSSI_CUTOFF_CLOSE is beyond allowed range (0 to -99). Defaul value -70 will be set for active configuration!" | $LOGGER 
+	RSSI_CUTOFF_CLOSE=-70
+fi
+# RSSI_CUTOFF_FAR = determins the outer-range of the far-distance threshold. Must be negative. Default value: -83
+RSSI_CUFOFF_FAR=$((RSSI_CUTOFF_FAR + 1))
+RSSI_CUTOFF_FAR=$((RSSI_CUTOFF_FAR - 1))
+if [ "$RSSI_CUTOFF_FAR" -ge -99 ] && [ "$RSSI_CUTOFF_FAR" -le -1 ]; then
+	# keep configured value
+	echo "RSSI_CUTOFF_FAR value $RSSI_CUTOFF_FAR is within allowed range! Value will be used!" | $LOGGER 
+else    
+	echo "RSSI_CUTOFF_FAR value $RSSI_CUFOFF_FAR is beyond allowed range (-1 to -99). Defaul value -83 will be set for active configuration!" | $LOGGER 
+	RSSI_CUTOFF_FAR=-83
+fi
+
+# write file
+echo "agent_url = \"$AGENT_URL"\" > $TOML
+echo "rssi_window_tap = $RSSI_WINDOW_TAP" >> $TOML
+echo "rssi_window_long = $RSSI_WINDOW_LONG" >> $TOML
+echo "rssi_tap_threshold = $RSSI_TAP_THRESHOLD" >> $TOML
+echo "rssi_cutoff_close = $RSSI_CUTOFF_CLOSE" >> $TOML
+echo "rssi_cutoff_far = $RSSI_CUTOFF_FAR" >> $TOML

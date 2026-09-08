@@ -1,0 +1,10 @@
+[Unit]
+Description=IGEL configuration service for Nymi nbed
+Before=nbed.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Restart=no
+ExecStartPre=/usr/sbin/modprobe cdc-acm
+ExecStart=/services/nbed/write-nbe.toml

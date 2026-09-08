@@ -1,0 +1,50 @@
+{
+	"root": {
+	"id": "root",
+	"childrenIds": ["base"]
+	},
+	"base": {
+	"id": "base",
+	"parentId": "root",
+	"nlsResourceId": "title",
+	"title": "",
+	"childrenIds": ["", "settings"]
+	},	
+	"settings": {
+		"id": "settings",
+		"parentId": "base",
+		"nlsResourceId": "settings.label",
+		"title": "Settings",
+		"elements": {
+			"0": {
+				"type": "label",
+				"nlsResourceID": "app.nbed.settings.nbed_config.label",
+				"title": "nbed settings"
+			},
+			"1": {
+				"type": "generic",
+				"paramId": "app.nbed.nbed_config.agent_url"
+			},
+			"2": {
+				"type": "generic",
+				"paramId": "app.nbed.nbed_config.rssi_window_tap"
+			},
+			"3": {
+				"type": "generic",
+				"paramId": "app.nbed.nbed_config.rssi_window_long"
+			},
+			"4": {
+				"type": "generic",
+				"paramId": "app.nbed.nbed_config.rssi_tap_threshold"
+			},
+			"5": {
+				"type": "generic",
+				"paramId": "app.nbed.nbed_config.rssi_cutoff_close"
+			},
+			"6": {
+				"type": "generic",
+				"paramId": "app.nbed.nbed_config.rssi_cutoff_far"
+			}
+			}
+		}
+}

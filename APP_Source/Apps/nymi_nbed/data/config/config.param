@@ -1,0 +1,51 @@
+<config_schema_version>
+	value=<1>
+	type=<integer>
+	runtime=<false>
+</config_schema_version>
+<nbed_config>
+	<agent_url>
+		value=<ws://127.0.0.1:9120/socket/websocket>
+		type=<string>
+		runtime=<true>
+		displayname[en_us]=<Nymi Agent URL>
+		displayname[de_de]=<Agent-URL des NYMI-Servers>
+		tooltip[en_us]=<Nymi Agent URL is the FQDN of the Nymi Agent host; e.g: ws://nymi.igel.com:9120/socket/websocket>
+		tooltip[de_de]=<Die Nymi Agent URL ist der FQDN des Nymi Agent host; z.B.: ws://nymi.igel.com:9120/socket/websocket>
+	</agent_url>
+	<rssi_window_tap>
+		value=<10>
+		type=<integer>
+		runtime=<true>
+		displayname[en_us]=<rssi window tap value>
+		displayname[de_de]=<rssi window tap value>
+	</rssi_window_tap>
+	<rssi_window_long>
+		value=<50>
+		type=<integer>
+		runtime=<true>
+		displayname[en_us]=<rssi window long value>
+		displayname[de_de]=<rssi window long value>
+	</rssi_window_long>
+	<rssi_tap_threshold>
+		value=<-42>
+		type=<integer>
+		runtime=<true>
+		displayname[en_us]=<rssi tap threshold value>
+		displayname[de_de]=<rssi tap threshold value>
+	</rssi_tap_threshold>
+	<rssi_cutoff_close>
+		value=<-70>
+		type=<integer>
+		runtime=<true>
+		displayname[en_us]=<rssi cutoff close value>
+		displayname[de_de]=<rssi cutoff close value>
+	</rssi_cutoff_close>
+	<rssi_cutoff_far>
+		value=<-83>
+		type=<integer>
+		runtime=<true>
+		displayname[en_us]=<rssi cutoff far value>
+		displayname[de_de]=<rssi cutoff far value>
+	</rssi_cutoff_far>
+</nbed_config>
