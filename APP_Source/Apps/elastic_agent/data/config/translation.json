@@ -1,0 +1,10 @@
+{
+    "config.label": {
+        "en": "Settings",
+        "fr_ca": "Paramètres"
+    },
+    "title": {
+        "en": "Elastic Agent",
+        "fr_ca": "Elastic Agent"
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": ["base"]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "Elastic Agent",
+    "childrenIds": ["config"]
+  },
+  "config": {
+    "id": "config",
+    "title": "Configuration",
+    "nlsResourceId": "config.label",
+    "parentId": "base",
+    "elements": {
+      "0": {
+        "title": "Configuration",
+        "nlsResourceId": "config.label",
+        "type": "label"
+      },
+      "1": {
+        "paramId": "app.elastic-agent.config.url",
+        "type": "generic"
+      },
+      "2": {
+        "paramId": "app.elastic-agent.config.enrollment-token",
+        "type": "generic"
+      }
+    }
+  }
+}
+

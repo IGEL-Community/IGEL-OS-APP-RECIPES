@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "elastic_agent",
+  "author": "The IGEL community",
+  "vendor": "Elastic",
+  "rw_partition": {
+    "size": "large",
+    "flags": [
+      "allow_execute",
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Elastic Agent (Community)"
+  },
+  "version": "9.5.3+1.6"
+}
