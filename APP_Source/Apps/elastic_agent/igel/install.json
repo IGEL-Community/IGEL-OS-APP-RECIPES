@@ -1,0 +1,9 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "lib/systemd.*"
+    ],
+    "strip": false
+  }
+]

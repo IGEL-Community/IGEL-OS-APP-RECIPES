@@ -1,0 +1,10 @@
+<config>
+	<url>
+		displayname[fr_ca]=<URL de Fleet d’Elastic Agent>
+		tooltip[fr_ca]=<URL de Fleet d’Elastic Agent>
+	</url>
+	<enrollment-token>
+		displayname[fr_ca]=<Jeton d’inscription à Fleet d’Elastic Agent>
+        tooltip[fr_ca]=<Jeton d’inscription à Fleet d’Elastic Agent>
+	</enrollment-token>
+</config>

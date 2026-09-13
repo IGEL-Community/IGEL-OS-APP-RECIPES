@@ -1,0 +1,23 @@
+<config>
+	<url>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Elastic Agent Fleet URL>
+		tooltip[en_us]=<Elastic Agent Fleet URL>
+		node_action=<systemctl restart elastic-agent.service>
+	</url>
+	<enrollment-token>
+		value=<>
+		type=<sting>
+		runtime=<true>
+		displayname[en_us]=<Elastic Agent Fleet Enrollment Token>
+		tooltip[en_us]=<Elastic Agent Fleet Enrollment Token>
+		node_action=<systemctl restart elastic-agent.service>
+	</enrollment-token>
+</config>
+<config_schema_version>
+	value=<1>
+	type=<integer>
+	runtime=<false>
+</config_schema_version>

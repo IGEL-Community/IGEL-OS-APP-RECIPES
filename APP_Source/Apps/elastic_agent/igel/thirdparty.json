@@ -1,0 +1,11 @@
+[
+  {
+    "url": "file:///tmp/elastic-agent-amd64.deb",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  }
+]

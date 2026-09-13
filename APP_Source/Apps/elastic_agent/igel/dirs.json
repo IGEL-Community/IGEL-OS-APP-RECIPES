@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/opt/Elastic/Agent",
+    "persistent": true,
+    "owner": "0:0",
+    "permissions": "755"
+  }
+]
