@@ -202,7 +202,7 @@ EOF
 ### Save the following as `build-zenmap.sh`
 
 ```bash linenums="1"
-cat << "EOF" > build-zenmap.sh
+cat << "EEOFF" > build-zenmap.sh
 #!/bin/bash
 set -euo pipefail
 
@@ -279,6 +279,6 @@ mv "${OUTPUT_DIR}/zenmap.tar.bz2" .
 # Set the following for nmap file as IGEL OS Custom Command
 # setcap cap_net_raw,cap_net_admin,cap_net_bind_service+eip /services/zenmap/usr/local/bin/nmap
 #
-EOF
+EEOFF
 chmod a+rx build-zenmap.sh
 ```
