@@ -1,0 +1,27 @@
+[
+  {
+    "url": "file:///tmp/scrt.ubuntu20-64.x86_64.deb",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/libicu66.deb",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/libssl1.1.deb",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  }
+]

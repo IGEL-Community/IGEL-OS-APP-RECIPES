@@ -1,0 +1,17 @@
+<sessions>
+	<scrt%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</scrt%>
+  <scrt0>
+		<name_localized>
+			displayname[en_us]=<SecureCRT>
+		</name_localized>
+		<icon>
+            value=</services/scrt/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </scrt0>
+</sessions>

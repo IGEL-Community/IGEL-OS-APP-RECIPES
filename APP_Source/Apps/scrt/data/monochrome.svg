@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f7f7"/><stop offset="1" stop-color="#b9b9b9"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ec1ff"/><stop offset="1" stop-color="#dce8ff"/>
+    </linearGradient>
+    <linearGradient id="term" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#444"/><stop offset="1" stop-color="#151515"/>
+    </linearGradient>
+  </defs>
+  <!-- application/window -->
+  <rect x="5" y="3" width="53" height="42" rx="1.5" fill="url(#frame)" stroke="#555" stroke-width="1.5"/>
+  <rect x="9" y="7" width="45" height="28" fill="#fff" stroke="#777" stroke-width="1"/>
+  <rect x="13" y="10" width="38" height="17" fill="url(#screen)" stroke="#7a8ba8" stroke-width="1"/>
+  <rect x="9" y="36" width="45" height="5" fill="#d6d6d6"/>
+  <!-- terminal overlay -->
+  <rect x="24" y="26" width="37" height="32" rx="2" fill="url(#term)" stroke="#555" stroke-width="1.5"/>
+  <rect x="27" y="29" width="31" height="25" fill="#262626"/>
+  <path d="M30 35l5 4-5 4" fill="none" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 44h9" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round"/>
+  <!-- lock/badge -->
+  <circle cx="18" cy="47" r="13" fill="#ececec" stroke="#555" stroke-width="1.5"/>
+  <path d="M11 43v-4.2c0-4 3.1-7.3 7-7.3s7 3.3 7 7.3V43" fill="none" stroke="#555" stroke-width="3" stroke-linecap="round"/>
+  <rect x="9" y="41" width="18" height="14" rx="3" fill="#f7f7f7" stroke="#555" stroke-width="1.5"/>
+  <circle cx="18" cy="47" r="2.2" fill="#333"/>
+  <path d="M18 49v3" stroke="#333" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- small connection accent -->
+  <path d="M5 50c-2-5 0-10 4-13" fill="none" stroke="#777" stroke-width="2" stroke-linecap="round"/>
+  <path d="M4 36l6 0-2 5" fill="#777"/>
+</svg>
