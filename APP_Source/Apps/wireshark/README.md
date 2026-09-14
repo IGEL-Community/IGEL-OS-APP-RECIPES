@@ -29,7 +29,7 @@ echo "Starting"
 
 if [ -d /services/wireshark ]; then
   echo "Setting up setcap on dumpcap"
-  setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
+  setcap cap_net_raw,cap_net_admin=eip /services/wireshark/usr/bin/dumpcap
 else
   echo "Wireshark not installed. Nothing to do"
 fi
