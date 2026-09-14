@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "scrt",
+  "author": "The IGEL community",
+  "vendor": "VanDyke Software",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "VanDyke Software Secure CRT client for Linux (Community)"
+  },
+  "version": "9.5.2+3325.1.3"
+}

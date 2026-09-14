@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.config/VanDyke",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.config/.vandyke",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
