@@ -27,7 +27,12 @@ exec > >(logger -t "$ACTION") 2>&1
 
 echo "Starting"
 
-setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
+if [ -d /services/wireshark ]; then
+  echo "Setting up setcap on dumpcap"
+  setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
+else
+  echo "Wireshark not installed. Nothing to do"
+fi
 
 echo "Finished"
 
