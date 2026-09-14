@@ -1,0 +1,258 @@
+[
+  {
+    "package": "libc-ares2",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libdouble-conversion3",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "liblua5.2-0",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libmaxminddb0",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libnl-route-3-200",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5multimediagsttools5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5core5a",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5dbus5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5gui5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5multimedia5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5multimedia5-plugins",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5multimediawidgets5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5network5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5opengl5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5printsupport5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5svg5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libqt5widgets5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libsmi2ldbl",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libsnappy1v5",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libspandsp2",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libssh-gcrypt-4",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libwireshark-data",
+    "licenses": [
+      {
+        "name": "GPL-2.0-or-later"
+      }
+    ]
+  },
+  {
+    "package": "libwireshark16",
+    "licenses": [
+      {
+        "name": "GPL-2.0-or-later"
+      }
+    ]
+  },
+  {
+    "package": "libwiretap13",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libwsutil14",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "libxcb-xinerama0",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "qt5-gtk-platformtheme",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "qttranslations5-l10n",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  },
+  {
+    "package": "wireshark",
+    "licenses": [
+      {
+        "name": "GPL-2.0-or-later"
+      }
+    ]
+  },
+  {
+    "package": "wireshark-common",
+    "licenses": [
+      {
+        "name": "GPL-2.0-or-later"
+      }
+    ]
+  },
+  {
+    "package": "wireshark-qt",
+    "licenses": [
+      {
+        "name": "GPL-2.0-or-later"
+      }
+    ]
+  },
+  {
+    "package": "libbcg729-0",
+    "licenses": [
+      {
+        "name": "MIT"
+      }
+    ]
+  }
+]

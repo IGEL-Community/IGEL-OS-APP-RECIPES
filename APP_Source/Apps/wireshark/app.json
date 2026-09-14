@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "wireshark",
+  "author": "The IGEL community",
+  "vendor": "Wireshark Team",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Wireshark (Community)"
+  },
+  "version": "4.0.17+1.2"
+}
