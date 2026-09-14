@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "zenmap",
+  "author": "The IGEL community",
+  "vendor": "Nmap Project",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Zenmap (Community)"
+  },
+  "version": "7.991.0+1.2"
+}

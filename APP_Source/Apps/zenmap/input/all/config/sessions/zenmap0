@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export PYTHONPATH=/services/zenmap/usr/local/lib/python3.11/dist-packages:$PYTHONPATH
+
+/services/zenmap/usr/local/bin/zenmap
