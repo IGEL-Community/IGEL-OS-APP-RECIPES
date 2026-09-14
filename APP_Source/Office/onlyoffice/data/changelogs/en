@@ -1,0 +1,7 @@
+9.4.0+129.2
+
+Add explicit Debian copyright metadata for dependencies the portal cannot auto-detect.
+
+9.4.0+129.1
+
+Initial community recipe for ONLYOFFICE Desktop Editors Debian package 9.4.0-129.

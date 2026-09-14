@@ -1,0 +1,16 @@
+#!/bin/sh
+# ONLYOFFICE's vendor wrapper uses /opt; IGEL mounts the payload under /services.
+set -eu
+APP_ROOT=/services/onlyoffice
+APP_PATH="$APP_ROOT/opt/onlyoffice/desktopeditors"
+if [ ! -x "$APP_PATH/DesktopEditors" ]; then
+    echo "ONLYOFFICE payload is unavailable: $APP_PATH/DesktopEditors" >&2
+    exit 127
+fi
+export LD_LIBRARY_PATH="$APP_PATH:$APP_PATH/system:$APP_PATH/converter${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export QT_PLUGIN_PATH="$APP_PATH"
+export QT_QPA_PLATFORM_PLUGIN_PATH="$APP_PATH/platforms"
+# The shipped Qt build uses X11. Xwayland is required in a Wayland session.
+export QT_QPA_PLATFORM=xcb
+unset QML2_IMPORT_PATH QML_IMPORT_PATH QT_QPA_PLATFORMTHEME
+exec "$APP_PATH/DesktopEditors" "$@"
