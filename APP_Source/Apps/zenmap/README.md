@@ -96,6 +96,7 @@ RUN apt-get update && \
         gir1.2-gtk-3.0 \
         python3-gi \
         python3-cairo \
+        python3-gi-cairo \
         desktop-file-utils \
         && rm -rf /var/lib/apt/lists/*
 
@@ -166,22 +167,28 @@ RUN set -eux; \
     [ -n "${liblinear_path}" ] || { echo "ERROR: liblinear.so.4 was not collected" >&2; exit 1; }; \
     echo "Verified liblinear.so.4: ${liblinear_path}"
 
-# Zenmap/RadialNet requires the Debian Python Cairo bindings at runtime.
-# The Zenmap wheel itself does not vendor pycairo, so copy the files from
-# python3-cairo into data_dir while preserving their Debian filesystem paths.
+# Zenmap/RadialNet requires both pycairo and the PyGObject Cairo bridge.
+# The Zenmap wheel does not vendor these Debian Python modules, so stage
+# python3-cairo and python3-gi-cairo while preserving their package paths.
 RUN set -eux; \
-    dpkg-query -L python3-cairo | while IFS= read -r path; do \
-        [ -f "${path}" ] || [ -L "${path}" ] || continue; \
-        dest="/stage/data_dir${path}"; \
-        mkdir -p "$(dirname "${dest}")"; \
-        cp -a "${path}" "${dest}"; \
+    for pkg in python3-cairo python3-gi-cairo; do \
+        dpkg-query -L "${pkg}" | while IFS= read -r path; do \
+            [ -f "${path}" ] || [ -L "${path}" ] || continue; \
+            dest="/stage/data_dir${path}"; \
+            mkdir -p "$(dirname "${dest}")"; \
+            cp -a "${path}" "${dest}"; \
+        done; \
     done; \
     cairo_module="$(find /stage/data_dir/usr/lib/python3/dist-packages -maxdepth 2 \
         \( -name 'cairo*.so' -o -name 'cairo' \) -print -quit)"; \
+    gi_cairo_module="$(find /stage/data_dir/usr/lib/python3/dist-packages/gi -maxdepth 1 \
+        -name '_gi_cairo*.so' -print -quit)"; \
     [ -n "${cairo_module}" ] || { echo "ERROR: python3-cairo was not staged" >&2; exit 1; }; \
+    [ -n "${gi_cairo_module}" ] || { echo "ERROR: python3-gi-cairo was not staged" >&2; exit 1; }; \
     echo "Verified Python Cairo runtime: ${cairo_module}"; \
+    echo "Verified Python GI Cairo runtime: ${gi_cairo_module}"; \
     PYTHONPATH=/stage/data_dir/usr/lib/python3/dist-packages \
-        python3 -c 'import cairo; print("cairo import OK:", cairo.__file__)'
+        python3 -c 'import cairo; import gi._gi_cairo; print("cairo import OK:", cairo.__file__); print("gi cairo import OK:", gi._gi_cairo.__file__)'
 
 RUN find /stage/usr/local/bin -type f -exec sh -c \
         'file "$1" | grep -q ELF && strip --strip-unneeded "$1" || true' \
@@ -269,6 +276,12 @@ cp -a "${OUTPUT_DIR}"/usr/local/local/* "${OUTPUT_DIR}"/usr/local
 rm -rf "${OUTPUT_DIR}"/usr/local/local
 mkdir -p "${OUTPUT_DIR}"/lib/x86_64-linux-gnu/
 cp -a "${OUTPUT_DIR}"/data_dir/lib/x86_64-linux-gnu/liblinear.so.4 "${OUTPUT_DIR}"/lib/x86_64-linux-gnu
+cp -a "${OUTPUT_DIR}"/data_dir/usr/lib/python3/dist-packages/cairo "${OUTPUT_DIR}"/usr/local/lib/python3.11/dist-packages
+# python3-gi-cairo installs the compiled _gi_cairo extension under the gi package.
+# Copy it into Zenmap's /usr/local Python path alongside the staged Cairo module.
+mkdir -p "${OUTPUT_DIR}"/usr/local/lib/python3.11/dist-packages/gi
+cp -a "${OUTPUT_DIR}"/data_dir/usr/lib/python3/dist-packages/gi/_gi_cairo*.so \
+    "${OUTPUT_DIR}"/usr/local/lib/python3.11/dist-packages/gi/
 pushd .
 cd "${OUTPUT_DIR}"
 tar -cvjf zenmap.tar.bz2 lib usr
