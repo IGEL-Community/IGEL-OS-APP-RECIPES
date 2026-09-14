@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /services/onlyoffice/usr/bin/onlyoffice-desktopeditors "$@"

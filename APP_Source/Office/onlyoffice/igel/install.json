@@ -1,0 +1,11 @@
+[
+  {
+    "source": ".*",
+    "strip": false,
+    "excludes": [
+      "usr/bin/onlyoffice-desktopeditors$",
+      "usr/share/applications/onlyoffice-desktopeditors.desktop$",
+      "opt/onlyoffice/desktopeditors/platforminputcontexts/libqtvirtualkeyboardplugin.so$"
+    ]
+  }
+]

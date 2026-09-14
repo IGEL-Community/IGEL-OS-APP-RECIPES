@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/userhome/.config/onlyoffice",
+    "persistent": true,
+    "owner": "777:100"
+  },
+  {
+    "path": "/userhome/.local/share/onlyoffice",
+    "persistent": true,
+    "owner": "777:100"
+  },
+  {
+    "path": "/userhome/OnlyOfficeDocuments",
+    "persistent": true,
+    "owner": "777:100"
+  }
+]
