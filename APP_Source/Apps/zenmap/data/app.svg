@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Zenmap-style eye icon</title>
+  <desc id="desc">Native vector eye icon with blue iris and targeting crosshair, no text.</desc>
+
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#1d6fa6"/>
+      <stop offset="45%" stop-color="#0d3556"/>
+      <stop offset="100%" stop-color="#02070c"/>
+    </radialGradient>
+
+    <linearGradient id="sclera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7fdff"/>
+      <stop offset="55%" stop-color="#e8f7ff"/>
+      <stop offset="100%" stop-color="#b9e0f7"/>
+    </linearGradient>
+
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#159fe5"/>
+      <stop offset="50%" stop-color="#27b7f4"/>
+      <stop offset="100%" stop-color="#0571b2"/>
+    </linearGradient>
+
+    <radialGradient id="pupil" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#08233a"/>
+      <stop offset="100%" stop-color="#01070c"/>
+    </radialGradient>
+
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#87d8ff"/>
+      <stop offset="100%" stop-color="#2e81bc"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="eyeClip">
+      <path d="M90 500 Q800 50 1510 500 Q800 950 90 500 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <!-- Outer eye -->
+  <path d="M90 500 Q800 50 1510 500 Q800 950 90 500 Z"
+        fill="#06111b" stroke="#173d5e" stroke-width="10"/>
+
+  <!-- Eye body -->
+  <path d="M120 500 Q800 105 1480 500 Q800 895 120 500 Z"
+        fill="url(#sclera)" stroke="url(#rim)" stroke-width="22"/>
+
+  <!-- Subtle lower blue layer -->
+  <path d="M135 515 Q800 870 1465 515 Q800 905 135 515 Z"
+        fill="#63b7e8" opacity="0.55" clip-path="url(#eyeClip)"/>
+
+  <!-- Iris outer dark ring -->
+  <circle cx="800" cy="500" r="290" fill="#071521"/>
+
+  <!-- Iris -->
+  <circle cx="800" cy="500" r="265" fill="url(#iris)" stroke="#0a5d93" stroke-width="16"/>
+
+  <!-- Iris rays -->
+  <g stroke="#79d7ff" stroke-width="12" opacity="0.7">
+    <line x1="800" y1="245" x2="800" y2="325"/>
+    <line x1="800" y1="675" x2="800" y2="755"/>
+    <line x1="545" y1="500" x2="625" y2="500"/>
+    <line x1="975" y1="500" x2="1055" y2="500"/>
+
+    <line x1="620" y1="320" x2="675" y2="375"/>
+    <line x1="925" y1="625" x2="980" y2="680"/>
+    <line x1="620" y1="680" x2="675" y2="625"/>
+    <line x1="925" y1="375" x2="980" y2="320"/>
+
+    <line x1="675" y1="275" x2="710" y2="350"/>
+    <line x1="890" y1="650" x2="925" y2="725"/>
+    <line x1="565" y1="390" x2="640" y2="425"/>
+    <line x1="960" y1="575" x2="1035" y2="610"/>
+
+    <line x1="565" y1="610" x2="640" y2="575"/>
+    <line x1="960" y1="425" x2="1035" y2="390"/>
+    <line x1="675" y1="725" x2="710" y2="650"/>
+    <line x1="890" y1="350" x2="925" y2="275"/>
+  </g>
+
+  <!-- Pupil -->
+  <circle cx="800" cy="500" r="140" fill="url(#pupil)"/>
+
+  <!-- Target crosshair -->
+  <g stroke="#c7f6ff" stroke-width="12" stroke-linecap="square" filter="url(#glow)">
+    <line x1="800" y1="255" x2="800" y2="445"/>
+    <line x1="800" y1="555" x2="800" y2="745"/>
+    <line x1="555" y1="500" x2="745" y2="500"/>
+    <line x1="855" y1="500" x2="1045" y2="500"/>
+  </g>
+
+  <circle cx="800" cy="500" r="46" fill="none" stroke="#d9fbff" stroke-width="12"/>
+  <circle cx="800" cy="500" r="12" fill="#c8f7ff"/>
+
+  <!-- Highlights -->
+  <ellipse cx="670" cy="350" rx="85" ry="45"
+           transform="rotate(-35 670 350)"
+           fill="#ffffff" opacity="0.97"/>
+  <circle cx="710" cy="405" r="22" fill="#ffffff" opacity="0.96"/>
+
+  <!-- Top inner eyelid highlight -->
+  <path d="M270 445 Q800 165 1330 445 Q800 245 270 445 Z"
+        fill="#dff4ff" opacity="0.55"/>
+</svg>
