@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "x3270",
+  "author": "The IGEL community",
+  "vendor": "x3270 Project",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "x3270 (Community)"
+  },
+  "version": "4.5.6+1.6"
+}

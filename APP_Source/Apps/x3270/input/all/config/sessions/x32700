@@ -1,0 +1,7 @@
+#!/bin/bash
+
+FONTDIR="/services/x3270/usr/local/share/fonts/X11/misc"
+xset +fp "$FONTDIR"
+xset fp rehash
+
+/services/x3270/usr/local/bin/x3270

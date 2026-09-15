@@ -1,0 +1,17 @@
+<sessions>
+	<x3270%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</x3270%>
+  <x32700>
+		<name_localized>
+			displayname[en_us]=<x3270>
+		</name_localized>
+		<icon>
+            value=</services/x3270/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </x32700>
+</sessions>
