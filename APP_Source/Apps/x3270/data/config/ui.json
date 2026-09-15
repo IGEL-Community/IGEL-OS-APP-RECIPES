@@ -1,0 +1,28 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": ["base"]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "x3270",
+    "childrenIds": ["sessions"]
+  },
+  "sessions": {
+    "id": "sessions",
+    "parentId": "base",
+    "nlsResourceId": "sessions.label",
+    "title": "Session",
+    "instancePage": true,
+    "fixInstanceId": 0,
+    "elements": {
+      "0": {
+        "type": "sessionPage",
+        "paramId": "app.x3270.sessions.x3270",
+        "instancePageId": "sessions.genericInstancePage"
+      }
+    }
+  }
+}

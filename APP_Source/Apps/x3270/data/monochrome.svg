@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="x3270 terminal icon">
+  <rect x="36" y="64" width="440" height="344" rx="28" fill="#111"/>
+  <rect x="52" y="80" width="408" height="312" rx="16" fill="#050805" stroke="#5a5a5a" stroke-width="8"/>
+
+  <!-- title bar -->
+  <rect x="52" y="80" width="408" height="44" rx="16" fill="#222"/>
+  <circle cx="82" cy="102" r="8" fill="#777"/>
+  <circle cx="108" cy="102" r="8" fill="#777"/>
+  <circle cx="134" cy="102" r="8" fill="#777"/>
+
+  <!-- terminal text -->
+  <g fill="#67e667" font-family="monospace" font-weight="700">
+    <text x="84" y="190" font-size="62">x3270</text>
+    <text x="84" y="246" font-size="26">IBM 3270 TERMINAL</text>
+    <text x="84" y="308" font-size="34">&gt; _</text>
+  </g>
+
+  <!-- base -->
+  <path d="M164 408h184l24 40H140z" fill="#222"/>
+  <rect x="116" y="448" width="280" height="24" rx="12" fill="#333"/>
+</svg>

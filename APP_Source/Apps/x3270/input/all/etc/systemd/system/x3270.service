@@ -1,0 +1,5 @@
+[Unit]
+Description=x3270 rc file
+
+[Service]
+ExecStart=/bin/bash /services/x3270/config/bin/x3270-postinst.sh
