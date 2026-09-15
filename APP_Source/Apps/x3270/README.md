@@ -298,6 +298,8 @@ echo "x3270 series:   ${X3270_SERIES}"
 echo "Output:         ${OUTPUT_DIR}"
 echo
 
+docker system prune -f
+
 docker build --network host \
     --pull \
     --build-arg "X3270_VERSION=${X3270_VERSION}" \
