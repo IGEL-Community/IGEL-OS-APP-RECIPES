@@ -1,0 +1,6 @@
+[Unit]
+Description=remmina_compile
+
+[Service]
+ExecStartPre=/bin/mkdir -p /usr/local/lib/remmina
+ExecStart=/bin/ln -svf /services/remmina_compile/usr/local/lib/remmina/plugins /usr/local/lib/remmina/plugins

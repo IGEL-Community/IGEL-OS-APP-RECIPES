@@ -1,0 +1,12 @@
+[
+    {
+      "path": "/userhome/.config/remmina",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/.local/share/remmina",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
