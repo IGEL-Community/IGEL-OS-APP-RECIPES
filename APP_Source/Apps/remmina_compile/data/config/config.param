@@ -1,0 +1,17 @@
+<sessions>
+	<remmina_compile%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</remmina_compile%>
+  <remmina_compile0>
+		<name_localized>
+			displayname[en_us]=<Remmina>
+		</name_localized>
+		<icon>
+            value=</services/remmina_compile/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </remmina_compile0>
+</sessions>

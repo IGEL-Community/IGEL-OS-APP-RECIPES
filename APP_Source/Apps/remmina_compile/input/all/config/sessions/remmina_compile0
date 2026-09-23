@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export LD_LIBRARY_PATH=/services/remmina_compile/usr/local/lib
+
+/services/remmina_compile/usr/local/bin/remmina

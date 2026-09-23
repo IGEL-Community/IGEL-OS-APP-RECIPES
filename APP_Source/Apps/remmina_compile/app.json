@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "remmina_compile",
+  "author": "The IGEL community",
+  "vendor": "Remmina",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Remmina Compile (Community)"
+  },
+  "version": "1.4.43+1.2"
+}
