@@ -18,7 +18,8 @@ Steps:
 - Tar sra-pin-linux_x86_64-*.bin
 
 ```bash linenums="1"
-tar cvjf sra-pin-linux_x86_64-*.bin
+tar cvjf beyondtrust-sra.tar.bz2 sra-pin-linux_x86_64-*.bin
+```
 
 -----
 **NOTE:**
