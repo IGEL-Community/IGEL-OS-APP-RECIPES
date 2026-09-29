@@ -1,0 +1,17 @@
+<sessions>
+	<teamviewer_host%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</teamviewer_host%>
+  <teamviewer_host0>
+		<name_localized>
+			displayname[en_us]=<TeamViewer Host>
+		</name_localized>
+		<icon>
+			value=</services/teamviewer_host/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </teamviewer_host0>
+</sessions>
