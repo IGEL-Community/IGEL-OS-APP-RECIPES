@@ -1,0 +1,11 @@
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+**Note:**
+
+# [Teamviewer Host](https://www.teamviewer.com/en-us/)
+
+https://www.teamviewer.com/en-us/download/portal/linux/
+
+- Rename the downloaded file to be `teamviewer-host_amd64.deb` and is defined in file `thirdparty.json`
+
+- Recipe built / tested with `teamviewer-host_15.82.6_amd64.deb`

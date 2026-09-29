@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "teamviewer_host",
+  "author": "The IGEL community",
+  "vendor": "TeamViewer",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "TeamViewer Host (Community)"
+  },
+  "version": "15.82.6+1.0"
+}
