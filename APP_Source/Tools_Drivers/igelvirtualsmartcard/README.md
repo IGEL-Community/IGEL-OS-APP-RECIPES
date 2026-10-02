@@ -11,6 +11,8 @@ Virtual Smart Card emulates a smart card and makes it accessible through PC/SC. 
 - Electronic passport (ePass/MRTD) with support for BAC
 - Cryptoflex smart card (incomplete)
 
+[IGEL Virtual Smart Card app demo](https://youtu.be/plHqE6T7jBQ?si=Hl5_MS04tRZSb1tq)
+
 ## Main application: dynamic reader details
 
 The lower details notebook now contains:
