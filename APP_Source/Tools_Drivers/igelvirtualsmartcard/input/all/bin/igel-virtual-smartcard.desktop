@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=IGEL Virtual Smartcard
+Comment=Virtual PIV and CAC smart card manager
+Exec=igelvirtualsmartcard-launcher
+Icon=igel_virtual_smartcard_icon
+Terminal=false
+Categories=System;Security;

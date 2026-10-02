@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "igelvirtualsmartcard",
+  "author": "The IGEL Community",
+  "vendor": "Dominik Oepen and Frank Morgner",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Virtual Smart Card (Community)"
+  },
+  "version": "1.1.1+1.0"
+}

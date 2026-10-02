@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=IGEL Virtual Smaartcard
+Comment=Virtual smart card manager and physical smart-card proxy
+Exec=igelvirtualsmartcard-launcher
+Icon=/services/igelvirtualsmartcard/.icons/app.svg
+Terminal=false
+Categories=System;Security;
