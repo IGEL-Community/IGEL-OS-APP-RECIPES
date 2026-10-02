@@ -1,0 +1,10 @@
+IGEL Virtual Smartcard
+
+- Based on [Virtual Smart Card](https://frankmorgner.github.io/vsmartcard/)
+
+Virtual Smart Card emulates a smart card and makes it accessible through PC/SC. Currently the Virtual Smart Card supports the following types of smart cards:
+
+- Generic ISO-7816 smart card including secure messaging
+- German electronic identity card (nPA) with complete support for EAC (PACE, TA, CA)
+- Electronic passport (ePass/MRTD) with support for BAC
+- Cryptoflex smart card (incomplete)

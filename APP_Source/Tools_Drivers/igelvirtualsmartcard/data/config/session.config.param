@@ -1,0 +1,30 @@
+<sessions>
+    <igelvirtualsmartcard%>
+        <name>
+            value=<IGEL Virtual Smartcard>
+        </name>
+        <icon>
+            value=</services/igelvirtualsmartcard/.icons/app.svg>
+        </icon>
+        <run_only_once>
+            value=<true>
+        </run_only_once>
+        extends_base=<sessions.base%>
+    </igelvirtualsmartcard%>
+    <igelvirtualsmartcardmini%>
+        <name>
+            value=<IGEL Virtual Smartcard Mini Utility>
+        </name>
+        <icon>
+            value=</services/igelvirtualsmartcard/.icons/app.svg>
+        </icon>
+        <run_only_once>
+            value=<true>
+        </run_only_once>
+        extends_base=<sessions.base%>
+    </igelvirtualsmartcardmini%>
+    <igelvirtualsmartcard0>
+    </igelvirtualsmartcard0>
+    <igelvirtualsmartcardmini0>
+    </igelvirtualsmartcardmini0>
+</sessions>

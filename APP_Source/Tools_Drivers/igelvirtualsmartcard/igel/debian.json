@@ -1,0 +1,101 @@
+[
+  {
+    "package": "vsmartcard-vpcd",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "vsmartcard-vpicc",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "python3-virtualsmartcard",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "python3-pycryptodome",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "python3-gi",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "gir1.2-gtk-3.0",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "python3-xlib",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "libayatana-appindicator3-1",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "gir1.2-ayatanaappindicator3-0.1",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  },
+  {
+    "package": "libqrencode4",
+    "licenses": [
+      {
+        "name": "License to be completed",
+        "text": "License to be completed"
+      }
+    ]
+  },
+  {
+    "package": "python3-pyscard",
+    "licenses": [
+      {
+        "name": "TBC",
+        "text": "TBC"
+      }
+    ]
+  }
+]
