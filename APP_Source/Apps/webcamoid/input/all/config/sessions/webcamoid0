@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/services/webcamoid/usr/bin/Webcamoid-*-anylinux-x86_64.AppImage

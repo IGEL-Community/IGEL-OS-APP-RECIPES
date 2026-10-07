@@ -1,0 +1,17 @@
+[
+    {
+      "path": "/userhome/.config/Webcamoid",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/Pictures/Webcamoid",
+      "persistent": true,
+      "owner": "777:100"
+    },
+    {
+      "path": "/userhome/Videos/Webcamoid",
+      "persistent": true,
+      "owner": "777:100"
+    }
+]
