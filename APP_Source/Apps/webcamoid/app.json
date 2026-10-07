@@ -1,0 +1,23 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "webcamoid",
+  "author": "The IGEL community",
+  "vendor": "Webcamoid",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Webcamoid (Community)"
+  },
+  "version": "9.4.0+2.1.1"
+}

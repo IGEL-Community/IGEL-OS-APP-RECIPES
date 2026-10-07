@@ -1,0 +1,17 @@
+<sessions>
+	<webcamoid%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</webcamoid%>
+  <webcamoid0>
+		<name_localized>
+			displayname[en_us]=<Webcamoid>
+		</name_localized>
+		<icon>
+            value=</services/webcamoid/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </webcamoid0>
+</sessions>
