@@ -31,5 +31,8 @@
         "name": "GPL-2.0-or-later"
       }
     ]
+  },
+  {
+    "package": "libvdpau-va-gl1"
   }
 ]
