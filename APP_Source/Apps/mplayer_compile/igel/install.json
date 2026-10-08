@@ -1,0 +1,9 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "usr/share.*"
+    ],
+    "owner": "0:0"
+  }
+]
