@@ -1,0 +1,35 @@
+[
+  {
+    "package": "libcdio19"
+  },
+  {
+    "package": "libcdio-cdda2",
+    "licenses": [
+      {
+        "name": "GPL-3.0-or-later"
+      }
+    ]
+  },
+  {
+    "package": "libcdio-paranoia2",
+    "licenses": [
+      {
+        "name": "GPL-3.0-or-later"
+      }
+    ]
+  },
+  {
+    "package": "libdvdnav4"
+  },
+  {
+    "package": "libdvdread8"
+  },
+  {
+    "package": "libmad0",
+    "licenses": [
+      {
+        "name": "GPL-2.0-or-later"
+      }
+    ]
+  }
+]

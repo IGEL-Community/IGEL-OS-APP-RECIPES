@@ -1,0 +1,17 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "mplayer_compile",
+  "author": "The IGEL community",
+  "vendor": "MPlayer Team",
+  "release": "",
+  "summary": {
+    "en": "MPlayer Command Line Compile (Community)"
+  },
+  "version": "1.5.0+2.3"
+}
