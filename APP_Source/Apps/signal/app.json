@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "signal",
+  "author": "The IGEL community",
+  "vendor": "Signal Foundation",
+   "vendor": "Signal Foundation",
+  "rw_partition": {
+    "size": "medium",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Signal (Community)"
+  },
+  "version": "8.31.0+1.1"
+}
