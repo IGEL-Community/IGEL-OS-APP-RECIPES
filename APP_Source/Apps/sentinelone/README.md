@@ -15,3 +15,16 @@ https://support.guardz.com/en/articles/10088053-sentinelone-installation-linux
 ```bash linenums="1"
 /opt/sentinelone/bin/sentinelctl management token set <token_value>
 ```
+
+## sentinelone-postinst.sh
+
+This script will:
+
+- Apply the `SITE TOKEN` from profile (System -> Registry -> app.sentinelone.config.site-token)
+- Save the `configuration` folder to read / write folder
+
+## Debug from Journalctl
+
+```bash linenums="1"
+jounalctl -t sentinelone_postinst
+```
