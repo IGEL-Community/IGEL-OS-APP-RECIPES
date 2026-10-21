@@ -10,43 +10,36 @@ permissions:
   contents: write
 
 concurrency:
-  group: master-deploy-app
+  group: master-deploy-app-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout triggering branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
           persist-credentials: true
 
       - name: Create APP packages
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
         run: bash utils/make-app-packages.sh
 
       - name: Commit and push APP packages
         run: |
-          git config user.name "rneher-igel"
-          git config user.email "neher@igel.com"
-
-          git add --all
-
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- APP_Packages/
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No package changes to commit"
             exit 0
           fi
-
           git commit -m "Updated APP Packages"
-
-          echo "Fetching latest remote changes..."
-          git fetch origin main
-
-          echo "Rebasing onto latest main..."
-          git rebase origin/main
-
-          echo "Pushing changes..."
-          git push origin HEAD:main
+          git fetch origin "${GITHUB_REF_NAME}"
+          git rebase "origin/${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
