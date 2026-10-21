@@ -2,7 +2,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Obtain the SentinelOne installer file
 
-- Recipe tested with `SentinelAgent_linux_x86_64_v26_2_1_24.deb`
+- Tested with `SentinelAgent_linux_x86_64_v26_2_1_24.deb`
 
 - Rename file to `SentinelAgent_linux.deb`
 
