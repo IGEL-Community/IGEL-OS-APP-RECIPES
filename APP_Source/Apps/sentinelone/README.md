@@ -10,14 +10,8 @@ SentinelAgent_linux_x86_64.deb
 
 https://support.guardz.com/en/articles/10088053-sentinelone-installation-linux
 
-- Run following command to set token value (as root):
+- `sentinelone-postinst.sh` will run the following command to set token value:
 
 ```bash linenums="1"
 /opt/sentinelone/bin/sentinelctl management token set <token_value>
-```
-
-- Start the agent service (as root):
-
-```bash linenums="1"
-/opt/sentinelone/bin/sentinelctl control start
 ```

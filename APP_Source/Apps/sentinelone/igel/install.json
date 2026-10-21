@@ -2,7 +2,7 @@
   {
     "source": ".*",
     "excludes": [
-      ""
+      "opt/sentinelone/configuration.*"
     ]
   }
 ]

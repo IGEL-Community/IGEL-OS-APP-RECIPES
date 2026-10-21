@@ -1,11 +1,11 @@
 [Unit]
 Description=Monitor SentinelOne Agent
 #After=uptrack-prefetch.service uptrack.service
+After=igel-network-online.target
 #RefuseManualStop=yes
 
 [Service]
-#ExecStartPre=/bin/bash /etc/sentinelone/sentinelone-init.sh
-ExecStartPre=/bin/ln -sf /services/sentinelone/opt/sentinelone /opt/sentinelone
+ExecStartPre=/bin/bash /services/sentinelone/config/bin/sentinelone-postinst.sh
 WorkingDirectory=/services/sentinelone/opt/sentinelone/bin
 Type=exec
 ExecStart=/services/sentinelone/opt/sentinelone/bin/sentinelone-agent
