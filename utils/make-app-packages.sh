@@ -1,96 +1,84 @@
-#!/bin/bash
-shopt -s extglob
-# uncomment set and trap to trace execution
-set -x
-#trap read debug
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Files that have changed in most recent commit
-git diff --name-only HEAD HEAD~1
-CHANGEDFILES=`git diff --name-only HEAD HEAD~1`
-CHANGEDFILESB=`git diff --name-only HEAD HEAD~1|grep -v ".zip"`
-
-BASEDIR=`pwd`
+BASEDIR=$(git rev-parse --show-toplevel)
+cd "$BASEDIR"
 SRCLOC="$BASEDIR/APP_Source"
 ZIPLOCATION="$BASEDIR/APP_Packages"
-COMMONREADME="$BASEDIR/utils/readme.txt"
-COMMONDISCLAIMER="$BASEDIR/utils/disclaimer.txt"
-CATEGORIES="Apps Browsers Multimedia Network Office Scripts Server Tools_Drivers Unified_Communications"
+CATEGORIES=(Apps Browsers Multimedia Network Office Scripts Server Tools_Drivers Unified_Communications)
 
-for category in $CATEGORIES; do
-    cd $SRCLOC/$category;
+# Compare the complete push range, not just HEAD~1. If the base commit
+# is unavailable (e.g. a newly created branch), rebuild all packages.
+REBUILD_ALL=false
+if [[ ${BEFORE_SHA:-} =~ ^[0-9a-f]{40}$ && ${AFTER_SHA:-} =~ ^[0-9a-f]{40}$ ]] &&
+   [[ $BEFORE_SHA != 0000000000000000000000000000000000000000 ]] &&
+   git cat-file -e "${BEFORE_SHA}^{commit}" 2>/dev/null &&
+   git cat-file -e "${AFTER_SHA}^{commit}" 2>/dev/null; then
+    mapfile -d '' -t CHANGED < <(git diff --name-only -z "$BEFORE_SHA" "$AFTER_SHA" -- APP_Source/ utils/readme.txt utils/disclaimer.txt)
+else
+    echo "No usable push commit range; rebuilding all packages"
+    REBUILD_ALL=true
+    CHANGED=()
+fi
 
-    #  look at every folder under the category
-    for app in *; do
+printf 'Changed source files:\n'
+printf '  %s\n' "${CHANGED[@]}"
 
-      echo "in the loop with app = $app"
-      if [ -d $app ]; then
-        zip_needed=false
-        #zip_reason=""
-        zip_file="$ZIPLOCATION/$category/${app}_community.zip";
-        #  Take the zip file string out of changed files so we don't recreate it needlessly
-        CHANGEDFILES=${CHANGEDFILES//APP_Packages\/$category\/${app}_community.zip/}
+COMMON_CHANGED=false
+for changed in "${CHANGED[@]}"; do
+    case "$changed" in
+        utils/readme.txt|utils/disclaimer.txt) COMMON_CHANGED=true ;;
+    esac
+done
 
-        if [ ! -f  $zip_file ]; then
-          zip_needed=true;
-          #zip_reason="$zip_reason There was no current zip file."
-        fi
+for category in "${CATEGORIES[@]}"; do
+    category_dir="$SRCLOC/$category"
+    [[ -d $category_dir ]] || continue
+    mkdir -p "$ZIPLOCATION/$category"
 
-        #  if the common readme and disclaimer files are in the list of changed files, re-create the zip
-        if [[ "$CHANGEDFILES" == *"$COMMONREADME"* ]]; then
-            zip_needed=true;
-            #zip_reason="$zip_reason COMMONREADME is new."
-        fi
-        if [[ "$CHANGEDFILES" == *"$COMMONDISCLAIMER"* ]]; then
-            zip_needed=true;
-            #zip_reason="$zip_reason COMMONDISCLAIMER is new."
-        fi
-
-
-        echo "category/app  = $category/$app"
-        #  check the list of changed files in this commit to see if this Custom Partition has changed
-        if [[ "$CHANGEDFILES" == *"$category/$app"* ]] ; then
-            zip_needed=true;
-            #zip_reason="$zip_reason A file in $category/$app has changed."
-        fi
-
-
-        #  create the structure needed, then zip the file to the correct location
-        if $zip_needed; then
-          echo "Zip needed for app: $app"
-          #echo "Because $zip_reason"
-          cd $app
-          foldername=`grep -i "app=" *.sh`
-          foldername=${foldername/*\//}
-          foldername=${foldername/\"/}
-          echo "Folder name: $foldername"
-          echo "Zip file: $zip_file"
-          cpt="tmp"
-          rm -rf $cpt
-          mkdir $cpt
-          #mkdir "$cpt/igel"
-          #mkdir "$cpt/target"
-          #cp *.xml "$cpt/igel"
-          #cp igel/*.xml "$cpt/igel"
-          #cp *.inf "$cpt/target"
-          #cp target/*.inf "$cpt/target"
-          #cp *.sh "$cpt/target"
-          #cp *.md "$cpt/target"
-          #cp -R !(*.xml|*.inf|*.sh|*.md|$cpt) "$cpt/target"
-          cp -R * "$cpt"
-          rm -rf "${cpt}/tmp"
-          #cp $COMMONREADME "$cpt"
-          #cp $COMMONDISCLAIMER "$cpt"
-          cd $cpt
-          zip -r $zip_file .
-          cd ..
-          rm -rf $cpt
-          cd ..
-        fi
-
-      fi
-
+    # Clean up ZIPs for removed application directories.
+    for changed in "${CHANGED[@]}"; do
+        case "$changed" in
+            "APP_Source/$category/"*)
+                remainder=${changed#"APP_Source/$category/"}
+                app=${remainder%%/*}
+                if [[ -n $app && ! -d "$category_dir/$app" ]]; then
+                    removed_zip="$ZIPLOCATION/$category/${app}_community.zip"
+                    if [[ -f $removed_zip ]]; then
+                        echo "Removing package for deleted app: $category/$app"
+                        rm -f "$removed_zip"
+                    fi
+                fi
+                ;;
+        esac
     done
 
-    cd ../..
+    for app_dir in "$category_dir"/*; do
+        [[ -d $app_dir ]] || continue
+        app=${app_dir##*/}
+        zip_file="$ZIPLOCATION/$category/${app}_community.zip"
+        zip_needed=$REBUILD_ALL
+        [[ -f $zip_file ]] || zip_needed=true
+        [[ $COMMON_CHANGED == true ]] && zip_needed=true
 
+        for changed in "${CHANGED[@]}"; do
+            case "$changed" in
+                "APP_Source/$category/$app/"*) zip_needed=true; break ;;
+            esac
+        done
+        [[ $zip_needed == true ]] || continue
+
+        echo "Building package: $category/$app"
+        # Package all source contents directly at the archive root.
+        # Exclude legacy temporary build directories named 'tmp'.
+        temp_zip=$(mktemp "$ZIPLOCATION/$category/.${app}_community.XXXXXX.zip")
+        rm -f "$temp_zip"
+        if (cd "$app_dir" && zip -q -r "$temp_zip" . -x 'tmp/*' '*/tmp/*'); then
+            mv -f "$temp_zip" "$zip_file"
+        else
+            rm -f "$temp_zip"
+            echo "Failed to build $category/$app" >&2
+            exit 1
+        fi
+    done
 done
