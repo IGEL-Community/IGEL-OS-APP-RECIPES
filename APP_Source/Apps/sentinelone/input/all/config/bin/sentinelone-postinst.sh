@@ -42,6 +42,16 @@ else
     echo "Symlink /opt/${APP_NAME}/configuration already exists"
 fi
 
+# Create installation_params.json file in the configuration directory
+if [[ ! -f "${APP_PATH_RW}/configuration/installation_params.json" ]]; then
+    echo "Creating installation_params.json in ${APP_PATH_RW}/configuration"
+    cat << EOF > "${APP_PATH_RW}/configuration/installation_params.json"
+{
+    "PACKAGE_TYPE": "deb"
+}
+EOF
+fi
+
 SITE_TOKEN=$(getsysvalue app.${APP_NAME}.config.site-token)
 
 if [ -n "$SITE_TOKEN" ]; then
