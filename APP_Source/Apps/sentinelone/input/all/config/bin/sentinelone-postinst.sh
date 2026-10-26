@@ -59,6 +59,8 @@ if [ -n "$SITE_TOKEN" ]; then
   # If enrolling, may need to figure out how to handle the changed files / folders after enrollment.
   #
   if [ ! -f /services_rw/${APP_NAME}/enrolled ]; then
+    echo "Agent service registered successfully"
+    /opt/${APP_NAME}/bin/sentinelctl control set-service-type systemd
     echo "SentinelOne Agent is not enrolled, enrolling now..."
     /opt/${APP_NAME}/bin/sentinelctl management token set $SITE_TOKEN
     echo $(date) > /services_rw/${APP_NAME}/enrolled
