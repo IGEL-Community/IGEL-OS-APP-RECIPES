@@ -13,6 +13,8 @@ echo "Starting"
 APP_PATH="/services/sentinelone"
 APP_PATH_RW="/services_rw/sentinelone"
 APP_NAME="sentinelone"
+GROUP_NAME="sentinelone"
+USER_NAME="sentinelone"
 
 # Create application symlink only if it does not already exist
 if [[ ! -L "/opt/${APP_NAME}" ]]; then
@@ -51,6 +53,10 @@ if [[ ! -f "${APP_PATH_RW}/configuration/installation_params.json" ]]; then
 }
 EOF
 fi
+
+# Set ownership
+chown -R -L ${USER_NAME}:${GROUP_NAME} "${APP_PATH}/opt/sentinelone"
+chown -R root:${GROUP_NAME} "${APP_PATH}/opt/sentinelone/bin"
 
 SITE_TOKEN=$(getsysvalue app.${APP_NAME}.config.site-token)
 
