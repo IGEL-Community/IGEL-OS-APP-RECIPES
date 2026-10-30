@@ -25,7 +25,7 @@ ARG DEBIAN_VERSION=bookworm
 FROM debian:${DEBIAN_VERSION} AS builder
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG FREERDP_REF=3.32.0
+ARG FREERDP_REF=3.32.2
 ARG REMMINA_REF=v1.4.43
 ARG BUILD_TYPE=Release
 ARG JOBS=0
@@ -193,7 +193,7 @@ cat << "EOF" > build-remmina_compile.sh
 #!/usr/bin/env bash
 set -euo pipefail
 
-FREERDP_REF="${FREERDP_REF:-3.32.0}"
+FREERDP_REF="${FREERDP_REF:-3.32.2}"
 REMMINA_REF="${REMMINA_REF:-v1.4.43}"
 BUILD_TYPE="${BUILD_TYPE:-Release}"
 OUTPUT_DIR="${OUTPUT_DIR:-output}"
