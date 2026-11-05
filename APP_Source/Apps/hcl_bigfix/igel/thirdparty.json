@@ -1,0 +1,20 @@
+[
+  {
+    "url": "file:///tmp/BESAgent.amd64.deb",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  },
+  {
+    "url": "file:///tmp/actionsite.afxm.zip",
+    "licenses": [
+      {
+        "name": "Private App",
+        "text": "Private App Lic"
+      }
+    ]
+  }
+]

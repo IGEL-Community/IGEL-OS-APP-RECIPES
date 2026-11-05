@@ -1,0 +1,25 @@
+[Unit]
+Description=HCL BigFix Agent
+Wants=network-online.target
+After=igel-network-online.target
+
+[Service]
+ExecStartPre=/bin/bash /services/bigfix/config/bin/bigfix-postinst.sh
+Type=forking
+ExecStart=/opt/BESClient/bin/BESClient
+PIDFile=
+GuessMainPID=yes
+
+Environment="BESClientConfigPath=/var/opt/BESClient/besclient.config"
+Environment="BESClientActionMastheadPath=/etc/opt/BESClient/actionsite.afxm"
+Environment="LD_LIBRARY_PATH=/opt/BESClient/BESLib"
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/root/.Xauthority"
+
+Restart=on-failure
+RestartSec=10
+TimeoutStartSec=120
+TimeoutStopSec=120
+
+[Install]
+WantedBy=multi-user.target
