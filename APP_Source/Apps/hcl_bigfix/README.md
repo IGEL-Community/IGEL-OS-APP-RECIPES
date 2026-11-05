@@ -23,3 +23,7 @@ This script will:
 ```bash linenums="1"
 jounalctl -t bigfix_postinst
 ```
+
+## Logs
+
+- Logs are in folder: `/var/opt/BESCLient/_BESData/_Global/Logs`
