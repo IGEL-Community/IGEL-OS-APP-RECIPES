@@ -1,0 +1,20 @@
+{
+  "root": {
+    "id": "root",
+    "childrenIds": ["base"]
+  },
+  "base": {
+    "id": "base",
+    "parentId": "root",
+    "nlsResourceId": "title",
+    "title": "HCL BigFix Agent",
+    "childrenIds": ["config"]
+  },
+  "config": {
+    "id": "config",
+    "title": "Configuration",
+    "nlsResourceId": "config.label",
+    "parentId": "base"
+  }
+}
+

@@ -1,0 +1,7 @@
+[
+    {
+      "path": "/var/opt/BESClient",
+      "persistent": true,
+      "owner": "0:0"
+    }
+]

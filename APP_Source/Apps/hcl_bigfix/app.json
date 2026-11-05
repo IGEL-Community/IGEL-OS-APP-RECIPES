@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "bigfix",
+  "author": "The IGEL community",
+  "vendor": "HCL Technologies",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed",
+      "prefer_btrfs"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "HCL BigFix Agent (Community)"
+  },
+  "version": "11.0.5+204.1.7"
+}

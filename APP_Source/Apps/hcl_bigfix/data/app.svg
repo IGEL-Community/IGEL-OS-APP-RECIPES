@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="HCL BigFix icon">
+ <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#103b82"/><stop offset="1" stop-color="#031638"/></linearGradient>
+  <linearGradient id="hex" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#27c9f5"/><stop offset=".55" stop-color="#087deb"/><stop offset="1" stop-color="#0052b7"/></linearGradient>
+  <clipPath id="round"><rect width="512" height="512" rx="88"/></clipPath>
+ </defs>
+ <g clip-path="url(#round)">
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <path d="M0 506 Q340 500 512 310 L512 512Z" fill="#008de9" opacity=".85"/>
+  <path d="M0 512 Q370 486 512 380 L512 512Z" fill="#0649a4" opacity=".8"/>
+ </g>
+ <text x="256" y="143" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-style="italic" font-size="82" fill="white">HCL</text>
+ <path d="M135 190 L215 237 Q224 242 224 252 L224 346 Q224 356 215 361 L135 408 Q126 413 117 408 L37 361 Q28 356 28 346 L28 252 Q28 242 37 237 L117 190 Q126 185 135 190Z" fill="url(#hex)"/>
+ <path d="M28 252 L126 194 L224 252 L224 285 L126 225 L28 285Z" fill="#24c4f5" opacity=".5"/>
+ <text x="126" y="353" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="171" fill="white">b</text>
+ <text x="237" y="328" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="70" letter-spacing="-3" fill="white" textLength="256" lengthAdjust="spacingAndGlyphs">BigFix</text>
+</svg>

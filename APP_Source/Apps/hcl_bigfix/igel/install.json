@@ -1,0 +1,11 @@
+[
+  {
+    "source": ".*",
+    "excludes": [
+      "etc.*",
+      "lib.*",
+      "var.*"
+    ],
+    "strip": false
+  }
+]
