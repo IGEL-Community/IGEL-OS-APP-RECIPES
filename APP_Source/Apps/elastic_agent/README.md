@@ -16,3 +16,11 @@ Tested with: `elastic-agent-9.5.3-amd64.deb`
 
 - Fleet URL
 - Fleet Enrollment Token
+
+## Files the registration and setup information is stored in
+
+```bash
+/opt/Elastic/Agent/
+├── elastic-agent.yml     # Main configuration
+├── fleet.enc             # Encrypted Fleet credentials/config
+```

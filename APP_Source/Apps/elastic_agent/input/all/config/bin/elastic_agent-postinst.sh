@@ -29,7 +29,7 @@ default_symlink="/usr/share/elastic-agent/bin/elastic-agent"
 SERVICE_NAME="ElasticEndpoint"
 should_restart_endpoint=false
 
-mkdir -p "$symlink_dir"
+mkdir -pv "$symlink_dir"
 ln -svf "$new_agent_dir/elastic-agent" "$default_symlink"
 
 $new_agent_dir/elastic-agent apply-flavor
@@ -38,7 +38,7 @@ FLEET_URL=$(getsysvalue app.elastic_agent.config.url)
 ENROLLMENT_TOKEN=$(getsysvalue app.elastic_agent.config.enrollment-token)
 
 echo "cp /etc/elastic-agent/* /services/elastic_agent/var/lib/elastic-agent"
-cp /etc/elastic-agent/* /services/elastic_agent/var/lib/elastic-agent
+cp -av /etc/elastic-agent/* /services/elastic_agent/var/lib/elastic-agent
 
 if [ -n "$FLEET_URL" ] && [ -n "$ENROLLMENT_TOKEN" ]; then
   #
@@ -49,12 +49,20 @@ if [ -n "$FLEET_URL" ] && [ -n "$ENROLLMENT_TOKEN" ]; then
     $new_agent_dir/elastic-agent enroll \
       --url=$FLEET_URL \
       --enrollment-token=$ENROLLMENT_TOKEN
-    echo "Need to figure out the changed files after enrollment and copy them to /services_rw/elastic_agent/changed-files"
-    #echo $(date) > /services_rw/elastic_agent/enrolled
-    echo "mkdir -p /services_rw/elastic_agent/changed-files"
-    # mkdir -p /services_rw/elastic_agent/changed-files
+    echo $(date) > /services_rw/elastic_agent/enrolled
+    echo "mkdir -pv /services_rw/elastic_agent/changed-files"
+    mkdir -pv /services_rw/elastic_agent/changed-files
+    echo "Copy the changed files into /services_rw/elastic_agent/changed-files"
+    cp -av /services/elastic_agent/opt/Elastic/Agent/elastic-agent.yml \
+          /services_rw/elastic_agent/changed-files
+    cp -av /services/elastic_agent/opt/Elastic/Agent/opt/Elastic/Agent/fleet.enc \
+          /services_rw/elastic_agent/changed-files
   else
-    echo "Need to copy the changed files back into /services/elastic_agent/var/lib/elastic-agent"
+    echo "Need to copy the changed files back into /services/elastic_agent/opt/Elastic/Agent"
+    cp -av /services_rw/elastic_agent/changed-files/elastic-agent.yml \
+           /services/elastic_agent/opt/Elastic/Agent
+    cp -av /services_rw/elastic_agent/changed-files/fleet.enc \
+           /services/elastic_agent/opt/Elastic/Agent/opt/Elastic/Agent
   fi
 fi
 
