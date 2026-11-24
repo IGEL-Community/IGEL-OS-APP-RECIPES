@@ -1,0 +1,6 @@
+Autodarts
+
+Autodarts is a camera-based automatic dartboard scoring system. It uses
+computer vision to detect where steel-tip darts land on a conventional
+dartboard, automatically calculating the score without requiring a
+specialized electronic dartboard.

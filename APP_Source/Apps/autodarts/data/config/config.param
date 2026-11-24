@@ -1,0 +1,17 @@
+<sessions>
+	<autodarts%>
+		extends_base=<sessions.base%>
+		node_action=<wm_postsetup>
+	</autodarts%>
+  <autodarts0>
+		<name_localized>
+			displayname[en_us]=<Autodarts>
+		</name_localized>
+		<icon>
+            value=</services/autodarts/.icons/app.svg>
+		</icon>
+		<type>
+			displayname[en_us]=<Misc>
+		</type>
+  </autodarts0>
+</sessions>

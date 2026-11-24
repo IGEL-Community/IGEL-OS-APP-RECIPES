@@ -1,0 +1,24 @@
+{
+  "categories": [
+    "Miscellaneous"
+  ],
+  "icons": {
+    "app": "app.svg",
+    "monochrome": "monochrome.svg"
+  },
+  "name": "autodarts",
+  "author": "The IGEL community",
+  "vendor": "Autodarts",
+   "vendor": "Autodarts",
+  "rw_partition": {
+    "size": "small",
+    "flags": [
+      "compressed"
+    ]
+  },
+  "release": "",
+  "summary": {
+    "en": "Autodarts (Community)"
+  },
+  "version": "2.1.1+1.0"
+}
